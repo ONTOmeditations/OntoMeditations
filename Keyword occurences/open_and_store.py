@@ -68,5 +68,16 @@ concept_instances_str=[i[0] for i in concept_instances] #as a way to get columns
 
 #Book_1
 #print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook1.txt',concept_instances,"book_1_occ"))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook2.txt',concept_instances,'book2_occ'))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook3.txt',concept_instances,'book3_occ'))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook4.txt',concept_instances,'book4_occ'))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook5.txt',concept_instances,'book5_occ'))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook6.txt',concept_instances,'book6_occ'))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook7.txt',concept_instances,'book7_occ'))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook8.txt',concept_instances,'book8_occ'))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook9.txt',concept_instances,'book9_occ'))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook10.txt',concept_instances,'book10_occ'))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook11.txt',concept_instances,'book11_occ'))
+print(create_csv('/Users/macuser/Desktop/KRKE-Meditations/MAtext Occurences/MAtext/MeditationsBook12.txt',concept_instances,'book12_occ'))
 
     
