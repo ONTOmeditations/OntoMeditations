@@ -3,7 +3,7 @@ import os
 from pandas import DataFrame 
 
 
-#This is a function that takes as input a text file (in case each book) and our list of concepts. 
+#This is a function that takes as input a text file (in our case case each book) and our list of concepts. 
 #It splits each book into its fragments and retrieves the number of concept occurences in each fragment.
 
 def create_csv(text_file_path, concept_list,chapter_num_path):
