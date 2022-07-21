@@ -1,4 +1,5 @@
 from ast import keyword
+from platform import node
 import re
 import os
 from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
@@ -54,14 +55,18 @@ hasCitationIRI="https://w3id.org/arco/ontology/core/hasCitation"
 keywordURI="https://w3id.org/arco/ontology/core/keyword"
 synonymIRI="https://w3id.org/arco/ontology/core/synonym"
 
-#dat types
+#data types
 schemaIRI = "http://www.w3.org/2000/01/rdf-schema#"
 LiteralIRI="http://www.w3.org/2000/01/rdf-schema#Literal"
 
-
+baseIRI = "https://w3id.org/arco/ontology/core/"
 
 # accept the natural txt to work on
+#my global variables
 allTxt = []
+txtnumber = 0         #<-- STORES ALL THE TEXTS
+fragmentlist = []   #<-- STORES ALL THE FRAGMENTS, MAYBE DICT IS MORE SUITABLE?
+allFragments = {}
 '''
 Reading text methods
 
@@ -72,37 +77,110 @@ The file object provides you with three methods for reading text from a text fil
     readlines() - read all the lines of the text file and return them as a list of strings.
 
 '''
-
+#THIS FUNCTION ACCEPTS THE TEXT AND STORES IT IN A LOCAL LIST VARIABLE CALLED allTxt
 def uploadtxt(filepath):
-    with open(filepath) as f:
+    with open(filepath,"r",encoding="UTF-8") as f:
         chapter = f.read()
         allTxt.append(chapter)
         f.close
-    fragmentor(chapter)
     return
 
+#THIS FUNCTION ACCEPTS THE EXTRACTED SENTIMENTS FOR EACH FRAGMENT
 def uploadextractedSentiments(filepath):
+    #da fare
     sentiDf = pd.read_csv(filepath)
 
+#THIS FUNCTION ACCEPTS THE EXTRACTED INSTANCES OF OUR CONCEPTS IN THE FRAMENTS
 def uploadextractedConceptInstances(filepath):
+    #da fare
     conceptInstanceDf = pd.read_csv(filepath)
+    print(conceptInstanceDf)
     
-def fragmentlistcreator():
-    for item in allTxt:
-        fragmentlist.append(item)
+def fragmentdictcreator(fragment):
+    globals()['txtnumber'] +=1
+    allFragments.update({txtnumber:fragment})
+    return
 
 # create the list of fragments for each book
 def fragmentor(txt):
-    fragment =re.split('\d+\.', txt)
-    print(fragment)
-    print(os.linesep)
+    #THIS FUNCTION CREATOS FRAGMENTS FROM THE TEXT USING REGEX SPLITER AND STORES THEM IN THE 
+    for item in allTxt:
+        fragment =re.split('\d+\.', item)  #this creates a list of fragments
+        #CHECK IF THERE ARE ANY BLANK FRAGMENTS
+        for item in fragment:
+            if item == "":  
+                fragment.remove(item)
+        fragmentdictcreator(fragment)     
     return
 
 # itterate over the list of fragments in books and create a URI for all
 def KGraphcreator():
     #da fare
-    endpointURI = "http://127.0.0.1:9999/blazegraph/sparql"
+    myGraph = Graph()
+    #create your triples for literary diary here
+    myGraph.add(())
+    #create your triples for books/chapters here
+    bookId = 1
+    for items in allTxt:
+        subj = baseIRI + "Book" + bookId
+        #create your triples for book class instance here
+        tripl1 = 1
+        triple2 = 2
+        triple3 = 3
+        #change the localID for the next book/chapter here
+        bookId +=1
+    #create your triples for fragments here
+    for key in allFragments:
+        chapterNum = key
+        localID = 1 #this is the id for the frament, keeping this outside the loop so that it does not get reset when iterating over the fragments of one chapter
+        for value in allFragments[key]:
+            #print(value) <-- this contains one paragraph
+            UniversalID = chapterNum + "." + localID #we create unique number for each fragment
+            subj = baseIRI + "fragment" + UniversalID
+            #create all the triples for this fragment below
+            triple1 = 1  
+            triple2 = 2
+            triple3 = 3
+            #change the localID for the next frament below
+            localID +=1
 
-    #read CSV to get extracted data
+    dbupdater(myGraph)
+    return True
 
+def dbupdater(graphvariable):
+    store = SPARQLUpdateStore()
+    # The URL of the SPARQL endpoint is the same URL of the Blazegraph
+    # instance + '/sparql'
+    # It opens the connection with the SPARQL endpoint instance
+    endpointURI = "http://127.0.0.1:9999/blazegraph/sparql"  #this is a bit forcing and may not work with multiple dbs with different endpoints
+    store.open((endpointURI,endpointURI))
+
+    for triple in graphvariable.triples((None, None, None)):
+        store.add(triple)       
+    # close connection 
+    store.close()
+    return
+
+#read CSV to get extracted data
+#DRIVER CODE FOR UPLOADING CORE TEXT
+'''
 uploadtxt("txt/MeditationsBook1.txt")
+uploadtxt("txt/MeditationsBook2.txt")
+uploadtxt("txt/MeditationsBook3.txt")
+
+fragmentor(allTxt)
+'''
+#DRIVER CODE FOR VIEWING THE DICT OF FRAMENTS >>
+'''
+for key in allFragments:
+    print(key)
+    for value in allFragments[key]:
+        print(value)
+'''
+#DRIVER CODE FOR UPLOADING THE EXTRACTED CONCEPTS
+'''
+uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ0.csv") #<-- instances of extracted concept(Justice) keywords
+uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ1.csv") #<-- instances of extracted concept(Reason) keywords
+'''
+#DRIVER CODE FOR CREATING THE KNOWLEDGE GRAPH FROM THE TEXT
+#KGraphcreator()
