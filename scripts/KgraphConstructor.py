@@ -12,53 +12,53 @@ from sparql_dataframe import get
 
 #my ontology classes URI 
 #main class
-literaryDiaryIRI="http://www.semanticweb.org/victor/ontologies/2022/6/ontoMeditations/literary_diary"
+literaryDiaryIRI=URIRef("http://www.semanticweb.org/victor/ontologies/2022/6/ontoMeditations/literary_diary")
 #sub class
-abstractFigureIRI="https://w3id.org/arco/ontology/core/AbstractFigure"
-agentRoleIRI="https://w3id.org/arco/ontology/core/AgentRole"
-chaptersIRI="https://w3id.org/arco/ontology/core/chapters"
-conceptIRI="https://w3id.org/arco/ontology/core/Concept"
-sentimentIRI="https://w3id.org/arco/ontology/core/Sentiment"
+abstractFigureIRI=URIRef("https://w3id.org/arco/ontology/core/AbstractFigure")
+agentRoleIRI=URIRef("https://w3id.org/arco/ontology/core/AgentRole")
+chaptersIRI=URIRef("https://w3id.org/arco/ontology/core/chapters")
+conceptIRI=URIRef("https://w3id.org/arco/ontology/core/Concept")
+sentimentIRI=URIRef("https://w3id.org/arco/ontology/core/Sentiment")
 #sub sub class of abstractfigure
-menIRI="https://w3id.org/arco/ontology/core/AbstractFigure/men"
+menIRI=URIRef("https://w3id.org/arco/ontology/core/AbstractFigure/men")
 godIRI=""
 #sub sub class of chapters
-fragmentIRI="https://w3id.org/arco/ontology/core/fragments"
+fragmentIRI=URIRef("https://w3id.org/arco/ontology/core/fragments")
 #sub sub class of sentiments
-negativeIRI="https://w3id.org/arco/ontology/core/negative_sentiment"
-positiveIRI="https://w3id.org/arco/ontology/core/positive_sentiment"
+negativeIRI=URIRef("https://w3id.org/arco/ontology/core/negative_sentiment")
+positiveIRI=URIRef("https://w3id.org/arco/ontology/core/positive_sentiment")
 
 #my ontology URI for Object Properties
-hasAssociatedAgent="https://w3id.org/arco/ontology/core/hasAssociatedAgent"
-hasAssociatedConcept="https://w3id.org/arco/ontology/core/hasAssociatedConcept"
-hasAssociatedFigure="https://w3id.org/arco/ontology/core/hasAssociatedFigure"
-hasAssociatedsentimentIRI="https://w3id.org/arco/ontology/core/hasAssociatedSentiment"
-hasCharacteristicIRI="https://w3id.org/arco/ontology/core/hasCharacteristic"
-hasConstituentIRI="https://w3id.org/arco/ontology/core/hasConstituent"
-hasPartIRI="https://w3id.org/arco/ontology/core/hasPart"
+hasAssociatedAgent=URIRef("https://w3id.org/arco/ontology/core/hasAssociatedAgent")
+hasAssociatedConcept=URIRef("https://w3id.org/arco/ontology/core/hasAssociatedConcept")
+hasAssociatedFigure=URIRef("https://w3id.org/arco/ontology/core/hasAssociatedFigure")
+hasAssociatedsentimentIRI=URIRef("https://w3id.org/arco/ontology/core/hasAssociatedSentiment")
+hasCharacteristicIRI=URIRef("https://w3id.org/arco/ontology/core/hasCharacteristic")
+hasConstituentIRI=URIRef("https://w3id.org/arco/ontology/core/hasConstituent")
+hasPartIRI=URIRef("https://w3id.org/arco/ontology/core/hasPart")
 # sub class of has part IRI
-isPartOfIRI="https://w3id.org/arco/ontology/core/isPartOf"
-isCategoryOfIRI="https://w3id.org/arco/ontology/core/isCategoryOf"
-isCompoentOfIRI="https://w3id.org/arco/ontology/core/isComponentOf"
-oppositveOfIRI="https://w3id.org/arco/ontology/core/oppositeOf"
-sameasIRI="https://w3id.org/arco/ontology/core/sameAs"
+isPartOfIRI=URIRef("https://w3id.org/arco/ontology/core/isPartOf")
+isCategoryOfIRI=URIRef("https://w3id.org/arco/ontology/core/isCategoryOf")
+isCompoentOfIRI=URIRef("https://w3id.org/arco/ontology/core/isComponentOf")
+oppositveOfIRI=URIRef("https://w3id.org/arco/ontology/core/oppositeOf")
+sameasIRI=URIRef("https://w3id.org/arco/ontology/core/sameAs")
 
 
 
-providenceIRI="https://w3id.org/arco/ontology/core/Category/providence"
-justiceIRI="https://w3id.org/arco/ontology/core/Category/justice"
+providenceIRI=URIRef("https://w3id.org/arco/ontology/core/Category/providence")
+justiceIRI=URIRef("https://w3id.org/arco/ontology/core/Category/justice")
 
 
 #Data properties
-hasTitleIRI = "https://w3id.org/arco/ontology/core/hasTitle"
-hasAttributedAuthorIRI="https://w3id.org/arco/ontology/core/hasAttributedAuthor"
-hasCitationIRI="https://w3id.org/arco/ontology/core/hasCitation"
-keywordURI="https://w3id.org/arco/ontology/core/keyword"
-synonymIRI="https://w3id.org/arco/ontology/core/synonym"
+hasTitleIRI = URIRef("https://w3id.org/arco/ontology/core/hasTitle")
+hasAttributedAuthorIRI=URIRef("https://w3id.org/arco/ontology/core/hasAttributedAuthor")
+hasCitationIRI=URIRef("https://w3id.org/arco/ontology/core/hasCitation")
+keywordURI=URIRef("https://w3id.org/arco/ontology/core/keyword")
+synonymIRI=URIRef("https://w3id.org/arco/ontology/core/synonym")
 
 #data types
-schemaIRI = "http://www.w3.org/2000/01/rdf-schema#"
-LiteralIRI="http://www.w3.org/2000/01/rdf-schema#Literal"
+schemaIRI = URIRef("http://www.w3.org/2000/01/rdf-schema#")
+LiteralIRI=URIRef("http://www.w3.org/2000/01/rdf-schema#Literal")
 
 baseIRI = "https://w3id.org/arco/ontology/core/"
 
@@ -122,35 +122,44 @@ def fragmentor(txt):
 def KGraphcreator():
     #da fare
     chaptersDict = {}
+    fragIRIdict = {}
     myGraph = Graph()
     #create triples for your author here
-    authorIRI = "https://w3id.org/arco/ontology/core/MarcusAurelius"
+    authorIRI = URIRef("https://w3id.org/arco/ontology/core/MarcusAurelius")
     #other agent roles IRIs
-    DemocritusIRI = "https://w3id.org/arco/ontology/core/Democritus"
-    EpictetusIRI = "https://w3id.org/arco/ontology/core/Epictetus"
-    EuripidesIRI = "https://w3id.org/arco/ontology/core/Euripides"
-    HeraclitusIRI = "https://w3id.org/arco/ontology/core/Heraclitus"
-    HomerIRI = "https://w3id.org/arco/ontology/core/Homer"
+    DemocritusIRI = URIRef("https://w3id.org/arco/ontology/core/Democritus")
+    EpictetusIRI = URIRef("https://w3id.org/arco/ontology/core/Epictetus")
+    EuripidesIRI = URIRef("https://w3id.org/arco/ontology/core/Euripides")
+    HeraclitusIRI = URIRef("https://w3id.org/arco/ontology/core/Heraclitus")
+    HomerIRI = URIRef("https://w3id.org/arco/ontology/core/Homer")
 
     #create your triples for literary diary here
-    subj = baseIRI + "LiteraryDiary"
+    subj = URIRef(baseIRI + literaryDiaryname)
     myGraph.add((subj,RDF.type,literaryDiaryIRI))
     myGraph.add((subj,hasTitleIRI,Literal(literaryDiaryname)))
     myGraph.add((subj,hasAttributedAuthorIRI,authorIRI))
     #create your triples for books/chapters here
     bookId = 1
     for items in allTxt:
-        subj = baseIRI + "Book" + bookId
+        chaptersubj = URIRef(baseIRI + "Book" + str(bookId))
         #create your triples for book class instance here
         #create triples for each fragment of individual chapter
         for key in allFragments:
-            
-            myGraph.add((subj,hasPartIRI,))
+            for key2 in allFragments[key]:
+                fragLocalID = 1
+                fragUniID = str(bookId) + "." + str(fragLocalID)    #for example 1.1
+                if key2 == "fragmentlist":
+                    for item in allFragments[key][key2]:
+                        fragIRI = URIRef(baseIRI + str(fragUniID))   
+                        #append the fragIRI to a dict
+                        fragIRIdict.update({"chapter":bookId,"fraglocation":fragUniID,"fragIRI":fragIRI,"text":item})
+                        myGraph.add((chaptersubj,hasPartIRI,fragIRI))
         #store all the IRIs in a dict with the booknumber as key
-        chaptersDict.update({bookId:subj})
+        chaptersDict.update({bookId:chaptersubj})
         #change the localID for the next book/chapter here
         bookId +=1
     #create your triples for fragments here
+    '''
     for key in allFragments:
         chapterNum = key
         localID = 1 #this is the id for the frament, keeping this outside the loop so that it does not get reset when iterating over the fragments of one chapter
@@ -164,7 +173,7 @@ def KGraphcreator():
             triple3 = 3
             #change the localID for the next frament below
             localID +=1
-
+    '''
     dbupdater(myGraph)
     return True
 
@@ -184,11 +193,11 @@ def dbupdater(graphvariable):
 
 #read CSV to get extracted data
 #DRIVER CODE FOR UPLOADING CORE TEXT
-'''
+
 uploadtxt("txt/MeditationsBook1.txt")
 uploadtxt("txt/MeditationsBook2.txt")
 uploadtxt("txt/MeditationsBook3.txt")
-'''
+
 fragmentor(allTxt)
 
 #DRIVER CODE FOR VIEWING THE DICT OF FRAMENTS >>
@@ -206,4 +215,4 @@ uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ0.csv"
 uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ1.csv") #<-- instances of extracted concept(Reason) keywords
 '''
 #DRIVER CODE FOR CREATING THE KNOWLEDGE GRAPH FROM THE TEXT
-#KGraphcreator()
+KGraphcreator()
