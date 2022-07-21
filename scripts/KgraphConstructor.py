@@ -50,6 +50,7 @@ justiceIRI=URIRef("https://w3id.org/arco/ontology/core/Category/justice")
 
 
 #Data properties
+containsTextIRI = URIRef("https://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5#containsText")
 hasTitleIRI = URIRef("https://w3id.org/arco/ontology/core/hasTitle")
 hasAttributedAuthorIRI=URIRef("https://w3id.org/arco/ontology/core/hasAttributedAuthor")
 hasCitationIRI=URIRef("https://w3id.org/arco/ontology/core/hasCitation")
@@ -69,6 +70,7 @@ allTxt = []
 txtnumber = 0         #<-- STORES ALL THE TEXTS
 fragmentlist = []   #<-- STORES ALL THE FRAGMENTS, MAYBE DICT IS MORE SUITABLE?
 allFragments = {}
+FragmentsIRIdata = {}
 '''
 Reading text methods
 
@@ -104,7 +106,6 @@ def fragmentdictcreator(fragment,fragmentlen):
     data = {"fragmentlist":fragment,"fragmentscount":fragmentlen}
     allFragments.update({txtnumber:data})
     return
-
 # create the list of fragments for each book
 def fragmentor(txt):
     #THIS FUNCTION CREATOS FRAGMENTS FROM THE TEXT USING REGEX SPLITER AND STORES THEM IN THE 
@@ -117,6 +118,28 @@ def fragmentor(txt):
         fragementlen = len(fragment)
         fragmentdictcreator(fragment,fragementlen)     
     return
+# da fare >>
+def addconceptstriples(fragIRI):
+    triples = Graph()
+    '''
+    if condition is true:  #check for the associated concepts in the csv dataframe for this fragment 
+        dummyconcept_instance = URIRef()   #create the URI for the instance, these URIs will be shared by all the fragments? maybe not?
+        triples.add((fragIRI,hasAssociatedConcept,dummyconcept_instance))
+        #create the triples for the instance if required
+    if condition is true:  #check for the associated figures in the csv dataframe for this fragment 
+        triples.add((fragIRI,hasAssociatedFigure,))
+    '''
+    return triples
+# da fare >>
+def addsentimentstriples(fragIRI):
+    triples = Graph()
+    dummyconcept_instance = URIRef()   #create the URI for the instance, these URIs will be shared by all the fragments? maybe not?
+    triples.add((fragIRI,hasAssociatedConcept,dummyconcept_instance))
+    #create the triples for the instance if required
+    return triples
+# da fare >>
+def addAgentsTriples(fragIRI):
+    pass
 
 # itterate over the list of fragments in books and create a URI for all
 def KGraphcreator():
@@ -145,15 +168,39 @@ def KGraphcreator():
         #create your triples for book class instance here
         #create triples for each fragment of individual chapter
         for key in allFragments:
-            for key2 in allFragments[key]:
-                fragLocalID = 1
-                fragUniID = str(bookId) + "." + str(fragLocalID)    #for example 1.1
-                if key2 == "fragmentlist":
-                    for item in allFragments[key][key2]:
-                        fragIRI = URIRef(baseIRI + str(fragUniID))   
-                        #append the fragIRI to a dict
-                        fragIRIdict.update({"chapter":bookId,"fraglocation":fragUniID,"fragIRI":fragIRI,"text":item})
-                        myGraph.add((chaptersubj,hasPartIRI,fragIRI))
+            if key == bookId:
+                for key2 in allFragments[key]:
+                    fragLocalID = 1
+                        #for example 1.1
+                    if key2 == "fragmentlist":
+                        for item in allFragments[key][key2]:  # item stores the fragment text data here
+                            fragUniID = str(bookId) + "." + str(fragLocalID)
+                            fragIRI = URIRef(baseIRI + str(fragUniID))   
+                            #append the fragIRI to a dict
+                            fragIRIdict.update({fragUniID:fragIRI})
+                            
+                            #connect the frag to the chapter
+                            myGraph.add((chaptersubj,hasPartIRI,fragIRI))
+                            
+                            myGraph.add((fragIRI,containsTextIRI,Literal(item)))
+                            #add concepts to this fragment
+                            #C_triples = Graph(addconceptstriples(fragIRI))
+
+                            #add sentiments to this fragment 
+                            #S_triples = Graph(addsentimentstriples(fragIRI))
+
+                            #add agents to this fragment
+                            #A_triples =Graph(addAgentsTriples(fragIRI))
+                            
+                            #add abstract figures to this fragment
+                            #pass
+                            
+                            #now change the id for the next fragment
+                            fragLocalID += 1
+                            #pushing the data for this fragment and its URI to a bigger dict called FragmentsIRIdata
+                            FragmentsIRIdata.update({fragUniID:fragIRIdict})
+            else:
+                pass      
         #store all the IRIs in a dict with the booknumber as key
         chaptersDict.update({bookId:chaptersubj})
         #change the localID for the next book/chapter here
@@ -175,6 +222,9 @@ def KGraphcreator():
             localID +=1
     '''
     dbupdater(myGraph)
+    #dbupdater(C_triples)
+    #dbupdater(S_triples)
+    #dbupdater(A_triples)
     return True
 
 def dbupdater(graphvariable):
@@ -216,3 +266,18 @@ uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ1.csv"
 '''
 #DRIVER CODE FOR CREATING THE KNOWLEDGE GRAPH FROM THE TEXT
 KGraphcreator()
+#print(FragmentsIRIdata)
+
+'''
+def traveller():
+    for items in allTxt:
+        #create your triples for book class instance here
+        #create triples for each fragment of individual chapter
+        for key in allFragments:
+            for key2 in allFragments[key]:
+                if key2 == "fragmentlist":
+                    #print (allFragments[key][key2])
+                    for item in allFragments[key][key2]:
+                        print(item)
+
+traveller()'''
