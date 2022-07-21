@@ -104,6 +104,9 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/sameAs"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="/hasTitle"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="https://w3id.org/arco/ontology/core/hasAttributedAuthor"/>
     </Declaration>
     <Declaration>
@@ -925,6 +928,10 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/sameAs"/>
     </DisjointObjectProperties>
     <DataPropertyDomain>
+        <DataProperty IRI="/hasTitle"/>
+        <Class IRI="/literary_diary"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="https://w3id.org/arco/ontology/core/hasAttributedAuthor"/>
         <Class IRI="/literary_diary"/>
     </DataPropertyDomain>
@@ -940,6 +947,10 @@
         <DataProperty IRI="https://w3id.org/arco/ontology/core/synonym"/>
         <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasTitle"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="https://w3id.org/arco/ontology/core/hasAttributedAuthor"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
