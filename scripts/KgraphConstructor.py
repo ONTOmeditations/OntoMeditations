@@ -50,6 +50,7 @@ justiceIRI="https://w3id.org/arco/ontology/core/Category/justice"
 
 
 #Data properties
+hasTitleIRI = "https://w3id.org/arco/ontology/core/hasTitle"
 hasAttributedAuthorIRI="https://w3id.org/arco/ontology/core/hasAttributedAuthor"
 hasCitationIRI="https://w3id.org/arco/ontology/core/hasCitation"
 keywordURI="https://w3id.org/arco/ontology/core/keyword"
@@ -98,9 +99,10 @@ def uploadextractedConceptInstances(filepath):
     conceptInstanceDf = pd.read_csv(filepath)
     print(conceptInstanceDf)
     
-def fragmentdictcreator(fragment):
+def fragmentdictcreator(fragment,fragmentlen):
     globals()['txtnumber'] +=1
-    allFragments.update({txtnumber:fragment})
+    data = {"fragmentlist":fragment,"fragmentscount":fragmentlen}
+    allFragments.update({txtnumber:data})
     return
 
 # create the list of fragments for each book
@@ -112,23 +114,40 @@ def fragmentor(txt):
         for item in fragment:
             if item == "":  
                 fragment.remove(item)
-        fragmentdictcreator(fragment)     
+        fragementlen = len(fragment)
+        fragmentdictcreator(fragment,fragementlen)     
     return
 
 # itterate over the list of fragments in books and create a URI for all
 def KGraphcreator():
     #da fare
+    chaptersDict = {}
     myGraph = Graph()
+    #create triples for your author here
+    authorIRI = "https://w3id.org/arco/ontology/core/MarcusAurelius"
+    #other agent roles IRIs
+    DemocritusIRI = "https://w3id.org/arco/ontology/core/Democritus"
+    EpictetusIRI = "https://w3id.org/arco/ontology/core/Epictetus"
+    EuripidesIRI = "https://w3id.org/arco/ontology/core/Euripides"
+    HeraclitusIRI = "https://w3id.org/arco/ontology/core/Heraclitus"
+    HomerIRI = "https://w3id.org/arco/ontology/core/Homer"
+
     #create your triples for literary diary here
-    myGraph.add(())
+    subj = baseIRI + "LiteraryDiary"
+    myGraph.add((subj,RDF.type,literaryDiaryIRI))
+    myGraph.add((subj,hasTitleIRI,Literal(literaryDiaryname)))
+    myGraph.add((subj,hasAttributedAuthorIRI,authorIRI))
     #create your triples for books/chapters here
     bookId = 1
     for items in allTxt:
         subj = baseIRI + "Book" + bookId
         #create your triples for book class instance here
-        tripl1 = 1
-        triple2 = 2
-        triple3 = 3
+        #create triples for each fragment of individual chapter
+        for key in allFragments:
+            
+            myGraph.add((subj,hasPartIRI,))
+        #store all the IRIs in a dict with the booknumber as key
+        chaptersDict.update({bookId:subj})
         #change the localID for the next book/chapter here
         bookId +=1
     #create your triples for fragments here
@@ -165,21 +184,22 @@ def dbupdater(graphvariable):
 
 #read CSV to get extracted data
 #DRIVER CODE FOR UPLOADING CORE TEXT
-
+'''
 uploadtxt("txt/MeditationsBook1.txt")
 uploadtxt("txt/MeditationsBook2.txt")
 uploadtxt("txt/MeditationsBook3.txt")
-
+'''
 fragmentor(allTxt)
 
 #DRIVER CODE FOR VIEWING THE DICT OF FRAMENTS >>
-
+'''
 for key in allFragments:
     print(key)
-    for value in allFragments[key]:
-        print(value)
+    for key2 in allFragments[key]:
+        print(allFragments[key][key2])
+'''        
 
-print(literaryDiaryname)
+#print(literaryDiaryname)
 #DRIVER CODE FOR UPLOADING THE EXTRACTED CONCEPTS
 '''
 uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ0.csv") #<-- instances of extracted concept(Justice) keywords
