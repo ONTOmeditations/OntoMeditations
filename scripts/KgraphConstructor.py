@@ -63,6 +63,7 @@ baseIRI = "https://w3id.org/arco/ontology/core/"
 
 # accept the natural txt to work on
 #my global variables
+literaryDiaryname = ""
 allTxt = []
 txtnumber = 0         #<-- STORES ALL THE TEXTS
 fragmentlist = []   #<-- STORES ALL THE FRAGMENTS, MAYBE DICT IS MORE SUITABLE?
@@ -79,6 +80,8 @@ The file object provides you with three methods for reading text from a text fil
 '''
 #THIS FUNCTION ACCEPTS THE TEXT AND STORES IT IN A LOCAL LIST VARIABLE CALLED allTxt
 def uploadtxt(filepath):
+    if allTxt == []:
+        globals()['literaryDiaryname']= input("This text you are uploading belongs to which book? Please provide a name for it")
     with open(filepath,"r",encoding="UTF-8") as f:
         chapter = f.read()
         allTxt.append(chapter)
@@ -87,8 +90,7 @@ def uploadtxt(filepath):
 
 #THIS FUNCTION ACCEPTS THE EXTRACTED SENTIMENTS FOR EACH FRAGMENT
 def uploadextractedSentiments(filepath):
-    #da fare
-    sentiDf = pd.read_csv(filepath)
+    sentimentsDf = pd.read_csv(filepath)
 
 #THIS FUNCTION ACCEPTS THE EXTRACTED INSTANCES OF OUR CONCEPTS IN THE FRAMENTS
 def uploadextractedConceptInstances(filepath):
@@ -163,20 +165,21 @@ def dbupdater(graphvariable):
 
 #read CSV to get extracted data
 #DRIVER CODE FOR UPLOADING CORE TEXT
-'''
+
 uploadtxt("txt/MeditationsBook1.txt")
 uploadtxt("txt/MeditationsBook2.txt")
 uploadtxt("txt/MeditationsBook3.txt")
 
 fragmentor(allTxt)
-'''
+
 #DRIVER CODE FOR VIEWING THE DICT OF FRAMENTS >>
-'''
+
 for key in allFragments:
     print(key)
     for value in allFragments[key]:
         print(value)
-'''
+
+print(literaryDiaryname)
 #DRIVER CODE FOR UPLOADING THE EXTRACTED CONCEPTS
 '''
 uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ0.csv") #<-- instances of extracted concept(Justice) keywords
