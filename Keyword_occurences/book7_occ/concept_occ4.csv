@@ -1,4 +1,4 @@
-,Chapter,word,Occurences
+,Chapter,Word,Occurences
 0,4,impulse,1
 1,13,body,1
 2,16,body,1
@@ -8,5 +8,8 @@
 6,55,impulse,1
 7,60,body,2
 8,62,impulse,1
-9,66,flesh,1
-10,75,impulse,2
+9,63,soul,1
+10,64,soul,1
+11,66,flesh,1
+12,66,soul,1
+13,75,impulse,2

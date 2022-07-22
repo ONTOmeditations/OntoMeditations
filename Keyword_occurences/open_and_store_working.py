@@ -104,17 +104,17 @@ def create_csv(text_file_path, concept_list,chapter_num_path):
                 if re.search(i, chapter):
                      #regex matches optional word boundary and punctuation
                     chapter_l.append(index)
-                    word_l.append("god")
+                    word_l.append("God")
                     count_l.append(len(re.findall(i,chapter)))
         #keyword_l_str=[i[0] for i in keyword_l]
-        keyword_dict={"Chapter":chapter_l,'word':word_l, "Occurences":count_l } 
+        keyword_dict={"Chapter":chapter_l,'Word':word_l, "Occurences":count_l } 
         df_occ=DataFrame.from_dict(keyword_dict)
         return df_occ
         
 
     os.makedirs(chapter_num_path, exist_ok=True) 
 
-    num=1
+    num=0
     for l in concept_list:
         a_path=chapter_num_path
         a_file="abstr_occ"
@@ -139,7 +139,7 @@ death=['death','dissolution','extinct','life','sick','time']  #life and time is 
 concept_instances=[justice,reason,power,providence,psy_body,nature,death]
 
 concept_instances_str=[i[0] for i in concept_instances] #as a way to get columns/filenames based on concept name later
-god=['(?<!\w)(G|g)od(?!\w)']
+god=['(?<!\w)(G|g)od[s]*(?!\w)']
 men=['(?<!\w)(M|m)(e|a)n(?!\w)']
 abstract_fig=[god]
 #Book_1

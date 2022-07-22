@@ -33,7 +33,7 @@ def create_csv(text_file_path, concept_list,chapter_num_path):
                     word_l.append(i)
                     count_l.append(chapter.count(i))
 
-        keyword_dict={"Chapter":chapter_l,"Concept Instance":word_l, "Occurences":count_l } 
+        keyword_dict={"Chapter":chapter_l,"Word":word_l, "Occurences":count_l } 
         df_occ=DataFrame.from_dict(keyword_dict)
         return df_occ
         
@@ -57,8 +57,8 @@ def create_csv(text_file_path, concept_list,chapter_num_path):
 justice=['justice','action','blame','fault','honour','temperance']
 reason=['reason','ignorance','judgement','mind','principle','truth']
 power=['power','corrupt','employment','glory','governing self','obstacle',]
-providence=['providence','atoms','divinity','fate','fortune','god']
-psy_body=['psyche and body','psyche','body','flesh','impulse','souls','vital spirit']
+providence=['providence','atoms','divinity','fate','fortune','god', 'God','gods','Gods']
+psy_body=['psyche and body','psyche','body','flesh','impulse','souls','soul','vital spirit',]
 nature=['nature','law','matter', 'necessity','universe','whole']
 death=['death','dissolution','extinct','life','sick','time']  #life and time is super general?? can lead to bias
 

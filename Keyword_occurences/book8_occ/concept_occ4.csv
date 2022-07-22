@@ -1,11 +1,14 @@
-,Chapter,word,Occurences
+,Chapter,Word,Occurences
 0,1,impulse,1
 1,7,impulse,1
 2,12,flesh,1
 3,16,impulse,1
 4,28,body,2
 5,28,impulse,1
-6,41,impulse,2
-7,56,flesh,1
-8,56,vital spirit,1
-9,57,body,1
+6,28,soul,2
+7,29,soul,1
+8,41,impulse,2
+9,45,soul,1
+10,56,flesh,1
+11,56,vital spirit,1
+12,57,body,1
