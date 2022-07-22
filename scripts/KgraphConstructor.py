@@ -128,6 +128,20 @@ book3deatheDF = uploadextractedConceptInstances("extractedSentiments/book3_occ/c
 book3conceptsDict = {"justice":book3justiceDF,"reason":book3reasonDF,"power":book3powerDF,"providence":book3providenceDF,"pscyche_body":book3psyche_bodyDF,"nature":book3natureDF,"death":book3deatheDF}
 
 allConceptObjDict = {"1":book1conceptsDict,"2":book2conceptsDict,"3":book3conceptsDict}
+'''
+for key in allConceptObjDict:
+        print(key)
+        for key2 in allConceptObjDict[key]:
+            if key2 == "justice":
+                justiceDf = allConceptObjDict[key][key2]
+                for row_idx, row in justiceDf.iterrows():
+                    for item_idx, item in row.iteritems():
+                        if item_idx == "Chapter" and item == 17:
+                            print(item_idx, "-->", item)
+                            print("This is the concept keyword - ", row['Concept Instance'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                            print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
+                            print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
+'''
 
 def fragmentdictcreator(fragment,fragmentlen):
     globals()['txtnumber'] +=1
@@ -146,33 +160,81 @@ def fragmentor(txt):
         fragementlen = len(fragment)
         fragmentdictcreator(fragment,fragementlen)     
     return
-# da fare >>
+# da fare >> need to add the uri creator and triple creator
+
 def addconceptstriples(fragIRI,booknum,position):
     triples = Graph()
     for key in allConceptObjDict:
         if key == booknum:
             for key2 in allConceptObjDict[key]:
                 if key2 == "justice":
-                    for row in allConceptObjDict[key][key2].iterrows:
-                        print(type(row))
+                    justiceDf = allConceptObjDict[key][key2]
+                    for row_idx, row in justiceDf.iterrows():
+                        for item_idx, item in row.iteritems():
+                            if item_idx == "Chapter" and item == position:
+                                print(item_idx, "-->", item)
+                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
+                                print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
+                
                 elif key2 == "reason":
-                    for row in allConceptObjDict[key][key2].iterrows:
-                        print(row)
+                    reasonDf = allConceptObjDict[key][key2]
+                    for row_idx, row in reasonDf.iterrows():
+                        for item_idx, item in row.iteritems():
+                            if item_idx == "Chapter" and item == position:
+                                print(item_idx, "-->", item)
+                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
+                                print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
+
                 elif key2 == "power":
-                    for row in allConceptObjDict[key][key2].iterrows:
-                        print(row)
+                    powerDf = allConceptObjDict[key][key2]
+                    for row_idx, row in powerDf.iterrows():
+                        for item_idx, item in row.iteritems():
+                            if item_idx == "Chapter" and item == position:
+                                print(item_idx, "-->", item)
+                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
+                                print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
+
                 elif key2 == "providence":
-                    for row in allConceptObjDict[key][key2].iterrows:
-                        print(row)
+                    providenceDf = allConceptObjDict[key][key2]
+                    for row_idx, row in providenceDf.iterrows():
+                        for item_idx, item in row.iteritems():
+                            if item_idx == "Chapter" and item == position:
+                                print(item_idx, "-->", item)
+                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
+                                print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
+
                 elif key2 == "pscyche_body":
-                    for row in allConceptObjDict[key][key2].iterrows:
-                        print(row)
+                    bodyDf = allConceptObjDict[key][key2]
+                    for row_idx, row in bodyDf.iterrows():
+                        for item_idx, item in row.iteritems():
+                            if item_idx == "Chapter" and item == position:
+                                print(item_idx, "-->", item)
+                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
+                                print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
                 elif key2 == "nature":
-                    for row in allConceptObjDict[key][key2].iterrows:
-                        print(row)
+                    natureDf = allConceptObjDict[key][key2]
+                    for row_idx, row in natureDf.iterrows():
+                        for item_idx, item in row.iteritems():
+                            if item_idx == "Chapter" and item == position:
+                                print(item_idx, "-->", item)
+                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
+                                print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
+                    
                 elif key2 == "death":
-                    for row in allConceptObjDict[key][key2].iterrows:
-                        print(row)
+                    deathDf = allConceptObjDict[key][key2]
+                    for row_idx, row in deathDf.iterrows():
+                        for item_idx, item in row.iteritems():
+                            if item_idx == "Chapter" and item == position:
+                                print(item_idx, "-->", item)
+                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
+                                print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
 
     return triples
 # da fare >>
@@ -288,13 +350,13 @@ def dbupdater(graphvariable):
 
 #read CSV to get extracted data
 #DRIVER CODE FOR UPLOADING CORE TEXT
-
+'''
 uploadtxt("txt/MeditationsBook1.txt")
 uploadtxt("txt/MeditationsBook2.txt")
 uploadtxt("txt/MeditationsBook3.txt")
 
 fragmentor(allTxt)
-
+'''
 #DRIVER CODE FOR VIEWING THE DICT OF FRAMENTS >>
 '''
 for key in allFragments:
@@ -310,7 +372,7 @@ uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ0.csv"
 uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ1.csv") #<-- instances of extracted concept(Reason) keywords
 '''
 #DRIVER CODE FOR CREATING THE KNOWLEDGE GRAPH FROM THE TEXT
-KGraphcreator()
+#KGraphcreator()
 #print(FragmentsIRIdata)
 
 '''
@@ -326,3 +388,6 @@ def traveller():
                         print(item)
 
 traveller()'''
+
+#TESTING THE CONCEPT TRIPLE TRAVELLER
+#addconceptstriples(fragmentIRI,2,11)
