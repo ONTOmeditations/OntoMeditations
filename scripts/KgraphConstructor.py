@@ -97,10 +97,38 @@ def uploadextractedSentiments(filepath):
 
 #THIS FUNCTION ACCEPTS THE EXTRACTED INSTANCES OF OUR CONCEPTS IN THE FRAMENTS
 def uploadextractedConceptInstances(filepath):
-    #da fare
     conceptInstanceDf = pd.read_csv(filepath)
-    print(conceptInstanceDf)
-    
+    return conceptInstanceDf
+
+book1justiceDF = uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ0.csv")
+book1reasonDF = uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ1.csv")
+book1powerDF = uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ2.csv")
+book1providenceDF = uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ3.csv")
+book1psyche_bodyDF = uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ4.csv")
+book1natureDF = uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ5.csv")
+book1deatheDF = uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ6.csv")
+book1conceptsDict = {"justice":book1justiceDF,"reason":book1reasonDF,"power":book1powerDF,"providence":book1providenceDF,"pscyche_body":book1psyche_bodyDF,"nature":book1natureDF,"death":book1deatheDF}
+
+book2justiceDF = uploadextractedConceptInstances("extractedSentiments/book2_occ/concept_occ0.csv")
+book2reasonDF = uploadextractedConceptInstances("extractedSentiments/book2_occ/concept_occ1.csv")
+book2powerDF = uploadextractedConceptInstances("extractedSentiments/book2_occ/concept_occ2.csv")
+book2providenceDF = uploadextractedConceptInstances("extractedSentiments/book2_occ/concept_occ3.csv")
+book2psyche_bodyDF = uploadextractedConceptInstances("extractedSentiments/book2_occ/concept_occ4.csv")
+book2natureDF = uploadextractedConceptInstances("extractedSentiments/book2_occ/concept_occ5.csv")
+book2deatheDF = uploadextractedConceptInstances("extractedSentiments/book2_occ/concept_occ6.csv")
+book2conceptsDict = {"justice":book2justiceDF,"reason":book2reasonDF,"power":book2powerDF,"providence":book2providenceDF,"pscyche_body":book2psyche_bodyDF,"nature":book2natureDF,"death":book2deatheDF}
+
+book3justiceDF = uploadextractedConceptInstances("extractedSentiments/book3_occ/concept_occ0.csv")
+book3reasonDF = uploadextractedConceptInstances("extractedSentiments/book3_occ/concept_occ1.csv")
+book3powerDF = uploadextractedConceptInstances("extractedSentiments/book3_occ/concept_occ2.csv")
+book3providenceDF = uploadextractedConceptInstances("extractedSentiments/book3_occ/concept_occ3.csv")
+book3psyche_bodyDF = uploadextractedConceptInstances("extractedSentiments/book3_occ/concept_occ4.csv")
+book3natureDF = uploadextractedConceptInstances("extractedSentiments/book3_occ/concept_occ5.csv")
+book3deatheDF = uploadextractedConceptInstances("extractedSentiments/book3_occ/concept_occ6.csv")
+book3conceptsDict = {"justice":book3justiceDF,"reason":book3reasonDF,"power":book3powerDF,"providence":book3providenceDF,"pscyche_body":book3psyche_bodyDF,"nature":book3natureDF,"death":book3deatheDF}
+
+allConceptObjDict = {"1":book1conceptsDict,"2":book2conceptsDict,"3":book3conceptsDict}
+
 def fragmentdictcreator(fragment,fragmentlen):
     globals()['txtnumber'] +=1
     data = {"fragmentlist":fragment,"fragmentscount":fragmentlen}
@@ -119,16 +147,33 @@ def fragmentor(txt):
         fragmentdictcreator(fragment,fragementlen)     
     return
 # da fare >>
-def addconceptstriples(fragIRI):
+def addconceptstriples(fragIRI,booknum,position):
     triples = Graph()
-    '''
-    if condition is true:  #check for the associated concepts in the csv dataframe for this fragment 
-        dummyconcept_instance = URIRef()   #create the URI for the instance, these URIs will be shared by all the fragments? maybe not?
-        triples.add((fragIRI,hasAssociatedConcept,dummyconcept_instance))
-        #create the triples for the instance if required
-    if condition is true:  #check for the associated figures in the csv dataframe for this fragment 
-        triples.add((fragIRI,hasAssociatedFigure,))
-    '''
+    for key in allConceptObjDict:
+        if key == booknum:
+            for key2 in allConceptObjDict[key]:
+                if key2 == "justice":
+                    for row in allConceptObjDict[key][key2].iterrows:
+                        print(type(row))
+                elif key2 == "reason":
+                    for row in allConceptObjDict[key][key2].iterrows:
+                        print(row)
+                elif key2 == "power":
+                    for row in allConceptObjDict[key][key2].iterrows:
+                        print(row)
+                elif key2 == "providence":
+                    for row in allConceptObjDict[key][key2].iterrows:
+                        print(row)
+                elif key2 == "pscyche_body":
+                    for row in allConceptObjDict[key][key2].iterrows:
+                        print(row)
+                elif key2 == "nature":
+                    for row in allConceptObjDict[key][key2].iterrows:
+                        print(row)
+                elif key2 == "death":
+                    for row in allConceptObjDict[key][key2].iterrows:
+                        print(row)
+
     return triples
 # da fare >>
 def addsentimentstriples(fragIRI):
@@ -181,10 +226,10 @@ def KGraphcreator():
                             
                             #connect the frag to the chapter
                             myGraph.add((chaptersubj,hasPartIRI,fragIRI))
-                            
-                            myGraph.add((fragIRI,containsTextIRI,Literal(item)))
+                            myGraph.add((fragIRI,containsTextIRI,Literal(item))) #adds the text to the fragment 
+
                             #add concepts to this fragment
-                            #C_triples = Graph(addconceptstriples(fragIRI))
+                            C_triples = addconceptstriples(fragIRI,bookId,fragLocalID)
 
                             #add sentiments to this fragment 
                             #S_triples = Graph(addsentimentstriples(fragIRI))
