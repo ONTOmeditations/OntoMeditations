@@ -45,7 +45,7 @@
       <div class="hero-container" data-aos="fade-up">
         <h1>What we do now echoes in eternity. <span></span></h1>
         <h2>A study of Marcus Aurelius's sentiments and concepts</h2>
-        <a href="#about" class="btn-get-started scrollto">Fuck this shit</a>
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
       </div>
     </section><!-- End Hero -->
 
@@ -62,9 +62,19 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">The Project</a></li>
-            <li><a class="nav-link scrollto" href="#services">The ontology</a></li> 
+             <li class="dropdown"><a href="#"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="OntologyPage.html">The Ontology</a></li>
+               
+                </li>
+                <li><a href="LinguisticAnalysis.html">Linguistic Analysis</a></li>
+                <li><a href="SentimentAnalysis.html">Sentiment Analysis</a></li>
+                
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#faq">Queries</a></li> 
             <li><a class="nav-link scrollto" href="#team">Team</a></li>
+			
 
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
@@ -133,7 +143,7 @@
                 <img src="assets/img/Marcus-Aurelius-600x440.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <i class="bx bx-tachometer"></i>
-                  <h5 class="card-title"><a href="OntologyPage.html">The Ontology</a>
+                  <h5 class="card-title"><a href="OntologyPage.html">The Ontology</a></h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
               </div>
@@ -143,7 +153,7 @@
                 <img src="assets/img/the-last-words-of-the-emperor-marcus-aurelius-eugene-delacroix.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <i class="bx bx-file"></i>
-                  <h5 class="card-title"><a href="">Linguistic Analysis</a></h5>
+                  <h5 class="card-title"><a href="LinguisticAnalysis.html">Linguistic Analysis</a></h5>
                   <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
                 </div>
               </div>
@@ -153,7 +163,7 @@
                 <img src="assets/img/EO4G579XsAAE0Bx.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <i class="bx bx-show"></i>
-                  <h5 class="card-title"><a href="">Sentiment Analysis</a></h5>
+                  <h5 class="card-title"><a href="SentimentAnalysis.html">Sentiment Analysis</a></h5>
                   <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. </p>
                 </div>
               </div>

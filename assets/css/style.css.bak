@@ -1068,7 +1068,7 @@ section {
 # F.A.Q
 --------------------------------------------------------------*/
 .faq {
-  background: #e3c1c1 ;
+  background: #F2F3F4 ;
   padding: 60px 0;
 }
 .faq .section-title span {
@@ -1106,7 +1106,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #a8dabc;
+  color: #3d0000;
 }
 .faq .faq-list .icon-show, .faq .faq-list .icon-close {
   font-size: 24px;
@@ -1342,7 +1342,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 5px 3px 5px;
-  background: #3d0000;
+  background: #a8dabc;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 5px 5px 0;
@@ -1352,7 +1352,7 @@ section {
   background: #45a36c;
 }
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 10px 0 10px 0;
   background: #1b1b1b;
   color: #fff;
 }
