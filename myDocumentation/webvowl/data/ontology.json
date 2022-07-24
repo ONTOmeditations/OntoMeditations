@@ -18,10 +18,10 @@
     "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "8",
@@ -200,53 +200,6 @@
     "id" : "41",
     "superClasses" : [ "9" ]
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Category/providence",
-    "baseIri" : "https://w3id.org/arco/ontology/core/Category",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "providence"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/fate",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "fate"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/divinity",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "divinity"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/atoms",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "atoms"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/god",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "god"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/providence",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "providence"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/fortune",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "fortune"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "5",
-    "superClasses" : [ "41" ]
-  }, {
     "iri" : "https://w3id.org/arco/ontology/core/Category/nature",
     "baseIri" : "https://w3id.org/arco/ontology/core/Category",
     "instances" : 0,
@@ -292,6 +245,53 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "15",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/core/Category/providence",
+    "baseIri" : "https://w3id.org/arco/ontology/core/Category",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "providence"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/arco/ontology/core/fate",
+      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "labels" : {
+        "IRI-based" : "fate"
+      }
+    }, {
+      "iri" : "https://w3id.org/arco/ontology/core/divinity",
+      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "labels" : {
+        "IRI-based" : "divinity"
+      }
+    }, {
+      "iri" : "https://w3id.org/arco/ontology/core/atoms",
+      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "labels" : {
+        "IRI-based" : "atoms"
+      }
+    }, {
+      "iri" : "https://w3id.org/arco/ontology/core/god",
+      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "labels" : {
+        "IRI-based" : "god"
+      }
+    }, {
+      "iri" : "https://w3id.org/arco/ontology/core/providence",
+      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "labels" : {
+        "IRI-based" : "providence"
+      }
+    }, {
+      "iri" : "https://w3id.org/arco/ontology/core/fortune",
+      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "labels" : {
+        "IRI-based" : "fortune"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "5",
     "superClasses" : [ "41" ]
   }, {
     "iri" : "https://w3id.org/arco/ontology/core/AbstractFigure",
@@ -368,7 +368,7 @@
     "superClasses" : [ "41" ]
   }, {
     "instances" : 0,
-    "union" : [ "35", "22", "11", "5", "15", "6", "12" ],
+    "union" : [ "35", "22", "11", "15", "5", "12", "6" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "65"
   }, {
@@ -409,16 +409,16 @@
         "IRI-based" : "Book_XII"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_I",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_I"
-      }
-    }, {
       "iri" : "https://w3id.org/arco/ontology/core/Book_XI",
       "baseIri" : "https://w3id.org/arco/ontology/core",
       "labels" : {
         "IRI-based" : "Book_XI"
+      }
+    }, {
+      "iri" : "https://w3id.org/arco/ontology/core/Book_I",
+      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "labels" : {
+        "IRI-based" : "Book_I"
       }
     }, {
       "iri" : "https://w3id.org/arco/ontology/core/Book_IX",
@@ -427,16 +427,16 @@
         "IRI-based" : "Book_IX"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_X",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_X"
-      }
-    }, {
       "iri" : "https://w3id.org/arco/ontology/core/Book_II",
       "baseIri" : "https://w3id.org/arco/ontology/core",
       "labels" : {
         "IRI-based" : "Book_II"
+      }
+    }, {
+      "iri" : "https://w3id.org/arco/ontology/core/Book_X",
+      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "labels" : {
+        "IRI-based" : "Book_X"
       }
     }, {
       "iri" : "https://w3id.org/arco/ontology/core/Book_IV",
@@ -510,16 +510,16 @@
         "IRI-based" : "fault"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/honour",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "honour"
-      }
-    }, {
       "iri" : "https://w3id.org/arco/ontology/core/temperance",
       "baseIri" : "https://w3id.org/arco/ontology/core",
       "labels" : {
         "IRI-based" : "temperance"
+      }
+    }, {
+      "iri" : "https://w3id.org/arco/ontology/core/honour",
+      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "labels" : {
+        "IRI-based" : "honour"
       }
     }, {
       "iri" : "https://w3id.org/arco/ontology/core/blame",
@@ -670,16 +670,16 @@
         "IRI-based" : "well-being"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/fortitude",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "fortitude"
-      }
-    }, {
       "iri" : "https://w3id.org/arco/ontology/core/freedom",
       "baseIri" : "https://w3id.org/arco/ontology/core",
       "labels" : {
         "IRI-based" : "freedom"
+      }
+    }, {
+      "iri" : "https://w3id.org/arco/ontology/core/fortitude",
+      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "labels" : {
+        "IRI-based" : "fortitude"
       }
     }, {
       "iri" : "https://w3id.org/arco/ontology/core/purpose",
@@ -960,7 +960,7 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "0"
   }, {
     "range" : "6",
@@ -976,7 +976,7 @@
     },
     "domain" : "9",
     "subproperty" : [ "0" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "3"
   }, {
     "range" : "12",
@@ -1016,7 +1016,7 @@
       "IRI-based" : "hasAssociatedSentiment"
     },
     "domain" : "1",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "19"
   }, {
     "range" : "6",
@@ -1056,7 +1056,7 @@
       "IRI-based" : "hasConstituent"
     },
     "domain" : "20",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "28"
   }, {
     "iri" : "https://w3id.org/arco/ontology/core/hasCitation",
@@ -1186,7 +1186,7 @@
       "IRI-based" : "isComponentOf"
     },
     "domain" : "8",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "61"
   }, {
     "iri" : "https://w3id.org/arco/ontology/core/keyword",
@@ -1216,7 +1216,7 @@
       "IRI-based" : "isCategoryOf"
     },
     "domain" : "41",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "70"
   }, {
     "iri" : "https://w3id.org/arco/ontology/core/oppositeOf",
@@ -1226,7 +1226,7 @@
       "IRI-based" : "oppositeOf"
     },
     "domain" : "66",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "71"
   }, {
     "iri" : "https://w3id.org/arco/ontology/core/hasAssociatedConcept",
@@ -1236,7 +1236,7 @@
       "IRI-based" : "hasAssociatedConcept"
     },
     "domain" : "1",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "72"
   }, {
     "iri" : "https://w3id.org/arco/ontology/core/sameAs",
@@ -1246,7 +1246,7 @@
       "IRI-based" : "sameAs"
     },
     "domain" : "66",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "73"
   }, {
     "range" : "8",
@@ -1351,7 +1351,7 @@
       "IRI-based" : "hasAssociatedFigure"
     },
     "domain" : "1",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "92"
   }, {
     "iri" : "https://w3id.org/arco/ontology/core/hasAssociatedAgent",
@@ -1361,7 +1361,7 @@
       "IRI-based" : "hasAssociatedAgent"
     },
     "domain" : "1",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "93"
   }, {
     "iri" : "https://w3id.org/arco/ontology/core/hasCharacteristic",
@@ -1371,7 +1371,7 @@
       "IRI-based" : "hasCharacteristic"
     },
     "domain" : "1",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "94"
   } ]
 }
