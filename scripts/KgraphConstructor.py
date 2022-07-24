@@ -94,6 +94,21 @@ def uploadtxt(filepath):
 #THIS FUNCTION ACCEPTS THE EXTRACTED SENTIMENTS FOR EACH FRAGMENT
 def uploadextractedSentiments(filepath):
     sentimentsDf = pd.read_csv(filepath)
+    return sentimentsDf
+book1sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book1.csv")
+book2sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book2.csv")
+book3sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book3.csv")
+book4sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book4.csv")
+book5sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book5.csv")
+book6sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book6.csv")
+book7sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book7.csv")
+book8sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book8.csv")
+book9sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book9.csv")
+book10sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book10.csv")
+book11sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book11.csv")
+book12sentimentsDF = uploadextractedSentiments("Sentimentscsv/SA_df_book12.csv")
+
+allSentimentsDict = {"1":book1sentimentsDF,"2":book2sentimentsDF,"3":book3sentimentsDF,"4":book4sentimentsDF,"5":book5sentimentsDF,"6":book6sentimentsDF,"7":book7sentimentsDF,"8":book8sentimentsDF,"9":book9sentimentsDF,"10":book10sentimentsDF,"11":book11sentimentsDF,"12":book12sentimentsDF}
 
 #THIS FUNCTION ACCEPTS THE EXTRACTED INSTANCES OF OUR CONCEPTS IN THE FRAMENTS
 def uploadextractedConceptInstances(filepath):
@@ -128,6 +143,7 @@ book3deatheDF = uploadextractedConceptInstances("extractedSentiments/book3_occ/c
 book3conceptsDict = {"justice":book3justiceDF,"reason":book3reasonDF,"power":book3powerDF,"providence":book3providenceDF,"pscyche_body":book3psyche_bodyDF,"nature":book3natureDF,"death":book3deatheDF}
 
 allConceptObjDict = {"1":book1conceptsDict,"2":book2conceptsDict,"3":book3conceptsDict}
+
 '''
 for key in allConceptObjDict:
         print(key)
@@ -135,10 +151,11 @@ for key in allConceptObjDict:
             if key2 == "justice":
                 justiceDf = allConceptObjDict[key][key2]
                 for row_idx, row in justiceDf.iterrows():
+                    print(type(row))
                     for item_idx, item in row.iteritems():
                         if item_idx == "Chapter" and item == 17:
                             print(item_idx, "-->", item)
-                            print("This is the concept keyword - ", row['Concept Instance'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                            print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
                             print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                             print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
 '''
@@ -165,7 +182,7 @@ def fragmentor(txt):
 def addconceptstriples(fragIRI,booknum,position):
     triples = Graph()
     for key in allConceptObjDict:
-        if key == booknum:
+        if key == str(booknum):
             for key2 in allConceptObjDict[key]:
                 if key2 == "justice":
                     justiceDf = allConceptObjDict[key][key2]
@@ -173,7 +190,7 @@ def addconceptstriples(fragIRI,booknum,position):
                         for item_idx, item in row.iteritems():
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
-                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
                 
@@ -183,7 +200,7 @@ def addconceptstriples(fragIRI,booknum,position):
                         for item_idx, item in row.iteritems():
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
-                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
 
@@ -193,7 +210,7 @@ def addconceptstriples(fragIRI,booknum,position):
                         for item_idx, item in row.iteritems():
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
-                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
 
@@ -203,7 +220,7 @@ def addconceptstriples(fragIRI,booknum,position):
                         for item_idx, item in row.iteritems():
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
-                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
 
@@ -213,7 +230,7 @@ def addconceptstriples(fragIRI,booknum,position):
                         for item_idx, item in row.iteritems():
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
-                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
                 elif key2 == "nature":
@@ -222,7 +239,7 @@ def addconceptstriples(fragIRI,booknum,position):
                         for item_idx, item in row.iteritems():
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
-                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
                     
@@ -232,17 +249,28 @@ def addconceptstriples(fragIRI,booknum,position):
                         for item_idx, item in row.iteritems():
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
-                                print("This is the concept keyword - ", row['word'])          #create triple for adding the keyword  here - needs a URI creation script!!
+                                print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
 
     return triples
-# da fare >>
-def addsentimentstriples(fragIRI):
+
+def addsentimentstriples(fragIRI,booknum,position):
     triples = Graph()
-    dummyconcept_instance = URIRef()   #create the URI for the instance, these URIs will be shared by all the fragments? maybe not?
-    triples.add((fragIRI,hasAssociatedConcept,dummyconcept_instance))
+    for key in allSentimentsDict:
+        if key == str(booknum):
+            datadf = allSentimentsDict[key]
+            for row in datadf.itertuples():
+                row = pd.Series(row, index=['index','unnamed','Book', 'BookChapter','Negative','Neutral','Positive'])
+                if row['BookChapter'] == float(position):
+                    print("This fragment has ",row['Positive']*100,"% positive sentiments")
+                    #print("This fragment has ",row['Negative']*100,"% negative sentiments")
+                    #print("This fragment has ",row['Neutral']*100,"% neutral sentiments")
+                    triples.add((fragIRI,positiveIRI,Literal(row['Positive']*100)))
+                    triples.add((fragIRI,negativeIRI,Literal(row['Negative']*100)))
+                    triples.add((fragIRI,negativeIRI,Literal(row['Neutral']*100)))
     #create the triples for the instance if required
+    
     return triples
 # da fare >>
 def addAgentsTriples(fragIRI):
@@ -291,11 +319,12 @@ def KGraphcreator():
                             myGraph.add((fragIRI,containsTextIRI,Literal(item))) #adds the text to the fragment 
 
                             #add concepts to this fragment
-                            C_triples = addconceptstriples(fragIRI,bookId,fragLocalID)
+                            #C_triples = addconceptstriples(fragIRI,bookId,fragLocalID)
 
                             #add sentiments to this fragment 
-                            #S_triples = Graph(addsentimentstriples(fragIRI))
-
+                            S_triples = Graph()
+                            S_triples = addsentimentstriples(fragIRI,bookId,fragLocalID)
+                            myGraph = myGraph + S_triples
                             #add agents to this fragment
                             #A_triples =Graph(addAgentsTriples(fragIRI))
                             
@@ -350,13 +379,13 @@ def dbupdater(graphvariable):
 
 #read CSV to get extracted data
 #DRIVER CODE FOR UPLOADING CORE TEXT
-'''
+
 uploadtxt("txt/MeditationsBook1.txt")
 uploadtxt("txt/MeditationsBook2.txt")
 uploadtxt("txt/MeditationsBook3.txt")
 
 fragmentor(allTxt)
-'''
+
 #DRIVER CODE FOR VIEWING THE DICT OF FRAMENTS >>
 '''
 for key in allFragments:
@@ -372,10 +401,11 @@ uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ0.csv"
 uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ1.csv") #<-- instances of extracted concept(Reason) keywords
 '''
 #DRIVER CODE FOR CREATING THE KNOWLEDGE GRAPH FROM THE TEXT
-#KGraphcreator()
+KGraphcreator()
 #print(FragmentsIRIdata)
 
 '''
+
 def traveller():
     for items in allTxt:
         #create your triples for book class instance here
@@ -386,8 +416,11 @@ def traveller():
                     #print (allFragments[key][key2])
                     for item in allFragments[key][key2]:
                         print(item)
-
-traveller()'''
+'''
+#traveller()
 
 #TESTING THE CONCEPT TRIPLE TRAVELLER
 #addconceptstriples(fragmentIRI,2,11)
+
+#TESTING THE SENTIMENTS TRIPLE TRAVELLER
+#addsentimentstriples(fragmentIRI,"2",11)
