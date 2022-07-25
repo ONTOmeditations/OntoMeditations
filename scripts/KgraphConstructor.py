@@ -1,7 +1,9 @@
 from ast import keyword
+from operator import contains
 from platform import node
 import re
 import os
+from numpy import empty
 from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
 from rdflib import URIRef, RDF, Namespace, Literal, Graph
 import pandas as pd
@@ -27,6 +29,7 @@ fragmentIRI=URIRef("https://w3id.org/arco/ontology/core/fragments")
 #sub sub class of sentiments
 negativeIRI=URIRef("https://w3id.org/arco/ontology/core/negative_sentiment")
 positiveIRI=URIRef("https://w3id.org/arco/ontology/core/positive_sentiment")
+neutralIRI=URIRef("https://w3id.org/arco/ontology/core/neutral_sentiment")
 
 #my ontology URI for Object Properties
 hasAssociatedAgent=URIRef("https://w3id.org/arco/ontology/core/hasAssociatedAgent")
@@ -177,8 +180,8 @@ def fragmentor(txt):
         fragementlen = len(fragment)
         fragmentdictcreator(fragment,fragementlen)     
     return
-# da fare >> need to add the uri creator and triple creator
 
+# da fare >> need to add the uri creator and triple creator
 def addconceptstriples(fragIRI,booknum,position):
     triples = Graph()
     for key in allConceptObjDict:
@@ -190,10 +193,13 @@ def addconceptstriples(fragIRI,booknum,position):
                         for item_idx, item in row.iteritems():
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
-                                print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
-                                print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
-                                print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
-                
+                                print("This is the concept keyword - ", row['Word']) #"https://w3id.org/arco/ontology/core/keyword/"         #create triple for adding the keyword
+                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+row['Word']+"/")))
+                                print("This is the number of occurances -",row['Occurences']) 
+                                #triples.add(())      #create triple for adding the number of occurences here #UPDATE ONTOLOGY!
+                                print("Philosophical concept being refferd to is -", key2)    
+                                #triples.add(())      #create triple for adding the concept class of keyword here
+
                 elif key2 == "reason":
                     reasonDf = allConceptObjDict[key][key2]
                     for row_idx, row in reasonDf.iterrows():
@@ -268,12 +274,50 @@ def addsentimentstriples(fragIRI,booknum,position):
                     #print("This fragment has ",row['Neutral']*100,"% neutral sentiments")
                     triples.add((fragIRI,positiveIRI,Literal(row['Positive']*100)))
                     triples.add((fragIRI,negativeIRI,Literal(row['Negative']*100)))
-                    triples.add((fragIRI,negativeIRI,Literal(row['Neutral']*100)))
+                    triples.add((fragIRI,neutralIRI,Literal(row['Neutral']*100)))
     #create the triples for the instance if required
     
     return triples
+# da fare >>  pin point the position before making triples!
+def addAgentsTriples(fragIRI,booknum,position):
+    #other agent roles IRIs
+    DemocritusIRI = URIRef("https://w3id.org/arco/ontology/core/Democritus")
+    EpictetusIRI = URIRef("https://w3id.org/arco/ontology/core/Epictetus")
+    EuripidesIRI = URIRef("https://w3id.org/arco/ontology/core/Euripides")
+    HeraclitusIRI = URIRef("https://w3id.org/arco/ontology/core/Heraclitus")
+    HomerIRI = URIRef("https://w3id.org/arco/ontology/core/Homer")
+    triples = Graph()
+    for key in allFragments:
+            if key == booknum:
+                for key2 in allFragments[key]:
+                    if key2 == "fragmentlist":
+                        for item in allFragments[key][key2]:
+                            DemocritusRegex = re.compile(r'/<Democritus>')
+                            one = DemocritusRegex.search(item)
+                            print(one.group(0))
+                            EpictetusRegex = re.compile(r'/<Epictetus>')
+                            two = EpictetusRegex.search(item)
+                            print(two.group(0))
+                            EuripidesRegex = re.compile(r'/<Euripides>')
+                            three = EuripidesRegex.search(item)
+                            HeraclitusRegex = re.compile(r'/<Heraclitus>')
+                            four = HeraclitusRegex.search(item)
+                            HomerRegex = re.compile(r'/<Homer>')
+                            five = HomerRegex.search(item)
+                            if one.group() != empty:
+                                triples.add((fragIRI,hasAssociatedAgent,DemocritusIRI))
+                            if two.group() != empty:
+                                triples.add((fragIRI,hasAssociatedAgent,EpictetusIRI))
+                            if three.group() != empty:
+                                triples.add((fragIRI,hasAssociatedAgent,EuripidesIRI))
+                            if four.group() != empty:
+                                triples.add((fragIRI,hasAssociatedAgent,HeraclitusIRI))
+                            if five.group() != empty:
+                                triples.add((fragIRI,hasAssociatedAgent,HomerIRI))
+    return triples
+
 # da fare >>
-def addAgentsTriples(fragIRI):
+def addAbstractFigure(fragIRI,booknum,position):
     pass
 
 # itterate over the list of fragments in books and create a URI for all
@@ -284,12 +328,7 @@ def KGraphcreator():
     myGraph = Graph()
     #create triples for your author here
     authorIRI = URIRef("https://w3id.org/arco/ontology/core/MarcusAurelius")
-    #other agent roles IRIs
-    DemocritusIRI = URIRef("https://w3id.org/arco/ontology/core/Democritus")
-    EpictetusIRI = URIRef("https://w3id.org/arco/ontology/core/Epictetus")
-    EuripidesIRI = URIRef("https://w3id.org/arco/ontology/core/Euripides")
-    HeraclitusIRI = URIRef("https://w3id.org/arco/ontology/core/Heraclitus")
-    HomerIRI = URIRef("https://w3id.org/arco/ontology/core/Homer")
+    
 
     #create your triples for literary diary here
     subj = URIRef(baseIRI + literaryDiaryname)
@@ -319,17 +358,21 @@ def KGraphcreator():
                             myGraph.add((fragIRI,containsTextIRI,Literal(item))) #adds the text to the fragment 
 
                             #add concepts to this fragment
-                            #C_triples = addconceptstriples(fragIRI,bookId,fragLocalID)
+                            C_triples = addconceptstriples(fragIRI,bookId,fragLocalID)
+                            myGraph = myGraph + C_triples
 
                             #add sentiments to this fragment 
                             S_triples = Graph()
                             S_triples = addsentimentstriples(fragIRI,bookId,fragLocalID)
                             myGraph = myGraph + S_triples
+                            
                             #add agents to this fragment
-                            #A_triples =Graph(addAgentsTriples(fragIRI))
+                            A_triples =addAgentsTriples(fragIRI,bookId,fragLocalID)
+                            myGraph = myGraph + A_triples
                             
                             #add abstract figures to this fragment
-                            #pass
+                            #abst_triples = Graph(addAbstractFigure(fragIRI,bookId,fragLocalID))
+                            #myGraph = myGraph + abst_triples
                             
                             #now change the id for the next fragment
                             fragLocalID += 1
@@ -358,9 +401,6 @@ def KGraphcreator():
             localID +=1
     '''
     dbupdater(myGraph)
-    #dbupdater(C_triples)
-    #dbupdater(S_triples)
-    #dbupdater(A_triples)
     return True
 
 def dbupdater(graphvariable):
@@ -395,11 +435,7 @@ for key in allFragments:
 '''        
 
 #print(literaryDiaryname)
-#DRIVER CODE FOR UPLOADING THE EXTRACTED CONCEPTS
-'''
-uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ0.csv") #<-- instances of extracted concept(Justice) keywords
-uploadextractedConceptInstances("extractedSentiments/book1_occ/concept_occ1.csv") #<-- instances of extracted concept(Reason) keywords
-'''
+
 #DRIVER CODE FOR CREATING THE KNOWLEDGE GRAPH FROM THE TEXT
 KGraphcreator()
 #print(FragmentsIRIdata)
