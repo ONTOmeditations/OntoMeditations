@@ -2593,7 +2593,7 @@
   .bxs-sun:before {
     content: "\ebb2";
   }
-  .bxs-tachometer:before {
+  .bxs-netlify:before {
     content: "\ebb3";
   }
   .bxs-tag:before {
@@ -4831,7 +4831,7 @@
   .bx-table:before {
     content: "\ee9c";
   }
-  .bx-icons8-scroll-48:before {
+  .bx-netlify:before {
     content: "\ee9d";
   }
   .bx-tag:before {
