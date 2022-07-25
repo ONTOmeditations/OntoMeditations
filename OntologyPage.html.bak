@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>The Sentiment Analysis</title>
+  <title>The Ontology</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -50,7 +50,7 @@
           <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
 
-       <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar">
           <ul>
             <li><a href="index.html">Home</a></li>
              <li class="dropdown"><a href="index.html #about"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
@@ -63,8 +63,9 @@
 
               </ul>
             </li>
-            <li><a href="index.html #faq">Queries</a></li>
-            <li><a href="index.html #team">Team</a></li>
+            <li><a class="nav-link scrollto" href="#faq">Queries</a></li>
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+
       </div>
     </header><!-- End Header -->
 
@@ -75,10 +76,10 @@
         <div class="container">
 
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Sentiment Analysis</h2>
+            <h2>The Ontology</h2>
             <ol>
               <li><a href="index.html">Home</a></li>
-              <li>Sentiment Analysis</li>
+              <li>The Ontology</li>
             </ol>
           </div>
 

@@ -10,11 +10,13 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/icons8-greek-pillar-base-48.png" rel="icon">
+  <link href="assets/img/icons8-greek-pillar-base-48.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -41,7 +43,7 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container" data-aos="fade-up">
-        <h1>OntoMeditations <span></span></h1>
+        <h1>What we do now echoes in eternity. <span></span></h1>
         <h2>A study of Marcus Aurelius's sentiments and concepts</h2>
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
       </div>
@@ -60,28 +62,20 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">The Project</a></li>
-            <li><a class="nav-link scrollto" href="#services">The ontology</a></li> 
-            <li><a class="nav-link scrollto" href="#team">Team</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+             <li class="dropdown"><a class="nav-link scrollto active" href="#about"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
+                <li><a href="OntologyPage.html">The Ontology</a></li>
+               
                 </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
+                <li><a href="LinguisticAnalysis.html">Linguistic Analysis</a></li>
+                <li><a href="SentimentAnalysis.html">Sentiment Analysis</a></li>
+                
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li><a class="nav-link scrollto" href="#faq">Queries</a></li> 
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+			
+
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -97,16 +91,16 @@
 
           <div class="row">
             
-            <div class="col-xl-14 pt-4 pt-lg-0 d-flex align-items-stretch">
+            <div class="col-xl-13 pt-4 pt-lg-0 d-flex align-items-stretch">
               <div class="content d-flex flex-column justify-content-center" data-aos="fade-left">
                 <h3>Research Questions</h3>
                 <p>
                   Scholars have been interested in the concepts of Marcus Aurelius, and their place in the general philosophical school of Stoicism. They have not yet truly diven into how his concepts and philosophical themes - as much as the ones of other classic philosophers - are associated with more subjective sentiments, emotions and perspectives he might have had. Indeed, we believe that philosophical concepts from antiquity have been treated too much in their objective meanings and implications, without considering enough the humans behind them, in all of their individualities and perhaps even, personalities. </p>
-                   
+                   <br>
                   <p>Because we believe that understanding the subjective perspectives of philosophers is key to understand the concepts and themes they work on and build upon - that is, the way these general outlooks contribute in shaping concepts in certain ways, and in inscribing their corresponding themes in certain sentiments about them, going from the more positive to the more negative - we have decided to work on Marcus Aurelius’ book Meditations, rich in both concepts and sentiments, to produce a sentiment analysis ontology of his writings. What better work indeed to work on this problem, than that of the most popular stoic philosopher, concerned before anything else about dealing with human emotions, and on providing a general system of “ethics” concerning them - a way of living, spiritual exercises, therapeutics? [https://plato.stanford.edu/entries/stoicism/]</p>
-
+                    <br>
                   <p>Until recently, scholars did not have access to knowledge extraction digital tools and techniques, which makes the study of these questions much more feasible, and so in a more scientific approach (that is, having deductions based on concrete observations). These tools allow one to analyze the overall system of an author’s writing, from a more “distant” perspective [distant reading book reference], including to a certain extent their sentiments associations to themes and agents - though with the inherent limit of never being able to reach the “essence” of one’s sentiments through automatic calculations and deductions, if we consider them to not being reducible to calculations and even written words, which stay relative and ambiguous to a significant degree.  </p>
-
+                    <br>
                   <p>As such, our principal research question can be formulated in this way: what patterns can we observe, in between the philosophical concepts and themes of Marcus Aurelius’ Meditations, and the specific stoic sentiments their associated with, from the positive stoic calm to the negative stoic trouble ? Which ontology would best identify the main entities in this sentiment polarity applied to stoicism, the most important concepts of Meditations and their related themes, as well as the external agents or more abstract figures mentioned throughout the philosopher’s writings? To what sentiments are these different concepts, themes, agents and figures associated the most, in general?                </p>
                 <div class="row">
                   <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
@@ -148,8 +142,8 @@
               <div class="card" data-aos="fade-up">
                 <img src="assets/img/Marcus-Aurelius-600x440.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <i class="bx bx-tachometer"></i>
-                  <h5 class="card-title"><a href="">The Ontology</a></h5>
+                  <i class='bx bxl-netlify'></i>
+                  <h5 class="card-title"><a href="OntologyPage.html">The Ontology</a></h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
               </div>
@@ -159,7 +153,7 @@
                 <img src="assets/img/the-last-words-of-the-emperor-marcus-aurelius-eugene-delacroix.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <i class="bx bx-file"></i>
-                  <h5 class="card-title"><a href="">Linguistic Analysis</a></h5>
+                  <h5 class="card-title"><a href="LinguisticAnalysis.html">Linguistic Analysis</a></h5>
                   <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
                 </div>
               </div>
@@ -169,7 +163,7 @@
                 <img src="assets/img/EO4G579XsAAE0Bx.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <i class="bx bx-show"></i>
-                  <h5 class="card-title"><a href="">Sentiment Analysis</a></h5>
+                  <h5 class="card-title"><a href="SentimentAnalysis.html">Sentiment Analysis</a></h5>
                   <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. </p>
                 </div>
               </div>
@@ -184,9 +178,9 @@
         <div class="container">
 
           <div class="text-center" data-aos="zoom-in">
-            <h3>Call To Action</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a class="istockphoto-465316095-612x612" href="#">Call To Action</a>
+            <h3>The first rule is to keep an untroubled spirit. The second is to look things in the face and know them for what they are.</h3>
+            <p> -Marcus Aurelius, Meditations</p>
+            
           </div>
 
         </div>
@@ -274,7 +268,7 @@
               </li>
 
               <li data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">How many times does the concept of “Nature”, in all of its instances, appear alongside the abstract figure “god”, and how many times for “men”? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                   <p>
                     Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
@@ -283,7 +277,7 @@
               </li>
 
               <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Are there more occurrences of instances of stoic calm, or of stoic trouble, for each chapter? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                   <p>
                     Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
@@ -292,7 +286,7 @@
               </li>
 
               <li data-aos="fade-up" data-aos-delay="300">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Which main concept can we observe for each chapter of Meditations, in all of its defined instances? Where are their locations? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                   <p>
                     Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
@@ -301,10 +295,80 @@
               </li>
 
               <li data-aos="fade-up" data-aos-delay="400">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">To what extent does Marcus Aurelius use logical opposite instances of main concepts, to talk about these concepts? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                   <p>
                     Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                  </p>
+                </div>
+              </li>
+			  
+			  <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Does Meditations talk more about abstract figure God, or abstract figure men? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li> 
+			  
+			  <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Which two main concepts co-occur the most, in each segment and throughout the book? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li>
+			  <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How much does the instance of “ignorance” of the concept “reason” appear? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li>
+			  <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">To what extent do negative and positive sentiments co-occur in the books’ segments? does it point to a specific concept? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li>
+			  <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Which fragments are most emotionally charged within the book? does it point to a specific concept? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li><li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Relatively to the other macro-concepts, how much is the Providence concept associated with positive sentiments?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li><li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Who is the most cited author throughout the books?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li><li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">In citations of Euripides's by Marcus Aurelius, which is the most recurring concept? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li><li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">In citations of Homer by Marcus Aurelius, does an abstract figure appear in particular in between men or god? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
                   </p>
                 </div>
               </li>
@@ -315,84 +379,6 @@
         </div>
       </section><!-- End F.A.Q Section -->
 
-      <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials" class="testimonials">
-        <div class="container position-relative">
-
-          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </section><!-- End Testimonials Section -->
 
       <!-- ======= Team Section ======= -->
       <section id="team" class="team">
@@ -401,7 +387,7 @@
           <div class="section-title" data-aos="fade-down">
             <span>Team</span>
             <h2>Team</h2>
-            <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+            <p>The team behind OntoMeditations project:</p>
           </div>
 
           <div class="row">
@@ -411,7 +397,7 @@
                 <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
                 <div class="member-info">
                   <div class="member-info-content">
-                    <h4>Walter White</h4>
+                    <h4>Chloi Papadopoulou </h4>
                     <span>Chief Executive Officer</span>
                   </div>
                   <div class="social">
@@ -429,7 +415,7 @@
                 <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
                 <div class="member-info">
                   <div class="member-info-content">
-                    <h4>Sarah Jhonson</h4>
+                    <h4>Victor Chaix</h4>
                     <span>Product Manager</span>
                   </div>
                   <div class="social">
@@ -447,7 +433,7 @@
                 <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
                 <div class="member-info">
                   <div class="member-info-content">
-                    <h4>William Anderson</h4>
+                    <h4>Manu Srivastava</h4>
                     <span>CTO</span>
                   </div>
                   <div class="social">
@@ -465,7 +451,7 @@
                 <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
                 <div class="member-info">
                   <div class="member-info-content">
-                    <h4>Amanda Jepson</h4>
+                    <h4>Eleonora Pasquale</h4>
                     <span>Accountant</span>
                   </div>
                   <div class="social">
@@ -484,142 +470,32 @@
       </section><!-- End Team Section -->
 
 
-      
-
-      <!-- ======= Contact Us Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container">
-
-          <div class="section-title" data-aos="fade-down">
-            <span>Contact Us</span>
-            <h2>Contact Us</h2>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="info-box">
-                <i class="bx bx-map"></i>
-                <h3>Our Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-              <div class="info-box">
-                <i class="bx bx-envelope"></i>
-                <h3>Email Us</h3>
-                <p>info@example.com<br>contact@example.com</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-              <div class="info-box">
-                <i class="bx bx-phone-call"></i>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
-              </div>
-            </div>
-          </div>
-
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-
-        </div>
-      </section><!-- End Contact Us Section -->
-
     </main><!-- End #main -->
+
+     <br>
+	 <br>
+	 <br>
+	 <br>
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
 
-      <div class="footer-newsletter">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <h4>Join Our Newsletter</h4>
-              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-              <form action="" method="post">
-                <input type="email" name="email"><input type="submit" value="Subscribe">
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
       <div class="footer-top">
         <div class="container">
-          <div class="row">
-
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>Plato</h3>
+         
               <p>
-                A108 Adam Street <br>
-                New York, NY 535022<br>
-                United States <br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+			    <center>
+                This website was created as project for the final examination of the course Knowledge Representation and Extraction,during the a.y. 2021/2022 at the University of Bologna.
+				</center>
               </p>
             </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Social Networks</h4>
-              <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
+     
       <div class="container py-4">
         <div class="copyright">
-          &copy; Copyright <strong><span>Plato</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>OntoMeditations 2022</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
