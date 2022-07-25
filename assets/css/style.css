@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 logo {
 	font-family: 'Britannic', cursive;;
-} 
+}
 
 .wrap {
   max-width: 1440px;
@@ -113,7 +113,7 @@ logo {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -201,7 +201,7 @@ logo {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -1452,12 +1452,10 @@ section {
 
 .app {
   overflow-y: hidden;
+  position:sticky;
 }
 
 
-.app {
-  overflow-y: hidden;
-}
 
 .hs > li,
 .item {
@@ -2699,12 +2697,12 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 }
 
 .butnn:hover {
-  background: #63af90;
+  background: #95d5b2;
   text-decoration: none;
 }
 
 .butnr:hover {
-  background: #ade8f4;
+  background: #caf0f8;
   text-decoration: none;
 }
 
@@ -2720,13 +2718,13 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 }
 
 .butnj:hover {
-  background: #00FAFA;
+  background: #7bdff2;
   text-decoration: none;
 
 }
 
 .butnp:hover {
-  background: #ec37db;
+  background: #b892ff;
   text-decoration: none;
   }
 .butnd:hover {
@@ -2734,7 +2732,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
   text-decoration: none;
 }
 .butna:hover {
-  background: #bf4342;
+  background: #dda15e;
   text-decoration: none;
 }
  .butn2 {
@@ -2758,23 +2756,23 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 
 
 .highlight[property~="man"]{
-	background-color: #bf4342
+	background-color: #dda15e
 }
 
 .highlight[property~="god"]{
-	background-color: #bf4342
+	background-color: #dda15e
 }
 
 .highlight[property~="nature"]{
-	background-color: #63af90
+	background-color: #95d5b2
 }
 
 .highlight[property~="justice"]{
-	background-color: #00FAFA
+	background-color: #7bdff2
 }
 
 .highlight[property~="reason"]{
-	background-color: #ade8f4
+	background-color: #caf0f8
 }
 
 .highlight[property~="death"]{
@@ -2786,7 +2784,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 }
 
 .highlight[property~="power"]{
-	background-color: #ec37db
+	background-color: #b892ff
 }
 
 .highlight[property~="providence"]{
@@ -2796,4 +2794,3 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .highlight[property~="cosmo:omission"]{
 	background-color: #feef5d
 }
-
