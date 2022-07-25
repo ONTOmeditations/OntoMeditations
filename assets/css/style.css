@@ -26,6 +26,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Trajanus Roman';
+	src: url("https://github.com/ONTOmeditations/OntoMeditations/blob/gh-pages/assets/trajanus-roman/TRAJANUS.TTF")format('truetype');
 }
 
 logo {
