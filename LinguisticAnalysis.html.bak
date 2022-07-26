@@ -18,12 +18,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
-
-
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=EB+Garamond&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+	
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +53,7 @@
           <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
 
-      <nav id="navbar" class="navbar">
+       <nav id="navbar" class="navbar">
           <ul>
             <li><a  href="index.html">Home</a></li>
              <li class="dropdown"><a href="index.html #about"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
@@ -73,8 +70,8 @@
 
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="#faq">Queries</a></li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li><a class="nav-link scrollto" href="index.html#faq">Queries</a></li>  
+            <li><a class="nav-link scrollto" href="index.html">Team</a></li>
 
 
           </ul>
@@ -105,19 +102,19 @@
 
         <div class="container text-center">
         <div class="row">
-          <div class="col">
-        <a class="butn2" href="#" data-rel="content1">Book 1</a>
-        <a class="butn2" href="#" data-rel="content2">Book 2</a>
-        <a class="butn2" href="#" data-rel="content3">Book 3</a>
-        <a class="butn2" href="#" data-rel="content4">Book 4</a>
-        <a class="butn2" href="#" data-rel="content5">Book 5</a>
-        <a class="butn2" href="#" data-rel="content6">Book 6</a>
-        <a class="butn2" href="#" data-rel="content7">Book 7</a>
-        <a class="butn2" href="#" data-rel="content8">Book 8</a>
-        <a class="butn2" href="#" data-rel="content9">Book 9</a>
-        <a class="butn2" href="#" data-rel="content10">Book 10</a>
-        <a class="butn2" href="#" data-rel="content11">Book 11</a>
-        <a class="butn2" href="#" data-rel="content12">Book 12</a>
+          <div class="col-6">
+        <a class="butn2" href="#" data-rel="content1">Book I</a>
+        <a class="butn2" href="#" data-rel="content2">Book II</a>
+        <a class="butn2" href="#" data-rel="content3">Book III</a>
+        <a class="butn2" href="#" data-rel="content4">Book IV</a>
+        <a class="butn2" href="#" data-rel="content5">Book V</a>
+        <a class="butn2" href="#" data-rel="content6">Book VI</a>
+        <a class="butn2" href="#" data-rel="content7">Book VII</a>
+        <a class="butn2" href="#" data-rel="content8">Book VIII</a>
+        <a class="butn2" href="#" data-rel="content9">Book IX</a>
+        <a class="butn2" href="#" data-rel="content10">Book X</a>
+        <a class="butn2" href="#" data-rel="content11">Book XI</a>
+        <a class="butn2" href="#" data-rel="content12">Book XII</a>
       </div>
 
         </div>
@@ -127,7 +124,7 @@
             <ul class="hs full">
             <li class="item"><span style="background-color:grey; width:2px; height:40px; margin-left: 20px; margin-right: 20px;"></span></li>
 
-              <li class="item"><a class="butna conceptButton" role="button" data-concept="god"id="GodButton">God</a></li>
+              <li class="item"><a class="butna conceptButton" role="button" data-concept="god"id="GodButton">God</span></a></li>
               <li class="item"><a class="butna conceptButton" role="button" data-concept="man" id="ManButton">Man</a></li>
               <li class="item"><span style="background-color:grey; width:2px; height:40px; margin-left: 20px; margin-right: 20px;"></span></li>
 
@@ -147,7 +144,8 @@
       		
     <div class="container">
 <hr>
-<p>Select one of the 12 books to see the text, and between abstract figures or stoic themes to see highlighted instances.[here we could add an index- of what's what according to stoics and our boi marcus] </p>
+<p>Select one of the 12 books to see the text, and between <a href="DocumentationPage.html">our choice of figures and themes</a> to see highlighted instances.</p>
+	    
 <hr>
       <div class="content-container">
           <div id="content1">
@@ -304,11 +302,11 @@ recorded of Socrates would exactly fit him: he could equally be abstinent
 from or enjoy what many are too weak to abstain from and too selfindulgent in enjoying. To be strong, to endure, and in either case to be sober
 belong to the <span property ="man">man</span> of perfect and invincible spirit, like the spirit of Maximus
 in his illness.
-<br>17. From the <span property="providence"><span property="god">gods</span>: to have had good grandparents, good parents, a good
+<br>17. From the <span property="providence"><span property="god">gods</span></span>: to have had good grandparents, good parents, a good
 sister, good masters, good intimates, kinsfolk, friends, almost everything;
 and that in regard to not one of them did I stumble into offence, although I
 had the kind of disposition which might in some circumstances have led me
-to behave thus; but it was the goodness of the <span property="providence"><span property="god">gods</span> that no conjunction of
+to behave thus; but it was the goodness of the <span property="providence"><span property="god">gods</span></span> that no conjunction of
 events came about which was likely to expose my weakness. That I was not
 brought up longer than I was with my grandfather’s second wife, that I
 preserved the flower of my youth and did not play the <span property ="man">man</span> before my time,
@@ -330,10 +328,10 @@ masters to the honours which they appeared to covet and did not put them
 off with hopes that, as they were still young, I should do it later on. To have
 got to know Apollonius, Rusticus, Maximus. To have pictured to myself
 clearly and repeatedly what life in obedience to <span property="nature">Nature</span> really is, so that,
-so far as concerns the <span property="providence"><span property="god">gods</span> and communications from the other world, and
+so far as concerns the <span property="providence"><span property="god">gods</span></span> and communications from the other world, and
 aids and inspirations, nothing hinders my living at once in obedience to
 <span property="nature">Nature</span>, though I still come somewhat short of this by my own <span property="justice">fault</span> and by
-not observing the reminders and almost the instructions of the <span property="providence"><span property="god">gods</span>. That
+not observing the reminders and almost the instructions of the <span property="providence"><span property="god">gods</span></span>. That
 my <span property="psy-body">body</span> has held out so well in a life like mine; that I did not touch
 Benedicta or Theodotus,but that even in later years when I experienced
 the passion of love I was cured; that though I was often angry with Rusticus
@@ -348,7 +346,7 @@ dreams, especially how to avoid spitting blood and fits of giddiness, and
 the answer of the oracle at Caieta: ‘Even as thou shalt employ thyself; and
 that, although in love with philosophy, I did not meet with any sophist or
 retire to disentangle literary works or syllogisms or busy myself with
-problems ‘in the clouds’.For all these things require ‘the <span property="providence"><span property="god">gods</span> to help and
+problems ‘in the clouds’.For all these things require ‘the <span property="providence"><span property="god">gods</span></span> to help and
 <span property="providence">Fortune</span>’s hand’.
       </p>
       </div>
@@ -378,7 +376,7 @@ of <span property="death">death</span>, reflect like this: ‘you are an old <sp
 you no longer to be in bondage, no longer to be a puppet pulled by selfish
 <span property="psy-body">impulse</span>, no longer to be indignant with what is allotted in the present or to
 suspect what is allotted in the future.’
-<br>3. The work of the <span property="providence"><span property="god">gods</span> is full of <span property="providence">Providence</span>: the work of <span property="providence">fortune</span> is not
+<br>3. The work of the <span property="providence"><span property="god">gods</span></span> is full of <span property="providence">Providence</span>: the work of <span property="providence">fortune</span> is not
 divorced from <span property="nature">Nature</span> or the spinning and winding of the threads ordained
 by <span property="providence">Providence</span>. All flows from that other world; and there is, besides,
 <span property="nature">necessity</span> and the well-being of the whole <span property="nature">universe</span>, whereof you are a part.
@@ -389,9 +387,9 @@ elements which compose those bodies. Let this be sufficient for you, these
 be continually your doctrines. But put away your thirst for books,
 that so
 you may not die murmuring, but truly reconciled and grateful from your
-heart to the <span property="providence"><span property="god">gods</span>.
+heart to the <span property="providence"><span property="god">gods</span></span>.
 <br>4. Remember how long you have been putting off these things, and how
-many times the <span property="providence"><span property="god">gods</span> have given you days of grace, and yet you do not use
+many times the <span property="providence"><span property="god">gods</span></span> have given you days of grace, and yet you do not use
 them. Now is it high time to perceive the kind of <span property="nature">Universe</span> whereof you are
 a part and the <span property="nature">nature</span> of the governor of the <span property="nature">Universe</span> from whom you
 subsist as an effluence, and that the term of your time is circumscribed, and
@@ -404,7 +402,7 @@ imagination. And so you will, if only you do each act as though it were your
 last, freed from every random aim, from wilful turning away from the
 directing <span property="reason">Reason</span>, from pretence, self-love and displeasure with what is
 allotted to you. You see how few things a <span property ="man">man</span> need master in order to live a
-smooth and <span property="providence"><span property="god">god</span>-fearing life; for the <span property="providence"><span property="god">gods</span> themselves will require nothing
+smooth and <span property="providence"><span property="god">god</span></span>-fearing life; for the <span property="providence"><span property="god">gods</span></span> themselves will require nothing
 more of him who keeps these precepts.
 <br>6. You are doing yourself violence, violence, my <span property="psy-body">soul</span>; and you will have
 no second occasion to do yourself <span property="justice">honour</span>. Brief is the life of each of us, and
@@ -436,10 +434,10 @@ by pain to lose his temper; the other has begun it himself and has been
 impelled to do wrong, carried away by appetite to do what he does.
 <br>11. In the conviction that it is possible you may depart from life at once, act
 and speak and think in every case accordingly. But to leave the company of
-<span property ="man">men</span> is nothing to fear, if <span property="providence"><span property="god">gods</span> exist;
+<span property ="man">men</span> is nothing to fear, if <span property="providence"><span property="god">gods</span></span> exist;
 for they would not involve you in ill.
 If, however, they do not exist or if they take no care for <span property ="man">man</span>’s affairs, why
-should I go on living in a world void of <span property="providence"><span property="god">gods</span>, or void of <span property="providence">providence</span>? But
+should I go on living in a world void of <span property="providence"><span property="god">gods</span></span>, or void of <span property="providence">providence</span>? But
 they do exist, and they do care for <span property ="man">men</span>’s lives, and they have put it entirely
 in a <span property ="man">man</span>’s <span property="power">power</span> not to fall into real ills; for the rest, if anything were an ill,
 they would have provided also for this, that it may be in every <span property ="man">man</span>’s <span property="power">power</span>
@@ -463,7 +461,7 @@ that if a <span property ="man">man</span> looks at it by itself and by the sepa
 strips off all the images associated with <span property="death">death</span>, he will come to judge it to be
 nothing else but <span property="nature">Nature</span>’s handiwork. But if a <span property ="man">man</span> fears <span property="nature">Nature</span>’s handiwork
 he is a mere child; and yet <span property="death">death</span> is not merely <span property="nature">Nature</span>’s handiwork, but also
-her well-being. To consider also how mortal <span property ="man">man</span> touches <span property="providence"><span property="god">God</span> and through
+her well-being. To consider also how mortal <span property ="man">man</span> touches <span property="providence"><span property="god">God</span></span> and through
 what organ of himself, and when that part of him is in what sort of
 condition.
 <br>13. Nothing is more wretched than the <span property ="man">man</span> who goes round and round
@@ -472,8 +470,8 @@ everything, and, as Pindar says,
 seeks by conjecture to sound the minds of his neighbours, but fails to
 perceive that it is enough to abide with the <span property="providence">Divinity</span> that is within himself
 and to do Him genuine service. Now that service is to keep Him unsullied
-by passion, trifling, and discontent with what comes from <span property="providence"><span property="god">God</span> or <span property ="man">men</span>.
-What comes from the <span property="providence"><span property="god">Gods</span> is to be revered because of excellence; what
+by passion, trifling, and discontent with what comes from <span property="providence"><span property="god">God</span></span> or <span property ="man">men</span>.
+What comes from the <span property="providence"><span property="god">Gods</span></span> is to be revered because of excellence; what
 comes from <span property ="man">men</span> is dear because they are of one kindred with himself;
 pitiful too sometimes, humanly speaking, by <span property="reason">reason</span> of their <span property="reason">ignorance</span> of
 good and ill. This disablement is more grievous than that which robs the
@@ -571,7 +569,7 @@ Heraclitus, after many speculations about the fire which should consume
 the <span property="nature">Universe</span>, was waterlogged by dropsy, poulticed himself with cow-dung,
 and died. Vermin killed Democritus; another kind of vermin Socrates.
 What is the moral? You went on board, you set sail, you have made the
-port. Step ashore: if to a second life, nothing is void of <span property="providence"><span property="god">gods</span>, not even in
+port. Step ashore: if to a second life, nothing is void of <span property="providence"><span property="god">gods</span></span>, not even in
 that other world; but if to unconsciousness, you will cease to suffer pains
 and pleasures and to be the servant of an earthly vessel as far inferior as that
 which does it service is superior; for the one is <span property="reason">mind</span> and deity, the other
@@ -592,7 +590,7 @@ pleasurable, or to speak more generally luxurious imaginings or rivalry of
 any kind, or envy and suspicion or anything else about which you would
 blush to put into words that you had it in your head.
 A <span property ="man">man</span> so minded, putting off no longer to be one of the elect, is surely a
-priest and minister of <span property="providence"><span property="god">gods</span>, employing aright that which is seated within
+priest and minister of <span property="providence"><span property="god">gods</span></span>, employing aright that which is seated within
 him, which makes the mere mortal to be unstained by pleasures, unscathed
 by any pain, untouched by any wrong, unconscious of any wickedness; a
 wrestler in the greatest contest of all, not to be overthrown by any passion;
@@ -613,7 +611,7 @@ no account even of the praise of such <span property ="man">men</span>-<span pro
 to themselves.
 <br>5. Do not act unwillingly nor selfishly nor without self-examination, nor
 with divergent motives. Let no affectation veneer your thinking. Be neither
-a busy talker, nor a busybody. Moreover let the <span property="providence"><span property="god">God</span> within be the guardian
+a busy talker, nor a busybody. Moreover let the <span property="providence"><span property="god">God</span></span> within be the guardian
 of a real <span property ="man">man</span>, a <span property ="man">man</span> of ripe years, a statesman, a Roman, a magistrate,
 who has taken his post like one waiting for the Retreat to sound, ready to
 depart, needing no oath nor any <span property ="man">man</span> as witness. And see that you have
@@ -630,7 +628,7 @@ is revealed than the very <span property="providence">divinity</span> seated wit
 private <span property="psy-body">impulses</span> to itself, examining your thoughts, having withdrawn
 itself, as Socrates used to say,
  from the sense-affections, and subordinated
-itself to the <span property="providence"><span property="god">gods</span> and making <span property ="man">men</span> its first care; if you find all else to be
+itself to the <span property="providence"><span property="god">gods</span></span> and making <span property ="man">men</span> its first care; if you find all else to be
 smaller and cheaper than this, give no room to anything else, to which when
 once you incline and turn, you will no longer have the <span property="power">power</span> without a
 struggle to prefer in <span property="justice">honour</span> that which is your own, your peculiar good. For
@@ -667,7 +665,7 @@ nothing that needs a hole to hide in.
 <br>9. Reverence your faculty of <span property="reason">judgement</span>. On this it entirely rests that your
 <span property="power">governing self</span> no longer has a <span property="reason">judgement</span> disobedient to Nature and to the
 estate of a reasonable being. This <span property="reason">judgement</span> promises deliberateness,
-familiar friendship with <span property ="man">men</span>, and to follow in the train of the <span property="providence"><span property="god">gods</span>.
+familiar friendship with <span property ="man">men</span>, and to follow in the train of the <span property="providence"><span property="god">gods</span></span>.
 <br>10. Therefore throw all else aside, and hold fast only these few things;
 further calling to <span property="reason">mind</span> at the same time that each of us lives only in the
 present, this brief moment; the rest is either a life that is past, or is in an
@@ -689,7 +687,7 @@ what to <span property ="man">man</span>, who is a citizen of the highest City, 
 like households. What is this which now creates an image in me, what is its
 composition? how long will it naturally continue, what virtue is of use to
 meet it; for example, gentleness, fortitude, <span property="reason">truth</span>, good faith, simplicity, selfreliance, and the rest? Therefore, in each case, we must say: this has come
-from <span property="providence"><span property="god">God</span>; this by the actual co-ordination of events, the complicated web
+from <span property="providence"><span property="god">God</span></span>; this by the actual co-ordination of events, the complicated web
 and similar coincidence or chance; this again from my fellow <span property ="man">man</span>, my
 kinsman, my comrade, yet one who does not know what is natural for
 himself But I do know; wherefore I use him kindly and justly, according to
@@ -707,7 +705,7 @@ sudden demands for treatment, so do you have your doctrines ready in order
 to recognize the divine and human, and so to do everything, even the very
 smallest, as mindful of the bond which unites the divine and human; for you
 will not do any act well which concerns <span property ="man">man</span> without referring it to the
-divine; and the same is true of your conduct to <span property="providence"><span property="god">God</span>.
+divine; and the same is true of your conduct to <span property="providence"><span property="god">God</span></span>.
 <br>14. Do not wander from your path any longer, for you are not likely to read
 your notebooks or your deeds of ancient Rome and Greece or your extracts
 from their writings, which you laid up against old age. Hasten then to the
@@ -721,13 +719,13 @@ spirit, <span property="psy-body">impulses</span>; of the <span property="reason
 also to the beasts of the field, to be swayed by the strings of <span property="psy-body">impulse</span> to wild
 beasts, to <span property ="man">men</span> who sin against nature, to a Phalaris or a Nero. To have
 the <span property="reason">mind</span> as guide to what appear to be duties belongs also to <span property ="man">men</span> who do
-not believe in <span property="providence"><span property="god">gods</span>, who betray their own country, who do anything and
+not believe in <span property="providence"><span property="god">gods</span></span>, who betray their own country, who do anything and
 everything once they have locked their doors. If then all else is common
 to you with those whom I have mentioned, it remains the peculiar mark of
 the good <span property ="man">man</span> to love and welcome what befalls him and is the thread <span property="providence">fate</span>
 spins for him; not to soil the <span property="providence">divinity</span> seated within his breast nor to disquiet
 it with a mob of imaginations, but to preserve and to propitiate it, following
-<span property="providence"><span property="god">God</span> in orderly wise, uttering no word contrary to <span property="reason">truth</span>, doing no act
+<span property="providence"><span property="god">God</span></span> in orderly wise, uttering no word contrary to <span property="reason">truth</span>, doing no act
 contrary to <span property="justice">justice</span>. And if all <span property ="man">men</span> disbelieve that he lives simply, modestly,
 and cheerfully, he is not angry with any one of them nor diverted from the
 road that leads to the goal of his life, at which he must arrive, pure,
@@ -840,7 +838,7 @@ you birth, or rather you will be taken up into its generative <span property="re
 process of change.
 <br>15. many grains of incense upon the same altar; one falls first, another later,
 but difference there is none.
-<br>16. Within ten days you will appear a <span property="providence"><span property="god">god</span> even to those11
+<br>16. Within ten days you will appear a <span property="providence"><span property="god">god</span></span> even to those11
 to whom today
 you seem a beast or a baboon, if you return to your <span property="reason">principles</span> and your
 reverence of the Word.
@@ -892,7 +890,7 @@ is just, and in all your imaginations preserve what you apprehend.
 Nothing in thy good time is too early or too late for me; everything is fruit
 for me which thy seasons. <span property="nature">Nature</span>, bear; from thee, in thee, to thee are all
 things. The poet sings: ‘Dear city of Cecrops’, and will you not say: ‘Dear
-city of <span property="providence"><span property="god">God</span>’?
+city of <span property="providence"><span property="god">God</span></span>’?
 <br>24. Democritus has said: ‘Do few things, if you would enjoy tranquillity’.
 May it not be better to do the necessary things and what the <span property="reason">reason</span> of a
 creature intended by <span property="nature">Nature</span> to be social prescribes, and as that <span property="reason">reason</span>
@@ -934,7 +932,7 @@ here half-naked. ‘I have no bread,’ he says, ‘still I stand firm by the Wo
 And I have nourishment from my lessons and yet do not stand firm.
 <br>31. Love the art which you were taught, set up your rest in this. Pass
 through what is left of life as one who has committed all that is yours, with
-your whole heart, to the <span property="providence"><span property="god">gods</span>, and of <span property ="man">men</span> making yourself neither despot
+your whole heart, to the <span property="providence"><span property="god">gods</span></span>, and of <span property ="man">men</span> making yourself neither despot
 nor servant to any.
 <br>32. Call to <span property="reason">mind</span> by way of example the time of Vespasian: you will see
 everything the same: <span property ="man">men</span> marrying, bringing up children, falling ill, dying,
@@ -1016,7 +1014,7 @@ which they most continuously have converse (<span property="reason">Reason</span
 and again: ‘we must not act and speak like <span property ="man">men</span> who sleep, for in sleep we
 suppose that we act and speak’; and ‘we must not be like children with
 parents’<Heraclitus>, that is, accept things simply as we have received them.
-<br>47. Just as, if one of the <span property="providence"><span property="god">gods</span> told you: ‘tomorrow you will be dead or in
+<br>47. Just as, if one of the <span property="providence"><span property="god">gods</span></span> told you: ‘tomorrow you will be dead or in
 any case the day after tomorrow’, you would no longer be making that day
 after important any more than tomorrow, unless you are an arrant coward
 (for the difference is a mere trifle), in the same way count it no great <span property="nature">matter</span>
@@ -1199,7 +1197,7 @@ altogether the object of earnest pursuit I do not see. On the contrary, one
 must console oneself by awaiting <span property="nature">Nature</span>’s release, and not chafing at the
 circumstances of delay, but finding repose only in two things: one, that
 nothing will befall me which is not in accordance with the <span property="nature">nature</span> of the
-<span property="nature">Whole</span>; the other, that it is in my <span property="power">power</span> to do nothing contrary to my <span property="providence"><span property="god">God</span>
+<span property="nature">Whole</span>; the other, that it is in my <span property="power">power</span> to do nothing contrary to my <span property="providence"><span property="god">God</span></span>
 and inward Spirit; for there is no one who shall force me to sin against this.
 <br>11. ‘To what purpose, then, am I now using my <span property="psy-body">soul</span>?’ In every case ask
 yourself this question and examine yourself: ‘What have I now in this part
@@ -1306,7 +1304,7 @@ sympathy,
  as needs must be in a united system, then you must not try to
 resist the sensation, which is natural, yet the governing part must not of
 itself add to the affection the <span property="reason">judgement</span> that it is either good or bad.
-<br>27. ‘Live with the <span property="providence"><span property="god">gods</span>.’ But he is living with the <span property="providence"><span property="god">gods</span> who continuously
+<br>27. ‘Live with the <span property="providence"><span property="god">gods</span></span>.’ But he is living with the <span property="providence"><span property="god">gods</span></span> who continuously
 exhibits his <span property="psy-body">soul</span> to them, as satisfied with its dispensation and doing what
 the deity, the portion of himself
  which Zeus has given to each <span property ="man">man</span> to
@@ -1329,7 +1327,7 @@ what agrees with the <span property="nature">nature</span> of a reasonable and s
 the interests of the superior and has connected the superior one with
 another. You see how it has subordinated, coordinated, and allotted to each
 its due and brought the ruling creatures into agreement one with another.
-<br>31. How have you hitherto borne yourself to <span property="providence"><span property="god">gods</span>, parents, brother, wife,
+<br>31. How have you hitherto borne yourself to <span property="providence"><span property="god">gods</span></span>, parents, brother, wife,
 children, masters, tutors, friends, connexions, servants? Has your relation to
 all <span property ="man">men</span> hitherto been: ‘not to have wrought nor to have said a lawless thing
 to any’? <Homer> Remind yourself of the kinds of things you have passed through
@@ -1351,12 +1349,12 @@ one stay, the senses blurred and subject to false impressions; the <span propert
 an exhalation from blood, and a good reputation in such conditions vanity?
 What shall we say? Wait in peace, whether for extinction or a change of
 state; and until its due time arrives, what is sufficient? What else than to
-worship and bless the <span property="providence"><span property="god">gods</span>, to do good to <span property ="man">men</span>, to bear them and to
+worship and bless the <span property="providence"><span property="god">gods</span></span>, to do good to <span property ="man">men</span>, to bear them and to
 forbear;<Epictetus> and, for all that lies within the limits of mere <span property="psy-body">flesh</span> and spirit, to
 remember that this is neither yours nor in your <span property="power">power</span>?
 <br>34. You are able always to have a favourable tide, if you are able to take a
 right path, if, that is, you are able both to conceive and to act with rectitude.
-These two things are common to <span property="providence"><span property="god">God</span>’s <span property="psy-body">soul</span> and to <span property ="man">man</span>’s, that is, to the
+These two things are common to <span property="providence"><span property="god">God</span></span>’s <span property="psy-body">soul</span> and to <span property ="man">man</span>’s, that is, to the
 <span property="psy-body">soul</span> of every reasonable creature: not to be subject to another’s hindrance,
 to find his good in righteous act and disposition, and to terminate his desire
 in what is right.
@@ -1399,7 +1397,7 @@ into their <span property="providence">atoms</span>.
 the material upon which it works.
 <br>6. The noblest kind of retribution is not to become like your enemy.
 <br>7. Rejoice and set up your rest in one thing: to pass from act to act of
-fellowship, keeping <span property="providence"><span property="god">God</span> in remembrance.
+fellowship, keeping <span property="providence"><span property="god">God</span></span> in remembrance.
 <br>8. The governing <span property="reason">principle</span> it is which wakes itself up and adapts itself,
 making itself of whatever kind it wills and making all that happens to it
 appear to be of whatever kind it wills.
@@ -1482,9 +1480,9 @@ besides? Then you will not be free or self-contained or passionless; for you
 will be obliged to entertain envy and rivalry, to regard with suspicion those
 who are able to take away those things, to plot against those who have what
 is valued by you. To sum up, he who feels the want of any one of those
-things must be sullied thereby and besides must often <span property="justice">blame</span> the <span property="providence"><span property="god">gods</span>. But
+things must be sullied thereby and besides must often <span property="justice">blame</span> the <span property="providence"><span property="god">gods</span></span>. But
 to reverence and value your own understanding will make you acceptable to
-yourself, harmonious with your fellows, and in concord with the <span property="providence"><span property="god">gods</span>; that
+yourself, harmonious with your fellows, and in concord with the <span property="providence"><span property="god">gods</span></span>; that
 is, praising whatsoever they assign and have ordained.
 <br>17. The motions of the Elements are up, down, in circles: the movement of
 <span property ="man">man</span>’s excellence is in none of these, but proceeding in a more divine way
@@ -1514,7 +1512,7 @@ or without <span property="reason">reason</span> or has gone astray and is ignor
 <br>23. Use dumb animals and lifeless things and objects generally with a
 generous and free spirit, because you have <span property="reason">reason</span> and they have not; use
 <span property ="man">men</span> because they have <span property="reason">reason</span>, in a neighbourly spirit; and in all things call
-upon for <span property="providence"><span property="god">gods</span> for help. Let it make no difference to you for how long a
+upon for <span property="providence"><span property="god">gods</span></span> for help. Let it make no difference to you for how long a
 time you will do these things, for even three hours in this spirit is enough.
 <br>24. Alexander the Great and his stable boy were levelled in <span property="death">death</span>, for they
 were either taken up into the same life-giving <span property="reason">principles</span> of the <span property="nature">Universe</span> or
@@ -1546,7 +1544,7 @@ your spirit should be the first to surrender.
 purple dye; for it does happen. Keep yourself therefore, simple, good, pure,
 grave, unaffected, the friend of <span property="justice">justice</span>, religious, kind, affectionate, strong
 for your proper work. Wrestle to continue to be the <span property ="man">man</span> Philosophy wished
-to make you. Reverence the <span property="providence"><span property="god">gods</span>, save <span property ="man">men</span>. Life is brief; there is one
+to make you. Reverence the <span property="providence"><span property="god">gods</span></span>, save <span property ="man">men</span>. Life is brief; there is one
 harvest of earthly existence, a holy disposition and neighbourly acts. In all
 things like a pupil of Antoninus; his energy on behalf of what was done in
 accord with <span property="reason">reason</span>, his equability everywhere, his serene expression, his
@@ -1563,7 +1561,7 @@ What a <span property ="man">man</span>, too, he was to remain in his place unti
 spare diet not needing even to relieve <span property="nature">nature</span> except at his usual hour.
 Moreover, his constancy and uniformity to his friends, his tolerance of
 plain-spoken opposition to his opinions and delight when anyone indicated
-a better course; and how he revered the <span property="providence"><span property="god">gods</span> without superstition. So may
+a better course; and how he revered the <span property="providence"><span property="god">gods</span></span> without superstition. So may
 your last hour find you, like him, with a conscience void of reproach.
 <br>31. Be sober once more, recall yourself and shake off sleep again. Perceive
 that they were dreams which troubled you, and once again fully awake,
@@ -1585,7 +1583,7 @@ enjoy.
 amateurs, yet none the less stick to the rule of their craft and never submit
 to desert that? Is it not grievous, then, that architect and physician will
 reverence, each the <span property="reason">principle</span> of his art, more than <span property ="man">man</span> his own <span property="reason">principle</span>,
-which he has in common with the <span property="providence"><span property="god">gods</span>?
+which he has in common with the <span property="providence"><span property="god">gods</span></span>?
 <br>36. Asia and Europe are corners in the <span property="nature">Universe</span>; every sea, a drop in the
 <span property="nature">Universe</span>; Mount Athos, a clod of earth in the <span property="nature">Universe</span>; every instant of
 time, a pin-prick of eternity. All things are petty, easily changed, vanishing
@@ -1614,11 +1612,11 @@ you have all things to your <span property="reason">mind</span>. And in like man
 <span property="reason">mind</span> of the All.
 <br>41. Should you propose to yourself as good or evil something beyond your
 will, the necessary result is that, if you fall into that evil or fail of that good,
-you <span property="justice">blame</span> the <span property="providence"><span property="god">gods</span> and you hate <span property ="man">men</span> who are or who you suspect will be
+you <span property="justice">blame</span> the <span property="providence"><span property="god">gods</span></span> and you hate <span property ="man">men</span> who are or who you suspect will be
 the causes of your loss of the good or your falling into the evil; and indeed
 we commit many wrongs from concern in regard to these things. If,
 however, we decide that only what our will controls is good or evil, then no
-ground is left either to arraign <span property="providence"><span property="god">God</span> or to adopt the position of an enemy to
+ground is left either to arraign <span property="providence"><span property="god">God</span></span> or to adopt the position of an enemy to
 <span property ="man">man</span>.
 <br>42. We are all working together to a single end, some consciously and with
 understanding, some without knowledge, as Heraclitus, I think, says that
@@ -1630,12 +1628,12 @@ you take your post, for in any event he who controls the whole will employ
 you aright and will accept you as one part of the fellow-labourers and
 fellow-workers; only do not you become as mean a part as the cheap and
 ridiculous verse in the comedy, which Chrysippus mentions.
-<br>43. Does the Sun <span property="providence"><span property="god">god</span> claim to do the work of the <span property="providence"><span property="god">god</span> of rain, or
-Aesculapius the work of the Fruit-bearing <span property="providence"><span property="god">god</span>dess? And how is it with
+<br>43. Does the Sun <span property="providence"><span property="god">god</span></span> claim to do the work of the <span property="providence"><span property="god">god</span></span> of rain, or
+Aesculapius the work of the Fruit-bearing <span property="providence"><span property="god">god</span></span>dess? And how is it with
 each of the stars? Is not their province different, but they are working
 together to the same end?
-<br>44. If so be that the <span property="providence"><span property="god">gods</span> took counsel about me and what must happen to
-me, they took counsel for good; for it is not easy to conceive a <span property="providence"><span property="god">god</span> without
+<br>44. If so be that the <span property="providence"><span property="god">gods</span></span> took counsel about me and what must happen to
+me, they took counsel for good; for it is not easy to conceive a <span property="providence"><span property="god">god</span></span> without
 purpose, and on what possible ground would be likely to desire to do me
 harm? What advantage would there be from this either for themselves or for
 the common good, which is their principal care? But if they took no counsel
@@ -1763,7 +1761,7 @@ present.
 <br>9. All things are woven together and the common bond is sacred, and
 scarcely one thing is foreign to another, for they have been arranged
 together in their places and together make the same ordered <span property="nature">Universe</span>. For
-there is one <span property="nature">Universe</span> out of all, one <span property="providence"><span property="god">God</span> through all, one substance and one
+there is one <span property="nature">Universe</span> out of all, one <span property="providence"><span property="god">God</span></span> through all, one substance and one
 <span property="nature">law</span>, one common <span property="reason">Reason</span> of all intelligent creatures and one <span property="reason">truth</span>, if indeed
 the perfection of creatures of the same family and partaking of the same
 <span property="reason">Reason</span> is one.
@@ -1802,7 +1800,7 @@ regarded by itself has no wants, unless it create want for itself, and in the
 same way it is untroubled and unhindered, unless it trouble and hinder
 itself.
 <br>17. Happiness is a good genius or a good familiar spirit. ‘What then are you
-doing here, phantom of imagination? Depart, in <span property="providence"><span property="god">God</span>’s name, the way you
+doing here, phantom of imagination? Depart, in <span property="providence"><span property="god">God</span></span>’s name, the way you
 came; I have no need of you. But you have come according to your ancient
 habit. I am not angry with you, only depart.’
 <br>18. Is it change that a <span property ="man">man</span> fears? Why, what can have come to be without
@@ -1862,7 +1860,7 @@ the wrong done by another where the wrong arose.
 <br>30. Direct your thought to what is being said. Let your <span property="reason">mind</span> gain an
 entrance into what is occurring and who is producing it.
 <br>31. Make yourself glad in simplicity, self-respect, and indifference to what
-lies between virtue and vice. Love mankind. Follow <span property="providence"><span property="god">God</span>. Democritus
+lies between virtue and vice. Love mankind. Follow <span property="providence"><span property="god">God</span></span>. Democritus
 says: ‘All (sensibles) are ruled by <span property="nature">law</span>, but in reality the elements alone
 exist.’ <Democritus> Enough for you to remember that ‘all exist by <span property="nature">law</span>’; now is there very
 little else.
@@ -1887,11 +1885,11 @@ shape and fashion of beauty at the bidding of the <span property="reason">mind</
 itself is not shaped and fashioned to beauty by itself.
 <br>38. ‘<span property ="man">man</span> must not vent his passion on dead things. Since they care
 nothing. . .’ <Euripides>
-<br>39. ‘May it be joy that you give to the immortal <span property="providence"><span property="god">gods</span> and to <span property ="man">men</span>.’
+<br>39. ‘May it be joy that you give to the immortal <span property="providence"><span property="god">gods</span></span> and to <span property ="man">men</span>.’
 <br>40.
 ‘Life, like ripe corn, must to the sickle yield. And one must be,
 another cease to be.’ <Euripides>
-<br>41. ‘Were the <span property="providence"><span property="god">gods</span> careless of my sons and me. Yet there is <span property="reason">reason</span> here.’ <Euripides>
+<br>41. ‘Were the <span property="providence"><span property="god">gods</span></span> careless of my sons and me. Yet there is <span property="reason">reason</span> here.’ <Euripides>
 <br>42. ‘For with me stand both Righteousness and Good.’ <Euripides>
 <br>43. ‘Mourn not with them that sorrow; feel no thrill.’
 <br>44.
@@ -1908,7 +1906,7 @@ dishonour.’
 <br>46. ‘But consider, my friend, whether possibly high spirit and virtue are
 not something other than saving one’s life and being saved. Perhaps a <span property ="man">man</span>
 who is really a <span property ="man">man</span> must leave on one side the question of living as long as
-he can, and must not love his life, but commit these things to <span property="providence"><span property="god">God</span>, and,
+he can, and must not love his life, but commit these things to <span property="providence"><span property="god">God</span></span>, and,
 believing the women’s proverb that no one ever escaped his destiny, must
 consider, with that in his <span property="reason">mind</span>, how he may live the best possible life in the
 time that is given him to live.’
@@ -1936,11 +1934,11 @@ shattering of the senseless molecules.<Euripides>
 ‘With gifts of meat and drink and magic charms
 Turning aside the current not to die.’
 ‘<span property ="man">man</span> must endure whatever wind doth blow
-From <span property="providence"><span property="god">God</span>, and labour still without lament.’ <Euripides>
+From <span property="providence"><span property="god">God</span></span>, and labour still without lament.’ <Euripides>
 <br>52. ‘A better <span property ="man">man</span> at wrestling’: but not more sociable or more modest or
 better trained to meet occasion or kinder to the <span property="justice">fault</span> of neighbours.
 <br>53. Where work can be accomplished according to the <span property="reason">reason</span> which is
-common to <span property="providence"><span property="god">gods</span> and <span property ="man">men</span>, there is nothing to fear; for where it is possible
+common to <span property="providence"><span property="god">gods</span></span> and <span property ="man">men</span>, there is nothing to fear; for where it is possible
 to obtain benefit by <span property="justice">action</span> which moves on an easy path and according to
 your constitution, there is no injury to suspect.
 <br>54. Everywhere and continually it is in your <span property="power">power</span> to be reverently content
@@ -2012,7 +2010,7 @@ arrest Leo of Salamis, and ‘carried his head high in the streets’ (a trait
 in regard to which one might question whether it was true). No, we have to
 consider this: what kind of <span property="psy-body">soul</span> Socrates had, whether he could be content
 with being just in his dealings with <span property ="man">men</span> and righteous in his dealing with
-the <span property="providence"><span property="god">gods</span>, whether he was neither hastily indignant with wickedness nor a
+the <span property="providence"><span property="god">gods</span></span>, whether he was neither hastily indignant with wickedness nor a
 servant to any <span property ="man">man</span>’s <span property="reason">ignorance</span>, whether he neither accepted as unfamiliar
 anything assigned by Universal <span property="nature">Nature</span> or endured it as intolerable, nor
 submitted his <span property="reason">mind</span> to be affected by the affections of the <span property="psy-body">flesh</span>.
@@ -2021,8 +2019,8 @@ permit you to circumscribe yourself and to bring what is its own into
 submission to itself. Always bear this in <span property="reason">mind</span>, and further that to live the
 blessed life rests upon very few conditions; and do not, just because you
 have abandoned hope of being a thinker and a student of science, on this
-account despair of being free, modest, sociable, and obedient to <span property="providence"><span property="god">God</span>; for it
-is possible to become an entirely <span property="providence"><span property="god">god</span>like <span property ="man">man</span> and yet not to be recognized
+account despair of being free, modest, sociable, and obedient to <span property="providence"><span property="god">God</span></span>; for it
+is possible to become an entirely <span property="providence"><span property="god">god</span></span>like <span property ="man">man</span> and yet not to be recognized
 by anyone.
 <br>68. Live out your life without restraint in entire gladness even if all <span property ="man">men</span>
 shout what they please against you, even if wild beasts tear in pieces the
@@ -2033,12 +2031,12 @@ what is submitted to it, so that <span property="reason">judgement</span> says t
 what you are in reality, even if you seem other in appearance’, and use says
 to what is given to it: ‘I was looking for you, for the present is to me always
 material of reasonable and political virtue, that is (generally speaking) of
-the art of <span property ="man">man</span> or <span property="providence"><span property="god">God</span>’; since whatever comes to pass is suited to <span property="providence"><span property="god">God</span> or
+the art of <span property ="man">man</span> or <span property="providence"><span property="god">God</span></span>’; since whatever comes to pass is suited to <span property="providence"><span property="god">God</span></span> or
 <span property ="man">man</span>, and is neither novel nor hard to deal with, but familiar and easy to
 handle.
 <br>69. Perfection of character possesses this: to live each day as if the last, to
 be neither feverish nor apathetic, and not to act a part.
-<br>70. The <span property="providence"><span property="god">gods</span>, who have no part in <span property="death">death</span>, are not grieved because in so long
+<br>70. The <span property="providence"><span property="god">gods</span></span>, who have no part in <span property="death">death</span>, are not grieved because in so long
 an eternity they will be obliged always and entirely to suffer so many and
 such worthless <span property ="man">men</span>; and besides they take care of them in all kinds of
 ways. Yet do you, who are all but at the point of vanishing, give up the
@@ -2083,7 +2081,7 @@ which does not produce effects the opposite of these.
 <br>2. On the occasion of each act, ask yourself: ‘How is this related to me?
 Shall I repent of it? But a little while and I am dead and all things are taken
 away. What more do I require, if my present work is the work of an
-intelligent and social creature, subject to the same <span property="nature">law</span> as <span property="providence"><span property="god">God</span>?’
+intelligent and social creature, subject to the same <span property="nature">law</span> as <span property="providence"><span property="god">God</span></span>?’
 <br>3. Alexander, Julius Caesar, and Pompeius, what are they by comparison
 with Diogenes, Heraclitus, and Socrates? For these <span property ="man">men</span> saw reality and its
 causal and material aspects, and their ruling selves were self-determined;
@@ -2151,7 +2149,7 @@ puts you right is not to be less free. For the change is your own <span property
 proceeding according to your own <span property="psy-body">impulse</span> and decision, and indeed
 according to your <span property="reason">mind</span>.
 <br>17. If it is in your <span property="power">power</span> to decide, why do you do it? But if in another’s,
-whom do you find <span property="justice">fault</span> with? The <span property="providence">atoms</span> or the <span property="providence"><span property="god">gods</span>? Either is madness.
+whom do you find <span property="justice">fault</span> with? The <span property="providence">atoms</span> or the <span property="providence"><span property="god">gods</span></span>? Either is madness.
 You must find <span property="justice">fault</span> with no one. If you are able, put him right; if you can’t
 do this, at least put the thing itself right; but if you can’t even do this, to
 what purpose still does <span property="justice">fault</span>-finding tend? For nothing should be done
@@ -2161,8 +2159,8 @@ changes here, it is also resolved here into the eternal constituents, which are
 elements of the <span property="nature">Universe</span> and of yourself. And the elements themselves
 change and make no grievance of it.
 <br>19. Each has come into being for a purpose—a horse, say, or a vine. Why
-are you surprised? So the Sun <span property="providence"><span property="god">God</span> will say: ‘I came into being for a
-purpose’, and the rest of the <span property="providence"><span property="god">gods</span> too. What then is the purpose of your
+are you surprised? So the Sun <span property="providence"><span property="god">God</span></span> will say: ‘I came into being for a
+purpose’, and the rest of the <span property="providence"><span property="god">gods</span></span> too. What then is the purpose of your
 coming to be? ‘To please yourself?’ See whether the idea allows itself to
 be framed.
 <br>20. <span property="nature">Nature</span> has designed the ending of each thing, no less than its beginning
@@ -2180,7 +2178,7 @@ mere point.
 deserve to suffer this; so you would rather become good tomorrow than be
 good today.
 <br>23. Am I doing something? I relate the act to beneficence to <span property ="man">men</span>. Does an
-accident befall me? I accept it, relating it to the <span property="providence"><span property="god">gods</span> and to the source of all
+accident befall me? I accept it, relating it to the <span property="providence"><span property="god">gods</span></span> and to the source of all
 things, from which all that comes to pass depends by a common thread.
 <br>24. As your bath appears to your senses—soap, sweat, dirt, greasy water,
 all disgusting—so is every piece of life and every object.
@@ -2239,7 +2237,7 @@ some unneighbourly act. You have somehow made yourself an outcast from
 the unity which is according to <span property="nature">Nature</span>; for you came into the world as a
 part and now you have cut yourself off. Yet here there is this admirable
 provision that it is in your <span property="power">power</span> to make yourself once more part of the
-unity—<span property="providence"><span property="god">God</span> has permitted this to no other part, to come together again,
+unity—<span property="providence"><span property="god">God</span></span> has permitted this to no other part, to come together again,
 once it has been severed and cut off. But consider the kindness with which
 he has honoured <span property ="man">man</span>. He has put it in his <span property="power">power</span>, to begin with, not to be
 broken off from the <span property="nature">Whole</span>, and then, if he has been broken off, to come
@@ -2383,7 +2381,7 @@ delivered from it as soon as ever he himself determines.
 his <span property="psy-body">flesh</span>. For even though we were brought into the world more than
 anything else for the sake of one another, still each of our governing selves
 has its own sovereign right; for otherwise the evil of my neighbour would
-surely be evil of mine, and that was not <span property="providence"><span property="god">God</span>’s good pleasure, in order that
+surely be evil of mine, and that was not <span property="providence"><span property="god">God</span></span>’s good pleasure, in order that
 my unhappiness might not depend on someone other than myself
 <br>57. The sun appears to be poured down and indeed is poured in every
 direction but not poured out. For this pouring is extension, and so its beams
@@ -2417,7 +2415,7 @@ to enter into your own.</p>
 		<p><br>1. Whosoever does in<span property="justice">justice</span> commits sin; for Universal <span property="nature">Nature</span> having
 made reasonable creatures for the sake of one another, to benefit each other
 according to desert but in no wise to do injury, manifestly he who
-transgresses her will sins against the most venerable of the <span property="providence"><span property="god">gods</span>, because
+transgresses her will sins against the most venerable of the <span property="providence"><span property="god">gods</span></span>, because
 Universal <span property="nature">Nature</span> is a <span property="nature">nature</span> of what is, and what is is related to all that
 exists.
 And further, he who lies sins in regard to the same divine being, and she is
@@ -2513,12 +2511,12 @@ concurrence. Yet even so, they are overtaken in their flight, for <span property
 strong for them. Watch and you will observe what I mean; certainly one
 would more quickly discover something earthy not attaching itself to the
 earthy than <span property ="man">man</span> entirely cut off from <span property ="man">man</span>.
-<br>10. <span property ="man">man</span>, <span property="providence"><span property="god">God</span>, and the <span property="nature">Universe</span> alike bear fruit, each in the appropriate
+<br>10. <span property ="man">man</span>, <span property="providence"><span property="god">God</span></span>, and the <span property="nature">Universe</span> alike bear fruit, each in the appropriate
 season, but if custom has come to apply the word strictly of the vine and
 similar fruits, no <span property="nature">matter</span>. <span property="reason">Reason</span>, too, has its fruit, for the <span property="nature">Whole</span> and for
 itself, and from <span property="reason">reason</span> other results similar to itself come to pass.
 <br>11. If you can, change him by teaching, but if you cannot, remember that
-kindness was given you for this. The <span property="providence"><span property="god">gods</span>, too, are kind
+kindness was given you for this. The <span property="providence"><span property="god">gods</span></span>, too, are kind
 to such <span property ="man">men</span> and
 even co-operate with them to some objects, to health, to wealth, to
 reputation, so good are they to <span property ="man">men</span>; and you may be so too; or say, who is
@@ -2574,7 +2572,7 @@ can by its <span property="nature">nature</span> subsist.
 to their inward selves, pass in and see what kind of <span property ="man">men</span> they are. You will
 see that you ought not to torment yourself in order that they may hold some
 opinion about you. You must, however, be well disposed to them; for in the
-natural order they are friends, and moreover the <span property="providence"><span property="god">gods</span> help them in a variety
+natural order they are friends, and moreover the <span property="providence"><span property="god">gods</span></span> help them in a variety
 of ways, by dreams, by prophecy; to get, however, the objects about
 which they are concerned.
 <br>28. The rotations of the <span property="nature">Universe</span> are the same, up and down, from age to
@@ -2582,7 +2580,7 @@ age.
 Now either the <span property="reason">mind</span> of the <span property="nature">Whole</span> has an <span property="psy-body">impulse</span> to each individual; and if
 that is so, welcome what it initiates; or else it had an <span property="psy-body">impulse</span> once for all
 and what follows is consequential upon that; and why are you anxious? And
-whether the <span property="nature">Whole</span> be <span property="providence"><span property="god">God</span>, all is well—or whether it be Chance, somehow
+whether the <span property="nature">Whole</span> be <span property="providence"><span property="god">God</span></span>, all is well—or whether it be Chance, somehow
 molecules or <span property="providence">atoms</span>, be not yourself then ruled by Chance.
 <br>29. In a moment earth will cover us all, then earth, too, will change and
 what ensues will change to eternity and that again to eternity. A <span property ="man">man</span> who
@@ -2633,7 +2631,7 @@ their praise profits, how great their vanity.
 her all things come to pass well. From eternity they came to pass in like
 fashion and will be to everlasting in other similar shapes. Why then do you
 say ‘all things ever came to pass badly and that all will ever be bad’? So no
-<span property="power">power</span> it seems was ever found in so many <span property="providence"><span property="god">gods</span> to remedy this, but the
+<span property="power">power</span> it seems was ever found in so many <span property="providence"><span property="god">gods</span></span> to remedy this, but the
 world is condemned to be straitened in uninterrupted evils?
 <br>36. The rottenness of the <span property="nature">matter</span> which underlies everything. Water, dust,
 bones, stench. Again: marble, an incrustation of earth; gold and silver,
@@ -2644,7 +2642,7 @@ this to that.
 are you troubled, what novelty is there in this, what takes you out of
 yourself? The formal side of things? Look it in the face. The material side
 then? Face that. Besides these there is nothing, except even now at this late
-hour to become simpler and better in your relation to the <span property="providence"><span property="god">gods</span>. To acquaint
+hour to become simpler and better in your relation to the <span property="providence"><span property="god">gods</span></span>. To acquaint
 yourself with these things for a hundred years or for three is the same.
 <br>38. If he did wrong, the harm is with him; but perhaps he did not.
 <br>39. Either all comes to pass from one fountain of <span property="reason">mind</span>, as in a single
@@ -2653,15 +2651,15 @@ the whole; or else there are <span property="providence">atoms</span>, nothing b
 dispersal. Why then be troubled? Say to your <span property="power">governing self</span>: ‘are you dead,
 gone to corruption, turned into a beast, are you acting a part, running with
 the herd, feeding with it?’
-<br>40. The <span property="providence"><span property="god">gods</span> are either powerless or powerful. If then they are powerless,
+<br>40. The <span property="providence"><span property="god">gods</span></span> are either powerless or powerful. If then they are powerless,
 why do you pray? But if they are powerful, why not rather pray them for
 the gift to fear none of these things, to desire none of them, to sorrow for
 none of them, rather than that any one of them should be present or absent?
 For surely if they can co-operate with <span property ="man">man</span>, they can co-operate to these
-ends. But perhaps you will say: ‘The <span property="providence"><span property="god">gods</span> put these things in my <span property="power">power</span>.’
+ends. But perhaps you will say: ‘The <span property="providence"><span property="god">gods</span></span> put these things in my <span property="power">power</span>.’
 Were it not better then to use what is in your <span property="power">power</span> with a free spirit rather
 than to be concerned for what is not in your <span property="power">power</span> with a servile and abject
-spirit? Besides, who told you that the <span property="providence"><span property="god">gods</span> do not co-operate even in respect
+spirit? Besides, who told you that the <span property="providence"><span property="god">gods</span></span> do not co-operate even in respect
 to what is in our <span property="power">power</span>? Begin at least to pray about these things and you
 will see. That <span property ="man">man</span> prays: ‘How may I know that woman’; do you pray:
 ‘How may I not desire to know her.’ Another prays: ‘How may I get rid of
@@ -2720,19 +2718,19 @@ and gets what is his own.  </p>
 
 <div id="content10">
 <p>
-<br>1. <br>1. Wilt thou one day, my <span property="psy-body">soul</span>, be good, simple, single, naked, plainer to see
+ <br>1. Wilt thou one day, my <span property="psy-body">soul</span>, be good, simple, single, naked, plainer to see
 than the <span property="psy-body">body</span> surrounding thee? Wilt thou one day taste a loving and
 devoted disposition? Wilt thou one day be filled and without want, craving
 nothing and desiring nothing, animate or inanimate, for indulgence in
 pleasures; not time wherein longer to indulge thyself, nor happy situation of
 place or room or breezes nor harmony of <span property ="man">men</span>? Wilt thou rather be satisfied
 with present circumstance and pleased with all the present, and convince
-thyself that all is present for thee from the <span property="providence"><span property="god">gods</span> and all is well for thee and
+thyself that all is present for thee from the <span property="providence"><span property="god">gods</span></span> and all is well for thee and
 will be well whatsoever is dear to them to give and whatsoever they
 purpose to bestow for the sustenance of the perfect living creature, the good
 and just and beautiful, which begets, sustains, includes, and embraces all
 things that are being resolved into the generation of others like themselves?
-Wilt thou one day be such as to dwell in the society of <span property="providence"><span property="god">gods</span> and <span property ="man">men</span> so as
+Wilt thou one day be such as to dwell in the society of <span property="providence"><span property="god">gods</span></span> and <span property ="man">men</span> so as
 neither to find <span property="justice">fault</span> at all with them nor to be condemned by them?
 <br>2. Observe what your <span property="nature">nature</span> requires in so far as you are governed by mere
 physical <span property="nature">nature</span>; then do that and accept that, if only your <span property="nature">nature</span> as part of
@@ -2819,7 +2817,7 @@ some corner, there to recover control, or even depart altogether from life,
 not angrily, but simply and freely and with self-respect, having done at
 least this one thing in life, to have made your exit thus.
 To remember the titles, however, it will be a great help to you to remember
-the <span property="providence"><span property="god">gods</span>, and that they at least do not wish to be the objects of servility, but
+the <span property="providence"><span property="god">gods</span></span>, and that they at least do not wish to be the objects of servility, but
 for all <span property="reason">rational</span> beings to be made into their likeness, and that the fig-tree
 should be what does the work of a fig-tree, the dog of a dog, the bee of a
 bee, and <span property ="man">man</span> the work of a <span property ="man">man</span>.
@@ -2849,7 +2847,7 @@ with these two things, if he is himself acting justly in what is done in the
 present, and if he embraces what is assigned to him in the present; and he
 has put away every preoccupation and enthusiasm, and has no other will
 than to pursue a straight path according to the <span property="nature">law</span> and, pursuing it, to
-follow in <span property="providence"><span property="god">God</span>’s train.
+follow in <span property="providence"><span property="god">God</span></span>’s train.
 <br>12. What need have you of a hint or suggestion, when it is possible to see
 what ought to be done and, if you are conscious of that, kindly to proceed
 on this path without turning back; but if you are not conscious of it, to
@@ -3087,7 +3085,7 @@ world’s greater stage. For you see that those events are bound to have that
 ending and that even those endure them who have cried aloud: ‘Alas! Alas!
 Cithaeron’. There are also valuable sayings in the dramatists; an especially
 famous one, for instance:
-Were the <span property="providence"><span property="god">gods</span> careless of my sons and me.
+Were the <span property="providence"><span property="god">gods</span></span> careless of my sons and me.
 Yet there is <span property="reason">reason</span> here,
 and again:
 <span property ="man">man</span> must not vent his passion on mere things,
@@ -3152,7 +3150,7 @@ Will he hate me? Let him see to it. But I will be kind and well-disposed to
 every <span property ="man">man</span> and ready to show him what is overlooked, not reproachfully nor
 as though I were displaying forbearance, but genuinely and generously like
 the famous Phocion, if he was not in fact pretending. For the inward parts
-ought to be like that, and a <span property ="man">man</span> ought to be seen by the <span property="providence"><span property="god">gods</span> to be neither
+ought to be like that, and a <span property ="man">man</span> ought to be seen by the <span property="providence"><span property="god">gods</span></span> to be neither
 disposed to indignation nor complaining. For what harm is there to you if
 you are yourself at the moment doing the thing which is appropriate to your
 <span property="nature">nature</span> and accepting what is at this moment in season for Universal <span property="nature">Nature</span>,
@@ -3272,7 +3270,7 @@ not tolerate this, but is carried in a reverse direction. For movement towards
 acts of in<span property="justice">justice</span> and habitual vice, towards wrath and sorrow and fear, is
 nothing else but a movement of severance from <span property="nature">Nature</span>. Moreover, when the
 <span property="power">governing self</span> is discontented with any circumstance, then, too, it deserts its
-proper station, for it is constituted for holiness and the service of <span property="providence"><span property="god">God</span> no
+proper station, for it is constituted for holiness and the service of <span property="providence"><span property="god">God</span></span> no
 less than for just dealing with <span property ="man">man</span>. For these relations belong in kind to
 good fellowship, or rather are even more to be reverenced than just
 dealings.
@@ -3351,7 +3349,7 @@ live with <span property="nature">Nature</span>, you will be a <span property ="
 birth, and will cease to be a stranger in your own country, surprised by what
 is coming to pass every day, as at something you did not look to see, and
 absorbed in this thing or in that.
-<br>2. <span property="providence"><span property="god">God</span> beholds the governing selves of all <span property ="man">men</span> stripped of their material
+<br>2. <span property="providence"><span property="god">God</span></span> beholds the governing selves of all <span property ="man">men</span> stripped of their material
 vessels and coverings and dross; for with His own <span property="reason">mind</span> alone He touches
 only what has flowed and been drawn from Himself into these selves. You,
 too, if you make it your habit to do this, will rid yourself of your exceeding
@@ -3377,24 +3375,24 @@ until you die, untroubled and with kindness and reconciled with your own
 good Spirit.
 <br>4. I often wonder how it is that everyone loves himself more than all the
 world and yet takes less account of his own <span property="reason">judgement</span> of himself than of
-the <span property="reason">judgement</span> of the world. At all events, if a <span property="providence"><span property="god">god</span> appeared to him or some
+the <span property="reason">judgement</span> of the world. At all events, if a <span property="providence"><span property="god">god</span></span> appeared to him or some
 wise master and bade him think and contemplate nothing within himself
 without at the same time speaking it out loud, he would not tolerate it even
 for a single day. Thus we respect whatever our neighbours will think about
 us more highly than we respect ourselves.
-<br>5. How was it that the <span property="providence"><span property="god">gods</span>, who ordered all things aright and with love to
+<br>5. How was it that the <span property="providence"><span property="god">gods</span></span>, who ordered all things aright and with love to
 <span property ="man">man</span>, overlooked this one thing only, that among mortal <span property ="man">men</span> some
-altogether good, who had, so to speak, most commerce with the <span property="providence"><span property="god">God</span>head,
+altogether good, who had, so to speak, most commerce with the <span property="providence"><span property="god">God</span></span>head,
 and by holy acts and solemn rites had grown in the highest degree familiar
 with Him, should, once dead, never come into being again but be entirely
 extinguished?
 Now, if indeed it is so, be certain of this that, if it ought to have been
-otherwise, the <span property="providence"><span property="god">gods</span> would have made it so; for were it just, it would also be
+otherwise, the <span property="providence"><span property="god">gods</span></span> would have made it so; for were it just, it would also be
 possible, and were it accordant with <span property="nature">Nature</span>, <span property="nature">Nature</span> would have brought it
 about. Therefore from its not being so, if indeed it is not so, you should
 believe that it ought not to come to pass. For you yourself see that, by
-questioning thus, you are arguing a point of <span property="justice">justice</span> with <span property="providence"><span property="god">God</span>. Now we
-should not be debating thus with the <span property="providence"><span property="god">gods</span> unless they were most good and
+questioning thus, you are arguing a point of <span property="justice">justice</span> with <span property="providence"><span property="god">God</span></span>. Now we
+should not be debating thus with the <span property="providence"><span property="god">gods</span></span> unless they were most good and
 most just; and if this is true, they would not have permitted any part of the
 ordered world they govern to be unjustly and unreasonably neglected.
 <br>6. Practise even the things which you despair of achieving. For even the left
@@ -3411,10 +3409,10 @@ what we judge them to be.
 The one puts away the sword he uses and takes it up again; the other has his
 hand always, and need but clench it.
 <br>10. See facts as they really are, distinguishing their <span property="nature">matter</span>, cause, relation.
-<br>11. How large a liberty <span property ="man">man</span> has to do nothing other than what <span property="providence"><span property="god">God</span> will
-commend, and to welcome all that <span property="providence"><span property="god">God</span> assigns to him as a consequence of
+<br>11. How large a liberty <span property ="man">man</span> has to do nothing other than what <span property="providence"><span property="god">God</span></span> will
+commend, and to welcome all that <span property="providence"><span property="god">God</span></span> assigns to him as a consequence of
 <span property="nature">Nature</span>.
-<br>12. The <span property="providence"><span property="god">gods</span> must not be blamed; for they do no wrong, willingly or
+<br>12. The <span property="providence"><span property="god">gods</span></span> must not be blamed; for they do no wrong, willingly or
 unwillingly; nor human beings; for they do no wrong except unwillingly.
 Therefore no one is to be blamed.
 <br>13. How ridiculous and like a stranger to the world is he who is surprised at
@@ -3424,7 +3422,7 @@ any one of the events of life.
 purpose.
 If then a <span property="nature">Necessity</span> which none may transgress, why do you
 resist? If a <span property="providence">Providence</span> admitting intercession, make yourself worthy of
-assistance from the <span property="providence"><span property="god">God</span>head. If an undirected welter, be glad that in so
+assistance from the <span property="providence"><span property="god">God</span></span>head. If an undirected welter, be glad that in so
 great a flood of waves you have yourself within you a directing <span property="reason">mind</span>; and,
 if the flood carry you away, let it carry away <span property="psy-body">flesh</span>, vital-spirit, the rest of
 you, for your <span property="reason">mind</span> it shall not carry away. Does the light of the lamp shine
@@ -3470,9 +3468,9 @@ advantage of the <span property="nature">Whole</span> is ever altogether lovely 
 for each individual the cessation of his life is no evil, for it is no dishonour
 to him, being neither of his choosing nor without relation to the common
 good: rather is it good, because it is in due season for the <span property="nature">Whole</span>, benefiting
-it and itself benefited by it. For thus is he both carried by <span property="providence"><span property="god">God</span>, who is borne
-along the same course with <span property="providence"><span property="god">God</span>, and of purpose borne to the same ends as
-<span property="providence"><span property="god">God</span>.
+it and itself benefited by it. For thus is he both carried by <span property="providence"><span property="god">God</span></span>, who is borne
+along the same course with <span property="providence"><span property="god">God</span></span>, and of purpose borne to the same ends as
+<span property="providence"><span property="god">God</span></span>.
 <br>24. These three thoughts keep always ready for use: First, in what you do
 that your act be not without purpose and not otherwise than Right itself
 would have done, and that outward circumstances depend either on chance
@@ -3495,7 +3493,7 @@ is not your own but another’s, further (c) that all that is coming to pass
 always did, always will, and does now everywhere thus come to pass, (d)
 the great kinship of <span property ="man">man</span> with all mankind, for the bond of kind is not blood
 nor the seed of life, but <span property="reason">mind</span>. You have forgotten, moreover (e), that every
-individual’s <span property="reason">mind</span> is of <span property="providence"><span property="god">God</span> and has flowed from that other world, (f) that
+individual’s <span property="reason">mind</span> is of <span property="providence"><span property="god">God</span></span> and has flowed from that other world, (f) that
 nothing is a <span property ="man">man</span>’s own, but even his child, his <span property="psy-body">body</span>, and his <span property="psy-body">vital spirit</span>
 itself have come from that other world, (g) that all is <span property="reason">judgement</span>, (h) that
 every <span property ="man">man</span> lives only the present life and this is what he is losing.
@@ -3508,13 +3506,13 @@ instance, in his country retreat, Lusius Lupus in his gardens, Stertinius at
 Baiae, Tiberius in Capri, and Velius Rufus—and generally some
 idiosyncrasy coupled with vanity; and how cheap is all that <span property ="man">man</span> strains to
 get, and how much wiser it were, with the material granted to you, to
-present yourself just, temperate, obedient to the <span property="providence"><span property="god">gods</span> in all simplicity; for
+present yourself just, temperate, obedient to the <span property="providence"><span property="god">gods</span></span> in all simplicity; for
 pride smouldering under a cover of humility is the most grievous pride of
 all.
-<br>28. To those who ask the question: ‘Where have you seen the <span property="providence"><span property="god">gods</span>, or
+<br>28. To those who ask the question: ‘Where have you seen the <span property="providence"><span property="god">gods</span></span>, or
 whence have you apprehended that they exist, that you thus worship them?’
 First, they are visible even to the eyes; secondly, I have not seen my own
-<span property="psy-body">soul</span> and yet I <span property="justice">honour</span> it; and so, too, with the <span property="providence"><span property="god">gods</span>, from my experiences
+<span property="psy-body">soul</span> and yet I <span property="justice">honour</span> it; and so, too, with the <span property="providence"><span property="god">gods</span></span>, from my experiences
 every instant of their <span property="power">power</span>, from these I apprehend that they exist and I do
 them reverence.
 <br>29. The security of life is to see each object in itself, in its entirety, its
@@ -3535,7 +3533,7 @@ therewith, and the feeling of fellowship is not sundered.
 enjoy your senses, your <span property="psy-body">impulses</span>? To wax and then to wane? To employ
 your tongue, your intelligence? Which of these do you suppose is worth
 your longing? But if each and all are to be despised, go forward to the final
-act, to follow <span property="reason">Reason</span>, that is <span property="providence"><span property="god">God</span>. But to <span property="justice">honour</span> those other ends, to be
+act, to follow <span property="reason">Reason</span>, that is <span property="providence"><span property="god">God</span></span>. But to <span property="justice">honour</span> those other ends, to be
 distressed because <span property="death">death</span> will rob one of them, conflicts with this end.
 <br>32. What a fraction of infinite and gaping time has been assigned to every
 <span property ="man">man</span>; for very swiftly it vanishes in the eternal; and what a fraction of the

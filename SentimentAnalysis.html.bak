@@ -67,8 +67,8 @@
 
               </ul>
             </li>
-            <li><a href="index.html #faq">Queries</a></li>
-            <li><a href="index.html #team">Team</a></li>
+            <li><a class="nav-link scrollto" href="index.html#faq">Queries</a></li>  
+            <li><a class="nav-link scrollto" href="index.html">Team</a></li>
 
 
           </ul>
@@ -100,9 +100,9 @@
           <p>
             For our sentiment analysis, we automatically processed each and every paragraph, or “entry”, of Marcus Aurelius’ diary, annotating it with the degree to which it is positive, negative or neutral. This gives us a percentage estimation in this sentimental continuum of Marcus Aurelius, for each fragment.</p>
             
-            First, we use Python to extract data regarding the sentiments of each diary entry. Then, we add this data to each diary entry on our knowledge graph, to give to the user the possibility to see, understand and query which sentiment is dominant in which diary entry. 
+            <p>First, we use the latest <a href="https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment">XLM-roBERTa</a> model to extract data regarding the sentiments of each diary entry. Then, we add this data to each diary entry on our knowledge graph, to give to the user the possibility to see, understand and query which sentiment is dominant in each diary entry. </p>
 
-            Feel free to hack our code and our choice of data model to better fulfill your own sentiment analysis and computationally-aided annotation needs.
+            <p>Feel free to hack our code and our choice of data model to better fulfill your own sentiment analysis and computationally-aided annotation needs.
 
           </p>
         </div>

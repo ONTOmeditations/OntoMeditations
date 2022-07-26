@@ -12,12 +12,14 @@
   <!-- Favicons -->
   <link href="assets/img/icons8-greek-pillar-base-48.png" rel="icon">
   <link href="assets/img/icons8-greek-pillar-base-48.png" rel="apple-touch-icon">
-
+	
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=EB+Garamond&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -58,16 +60,19 @@
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
-
+	      
+<!-- .navbar -->
+        
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-             <li class="dropdown"><a class="nav-link scrollto active" href="#about"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
+            <li><a  href="index.html">Home</a></li>
+             <li class="dropdown"><a href="index.html #about"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 
 				<li class="dropdown"><a href="index-en.html"><span>The Ontology</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
                     <li><a href="DocumentationPage.html">Documentation</a></li>
+					<li><a href="DomainPage.html">The Doamain</a></li>
 					</ul>
                  </li>
                 </li>
@@ -76,9 +81,8 @@
 
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="#faq">Queries</a></li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li>
-
+             <li><a class="nav-link scrollto" href="index.html#faq">Queries</a></li> 
+	     <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>  
 
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
@@ -101,7 +105,7 @@
                 <p>
                   OntoMeditations is a Knowledge Representation and Knowledge Extraction (KRKE) course project, made as part of the Digital Humanities and Digital Knowledge (DHDK) program of the Università di Bologna.   </p>
                    <br>
-                  <p>Engaged with Marcus Aurelius’ Meditations, a major work of Stoïcist philosophy, our project uses linguistic and sentiment analysis digital techniques applied to a dedicated ontology. The aim is to read and understand this rich philosophical work, as well as its iconic author-emperor-thinker-feeler, in novel ways, through digital lights.</p>
+                  <p>Engaged with Marcus Aurelius’ Meditations, a major work of Stoic philosophy, our project uses linguistic and sentiment analysis digital techniques applied to a dedicated ontology. The aim is to read and understand this rich philosophical work, as well as its iconic author-emperor-thinker-feeler, in novel ways, through digital lights.</p>
                     <br>
                   
                 <div class="row">
@@ -148,7 +152,6 @@
                 <div class="card-body">
                   <i class="bx bx-tachometer"></i>
                   <h5 class="card-title"><a href="OntologyPage.html">The Ontology</a></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
               </div>
             </div>
@@ -158,7 +161,6 @@
                 <div class="card-body">
                   <i class="bx bx-file"></i>
                   <h5 class="card-title"><a href="LinguisticAnalysis.html">Linguistic Analysis</a></h5>
-                  <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
                 </div>
               </div>
             </div>
@@ -168,7 +170,6 @@
                 <div class="card-body">
                   <i class="bx bx-show"></i>
                   <h5 class="card-title"><a href="SentimentAnalysis.html">Sentiment Analysis</a></h5>
-                  <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. </p>
                 </div>
               </div>
             </div>
@@ -194,63 +195,7 @@
         </div>
       </section><!-- End Cta Section -->
 
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
-        <div class="container">
-
-          <div class="section-title" data-aos="fade-down">
-            <span>Services</span>
-            <h2>Services</h2>
-            <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                <i class="bi bi-briefcase" style="color: #0ea5e0;"></i>
-                <h4><a href="#">Lorem Ipsum</a></h4>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-card-checklist" style="color: #07cc70;"></i>
-                <h4><a href="#">Dolor Sitema</a></h4>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-bar-chart" style="color: #e40373;"></i>
-                <h4><a href="#">Sed ut perspiciatis</a></h4>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-binoculars" style="color: #f0b103;"></i>
-                <h4><a href="#">Nemo Enim</a></h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
-                <i class="bi bi-brightness-high" style="color: #3145fa;"></i>
-                <h4><a href="#">Magni Dolore</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
-                <i class="bi bi-calendar4-week" style="color: #a00098;"></i>
-                <h4><a href="#">Eiusmod Tempor</a></h4>
-                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section><!-- End Services Section -->
+      
 
 
 
