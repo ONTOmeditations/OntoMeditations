@@ -1,4 +1,5 @@
 from ast import keyword
+from distutils.command.upload import upload
 from operator import contains
 from platform import node
 import re
@@ -22,8 +23,8 @@ chaptersIRI=URIRef("https://w3id.org/arco/ontology/core/chapters")
 conceptIRI=URIRef("https://w3id.org/arco/ontology/core/Concept")
 sentimentIRI=URIRef("https://w3id.org/arco/ontology/core/Sentiment")
 #sub sub class of abstractfigure
-menIRI=URIRef("https://w3id.org/arco/ontology/core/AbstractFigure/men")
-godIRI=""
+menIRI=URIRef("https://w3id.org/arco/ontology/core/AbstractFigure/man")
+godIRI=URIRef("https://w3id.org/arco/ontology/core/AbstractFigure/God")
 #sub sub class of chapters
 fragmentIRI=URIRef("https://w3id.org/arco/ontology/core/fragments")
 #sub sub class of sentiments
@@ -79,6 +80,7 @@ txtnumber = 0         #<-- STORES ALL THE TEXTS
 fragmentlist = []   #<-- STORES ALL THE FRAGMENTS, MAYBE DICT IS MORE SUITABLE?
 allFragments = {}
 FragmentsIRIdata = {}
+allAbstractFiguresDict = {}
 '''
 Reading text methods
 
@@ -98,6 +100,60 @@ def uploadtxt(filepath):
         allTxt.append(chapter)
         f.close
     return
+def uploadextractedAbstractFigures():
+    book1GodDF = pd.read_csv("extractedSentiments/book1_occ/abstr_occ0.csv")
+    book1manDF = pd.read_csv("extractedSentiments/book1_occ/abstr_occ1.csv")  
+    book1dict = {"God":book1GodDF,"man":book1manDF}
+
+    book2GodDF = pd.read_csv("extractedSentiments/book2_occ/abstr_occ0.csv")
+    book2manDF = pd.read_csv("extractedSentiments/book2_occ/abstr_occ1.csv") 
+    book2dict = {"God":book2GodDF,"man":book2manDF}
+
+    book3GodDF = pd.read_csv("extractedSentiments/book3_occ/abstr_occ0.csv")
+    book3manDF = pd.read_csv("extractedSentiments/book3_occ/abstr_occ1.csv") 
+    book3dict = {"God":book3GodDF,"man":book3manDF}
+
+    book4GodDF = pd.read_csv("extractedSentiments/book4_occ/abstr_occ0.csv")
+    book4manDF = pd.read_csv("extractedSentiments/book4_occ/abstr_occ1.csv") 
+    book4dict = {"God":book4GodDF,"man":book4manDF}
+
+    book5GodDF = pd.read_csv("extractedSentiments/book5_occ/abstr_occ0.csv")
+    book5manDF = pd.read_csv("extractedSentiments/book5_occ/abstr_occ1.csv")
+    book5dict = {"God":book5GodDF,"man":book5manDF} 
+
+    book6GodDF = pd.read_csv("extractedSentiments/book6_occ/abstr_occ0.csv")
+    book6manDF = pd.read_csv("extractedSentiments/book6_occ/abstr_occ1.csv") 
+    book6dict = {"God":book6GodDF,"man":book6manDF}
+
+    book7GodDF = pd.read_csv("extractedSentiments/book7_occ/abstr_occ0.csv")
+    book7manDF = pd.read_csv("extractedSentiments/book7_occ/abstr_occ1.csv") 
+    book7dict = {"God":book7GodDF,"man":book7manDF}
+    
+    book8GodDF = pd.read_csv("extractedSentiments/book8_occ/abstr_occ0.csv")
+    book8manDF = pd.read_csv("extractedSentiments/book8_occ/abstr_occ1.csv") 
+    book8dict = {"God":book8GodDF,"man":book8manDF}
+
+    book9GodDF = pd.read_csv("extractedSentiments/book9_occ/abstr_occ0.csv")
+    book9manDF = pd.read_csv("extractedSentiments/book9_occ/abstr_occ1.csv")
+    book9dict = {"God":book9GodDF,"man":book9manDF} 
+
+    book10GodDF = pd.read_csv("extractedSentiments/book10_occ/abstr_occ0.csv")
+    book10manDF = pd.read_csv("extractedSentiments/book10_occ/abstr_occ1.csv") 
+    book10dict = {"God":book10GodDF,"man":book10manDF}
+
+    book11GodDF = pd.read_csv("extractedSentiments/book11_occ/abstr_occ0.csv")
+    book11manDF = pd.read_csv("extractedSentiments/book11_occ/abstr_occ1.csv") 
+    book11dict = {"God":book11GodDF,"man":book11manDF}
+
+    book12GodDF = pd.read_csv("extractedSentiments/book12_occ/abstr_occ0.csv")
+    book12manDF = pd.read_csv("extractedSentiments/book12_occ/abstr_occ1.csv") 
+    book12dict = {"God":book12GodDF,"man":book12manDF}
+
+    
+    globals()['allAbstractFiguresDict'] = {"1":book1dict,"2":book2dict,"3":book3dict,"4":book4dict,"5":book5dict,"6":book6dict,"7":book7dict,"8":book8dict,"9":book9dict,"10":book10dict,"11":book11dict,"12":book12dict} 
+
+uploadextractedAbstractFigures()
+print(allAbstractFiguresDict)
 
 #THIS FUNCTION ACCEPTS THE EXTRACTED SENTIMENTS FOR EACH FRAGMENT
 def uploadextractedSentiments(filepath):
@@ -321,15 +377,21 @@ def addsentimentstriples(fragIRI,booknum,position):
     #create the triples for the instance if required
     
     return triples
-# da fare >>  pin point the position before making triples!
+
 def addAgentsTriples(fragIRI,booknum,position):
+    triples = Graph()
     #other agent roles IRIs
     DemocritusIRI = URIRef("https://w3id.org/arco/ontology/core/Democritus")
+    triples.add((DemocritusIRI,RDF.type,agentRoleIRI))
     EpictetusIRI = URIRef("https://w3id.org/arco/ontology/core/Epictetus")
+    triples.add((EpictetusIRI,RDF.type,agentRoleIRI))
     EuripidesIRI = URIRef("https://w3id.org/arco/ontology/core/Euripides")
+    triples.add((EuripidesIRI,RDF.type,agentRoleIRI))
     HeraclitusIRI = URIRef("https://w3id.org/arco/ontology/core/Heraclitus")
+    triples.add((HeraclitusIRI,RDF.type,agentRoleIRI))
     HomerIRI = URIRef("https://w3id.org/arco/ontology/core/Homer")
-    triples = Graph()
+    triples.add((HomerIRI,RDF.type,agentRoleIRI))
+    
     for key in allFragments:
             if key == booknum:
                 for key2 in allFragments[key]:
@@ -363,10 +425,37 @@ def addAgentsTriples(fragIRI,booknum,position):
                                     triples.add((fragIRI,hasAssociatedAgent,HomerIRI))
                             location += 1
     return triples
-
+    
 # da fare >>
 def addAbstractFigure(fragIRI,booknum,position):
-    pass
+    triples = Graph()
+    for key in allAbstractFiguresDict:
+        if key == str(booknum):
+            datadict = allAbstractFiguresDict[key]
+            for key2 in datadict:
+                if key2 == "God":
+                    df = pd.DataFrame
+                    df = datadict[key2]
+                    #print(df)
+                    for index, row in df.iterrows():
+                        if row['Chapter'] == position:
+                                triples.add((fragIRI,hasAssociatedFigure,godIRI))
+                                print("adding god triples!!")
+                                triples.add((godIRI,RDF.type,abstractFigureIRI))
+                        #creat and add God triples
+
+                elif key2 == "man":
+                    df = pd.DataFrame
+                    df = datadict[key2]
+                    #print(df)
+                    for index, row in df.iterrows():
+                        if row['Chapter'] == position:
+                                triples.add((fragIRI,hasAssociatedFigure,menIRI))
+                                print("adding man triples!!")
+                                triples.add((menIRI,RDF.type,abstractFigureIRI))
+                        #creat and add God triples
+                    
+    return triples
 
 # itterate over the list of fragments in books and create a URI for all
 def KGraphcreator():
@@ -377,6 +466,13 @@ def KGraphcreator():
     #create triples for your author here
     authorIRI = URIRef("https://w3id.org/arco/ontology/core/MarcusAurelius")
     
+    myGraph.add((justiceIRI,RDF.type,conceptIRI))
+    myGraph.add((powerIRI,RDF.type,conceptIRI))
+    myGraph.add((providenceIRI,RDF.type,conceptIRI))
+    myGraph.add((reasonIRI,RDF.type,conceptIRI))
+    myGraph.add((deathIRI,RDF.type,conceptIRI))
+    myGraph.add((natureIRI,RDF.type,conceptIRI))
+    myGraph.add((psychebodyIRI,RDF.type,conceptIRI))
 
     #create your triples for literary diary here
     subj = URIRef(baseIRI + literaryDiaryname)
@@ -388,6 +484,7 @@ def KGraphcreator():
     for items in allTxt:
         chaptersubj = URIRef(baseIRI + "Book" + str(bookId))
         #create your triples for book class instance here
+        myGraph.add((chaptersubj,RDF.type,chaptersIRI))
         #create triples for each fragment of individual chapter
         for key in allFragments:
             if key == bookId:
@@ -404,7 +501,7 @@ def KGraphcreator():
                             #connect the frag to the chapter
                             myGraph.add((chaptersubj,hasPartIRI,fragIRI))
                             myGraph.add((fragIRI,containsTextIRI,Literal(item))) #adds the text to the fragment 
-
+                            myGraph.add((fragIRI,RDF.type,fragmentIRI))
                             #add concepts to this fragment
                             C_triples = addconceptstriples(fragIRI,bookId,fragLocalID)
                             myGraph = myGraph + C_triples
@@ -419,8 +516,8 @@ def KGraphcreator():
                             myGraph = myGraph + A_triples
                             
                             #add abstract figures to this fragment
-                            #abst_triples = Graph(addAbstractFigure(fragIRI,bookId,fragLocalID))
-                            #myGraph = myGraph + abst_triples
+                            abst_triples = addAbstractFigure(fragIRI,bookId,fragLocalID)
+                            myGraph = myGraph + abst_triples
                             
                             #now change the id for the next fragment
                             fragLocalID += 1
