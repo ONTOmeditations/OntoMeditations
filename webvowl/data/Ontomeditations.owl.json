@@ -1,0 +1,2319 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "baseIris": [
+      "https://w3id.org/arco/ontology/core/Category",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5",
+      "https://w3id.org/arco/ontology/core",
+      "https://w3id.org/arco/ontology/core/Category/Category",
+      "https://w3id.org/arco/ontology/core/AbstractFigure"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri": "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5",
+    "title": "OntoMeditations",
+    "version": "1.0",
+    "author": "Victor Chaix, Chloe Papadopoulou, Eleonora Pasquale, Manu Srivastava"
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.29",
+      "translation": [
+        577.91,
+        153.76
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "13",
+      "type": "owl:Class"
+    },
+    {
+      "id": "31",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "21",
+      "type": "owl:Class"
+    },
+    {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "39",
+      "type": "owl:Class"
+    },
+    {
+      "id": "10",
+      "type": "owl:Class"
+    },
+    {
+      "id": "18",
+      "type": "owl:Class"
+    },
+    {
+      "id": "23",
+      "type": "owl:Class"
+    },
+    {
+      "id": "17",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "86",
+      "type": "owl:Class"
+    },
+    {
+      "id": "85",
+      "type": "owl:Class"
+    },
+    {
+      "id": "45",
+      "type": "owl:Class"
+    },
+    {
+      "id": "37",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "33",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "70",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "15",
+      "type": "owl:Class"
+    },
+    {
+      "id": "35",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "75",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "89",
+      "type": "rdfs:Literal"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "7",
+      "iri": "https://w3id.org/arco/ontology/core/AbstractFigure/god",
+      "baseIri": "https://w3id.org/arco/ontology/core/AbstractFigure",
+      "label": {
+        "IRI-based": "god"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -366.29,
+        -8.19
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "https://w3id.org/arco/ontology/core/Category/justice",
+      "baseIri": "https://w3id.org/arco/ontology/core/Category",
+      "label": {
+        "IRI-based": "justice"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/fault",
+          "labels": {
+            "IRI-based": "fault"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/temperance",
+          "labels": {
+            "IRI-based": "temperance"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/honour",
+          "labels": {
+            "IRI-based": "honour"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/blame",
+          "labels": {
+            "IRI-based": "blame"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/justice",
+          "labels": {
+            "IRI-based": "justice"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/action",
+          "labels": {
+            "IRI-based": "action"
+          }
+        }
+      ],
+      "pos": [
+        1234.64,
+        432.72
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "https://w3id.org/arco/ontology/core/negative_sentiment",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "negative_sentiment"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/displeasure",
+          "labels": {
+            "IRI-based": "displeasure"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/ill",
+          "labels": {
+            "IRI-based": "ill"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/violence",
+          "labels": {
+            "IRI-based": "violence"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/pain",
+          "labels": {
+            "IRI-based": "pain"
+          }
+        }
+      ],
+      "pos": [
+        404.96,
+        1384.98
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "https://w3id.org/arco/ontology/core/Sentiment",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "Sentiment"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        381.67,
+        929.52
+      ]
+    },
+    {
+      "id": "31",
+      "iri": "https://w3id.org/arco/ontology/core/AbstractFigure/men",
+      "baseIri": "https://w3id.org/arco/ontology/core/AbstractFigure",
+      "label": {
+        "IRI-based": "men"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        120.95,
+        -330.57
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/literary_diary",
+      "baseIri": "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5",
+      "label": {
+        "IRI-based": "literary_diary"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        127.55,
+        510.07
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "https://w3id.org/arco/ontology/core/Category/power",
+      "baseIri": "https://w3id.org/arco/ontology/core/Category",
+      "label": {
+        "IRI-based": "power"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/governing_self",
+          "labels": {
+            "IRI-based": "governing_self"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/obstacle",
+          "labels": {
+            "IRI-based": "obstacle"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/corrupt",
+          "labels": {
+            "IRI-based": "corrupt"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/glory",
+          "labels": {
+            "IRI-based": "glory"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/employment",
+          "labels": {
+            "IRI-based": "employment"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/power",
+          "labels": {
+            "IRI-based": "power"
+          }
+        }
+      ],
+      "pos": [
+        1287.48,
+        489.76
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "https://w3id.org/arco/ontology/core/Category/psyche&body",
+      "baseIri": "https://w3id.org/arco/ontology/core/Category",
+      "label": {
+        "IRI-based": "psyche&body"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/vital_spirit",
+          "labels": {
+            "IRI-based": "vital_spirit"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/psyche&body",
+          "labels": {
+            "IRI-based": "psyche&body"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/flesh",
+          "labels": {
+            "IRI-based": "flesh"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/souls",
+          "labels": {
+            "IRI-based": "souls"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/impulse",
+          "labels": {
+            "IRI-based": "impulse"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/bodies",
+          "labels": {
+            "IRI-based": "bodies"
+          }
+        }
+      ],
+      "pos": [
+        951.58,
+        -111
+      ]
+    },
+    {
+      "id": "39",
+      "iri": "https://w3id.org/arco/ontology/core/AgentRole",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "AgentRole"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Euripides",
+          "labels": {
+            "IRI-based": "Euripides"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Homer",
+          "labels": {
+            "IRI-based": "Homer"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Heraclitus",
+          "labels": {
+            "IRI-based": "Heraclitus"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Epictetus",
+          "labels": {
+            "IRI-based": "Epictetus"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Democritus",
+          "labels": {
+            "IRI-based": "Democritus"
+          }
+        }
+      ],
+      "pos": [
+        233.58,
+        105.17
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "https://w3id.org/arco/ontology/core/Concept",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "Concept"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        819.94,
+        312.22
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "https://w3id.org/arco/ontology/core/positive_sentiment",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "positive_sentiment"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/well-being",
+          "labels": {
+            "IRI-based": "well-being"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/freedom",
+          "labels": {
+            "IRI-based": "freedom"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/fortitude",
+          "labels": {
+            "IRI-based": "fortitude"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/purpose",
+          "labels": {
+            "IRI-based": "purpose"
+          }
+        }
+      ],
+      "pos": [
+        328.55,
+        1333.95
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "https://w3id.org/arco/ontology/core/Category/nature",
+      "baseIri": "https://w3id.org/arco/ontology/core/Category",
+      "label": {
+        "IRI-based": "nature"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/necessity",
+          "labels": {
+            "IRI-based": "necessity"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/matter",
+          "labels": {
+            "IRI-based": "matter"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/universe",
+          "labels": {
+            "IRI-based": "universe"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/nature",
+          "labels": {
+            "IRI-based": "nature"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/law",
+          "labels": {
+            "IRI-based": "law"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/whole",
+          "labels": {
+            "IRI-based": "whole"
+          }
+        }
+      ],
+      "pos": [
+        878.81,
+        -116.5
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "https://w3id.org/arco/ontology/core/Category/providence",
+      "baseIri": "https://w3id.org/arco/ontology/core/Category",
+      "label": {
+        "IRI-based": "providence"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/fate",
+          "labels": {
+            "IRI-based": "fate"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/divinity",
+          "labels": {
+            "IRI-based": "divinity"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/atoms",
+          "labels": {
+            "IRI-based": "atoms"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/god",
+          "labels": {
+            "IRI-based": "god"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/providence",
+          "labels": {
+            "IRI-based": "providence"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/fortune",
+          "labels": {
+            "IRI-based": "fortune"
+          }
+        }
+      ],
+      "pos": [
+        1339.91,
+        412.51
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "https://w3id.org/arco/ontology/core/Category/Category/reason",
+      "baseIri": "https://w3id.org/arco/ontology/core/Category/Category",
+      "label": {
+        "IRI-based": "reason"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/ignorance",
+          "labels": {
+            "IRI-based": "ignorance"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/principle",
+          "labels": {
+            "IRI-based": "principle"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/reason",
+          "labels": {
+            "IRI-based": "reason"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/truth",
+          "labels": {
+            "IRI-based": "truth"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/judgment",
+          "labels": {
+            "IRI-based": "judgment"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/mind",
+          "labels": {
+            "IRI-based": "mind"
+          }
+        }
+      ],
+      "pos": [
+        1002.47,
+        -169.02
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "https://w3id.org/arco/ontology/core/AbstractFigure",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "AbstractFigure"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        37.48,
+        88.03
+      ]
+    },
+    {
+      "id": "1",
+      "iri": "https://w3id.org/arco/ontology/core/fragments",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "fragments"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        292.34,
+        539.76
+      ]
+    },
+    {
+      "id": "86",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        412.32,
+        418.49
+      ]
+    },
+    {
+      "id": "85",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        -200.07,
+        -291.32
+      ]
+    },
+    {
+      "id": "45",
+      "iri": "https://w3id.org/arco/ontology/core/Category/death",
+      "baseIri": "https://w3id.org/arco/ontology/core/Category",
+      "label": {
+        "IRI-based": "death"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/life",
+          "labels": {
+            "IRI-based": "life"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/death",
+          "labels": {
+            "IRI-based": "death"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/time",
+          "labels": {
+            "IRI-based": "time"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/dissolution",
+          "labels": {
+            "IRI-based": "dissolution"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/sick",
+          "labels": {
+            "IRI-based": "sick"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/extinct",
+          "labels": {
+            "IRI-based": "extinct"
+          }
+        }
+      ],
+      "pos": [
+        1196.12,
+        515.87
+      ]
+    },
+    {
+      "id": "37",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        700.01,
+        1220.84
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "https://w3id.org/arco/ontology/core/chapters",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "chapters"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_V",
+          "labels": {
+            "IRI-based": "Book_V"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_VIII",
+          "labels": {
+            "IRI-based": "Book_VIII"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_VI",
+          "labels": {
+            "IRI-based": "Book_VI"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_III",
+          "labels": {
+            "IRI-based": "Book_III"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_XII",
+          "labels": {
+            "IRI-based": "Book_XII"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_I",
+          "labels": {
+            "IRI-based": "Book_I"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_XI",
+          "labels": {
+            "IRI-based": "Book_XI"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_IX",
+          "labels": {
+            "IRI-based": "Book_IX"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_II",
+          "labels": {
+            "IRI-based": "Book_II"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_X",
+          "labels": {
+            "IRI-based": "Book_X"
+          }
+        },
+        {
+          "iri": "https://w3id.org/arco/ontology/core/Book_IV",
+          "labels": {
+            "IRI-based": "Book_IV"
+          }
+        }
+      ],
+      "pos": [
+        -48.59,
+        845.27
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -158.19,
+        423.19
+      ]
+    },
+    {
+      "id": "70",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -176.48,
+        568.83
+      ]
+    },
+    {
+      "id": "15",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1278.75,
+        71.1
+      ]
+    },
+    {
+      "id": "35",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        1071.74,
+        -874.24
+      ]
+    },
+    {
+      "id": "75",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        902.63,
+        595.86
+      ]
+    },
+    {
+      "id": "89",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        183.52,
+        1133.59
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "0",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "4",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "3",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "14",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "16",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "19",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "20",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "22",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "24",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "25",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "26",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "27",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "28",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "29",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "30",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "32",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "34",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "36",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "38",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "40",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "41",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "42",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "43",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "44",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "46",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "47",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "48",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "49",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "50",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "51",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "52",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "53",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "54",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "55",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "56",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "57",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "58",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "59",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "60",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "61",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "62",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "63",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "64",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "65",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "66",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "67",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "68",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "69",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "71",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "72",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "73",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "74",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "76",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "77",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "78",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "79",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "80",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "81",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "82",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "83",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "84",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "87",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "88",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "90",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "91",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "92",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "GENERATED-UNION-86-8-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-86-13-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-86-10-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-86-39-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-85-31-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-85-7-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-37-18-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-37-12-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-15-45-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-15-9-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-15-21-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-15-23-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-15-17-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-15-5-5",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-15-6-6",
+      "type": "setOperatorProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "0",
+      "iri": "https://w3id.org/arco/ontology/core/isPartOf",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "isPartOf"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "2",
+      "superproperty": [
+        "3"
+      ],
+      "pos": [
+        118.21,
+        685.49
+      ]
+    },
+    {
+      "id": "4",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "5",
+      "range": "6"
+    },
+    {
+      "id": "3",
+      "iri": "https://w3id.org/arco/ontology/core/hasPart",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "hasPart"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "11",
+      "range": "2",
+      "subproperty": [
+        "0"
+      ],
+      "pos": [
+        2.7,
+        662.8
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "https://w3id.org/arco/ontology/core/isCategoryOf",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "isCategoryOf"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "10",
+      "range": "15",
+      "pos": [
+        1049.35,
+        191.66
+      ]
+    },
+    {
+      "id": "16",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "17",
+      "range": "6"
+    },
+    {
+      "id": "19",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "17",
+      "range": "5"
+    },
+    {
+      "id": "20",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "21",
+      "range": "17"
+    },
+    {
+      "id": "22",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "23",
+      "range": "6"
+    },
+    {
+      "id": "24",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "21",
+      "range": "6"
+    },
+    {
+      "id": "25",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "21",
+      "range": "5"
+    },
+    {
+      "id": "26",
+      "iri": "https://w3id.org/arco/ontology/core/hasAssociatedSentiment",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "hasAssociatedSentiment"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "13",
+      "pos": [
+        337,
+        734.64
+      ]
+    },
+    {
+      "id": "27",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "21",
+      "range": "23"
+    },
+    {
+      "id": "28",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "6"
+    },
+    {
+      "id": "29",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "23",
+      "range": "5"
+    },
+    {
+      "id": "30",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "23",
+      "range": "17"
+    },
+    {
+      "id": "32",
+      "iri": "https://w3id.org/arco/ontology/core/hasAttributedAuthor",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "hasAttributedAuthor"
+      },
+      "attributes": [
+        "datatype",
+        "external"
+      ],
+      "domain": "11",
+      "range": "33",
+      "pos": [
+        -25.99,
+        463.38
+      ]
+    },
+    {
+      "id": "34",
+      "iri": "https://w3id.org/arco/ontology/core/oppositeOf",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "oppositeOf"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "35",
+      "range": "35",
+      "pos": [
+        1217.89,
+        -823.4
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "https://w3id.org/arco/ontology/core/hasConstituent",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "hasConstituent"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "13",
+      "range": "37",
+      "pos": [
+        540.84,
+        1075.18
+      ]
+    },
+    {
+      "id": "38",
+      "iri": "https://w3id.org/arco/ontology/core/hasAssociatedConcept",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "hasAssociatedConcept"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "10",
+      "pos": [
+        556.14,
+        425.99
+      ]
+    },
+    {
+      "id": "40",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "17"
+    },
+    {
+      "id": "41",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "21"
+    },
+    {
+      "id": "42",
+      "iri": "https://w3id.org/arco/ontology/core/sameAs",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "sameAs"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "35",
+      "range": "35",
+      "pos": [
+        921.41,
+        -910.41
+      ]
+    },
+    {
+      "id": "43",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "5"
+    },
+    {
+      "id": "44",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "45",
+      "range": "5"
+    },
+    {
+      "id": "46",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "1",
+      "range": "2",
+      "pos": [
+        152.54,
+        729.28
+      ]
+    },
+    {
+      "id": "47",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "45",
+      "range": "17"
+    },
+    {
+      "id": "48",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "7",
+      "range": "8",
+      "pos": [
+        -164.4,
+        39.92
+      ]
+    },
+    {
+      "id": "49",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "23"
+    },
+    {
+      "id": "50",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "45",
+      "range": "6"
+    },
+    {
+      "id": "51",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "45"
+    },
+    {
+      "id": "52",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "6",
+      "range": "10",
+      "pos": [
+        882.71,
+        110.43
+      ]
+    },
+    {
+      "id": "53",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "17",
+      "range": "10",
+      "pos": [
+        1069.83,
+        360.42
+      ]
+    },
+    {
+      "id": "54",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "21",
+      "range": "45"
+    },
+    {
+      "id": "55",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "31",
+      "range": "8",
+      "pos": [
+        79.22,
+        -121.27
+      ]
+    },
+    {
+      "id": "56",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "45",
+      "range": "23"
+    },
+    {
+      "id": "57",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "5",
+      "range": "10",
+      "pos": [
+        907.56,
+        81.22
+      ]
+    },
+    {
+      "id": "58",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "10",
+      "pos": [
+        1017.42,
+        369.6
+      ]
+    },
+    {
+      "id": "59",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "23",
+      "range": "10",
+      "pos": [
+        847.98,
+        108.05
+      ]
+    },
+    {
+      "id": "60",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "21",
+      "range": "10",
+      "pos": [
+        1044.1,
+        397.34
+      ]
+    },
+    {
+      "id": "61",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "13"
+    },
+    {
+      "id": "62",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "2"
+    },
+    {
+      "id": "63",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "39",
+      "range": "10"
+    },
+    {
+      "id": "64",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "39",
+      "range": "13"
+    },
+    {
+      "id": "65",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "39",
+      "range": "2"
+    },
+    {
+      "id": "66",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "13",
+      "range": "10"
+    },
+    {
+      "id": "67",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "10",
+      "range": "2"
+    },
+    {
+      "id": "68",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "13",
+      "range": "2"
+    },
+    {
+      "id": "69",
+      "iri": "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle",
+      "baseIri": "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5",
+      "label": {
+        "IRI-based": "hasTitle"
+      },
+      "attributes": [
+        "datatype",
+        "external"
+      ],
+      "domain": "11",
+      "range": "70",
+      "pos": [
+        -35.76,
+        541.63
+      ]
+    },
+    {
+      "id": "71",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "39"
+    },
+    {
+      "id": "72",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "10"
+    },
+    {
+      "id": "73",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "2",
+      "range": "11",
+      "pos": [
+        -48.96,
+        638.55
+      ]
+    },
+    {
+      "id": "74",
+      "iri": "https://w3id.org/arco/ontology/core/synonym",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "synonym"
+      },
+      "attributes": [
+        "datatype",
+        "external"
+      ],
+      "domain": "10",
+      "range": "75",
+      "pos": [
+        866.83,
+        473.04
+      ]
+    },
+    {
+      "id": "76",
+      "iri": "https://w3id.org/arco/ontology/core/hasAssociatedFigure",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "hasAssociatedFigure"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "8",
+      "pos": [
+        164.91,
+        313.9
+      ]
+    },
+    {
+      "id": "77",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "10",
+      "range": "11",
+      "pos": [
+        473.75,
+        411.15
+      ]
+    },
+    {
+      "id": "78",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "45",
+      "range": "10",
+      "pos": [
+        998.99,
+        409.15
+      ]
+    },
+    {
+      "id": "79",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "39",
+      "range": "11",
+      "pos": [
+        178.12,
+        316.97
+      ]
+    },
+    {
+      "id": "80",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "13",
+      "pos": [
+        392.85,
+        1148.33
+      ]
+    },
+    {
+      "id": "81",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "18",
+      "range": "13",
+      "pos": [
+        356.27,
+        1122.87
+      ]
+    },
+    {
+      "id": "82",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "13",
+      "range": "11",
+      "pos": [
+        254.61,
+        719.79
+      ]
+    },
+    {
+      "id": "83",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "11",
+      "pos": [
+        82.52,
+        299.05
+      ]
+    },
+    {
+      "id": "84",
+      "iri": "https://w3id.org/arco/ontology/core/isComponentOf",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "isComponentOf"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "8",
+      "range": "85",
+      "pos": [
+        -81.29,
+        -101.65
+      ]
+    },
+    {
+      "id": "87",
+      "iri": "https://w3id.org/arco/ontology/core/hasAssociatedAgent",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "hasAssociatedAgent"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "1",
+      "range": "39",
+      "pos": [
+        264.25,
+        332.04
+      ]
+    },
+    {
+      "id": "88",
+      "iri": "https://w3id.org/arco/ontology/core/keyword",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "keyword"
+      },
+      "attributes": [
+        "datatype",
+        "external"
+      ],
+      "domain": "13",
+      "range": "89",
+      "pos": [
+        270.03,
+        1044.49
+      ]
+    },
+    {
+      "id": "90",
+      "iri": "https://w3id.org/arco/ontology/core/hasCharacteristic",
+      "baseIri": "https://w3id.org/arco/ontology/core",
+      "label": {
+        "IRI-based": "hasCharacteristic"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "11",
+      "range": "86",
+      "pos": [
+        269.94,
+        464.28
+      ]
+    },
+    {
+      "id": "91",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "18",
+      "range": "12"
+    },
+    {
+      "id": "92",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "31",
+      "range": "7"
+    },
+    {
+      "id": "GENERATED-UNION-86-8-0",
+      "domain": "86",
+      "range": "8",
+      "pos": [
+        224.9,
+        253.26
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-86-13-1",
+      "domain": "86",
+      "range": "13",
+      "pos": [
+        396.99,
+        674.01
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-86-10-2",
+      "domain": "86",
+      "range": "10",
+      "pos": [
+        616.13,
+        365.36
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-86-39-3",
+      "domain": "86",
+      "range": "39",
+      "pos": [
+        327.74,
+        270.23
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-85-31-0",
+      "domain": "85",
+      "range": "31",
+      "pos": [
+        -39.56,
+        -310.95
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-85-7-1",
+      "domain": "85",
+      "range": "7",
+      "pos": [
+        -283.18,
+        -149.76
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-37-18-0",
+      "domain": "37",
+      "range": "18",
+      "pos": [
+        522.83,
+        1274.79
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-37-12-1",
+      "domain": "37",
+      "range": "12",
+      "pos": [
+        560.29,
+        1298.56
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-15-45-0",
+      "domain": "15",
+      "range": "45",
+      "pos": [
+        1239.31,
+        283.38
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-15-9-1",
+      "domain": "15",
+      "range": "9",
+      "pos": [
+        1257.94,
+        241.7
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-15-21-2",
+      "domain": "15",
+      "range": "21",
+      "pos": [
+        1282.9,
+        270.15
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-15-23-3",
+      "domain": "15",
+      "range": "23",
+      "pos": [
+        1088.09,
+        -18.33
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-15-17-4",
+      "domain": "15",
+      "range": "17",
+      "pos": [
+        1307.52,
+        231.68
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-15-5-5",
+      "domain": "15",
+      "range": "5",
+      "pos": [
+        1148.37,
+        -42.22
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-15-6-6",
+      "domain": "15",
+      "range": "6",
+      "pos": [
+        1124.15,
+        -14.95
+      ]
+    }
+  ]
+}

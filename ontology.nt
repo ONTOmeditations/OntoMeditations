@@ -30,7 +30,7 @@
 # 
 # https://w3id.org/arco/ontology/core/hasCharacteristic
 <https://w3id.org/arco/ontology/core/hasCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/arco/ontology/core/hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/arco/ontology/core/fragments> .
+<https://w3id.org/arco/ontology/core/hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/literary_diary> .
 <https://w3id.org/arco/ontology/core/hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/arco/ontology/core/AbstractFigure> .
 <https://w3id.org/arco/ontology/core/hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/arco/ontology/core/AgentRole> .
 <https://w3id.org/arco/ontology/core/hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/arco/ontology/core/Concept> .
@@ -95,11 +95,6 @@
 <https://w3id.org/arco/ontology/core/hasAttributedAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/arco/ontology/core/hasAttributedAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/literary_diary> .
 <https://w3id.org/arco/ontology/core/hasAttributedAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-# 
-# https://w3id.org/arco/ontology/core/hasCitation
-<https://w3id.org/arco/ontology/core/hasCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/arco/ontology/core/hasCitation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/arco/ontology/core/AgentRole> .
-<https://w3id.org/arco/ontology/core/hasCitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # https://w3id.org/arco/ontology/core/keyword
 <https://w3id.org/arco/ontology/core/keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -249,27 +244,22 @@
 # https://w3id.org/arco/ontology/core/Democritus
 <https://w3id.org/arco/ontology/core/Democritus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/Democritus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/AgentRole> .
-<https://w3id.org/arco/ontology/core/Democritus> <https://w3id.org/arco/ontology/core/hasCitation> "" .
 # 
 # https://w3id.org/arco/ontology/core/Epictetus
 <https://w3id.org/arco/ontology/core/Epictetus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/Epictetus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/AgentRole> .
-<https://w3id.org/arco/ontology/core/Epictetus> <https://w3id.org/arco/ontology/core/hasCitation> "" .
 # 
 # https://w3id.org/arco/ontology/core/Euripides
 <https://w3id.org/arco/ontology/core/Euripides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/Euripides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/AgentRole> .
-<https://w3id.org/arco/ontology/core/Euripides> <https://w3id.org/arco/ontology/core/hasCitation> "" .
 # 
 # https://w3id.org/arco/ontology/core/Heraclitus
 <https://w3id.org/arco/ontology/core/Heraclitus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/Heraclitus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/AgentRole> .
-<https://w3id.org/arco/ontology/core/Heraclitus> <https://w3id.org/arco/ontology/core/hasCitation> "" .
 # 
 # https://w3id.org/arco/ontology/core/Homer
 <https://w3id.org/arco/ontology/core/Homer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/Homer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/AgentRole> .
-<https://w3id.org/arco/ontology/core/Homer> <https://w3id.org/arco/ontology/core/hasCitation> "" .
 # 
 # https://w3id.org/arco/ontology/core/action
 <https://w3id.org/arco/ontology/core/action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -302,6 +292,10 @@ _:genid2 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/death
 <https://w3id.org/arco/ontology/core/death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/death> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid3 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/death> .
+_:genid3 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid3 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/life> .
 # 
 # https://w3id.org/arco/ontology/core/displeasure
 <https://w3id.org/arco/ontology/core/displeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -334,18 +328,18 @@ _:genid2 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/flesh
 <https://w3id.org/arco/ontology/core/flesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/flesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/psyche&body> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
-_:genid3 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/flesh> .
-_:genid3 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
-_:genid3 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/souls> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid4 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/flesh> .
+_:genid4 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid4 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/souls> .
 # 
 # https://w3id.org/arco/ontology/core/fortitude
 <https://w3id.org/arco/ontology/core/fortitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/fortitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/positive_sentiment> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
-_:genid4 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/fortitude> .
-_:genid4 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
-_:genid4 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/obstacle> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid5 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/fortitude> .
+_:genid5 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid5 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/obstacle> .
 # 
 # https://w3id.org/arco/ontology/core/fortune
 <https://w3id.org/arco/ontology/core/fortune> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -363,6 +357,10 @@ _:genid4 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 <https://w3id.org/arco/ontology/core/god> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/god> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/providence> .
 <https://w3id.org/arco/ontology/core/god> <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/providence> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid6 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/god> .
+_:genid6 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid6 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/atoms> .
 # 
 # https://w3id.org/arco/ontology/core/governing_self
 <https://w3id.org/arco/ontology/core/governing_self> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -375,10 +373,10 @@ _:genid4 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/ignorance
 <https://w3id.org/arco/ontology/core/ignorance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/ignorance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/Category/reason> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
-_:genid5 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/ignorance> .
-_:genid5 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
-_:genid5 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/reason> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid7 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/ignorance> .
+_:genid7 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid7 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/reason> .
 # 
 # https://w3id.org/arco/ontology/core/ill
 <https://w3id.org/arco/ontology/core/ill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -395,6 +393,7 @@ _:genid5 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/justice
 <https://w3id.org/arco/ontology/core/justice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/justice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/justice> .
+<https://w3id.org/arco/ontology/core/justice> <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/justice> .
 # 
 # https://w3id.org/arco/ontology/core/law
 <https://w3id.org/arco/ontology/core/law> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -403,10 +402,10 @@ _:genid5 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/life
 <https://w3id.org/arco/ontology/core/life> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/life> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/death> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
-_:genid6 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/life> .
-_:genid6 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
-_:genid6 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/death> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid8 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/life> .
+_:genid8 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid8 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/death> .
 # 
 # https://w3id.org/arco/ontology/core/matter
 <https://w3id.org/arco/ontology/core/matter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -419,6 +418,7 @@ _:genid6 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/nature
 <https://w3id.org/arco/ontology/core/nature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/nature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/nature> .
+<https://w3id.org/arco/ontology/core/nature> <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/nature> .
 # 
 # https://w3id.org/arco/ontology/core/necessity
 <https://w3id.org/arco/ontology/core/necessity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -427,22 +427,23 @@ _:genid6 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/obstacle
 <https://w3id.org/arco/ontology/core/obstacle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/obstacle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/power> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
-_:genid7 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/obstacle> .
-_:genid7 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
-_:genid7 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/fortitude> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid9 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/obstacle> .
+_:genid9 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid9 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/fortitude> .
 # 
 # https://w3id.org/arco/ontology/core/pain
 <https://w3id.org/arco/ontology/core/pain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/pain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/negative_sentiment> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
-_:genid8 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/pain> .
-_:genid8 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
-_:genid8 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/well-being> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid10 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/pain> .
+_:genid10 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid10 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/well-being> .
 # 
 # https://w3id.org/arco/ontology/core/power
 <https://w3id.org/arco/ontology/core/power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/power> .
+<https://w3id.org/arco/ontology/core/power> <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/power> .
 # 
 # https://w3id.org/arco/ontology/core/principle
 <https://w3id.org/arco/ontology/core/principle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -451,6 +452,11 @@ _:genid8 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/providence
 <https://w3id.org/arco/ontology/core/providence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/providence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/providence> .
+<https://w3id.org/arco/ontology/core/providence> <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/providence> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid11 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/providence> .
+_:genid11 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid11 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/atoms> .
 # 
 # https://w3id.org/arco/ontology/core/purpose
 <https://w3id.org/arco/ontology/core/purpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -459,6 +465,11 @@ _:genid8 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/reason
 <https://w3id.org/arco/ontology/core/reason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/reason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/Category/reason> .
+<https://w3id.org/arco/ontology/core/reason> <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/reason> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid12 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/reason> .
+_:genid12 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid12 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/ignorance> .
 # 
 # https://w3id.org/arco/ontology/core/sick
 <https://w3id.org/arco/ontology/core/sick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -467,10 +478,10 @@ _:genid8 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/souls
 <https://w3id.org/arco/ontology/core/souls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/souls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/psyche&body> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
-_:genid9 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/souls> .
-_:genid9 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
-_:genid9 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/flesh> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid13 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/souls> .
+_:genid13 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid13 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/flesh> .
 # 
 # https://w3id.org/arco/ontology/core/temperance
 <https://w3id.org/arco/ontology/core/temperance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -499,10 +510,10 @@ _:genid9 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco
 # https://w3id.org/arco/ontology/core/well-being
 <https://w3id.org/arco/ontology/core/well-being> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/well-being> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/positive_sentiment> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
-_:genid10 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/well-being> .
-_:genid10 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
-_:genid10 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/pain> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid14 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://w3id.org/arco/ontology/core/well-being> .
+_:genid14 <http://www.w3.org/2002/07/owl#assertionProperty> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid14 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arco/ontology/core/pain> .
 # 
 # https://w3id.org/arco/ontology/core/whole
 <https://w3id.org/arco/ontology/core/whole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -511,6 +522,7 @@ _:genid10 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arc
 # https://w3id.org/arco/ontology/core/psyche&body
 <https://w3id.org/arco/ontology/core/psyche&body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/arco/ontology/core/psyche&body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/arco/ontology/core/Category/psyche&body> .
+<https://w3id.org/arco/ontology/core/psyche&body> <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/psyche&body> .
 # 
 # 
 # 
@@ -521,160 +533,160 @@ _:genid10 <http://www.w3.org/2002/07/owl#targetIndividual> <https://w3id.org/arc
 # #################################################################
 # 
 # 
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid11 <http://www.w3.org/2002/07/owl#members> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/chapters> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Sentiment> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Concept> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/AgentRole> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/AbstractFigure> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-# 
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid15 <http://www.w3.org/2002/07/owl#members> _:genid20 .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/psyche&body> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/chapters> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Sentiment> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Concept> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/Category/reason> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/AgentRole> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/providence> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/AbstractFigure> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/power> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/nature> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/justice> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/death> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
-_:genid25 <http://www.w3.org/2002/07/owl#members> _:genid36 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid21 <http://www.w3.org/2002/07/owl#members> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/psyche&body> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/Category/reason> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/providence> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/power> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/nature> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/justice> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/Category/death> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid29 <http://www.w3.org/2002/07/owl#members> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/sameAs> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/oppositeOf> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isComponentOf> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isCategoryOf> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasPart> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/sameAs> .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasConstituent> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/oppositeOf> .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasCharacteristic> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isComponentOf> .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isCategoryOf> .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasAssociatedFigure> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasPart> .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasAssociatedConcept> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasConstituent> .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasAssociatedAgent> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasCharacteristic> .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-# 
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
-_:genid37 <http://www.w3.org/2002/07/owl#members> _:genid43 .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/sameAs> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasAssociatedFigure> .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasAssociatedConcept> .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isComponentOf> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasAssociatedAgent> .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isCategoryOf> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasPart> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasCharacteristic> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
-_:genid44 <http://www.w3.org/2002/07/owl#members> _:genid50 .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid41 <http://www.w3.org/2002/07/owl#members> _:genid47 .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/sameAs> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/sameAs> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isComponentOf> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isCategoryOf> .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasPart> .
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isComponentOf> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasCharacteristic> .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isCategoryOf> .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasPart> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasConstituent> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
-_:genid51 <http://www.w3.org/2002/07/owl#members> _:genid56 .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid48 <http://www.w3.org/2002/07/owl#members> _:genid54 .
 _:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
 _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/sameAs> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/sameAs> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isComponentOf> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isCategoryOf> .
 _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasPart> .
 _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isComponentOf> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasConstituent> .
 _:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isCategoryOf> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasPart> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
-_:genid57 <http://www.w3.org/2002/07/owl#members> _:genid62 .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid55 <http://www.w3.org/2002/07/owl#members> _:genid60 .
 _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/sameAs> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/sameAs> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isComponentOf> .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isCategoryOf> .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isPartOf> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/hasPart> .
 _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isComponentOf> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isCategoryOf> .
+# 
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid61 <http://www.w3.org/2002/07/owl#members> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/sameAs> .
 _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/oppositeOf> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isPartOf> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isComponentOf> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/core/isCategoryOf> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
