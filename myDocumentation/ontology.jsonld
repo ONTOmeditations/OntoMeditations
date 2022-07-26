@@ -17,13 +17,61 @@
     "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
   } ],
   "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/pain"
+  } ],
+  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/well-being"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
+  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/providence"
+  } ],
+  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/atoms"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
+  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/reason"
+  } ],
+  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/ignorance"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
+  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/souls"
+  } ],
+  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/flesh"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
+  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/well-being"
   } ],
   "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/pain"
   } ]
 }, {
-  "@id" : "_:genid11",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -39,7 +87,19 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
+  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/atoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/providence"
+  } ]
+}, {
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -59,19 +119,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
-  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/atoms"
-  } ],
-  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/providence"
-  } ]
-}, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -105,13 +153,25 @@
     "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
   } ],
   "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/death"
+  } ],
+  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/life"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
+  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/flesh"
   } ],
   "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/souls"
   } ]
 }, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -129,19 +189,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
-  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/fortitude"
-  } ],
-  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/obstacle"
-  } ]
-}, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -165,13 +213,13 @@
     "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
   } ],
   "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/ignorance"
+    "@id" : "https://w3id.org/arco/ontology/core/fortitude"
   } ],
   "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/reason"
+    "@id" : "https://w3id.org/arco/ontology/core/obstacle"
   } ]
 }, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -187,7 +235,19 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
+  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/god"
+  } ],
+  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/atoms"
+  } ]
+}, {
+  "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -203,7 +263,19 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
+  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/ignorance"
+  } ],
+  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/reason"
+  } ]
+}, {
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
   "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
@@ -215,7 +287,7 @@
     "@id" : "https://w3id.org/arco/ontology/core/death"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
   "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
@@ -225,30 +297,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/fortitude"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
-  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/pain"
-  } ],
-  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/well-being"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NegativePropertyAssertion" ],
-  "http://www.w3.org/2002/07/owl#assertionProperty" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/oppositeOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#sourceIndividual" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/souls"
-  } ],
-  "http://www.w3.org/2002/07/owl#targetIndividual" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/flesh"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5",
@@ -411,45 +459,30 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/AgentRole"
-  } ],
-  "https://w3id.org/arco/ontology/core/hasCitation" : [ {
-    "@value" : ""
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/Epictetus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/AgentRole"
-  } ],
-  "https://w3id.org/arco/ontology/core/hasCitation" : [ {
-    "@value" : ""
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/Euripides",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/AgentRole"
-  } ],
-  "https://w3id.org/arco/ontology/core/hasCitation" : [ {
-    "@value" : ""
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/Heraclitus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/AgentRole"
-  } ],
-  "https://w3id.org/arco/ontology/core/hasCitation" : [ {
-    "@value" : ""
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/Homer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/AgentRole"
-  } ],
-  "https://w3id.org/arco/ontology/core/hasCitation" : [ {
-    "@value" : ""
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/Sentiment",
@@ -641,7 +674,7 @@
   "@id" : "https://w3id.org/arco/ontology/core/hasCharacteristic",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/fragments"
+    "@id" : "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/literary_diary"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/AbstractFigure"
@@ -654,15 +687,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/hasConstituent"
-  } ]
-}, {
-  "@id" : "https://w3id.org/arco/ontology/core/hasCitation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/arco/ontology/core/AgentRole"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/hasConstituent",
@@ -763,6 +787,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/Category/justice"
+  } ],
+  "https://w3id.org/arco/ontology/core/sameAs" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/justice"
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/keyword",
@@ -802,6 +829,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/Category/nature"
+  } ],
+  "https://w3id.org/arco/ontology/core/sameAs" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/nature"
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/necessity",
@@ -844,6 +874,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/Category/power"
+  } ],
+  "https://w3id.org/arco/ontology/core/sameAs" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/power"
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/principle",
@@ -856,12 +889,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/Category/providence"
+  } ],
+  "https://w3id.org/arco/ontology/core/sameAs" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/providence"
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/psyche&body",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/Category/psyche&body"
+  } ],
+  "https://w3id.org/arco/ontology/core/sameAs" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/psyche&body"
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/purpose",
@@ -874,6 +913,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/arco/ontology/core/Category/Category/reason"
+  } ],
+  "https://w3id.org/arco/ontology/core/sameAs" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/reason"
   } ]
 }, {
   "@id" : "https://w3id.org/arco/ontology/core/sameAs",

@@ -67,7 +67,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasCharacteristic">
-        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/fragments"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/literary_diary"/>
         <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure"/>
         <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
         <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
@@ -177,16 +177,6 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/arco/ontology/core/hasAttributedAuthor">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/literary_diary"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/arco/ontology/core/hasCitation -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/arco/ontology/core/hasCitation">
-        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -502,7 +492,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Democritus">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
-        <core:hasCitation></core:hasCitation>
     </owl:NamedIndividual>
     
 
@@ -512,7 +501,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Epictetus">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
-        <core:hasCitation></core:hasCitation>
     </owl:NamedIndividual>
     
 
@@ -522,7 +510,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Euripides">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
-        <core:hasCitation></core:hasCitation>
     </owl:NamedIndividual>
     
 
@@ -532,7 +519,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Heraclitus">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
-        <core:hasCitation></core:hasCitation>
     </owl:NamedIndividual>
     
 
@@ -542,7 +528,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Homer">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
-        <core:hasCitation></core:hasCitation>
     </owl:NamedIndividual>
     
 
@@ -610,6 +595,12 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/death">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/death"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/life"/>
+    </rdf:Description>
     
 
 
@@ -740,6 +731,12 @@
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
         <core:sameAs rdf:resource="https://w3id.org/arco/ontology/core/providence"/>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/god"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/atoms"/>
+    </rdf:Description>
     
 
 
@@ -808,6 +805,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/justice">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <core:sameAs rdf:resource="https://w3id.org/arco/ontology/core/justice"/>
     </owl:NamedIndividual>
     
 
@@ -859,6 +857,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/nature">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <core:sameAs rdf:resource="https://w3id.org/arco/ontology/core/nature"/>
     </owl:NamedIndividual>
     
 
@@ -907,6 +906,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/power">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <core:sameAs rdf:resource="https://w3id.org/arco/ontology/core/power"/>
     </owl:NamedIndividual>
     
 
@@ -925,7 +925,14 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/providence">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <core:sameAs rdf:resource="https://w3id.org/arco/ontology/core/providence"/>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/providence"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/atoms"/>
+    </rdf:Description>
     
 
 
@@ -943,7 +950,14 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/reason">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <core:sameAs rdf:resource="https://w3id.org/arco/ontology/core/reason"/>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/reason"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/ignorance"/>
+    </rdf:Description>
     
 
 
@@ -1054,6 +1068,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/psyche&amp;body">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <core:sameAs rdf:resource="https://w3id.org/arco/ontology/core/psyche&amp;body"/>
     </owl:NamedIndividual>
     
 
