@@ -209,13 +209,13 @@ def addconceptstriples(fragIRI,booknum,position):
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
                                 row_word = str(row['Word'])
-                                row_word.replace(" ","_")
+                                x = row_word.replace(" ","_")
                                 print("This is the concept keyword - ", row['Word']) #"https://w3id.org/arco/ontology/core/keyword/"         #create triple for adding the keyword
-                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/")))
+                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+x+"/")))
                                 print("This is the number of occurances -",row['Occurences']) 
                                 #triples.add(())      #create triple for adding the number of occurences here #UPDATE ONTOLOGY!
                                 print("Philosophical concept being refferd to is -", key2) 
-                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/"),isCategoryOfIRI,justiceIRI))   
+                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+x+"/"),isCategoryOfIRI,justiceIRI))   
                                 #triples.add(())      #create triple for adding the concept class of keyword here
 
                 elif key2 == "reason":
@@ -225,12 +225,12 @@ def addconceptstriples(fragIRI,booknum,position):
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
                                 row_word = str(row['Word'])
-                                row_word.replace(" ","_")
+                                x = row_word.replace(" ","_")
                                 print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
-                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/")))
+                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+x+"/")))
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
-                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/"),isCategoryOfIRI,reasonIRI))
+                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+x+"/"),isCategoryOfIRI,reasonIRI))
 
                 elif key2 == "power":
                     powerDf = allConceptObjDict[key][key2]
@@ -239,12 +239,12 @@ def addconceptstriples(fragIRI,booknum,position):
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
                                 row_word = str(row['Word'])
-                                row_word.replace(" ","_")
+                                x = row_word.replace(" ","_")
                                 print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
-                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/")))
+                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+x+"/")))
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
-                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/"),isCategoryOfIRI,powerIRI))
+                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+x+"/"),isCategoryOfIRI,powerIRI))
 
                 elif key2 == "providence":
                     providenceDf = allConceptObjDict[key][key2]
@@ -253,12 +253,12 @@ def addconceptstriples(fragIRI,booknum,position):
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
                                 row_word = str(row['Word'])
-                                row_word.replace(" ","_")
+                                x = row_word.replace(" ","_")
                                 print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
-                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/")))
+                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+x+"/")))
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
-                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/"),isCategoryOfIRI,providenceIRI))
+                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+x+"/"),isCategoryOfIRI,providenceIRI))
 
                 elif key2 == "pscyche_body":
                     bodyDf = allConceptObjDict[key][key2]
@@ -267,12 +267,12 @@ def addconceptstriples(fragIRI,booknum,position):
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
                                 row_word = str(row['Word'])
-                                row_word.replace(" ","_")
+                                x = row_word.replace(" ","_")
                                 print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
-                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/")))
+                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+x+"/")))
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
-                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/"),isCategoryOfIRI,psychebodyIRI))
+                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+x+"/"),isCategoryOfIRI,psychebodyIRI))
 
                 elif key2 == "nature":
                     natureDf = allConceptObjDict[key][key2]
@@ -281,12 +281,12 @@ def addconceptstriples(fragIRI,booknum,position):
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
                                 row_word = str(row['Word'])
-                                row_word.replace(" ","_")
+                                x = row_word.replace(" ","_")
                                 print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
-                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/")))
+                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+x+"/")))
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
-                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/"),isCategoryOfIRI,natureIRI))
+                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+x+"/"),isCategoryOfIRI,natureIRI))
                     
                 elif key2 == "death":
                     deathDf = allConceptObjDict[key][key2]
@@ -295,12 +295,12 @@ def addconceptstriples(fragIRI,booknum,position):
                             if item_idx == "Chapter" and item == position:
                                 print(item_idx, "-->", item)
                                 row_word = str(row['Word'])
-                                row_word.replace(" ","_")
+                                x = row_word.replace(" ","_")
                                 print("This is the concept keyword - ", row['Word'])          #create triple for adding the keyword  here - needs a URI creation script!!
-                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+row['Word'].replace(" ","_")+"/")))
+                                triples.add((fragIRI,hasAssociatedConcept,URIRef("https://w3id.org/arco/ontology/core/"+x.replace(" ","_")+"/")))
                                 print("This is the number of occurances -",row['Occurences']) #create triple for adding the number of occurences here
                                 print("Philosophical concept being refferd to is -", key2)    #create triple for adding the concept class of keyword here
-                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+row_word+"/"),isCategoryOfIRI,deathIRI))
+                                triples.add((URIRef("https://w3id.org/arco/ontology/core/"+x+"/"),isCategoryOfIRI,deathIRI))
 
     return triples
 
@@ -463,6 +463,7 @@ def dbupdater(graphvariable):
         store.add(triple)       
     # close connection 
     store.close()
+    graphvariable.serialize(destination="tbl.ttl")
     return
 
 #read CSV to get extracted data

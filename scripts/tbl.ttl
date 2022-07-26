@@ -1,0 +1,1910 @@
+@prefix ns1: <https://w3id.org/arco/ontology/core/> .
+@prefix ns2: <https://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Book1 ns1:hasPart ns1:1.1,
+        ns1:1.10,
+        ns1:1.11,
+        ns1:1.12,
+        ns1:1.13,
+        ns1:1.14,
+        ns1:1.15,
+        ns1:1.16,
+        ns1:1.17,
+        ns1:1.2,
+        ns1:1.3,
+        ns1:1.4,
+        ns1:1.5,
+        ns1:1.6,
+        ns1:1.7,
+        ns1:1.8,
+        ns1:1.9 .
+
+ns1:Book2 ns1:hasPart ns1:2.1,
+        ns1:2.10,
+        ns1:2.11,
+        ns1:2.12,
+        ns1:2.13,
+        ns1:2.14,
+        ns1:2.15,
+        ns1:2.16,
+        ns1:2.17,
+        ns1:2.2,
+        ns1:2.3,
+        ns1:2.4,
+        ns1:2.5,
+        ns1:2.6,
+        ns1:2.7,
+        ns1:2.8,
+        ns1:2.9 .
+
+ns1:Book3 ns1:hasPart ns1:3.1,
+        ns1:3.10,
+        ns1:3.11,
+        ns1:3.12,
+        ns1:3.13,
+        ns1:3.14,
+        ns1:3.15,
+        ns1:3.16,
+        ns1:3.2,
+        ns1:3.3,
+        ns1:3.4,
+        ns1:3.5,
+        ns1:3.6,
+        ns1:3.7,
+        ns1:3.8,
+        ns1:3.9 .
+
+ns1:Book4 ns1:hasPart ns1:4.1,
+        ns1:4.10,
+        ns1:4.11,
+        ns1:4.12,
+        ns1:4.13,
+        ns1:4.14,
+        ns1:4.15,
+        ns1:4.16,
+        ns1:4.17,
+        ns1:4.18,
+        ns1:4.19,
+        ns1:4.2,
+        ns1:4.20,
+        ns1:4.21,
+        ns1:4.22,
+        ns1:4.23,
+        ns1:4.24,
+        ns1:4.25,
+        ns1:4.26,
+        ns1:4.27,
+        ns1:4.28,
+        ns1:4.29,
+        ns1:4.3,
+        ns1:4.30,
+        ns1:4.31,
+        ns1:4.32,
+        ns1:4.33,
+        ns1:4.34,
+        ns1:4.35,
+        ns1:4.36,
+        ns1:4.37,
+        ns1:4.38,
+        ns1:4.39,
+        ns1:4.4,
+        ns1:4.40,
+        ns1:4.41,
+        ns1:4.42,
+        ns1:4.43,
+        ns1:4.44,
+        ns1:4.45,
+        ns1:4.46,
+        ns1:4.47,
+        ns1:4.48,
+        ns1:4.49,
+        ns1:4.5,
+        ns1:4.50,
+        ns1:4.51,
+        ns1:4.6,
+        ns1:4.7,
+        ns1:4.8,
+        ns1:4.9 .
+
+ns1:Meditations a <http://www.semanticweb.org/victor/ontologies/2022/6/ontoMeditations/literary_diary> ;
+    ns1:hasAttributedAuthor ns1:MarcusAurelius ;
+    ns1:hasTitle "Meditations" .
+
+ns1:1.1 ns1:negative_sentiment 5.316855e+00 ;
+    ns1:neutral_sentiment 3.75244e+01 ;
+    ns1:positive_sentiment 5.715874e+01 ;
+    ns2:containsText """ From my grandfather Verus:
+the lessons of noble character and even
+temper.
+""" .
+
+ns1:1.10 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/fault/>,
+        <https://w3id.org/arco/ontology/core/mind/> ;
+    ns1:negative_sentiment 4.215001e+01 ;
+    ns1:neutral_sentiment 3.760987e+01 ;
+    ns1:positive_sentiment 2.024012e+01 ;
+    ns2:containsText """ From Alexander the grammarian: to avoid fault-finding and not to
+censure in a carping spirit any who employ an exotic phrase, a solecism, or
+harsh expression, but oneself to use, neatly and precisely, the correct phrase,
+by way of answer or confirmation or handling of the actual question—the
+thing, not its verbal expression—or by some other equally happy reminder.
+""" .
+
+ns1:1.11 ns1:negative_sentiment 9.319361e+01 ;
+    ns1:neutral_sentiment 5.01258e+00 ;
+    ns1:positive_sentiment 1.793828e+00 ;
+    ns2:containsText """ From Fronto: to observe how vile a thing is the malice and caprice
+and hypocrisy of absolutism; and generally speaking that those whom we
+entitle ‘Patricians’ are somehow rather wanting in the natural affections.
+""" .
+
+ns1:1.12 ns1:negative_sentiment 4.057195e+01 ;
+    ns1:neutral_sentiment 4.388365e+01 ;
+    ns1:positive_sentiment 1.55444e+01 ;
+    ns2:containsText """ From Alexander the Platonist: seldom and only when absolutely
+necessary to say to anyone or write in a letter: ‘I am too busy’; nor by such
+a turn of phrase to evade continually the duties incident to our relations to
+those who live with us, on the plea of ‘present circumstances’.
+""" .
+
+ns1:1.13 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/reason/> ;
+    ns1:negative_sentiment 4.098458e+01 ;
+    ns1:neutral_sentiment 2.818155e+01 ;
+    ns1:positive_sentiment 3.083387e+01 ;
+    ns2:containsText """ From Catulus: not to neglect a friend’s remonstrance, even if he may
+be unreasonable in his remonstrance, but to endeavour to restore him to his
+usual temper. Hearty praise, too, of teachers, like what is recorded of
+Athenodotus and Domitius, and genuine love towards children.
+""" .
+
+ns1:1.14 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/justice/>,
+        <https://w3id.org/arco/ontology/core/necessity/>,
+        <https://w3id.org/arco/ontology/core/truth/> ;
+    ns1:negative_sentiment 3.693525e+01 ;
+    ns1:neutral_sentiment 3.482512e+01 ;
+    ns1:positive_sentiment 2.823963e+01 ;
+    ns2:containsText """ From Severus: love of family, love of truth, and love of justice. To
+have got by his help to understand Thrasea, Helvidius, Cato, Dio, Brutus,
+and to conceive the idea of a commonwealth based on equity and freedom
+of speech, and of a monarchy cherishing above all the liberty of the
+subject. From him, too, consistency and uniformity in regard for
+philosophy; to do good, to communicate liberally, to be hopeful; to believe
+in the affection of friends and to use no concealment towards those who
+incurred his censure, and that his friends had no necessity to conjecture his
+wishes or the reverse, but he was open with them.
+""" .
+
+ns1:1.15 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/life/> ;
+    ns1:negative_sentiment 5.603805e+01 ;
+    ns1:neutral_sentiment 2.705568e+01 ;
+    ns1:positive_sentiment 1.690627e+01 ;
+    ns2:containsText """ From Maximus: mastery of self and vacillation in nothing;
+cheerfulness in all circumstances and especially in illness. A happy blend of
+character, mildness with dignity, readiness to do without complaining what
+is given to be done. To see how in his case everyone believed ‘he really
+thinks what he says, and what he does, he does without evil intent’; not to
+be surprised or alarmed; nowhere to be in a hurry or to procrastinate, not to
+lack resource or to be depressed or cringing or on the other hand angered or
+suspicious. To be generous, forgiving, void of deceit. To give the
+impression of inflexible rectitude rather than of one who is corrected. The
+fact, too, that no one would ever have dreamt that he was looked down on
+by him or would have endured to conceive himself to be his superior. To be
+agreeable also (in social life).
+""" .
+
+ns1:1.16 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/glory/>,
+        <https://w3id.org/arco/ontology/core/honour/>,
+        <https://w3id.org/arco/ontology/core/judgement/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/matter/>,
+        <https://w3id.org/arco/ontology/core/power/>,
+        <https://w3id.org/arco/ontology/core/temperance/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 4.932703e+01 ;
+    ns1:neutral_sentiment 3.072226e+01 ;
+    ns1:positive_sentiment 1.995071e+01 ;
+    ns2:containsText """ From my father (by adoption): gentleness and unshaken resolution in
+judgements taken after full examination; no vainglory about external
+honours; love of work and perseverance; readiness to hear those who had
+anything to contribute to the public advantage; the desire to award to every
+man according to desert without partiality; the experience that knew where
+to tighten the rein, where to relax. Prohibition of unnatural practices,
+social tact and permission to his suite not invariably to be present at his
+banquets nor to attend his progress from Rome, as a matter of obligation,
+and always to be found the same by those who had failed to attend him
+through engagements. Exact scrutiny in council and patience; not that he
+was avoiding investigation, satisfied with first impressions. An inclination
+to keep his friends, and nowhere fastidious or the victim of manias but his
+own master in everything, and his outward mien cheerful. His long
+foresight and ordering of the merest trifle without making scenes. The
+check in his reign put upon organized applause and every form of lipservice; his unceasing watch over the needs of the empire and his
+stewardship of its resources; his patience under criticism by individuals of
+such conduct. No superstitious fear of divine powers or with man any
+courting of the public or obsequiousness or cultivation of popular favour,
+but temperance in all things and firmness; nowhere want of taste or search
+for novelty.
+In the things which contribute to life’s comfort, where Fortune was lavish to
+him, use without display and at the same time without apology, so as to take
+them when they were there quite simply and not to require them when they
+were absent. The fact that no one would have said that he was a sophist, an
+impostor, or a pedant, but a ripe man, an entire man, above flattery, able to
+preside over his own and his subjects’ business.
+Besides all this the inclination to respect genuine followers of philosophy,
+but towards the other sort no tendency to reproach nor on the other hand to
+be hoodwinked by them; affability, too, and humour, but not to excess. Care
+of his health in moderation, not as one in love with living nor with an eye to
+personal appearance nor on the other hand neglecting it, but so far as by
+attention to self to need doctoring or medicine and external applications for
+very few ailments.
+A very strong point, to give way without jealousy to those who had some
+particular gift like literary expression or knowledge of the Civil Law or
+customs or other matters, even sharing their enthusiasm that each might get
+the reputation due to his individual excellence. Acting always according to
+the tradition of our forefathers, yet not endeavouring that this regard for
+tradition should be noticed. No tendency, moreover, to chop and change, but
+a settled course in the same places and the same practices. After acute
+attacks of headache, fresh and vigorous at once for his accustomed duties;
+and not to have many secrets, only very few and by way of exception, and
+those solely because of matters of State. Discretion and moderation alike in
+the provision of shows, in carrying out public works, in donations to the
+populace, and so on; the behaviour in fact of one who has an eye precisely
+to what it is his duty to do, not to the reputation which attends the doing.
+He was not one who bathed at odd hours, not fond of building, no
+connoisseur of the table, of the stuff and colour of his dress, of the beauty of
+his slaves. His costume was brought to Rome from his country house at
+Lorium; his manner of life at Lanuvium; the way he treated the taxcollector who apologized at Tusculum, and all his behaviour of that sort.
+Nowhere harsh, merciless, or blustering, nor so that you might ever say ‘to
+fever heat’, but everything nicely calculated and divided into its times, as
+by a leisured man; no bustle, complete order, strength, consistency. What is
+recorded of Socrates would exactly fit him: he could equally be abstinent
+from or enjoy what many are too weak to abstain from and too selfindulgent in enjoying. To be strong, to endure, and in either case to be sober
+belong to the man of perfect and invincible spirit, like the spirit of Maximus
+in his illness.
+""" .
+
+ns1:1.17 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/body/>,
+        <https://w3id.org/arco/ontology/core/fate/>,
+        <https://w3id.org/arco/ontology/core/fault/>,
+        <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/honour/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/necessity/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 4.253997e+01 ;
+    ns1:neutral_sentiment 3.522257e+01 ;
+    ns1:positive_sentiment 2.223747e+01 ;
+    ns2:containsText """ From the gods: to have had good grandparents, good parents, a good
+sister, good masters, good intimates, kinsfolk, friends, almost everything;
+and that in regard to not one of them did I stumble into offence, although I
+had the kind of disposition which might in some circumstances have led me
+to behave thus; but it was the goodness of the gods that no conjunction of
+events came about which was likely to expose my weakness. That I was not
+brought up longer than I was with my grandfather’s second wife, that I
+preserved the flower of my youth and did not play the man before my time,
+but even delayed a little longer. That my station in life was under a
+governor and a father who was to strip off all my pride and to lead me to
+see that it is possible to live in a palace and yet not to need a bodyguard or
+embroidered uniforms or candelabra and statues bearing lamps and the like
+accompaniments of pomp, but that one is able to contract very nearly to a
+private station and not on that account to lose dignity or to be more remiss
+in the duties that a prince must perform on behalf of the public. That I met
+with so good a brother,
+able by his character not only to rouse me to care
+of myself but at the same time to hearten me by respect and natural
+affection; that my children were not deficient in mind nor deformed in
+body; that I made no further progress in eloquence and poetry and those
+other pursuits wherein, had I seen myself progressing along an easy road, I
+should perhaps have become absorbed. That I made haste to advance my
+masters to the honours which they appeared to covet and did not put them
+off with hopes that, as they were still young, I should do it later on. To have
+got to know Apollonius, Rusticus, Maximus. To have pictured to myself
+clearly and repeatedly what life in obedience to Nature really is, so that,
+so far as concerns the gods and communications from the other world, and
+aids and inspirations, nothing hinders my living at once in obedience to
+Nature, though I still come somewhat short of this by my own fault and by
+not observing the reminders and almost the instructions of the gods. That
+my body has held out so well in a life like mine; that I did not touch
+Benedicta or Theodotus,but that even in later years when I experienced
+the passion of love I was cured; that though I was often angry with Rusticus
+I never went to extremes for which I should have been sorry; that though
+my mother was fated to die young, she still spent her last years with me.
+That whenever I wanted to help anyone in poverty or some other necessity I
+was never told that I could not afford it, and that I did not myself fall into
+the same necessity so as to take help from another; that my wife is what
+she is, so obedient, so affectionate, and so simple; that I was well provided
+with suitable tutors for my children. That I was granted assistance in
+dreams, especially how to avoid spitting blood and fits of giddiness, and
+the answer of the oracle at Caieta: ‘Even as thou shalt employ thyself; and
+that, although in love with philosophy, I did not meet with any sophist or
+retire to disentangle literary works or syllogisms or busy myself with
+problems ‘in the clouds’.For all these things require ‘the gods to help and
+Fortune’s hand’.""" .
+
+ns1:1.2 ns1:negative_sentiment 4.923027e+00 ;
+    ns1:neutral_sentiment 2.740714e+01 ;
+    ns1:positive_sentiment 6.766983e+01 ;
+    ns2:containsText """ From my father’s reputation and my memory of him: modesty and
+manliness.
+""" .
+
+ns1:1.3 ns1:negative_sentiment 3.460883e+01 ;
+    ns1:neutral_sentiment 3.859467e+01 ;
+    ns1:positive_sentiment 2.67965e+01 ;
+    ns2:containsText """ From my mother: piety and bountifulness, to keep myself not only from
+doing evil but even from dwelling on evil thoughts, simplicity too in diet
+and to be far removed from the ways of the rich.
+""" .
+
+ns1:1.4 ns1:negative_sentiment 9.973159e+00 ;
+    ns1:neutral_sentiment 2.912017e+01 ;
+    ns1:positive_sentiment 6.090667e+01 ;
+    ns2:containsText """ From my mother’s grandfather: not to have attended public schools but
+enjoyed good teachers at home, and to have learned the lesson that on
+things like these it is a duty to spend liberally.
+""" .
+
+ns1:1.5 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/mind/> ;
+    ns1:negative_sentiment 4.896202e+01 ;
+    ns1:neutral_sentiment 3.408254e+01 ;
+    ns1:positive_sentiment 1.695545e+01 ;
+    ns2:containsText """ From my tutor: not to become a partisan of the Green jacket or the Blue
+in the races, nor of Thracian or Samnite gladiators;
+to bear pain and be
+content with little; to work with my own hands, to mind my own business,
+and to be slow to listen to slander.
+""" .
+
+ns1:1.6 ns1:negative_sentiment 4.193811e+01 ;
+    ns1:neutral_sentiment 3.140514e+01 ;
+    ns1:positive_sentiment 2.665674e+01 ;
+    ns2:containsText """ From Diognetus:
+ to avoid idle enthusiasms; to disbelieve the professions
+of sorcerers and impostors about incantations and exorcism of spirits and
+the like; not to cock-fight or to be excited about such sports; to put up
+with plain-speaking and to become familiar with philosophy; to hear the
+lectures first of Baccheius
+, then of Tandasis and Marcian, in boyhood to
+write essays and to aspire to the camp-bed and skin coverlet and the other
+things which are part of the Greek training.
+""" .
+
+ns1:1.7 ns1:negative_sentiment 4.09127e+01 ;
+    ns1:neutral_sentiment 3.343325e+01 ;
+    ns1:positive_sentiment 2.565404e+01 ;
+    ns2:containsText """ From Rusticus: to get an impression of need for reform and treatment
+of character; not to run off into zeal for rhetoric, writing on speculative
+themes, discoursing on edifying texts, exhibiting in fanciful colours the
+ascetic or the philanthropist. To avoid oratory, poetry, and preciosity; not to
+parade at home in ceremonial costume or to do things of that kind; to write
+letters in the simple style, like his own from Sinuessa to my mother. To be
+easily recalled to myself and easily reconciled with those who provoke
+and offend, as soon as they are willing to meet me. To read books
+accurately and not be satisfied with superficial thinking about things or
+agree hurriedly with those who talk round a subject. To have made the
+acquaintance of the Discourses of Epictetus, of which he allowed me to
+share a copy of his own.
+""" .
+
+ns1:1.8 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/fortune/>,
+        <https://w3id.org/arco/ontology/core/reason/>,
+        <https://w3id.org/arco/ontology/core/truth/> ;
+    ns1:negative_sentiment 5.203923e+01 ;
+    ns1:neutral_sentiment 2.716585e+01 ;
+    ns1:positive_sentiment 2.079491e+01 ;
+    ns2:containsText """ From Apollonius: moral freedom, not to expose oneself to the
+insecurity of fortune; to look to nothing else, even for a little while, except
+to reason. To be always the same, in sharp attacks of pain, in the loss of a
+child, in long illnesses. To see clearly in a living example that a man can be
+at once very much in earnest and yet able to relax.
+Not to be censorious in exposition; and to see a man who plainly considered
+technical knowledge and ease in communicating general truths as the least
+of his good gifts. The lesson how one ought to receive from friends what
+are esteemed favours, neither lowering oneself on their account, nor
+returning them tactlessly.
+""" .
+
+ns1:1.9 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/principle/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 4.058218e+01 ;
+    ns1:neutral_sentiment 3.076793e+01 ;
+    ns1:positive_sentiment 2.86499e+01 ;
+    ns2:containsText """ From Sextus: graciousness, and the pattern of a household governed by
+its head, and the notion of life according to Nature. Dignity without
+pretence, solicitous consideration for friends, tolerance of amateurs and of
+those whose opinions have no ground in science.
+A happy accommodation to every man, so that not only was his
+conversation more agreeable than any flattery, but he excited the greatest
+reverence at that very time in the very persons about him. Certainty of
+grasp, and method in the discovery and arrangement of the principles
+necessary to human life.
+Never to give the impression of anger or of any other passion, but to be at
+once entirely passionless and yet full of natural affection. To praise without
+noise, to be widely learned without display.
+""" .
+
+ns1:2.1 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/divinity/>,
+        <https://w3id.org/arco/ontology/core/ignorance/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/nature/> ;
+    ns1:negative_sentiment 6.137548e+01 ;
+    ns1:neutral_sentiment 2.641689e+01 ;
+    ns1:positive_sentiment 1.220764e+01 ;
+    ns2:containsText """ Say to yourself in the early morning:
+I shall meet today inquisitive,
+ungrateful, violent, treacherous, envious, uncharitable men. All these things
+have come upon them through ignorance of real good and ill. But I,
+because I have seen that the nature of good is the right, and of ill the wrong,
+and that the nature of the man himself who does wrong is akin to my own
+(not of the same blood and seed, but partaking with me in mind, that is in a
+portion of divinity),
+I can neither be harmed by any of them, for no man
+will involve me in wrong, nor can I be angry with my kinsman or hate him;
+for we have come into the world to work together, like feet, like hands, like
+eyelids, like the rows of upper and lower teeth. To work against one another
+therefore is to oppose Nature, and to be vexed with another or to turn away
+from him is to tend to antagonism.
+""" .
+
+ns1:2.10 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/fault/> ;
+    ns1:negative_sentiment 6.017982e+01 ;
+    ns1:neutral_sentiment 2.410394e+01 ;
+    ns1:positive_sentiment 1.571624e+01 ;
+    ns2:containsText """ Like a true philosopher Theophrastus says, when comparing, as men
+commonly do compare, various faults, that errors of appetite are graver than
+errors of temper. For clearly one who loses his temper is turning away from
+Reason with a kind of pain and inward spasm; whereas he who offends
+through appetite is the victim of pleasure and is clearly more vicious in a
+way and more effeminate in his wrong-doing. Rightly then and in a truly
+philosophic spirit Theophrastus said that an offence attended with pleasure
+involves greater censure than one attended with pain. And, generally, the
+latter resembles more a man who was originally wronged and so is forced
+by pain to lose his temper; the other has begun it himself and has been
+impelled to do wrong, carried away by appetite to do what he does.
+""" .
+
+ns1:2.11 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/ignorance/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/nature/>,
+        <https://w3id.org/arco/ontology/core/power/>,
+        <https://w3id.org/arco/ontology/core/providence/> ;
+    ns1:negative_sentiment 6.804649e+01 ;
+    ns1:neutral_sentiment 2.276019e+01 ;
+    ns1:positive_sentiment 9.193329e+00 ;
+    ns2:containsText """ In the conviction that it is possible you may depart from life at once, act
+and speak and think in every case accordingly. But to leave the company of
+men is nothing to fear, if gods exist;
+for they would not involve you in ill.
+If, however, they do not exist or if they take no care for man’s affairs, why
+should I go on living in a world void of gods, or void of providence? But
+they do exist, and they do care for men’s lives, and they have put it entirely
+in a man’s power not to fall into real ills; for the rest, if anything were an ill,
+they would have provided also for this, that it may be in every man’s power
+not to fall into it; (and how could what does not make a man worse make
+his life worse?) But the nature of the Whole would not have winked at these
+things either out of ignorance or because (though it knew of them) it had
+not the power to guard against them or to put them right; neither would it
+have made so vast an error, from want of power or skill, as to permit good
+and ill to befall indifferently, both good and bad men equally. Now death
+and life, good report and evil report, pain and pleasure, wealth and poverty,
+these all befall men, good and bad alike, equally, and are themselves neither
+right nor wrong: they are therefore neither good nor ill.
+""" .
+
+ns1:2.12 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/God/>,
+        <https://w3id.org/arco/ontology/core/corrupt/>,
+        <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/honour/>,
+        <https://w3id.org/arco/ontology/core/judgement/>,
+        <https://w3id.org/arco/ontology/core/mind/> ;
+    ns1:negative_sentiment 4.933717e+01 ;
+    ns1:neutral_sentiment 3.539292e+01 ;
+    ns1:positive_sentiment 1.526992e+01 ;
+    ns2:containsText """ How all things are vanishing swiftly, bodies themselves in the Universe
+and the memorials of them in Time; what is the character of all things of
+sense, and most of all those which attract by the bait of pleasure or terrify
+by the threat of pain or are shouted abroad by vanity, how cheap,
+comtemptible, soiled, corruptible, and mortal: these are for the faculty of
+mind to consider. To consider too what kind of men those are whose
+judgements and voices confer honour and dishonour; what it is to die, and
+that if a man looks at it by itself and by the separating activity of thought
+strips off all the images associated with death, he will come to judge it to be
+nothing else but Nature’s handiwork. But if a man fears Nature’s handiwork
+he is a mere child; and yet death is not merely Nature’s handiwork, but also
+her well-being. To consider also how mortal man touches God and through
+what organ of himself, and when that part of him is in what sort of
+condition.
+""" .
+
+ns1:2.13 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/God/>,
+        <https://w3id.org/arco/ontology/core/Gods/>,
+        <https://w3id.org/arco/ontology/core/ignorance/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/power/>,
+        <https://w3id.org/arco/ontology/core/reason/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 6.076666e+01 ;
+    ns1:neutral_sentiment 2.689649e+01 ;
+    ns1:positive_sentiment 1.233684e+01 ;
+    ns2:containsText """ Nothing is more wretched than the man who goes round and round
+everything, and, as Pindar says,
+‘searches the bowels of the earth’, and
+seeks by conjecture to sound the minds of his neighbours, but fails to
+perceive that it is enough to abide with the Divinity that is within himself
+and to do Him genuine service. Now that service is to keep Him unsullied
+by passion, trifling, and discontent with what comes from God or men.
+What comes from the Gods is to be revered because of excellence; what
+comes from men is dear because they are of one kindred with himself;
+pitiful too sometimes, humanly speaking, by reason of their ignorance of
+good and ill. This disablement is more grievous than that which robs the
+eyes of the power to distinguish light from darkness.
+""" .
+
+ns1:2.14 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/matter/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 4.901952e+01 ;
+    ns1:neutral_sentiment 3.760074e+01 ;
+    ns1:positive_sentiment 1.337973e+01 ;
+    ns2:containsText """ Even were you about to live three thousand years or thrice ten
+thousand, nevertheless remember this, that no one loses any other life than
+this which he is living, nor lives any other than this which he is losing. Thus
+the longest and the shortest come to the same thing. For the present is equal
+for all, and what is passing is therefore equal: thus what is being lost is
+proved to be barely a moment. For a man could lose neither past nor future;
+how can one rob him of what he has not got? Always remember, then, these
+two things: one, that all things from everlasting are of the same kind, and
+are in rotation; and it matters nothing whether it be for a hundred years or
+for two hundred or for an infinite time that a man shall behold the same
+spectacle; the other, that the longest-lived and the soonest to die have an
+equal loss; for it is the present alone of which either will be deprived, since
+(as we saw) this is all he has and a man does not lose what he has not got.
+""" .
+
+ns1:2.15 ns1:negative_sentiment 1.710782e+01 ;
+    ns1:neutral_sentiment 5.788231e+01 ;
+    ns1:positive_sentiment 2.500987e+01 ;
+    ns2:containsText """ ‘Everything is what you judge it to be.’ While the retort made to the
+Cynic philosopher Monimus is plain enough, plain too is the use of the
+saying, if one only take the gist of it, so far as it is true.
+""" .
+
+ns1:2.16 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/impulse/>,
+        <https://w3id.org/arco/ontology/core/matter/>,
+        <https://w3id.org/arco/ontology/core/nature/>,
+        <https://w3id.org/arco/ontology/core/reason/>,
+        <https://w3id.org/arco/ontology/core/soul/> ;
+    ns1:negative_sentiment 4.525687e+01 ;
+    ns1:neutral_sentiment 3.993635e+01 ;
+    ns1:positive_sentiment 1.480678e+01 ;
+    ns2:containsText """ The soul of a man does violence to itself, first and foremost when it
+becomes so far as in it lies, a separate growth, a blain as it were upon the
+Universe. For to turn against anything that comes to pass is a separation
+from Nature, by which the natures of each of the rest are severally
+comprehended. Secondly, when it turns away from any human being or is
+swept counter to him, meaning to injure him, as is the case with the natures
+of those who are enraged. It violates itself, thirdly, when it is the victim of
+pleasure or pain; fourthly, when it acts a part, and says or does anything
+both feignedly and falsely. Fifthly, when, failing to direct any act or impulse
+of its own upon a mark, it behaves in any matter without a plan or
+conscious purpose, whereas even the smallest act ought to have a reference
+to the end. Now the end of reasonable creatures is this: to obey the rule and
+ordinance of the most venerable of all cities and governments.
+""" .
+
+ns1:2.17 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/body/>,
+        <https://w3id.org/arco/ontology/core/corrupt/>,
+        <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/dissolution/>,
+        <https://w3id.org/arco/ontology/core/fortune/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/time/>,
+        <https://w3id.org/arco/ontology/core/vital_spirit/> ;
+    ns1:negative_sentiment 4.656561e+01 ;
+    ns1:neutral_sentiment 3.824469e+01 ;
+    ns1:positive_sentiment 1.518972e+01 ;
+    ns2:containsText """ Of a man’s life, his time is a point, his existence a flux, his sensation
+clouded, his body’s entire composition corruptible, his vital spirit an eddy
+of breath, his fortune hard to predict, his fame uncertain. Briefly, all the
+things of the body, a river; all the things of the spirit, dream and delirium;
+his life a warfare and a sojourn in a strange land, his after-fame oblivion.
+What then can be his escort through life? One thing and one thing only.
+Philosophy. And this is to keep the spirit within him unwronged and
+unscathed, master of pains and pleasures, doing nothing at random, nothing
+falsely and with pretence; needing no other to do aught or to leave aught
+undone; and moreover accepting what befalls it, that is, what is assigned to
+it, as coming from the other world from which it came itself. And in all
+things awaiting death, with a mind that is satisfied, counting it nothing else
+than a release of the elements from which each living creature is composed.
+Now if there is no hurt to the elements themselves in their ceaseless
+changing each into other, why should a man apprehend anxiously the
+change and dissolution of them all? For this is according to Nature; and no
+evil is according to Nature.""" .
+
+ns1:2.2 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/flesh/>,
+        <https://w3id.org/arco/ontology/core/governing_self/>,
+        <https://w3id.org/arco/ontology/core/impulse/>,
+        <https://w3id.org/arco/ontology/core/vital_spirit/> ;
+    ns1:negative_sentiment 6.358594e+01 ;
+    ns1:neutral_sentiment 2.710517e+01 ;
+    ns1:positive_sentiment 9.308894e+00 ;
+    ns2:containsText """ This whatever it is that I am, is flesh and vital spirit and the governing
+self. Disdain the flesh: blood and bones and network, a twisted skein of
+nerves, veins, arteries. Consider also what the vital spirit is: a current of air,
+not even continuously the same, but every hour being expelled and sucked
+in again. There is then a third part, the governing self. Put away your books,
+be distracted no longer, they are not your portion. Rather, as if on the point
+of death, reflect like this: ‘you are an old man, suffer this governing part of
+you no longer to be in bondage, no longer to be a puppet pulled by selfish
+impulse, no longer to be indignant with what is allotted in the present or to
+suspect what is allotted in the future.’
+""" .
+
+ns1:2.3 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/nature/>,
+        <https://w3id.org/arco/ontology/core/necessity/>,
+        <https://w3id.org/arco/ontology/core/universe/>,
+        <https://w3id.org/arco/ontology/core/whole/> ;
+    ns1:negative_sentiment 2.805422e+01 ;
+    ns1:neutral_sentiment 4.039995e+01 ;
+    ns1:positive_sentiment 3.154582e+01 ;
+    ns2:containsText """ The work of the gods is full of Providence: the work of Fortune is not
+divorced from Nature or the spinning and winding of the threads ordained
+by Providence. All flows from that other world; and there is, besides,
+necessity and the well-being of the whole universe, whereof you are a part.
+Now to every part of Nature that is good which the nature of the Whole
+brings, and which preserves that nature; and the whole world is preserved as
+much by the changes of the compound bodies as by the changes of the
+elements which compose those bodies. Let this be sufficient for you, these
+be continually your doctrines. But put away your thirst for books,
+that so
+you may not die murmuring, but truly reconciled and grateful from your
+heart to the gods.
+""" .
+
+ns1:2.4 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/nature/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 3.828961e+01 ;
+    ns1:neutral_sentiment 4.371106e+01 ;
+    ns1:positive_sentiment 1.799932e+01 ;
+    ns2:containsText """ Remember how long you have been putting off these things, and how
+many times the gods have given you days of grace, and yet you do not use
+them. Now is it high time to perceive the kind of Universe whereof you are
+a part and the nature of the governor of the Universe from whom you
+subsist as an effluence, and that the term of your time is circumscribed, and
+that unless you use it to attain calm of mind, time will be gone and you will
+be gone and the opportunity to use it will not be yours again.
+""" .
+
+ns1:2.5 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/justice/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/> ;
+    ns1:negative_sentiment 3.479531e+01 ;
+    ns1:neutral_sentiment 3.972809e+01 ;
+    ns1:positive_sentiment 2.547662e+01 ;
+    ns2:containsText """ Each hour be minded, valiantly as becomes a Roman and a man, to do
+what is to your hand, with precise . . . and unaffected dignity, natural love,
+freedom and justice; and to give yourself repose from every other
+imagination. And so you will, if only you do each act as though it were your
+last, freed from every random aim, from wilful turning away from the
+directing Reason, from pretence, self-love and displeasure with what is
+allotted to you. You see how few things a man need master in order to live a
+smooth and god-fearing life; for the gods themselves will require nothing
+more of him who keeps these precepts.
+""" .
+
+ns1:2.6 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/honour/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/soul/>,
+        <https://w3id.org/arco/ontology/core/souls/> ;
+    ns1:negative_sentiment 8.379775e+01 ;
+    ns1:neutral_sentiment 1.276791e+01 ;
+    ns1:positive_sentiment 3.434339e+00 ;
+    ns2:containsText """ You are doing yourself violence, violence, my soul; and you will have
+no second occasion to do yourself honour. Brief is the life of each of us, and
+this of yours is nearly ended, and yet you do not reverence yourself, but
+commit your well-being to the charge of other men’s souls.
+""" .
+
+ns1:2.7 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/impulse/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/sick/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 5.396933e+01 ;
+    ns1:neutral_sentiment 3.23817e+01 ;
+    ns1:positive_sentiment 1.364897e+01 ;
+    ns2:containsText """ Do things from outside break in to distract you? Give yourself a time of
+quiet to learn some new good thing and cease to wander out of your course.
+But, when you have done that, be on your guard against a second kind of
+wandering. For those who are sick to death in life, with no mark on which
+they direct every impulse or in general every imagination, are triflers, not in
+words only but also in their deeds.
+""" .
+
+ns1:2.8 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/soul/> ;
+    ns1:negative_sentiment 7.927872e+01 ;
+    ns1:neutral_sentiment 1.728835e+01 ;
+    ns1:positive_sentiment 3.432934e+00 ;
+    ns2:containsText """ Men are not easily seen to be brought into evil case by failure to consider
+what passes in another’s soul; but they who do not read aright the motions
+of their own soul are bound to be in evil case.
+""" .
+
+ns1:2.9 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/nature/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 1.908817e+01 ;
+    ns1:neutral_sentiment 6.208019e+01 ;
+    ns1:positive_sentiment 1.883164e+01 ;
+    ns2:containsText """ Always remember the following: what the nature of the Whole is; what
+my own nature; the relation of this nature to that; what kind of part it is of
+what kind of Whole; and that no man can hinder your saying and doing at
+all times what is in accordance with that Nature whereof you are a part.
+""" .
+
+ns1:3.1 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/employment/>,
+        <https://w3id.org/arco/ontology/core/judgement/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 3.811612e+01 ;
+    ns1:neutral_sentiment 3.960412e+01 ;
+    ns1:positive_sentiment 2.227977e+01 ;
+    ns2:containsText """ We ought to take into account not only the fact that day by day life is
+being spent and a smaller balance remaining, but this further point also that,
+should we live longer, it is at least doubtful whether the intellect will
+hereafter be the same, still sufficient to comprehend events and the
+speculation which contributes to the understanding alike of things divine
+and human. For, if the mind begin to decay, there will be no failure of
+functions like transpiration, nutrition, sense-impression, and desire; but the
+right employment of ourselves, precision in regard to the related elements
+of duty, analysis of the indications of sense, to know just whether the time
+is come to take leave of life, and all questions of the kind which specially
+require a trained judgement— these are extinguished before the rest.
+Accordingly we must press forward, not only because every day we are
+drawing nearer to death, but also because the apprehension of events and
+the ability to adapt ourselves to them begin to wane before the end.
+""" .
+
+ns1:3.10 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 5.530969e+01 ;
+    ns1:neutral_sentiment 3.404842e+01 ;
+    ns1:positive_sentiment 1.064188e+01 ;
+    ns2:containsText """ Therefore throw all else aside, and hold fast only these few things;
+further calling to mind at the same time that each of us lives only in the
+present, this brief moment; the rest is either a life that is past, or is in an
+uncertain future. Little the life each lives, little the corner of the earth he
+lives in, little even the longest fame hereafter, and even that dependent on
+a succession of poor mortals, who will very soon be dead, and have not
+learnt to know themselves, much less the man who was dead long years
+ago.
+""" .
+
+ns1:3.11 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/God/>,
+        <https://w3id.org/arco/ontology/core/law/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/power/>,
+        <https://w3id.org/arco/ontology/core/time/>,
+        <https://w3id.org/arco/ontology/core/truth/>,
+        <https://w3id.org/arco/ontology/core/whole/> ;
+    ns1:negative_sentiment 3.107607e+01 ;
+    ns1:neutral_sentiment 4.574433e+01 ;
+    ns1:positive_sentiment 2.31796e+01 ;
+    ns2:containsText """ To the above supports let one more be added. Always make a figure or
+outline of the imagined object as it occurs, in order to see distinctly what it
+is in its essence, naked, as a whole and parts; and say to yourself its
+individual name and the names of the things of which it was compounded
+and into which it will be broken up. For nothing is so able to create
+greatness of mind as the power methodically and truthfully to test each
+thing that meets one in life, and always to look upon it so as to attend at the
+same time to the use which this particular thing contributes to a Universe of
+a certain definite kind, what value it has in reference to the Whole, and
+what to man, who is a citizen of the highest City, whereof all other cities are
+like households. What is this which now creates an image in me, what is its
+composition? how long will it naturally continue, what virtue is of use to
+meet it; for example, gentleness, fortitude, truth, good faith, simplicity, selfreliance, and the rest? Therefore, in each case, we must say: this has come
+from God; this by the actual co-ordination of events, the complicated web
+and similar coincidence or chance; this again from my fellow man, my
+kinsman, my comrade, yet one who does not know what is natural for
+himself But I do know; wherefore I use him kindly and justly, according to
+the natural law of fellowship, aiming, however, at the same time at his
+desert, where the question is morally indifferent.
+""" .
+
+ns1:3.12 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/action/>,
+        <https://w3id.org/arco/ontology/core/divinity/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/truth/> ;
+    ns1:negative_sentiment 1.916249e+01 ;
+    ns1:neutral_sentiment 3.661797e+01 ;
+    ns1:positive_sentiment 4.421953e+01 ;
+    ns2:containsText """ If you complete the present work, following the rule of right, earnestly,
+with all your might, with kindness, and admit no side issue, but preserve
+your own divinity pure and erect, as if you have this moment to restore it; if
+you make this secure, expecting nothing and avoiding nothing, but content
+with present action in accord with Nature and with heroic truth in what you
+mean and say, you will live the blessed life. Now there is no one who is
+able to prevent this.
+""" .
+
+ns1:3.13 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/God/>,
+        <https://w3id.org/arco/ontology/core/mind/> ;
+    ns1:negative_sentiment 3.129915e+01 ;
+    ns1:neutral_sentiment 4.366878e+01 ;
+    ns1:positive_sentiment 2.503208e+01 ;
+    ns2:containsText """ As doctors have their instruments and scalpels always at hand to meet
+sudden demands for treatment, so do you have your doctrines ready in order
+to recognize the divine and human, and so to do everything, even the very
+smallest, as mindful of the bond which unites the divine and human; for you
+will not do any act well which concerns man without referring it to the
+divine; and the same is true of your conduct to God.
+""" .
+
+ns1:3.14 ns1:negative_sentiment 6.055971e+01 ;
+    ns1:neutral_sentiment 2.799371e+01 ;
+    ns1:positive_sentiment 1.144658e+01 ;
+    ns2:containsText """ Do not wander from your path any longer, for you are not likely to read
+your notebooks or your deeds of ancient Rome and Greece or your extracts
+from their writings, which you laid up against old age. Hasten then to the
+goal, lay idle hopes aside, and come to your own help, if you care at all for
+yourself, while still you may.
+""" .
+
+ns1:3.15 ns1:negative_sentiment 3.666776e+01 ;
+    ns1:neutral_sentiment 5.340838e+01 ;
+    ns1:positive_sentiment 9.923844e+00 ;
+    ns2:containsText """ They have not learnt to know the manifold significance of theft, of
+sowing, of buying, resting, seeing what ought to be done. This depends not
+on the bodily eye but on another kind of vision.
+""" .
+
+ns1:3.16 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/God/>,
+        <https://w3id.org/arco/ontology/core/body/>,
+        <https://w3id.org/arco/ontology/core/divinity/>,
+        <https://w3id.org/arco/ontology/core/fate/>,
+        <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/impulse/>,
+        <https://w3id.org/arco/ontology/core/justice/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/nature/>,
+        <https://w3id.org/arco/ontology/core/truth/>,
+        <https://w3id.org/arco/ontology/core/vital_spirit/> ;
+    ns1:negative_sentiment 3.505262e+01 ;
+    ns1:neutral_sentiment 3.969749e+01 ;
+    ns1:positive_sentiment 2.524987e+01 ;
+    ns2:containsText """ Body, vital spirit, mind: of the body, sense perceptions; of the vital
+spirit, impulses; of the mind, doctrines. To be impressed by images belongs
+also to the beasts of the field, to be swayed by the strings of impulse to wild
+beasts, to men who sin against nature, to a Phalaris or a Nero. To have
+the mind as guide to what appear to be duties belongs also to men who do
+not believe in gods, who betray their own country, who do anything and
+everything once they have locked their doors. If then all else is common
+to you with those whom I have mentioned, it remains the peculiar mark of
+the good man to love and welcome what befalls him and is the thread fate
+spins for him; not to soil the divinity seated within his breast nor to disquiet
+it with a mob of imaginations, but to preserve and to propitiate it, following
+God in orderly wise, uttering no word contrary to truth, doing no act
+contrary to justice. And if all men disbelieve that he lives simply, modestly,
+and cheerfully, he is not angry with any one of them nor diverted from the
+road that leads to the goal of his life, at which he must arrive, pure,
+peaceful, ready to depart, in effortless accord with his own birth-spirit.""" .
+
+ns1:3.2 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/action/> ;
+    ns1:negative_sentiment 3.537952e+01 ;
+    ns1:neutral_sentiment 3.642499e+01 ;
+    ns1:positive_sentiment 2.819546e+01 ;
+    ns2:containsText """ We must also observe closely points of this kind, that even the
+secondary effects of Nature’s processes possess a sort of grace and
+attraction. To take one instance, bread when it is being baked breaks open at
+some places; now even these cracks, which in one way contradict the
+promise of the baker’s art, somehow catch the eye and stimulate in a special
+way our appetite for the food. And again figs, when fully mature, gape, and
+in ripe olives their very approach to decay adds a certain beauty of its own
+to the fruit. Ears of corn too when they bend downwards, the lion’s
+wrinkled brow, the foam flowing from the boar’s mouth, and many other
+characteristics that are far from beautiful if we look at them in isolation, do
+nevertheless because they follow from Nature’s processes lend those a
+further ornament and a fascination. And so, if a man has a feeling for, and a
+deeper insight into the processes of the Universe, there is hardly one but
+will somehow appear to present itself pleasantly to him, even among mere
+attendant circumstances. Such a man also will feel no less pleasure in
+looking at the actual jaws of wild beasts than at the imitations which
+painters and sculptors exhibit, and he will be enabled to see in an old
+woman or an old man a kind of freshness and bloom, and to look upon the
+charms of his own boy slaves with sober eyes. And many such experiences
+there will be, not convincing to everyone but occurring to him and to him
+alone who has become genuinely familiar with Nature and her works.
+""" .
+
+ns1:3.3 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/fate/>,
+        <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/sick/>,
+        <https://w3id.org/arco/ontology/core/whole/> ;
+    ns1:negative_sentiment 5.419194e+01 ;
+    ns1:neutral_sentiment 3.045905e+01 ;
+    ns1:positive_sentiment 1.534901e+01 ;
+    ns2:containsText """ Hippocrates, after curing many sicknesses, himself fell sick and died.
+The Chaldean astrologers foretold the death of many persons, then the
+hour of fate overtook them also. Alexander, Pompeius, and Julius Caesar,
+after so often utterly destroying whole towns and slaying in the field many
+myriads of horse and foot, themselves also one day departed from life.
+Heraclitus, after many speculations about the fire which should consume
+the Universe, was waterlogged by dropsy, poulticed himself with cow-dung,
+and died. Vermin killed Democritus; another kind of vermin Socrates.
+What is the moral? You went on board, you set sail, you have made the
+port. Step ashore: if to a second life, nothing is void of gods, not even in
+that other world; but if to unconsciousness, you will cease to suffer pains
+and pleasures and to be the servant of an earthly vessel as far inferior as that
+which does it service is superior; for the one is mind and deity, the other
+clay and gore.
+""" .
+
+ns1:3.4 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/governing_self/>,
+        <https://w3id.org/arco/ontology/core/justice/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/nature/>,
+        <https://w3id.org/arco/ontology/core/necessity/>,
+        <https://w3id.org/arco/ontology/core/reason/>,
+        <https://w3id.org/arco/ontology/core/whole/> ;
+    ns1:negative_sentiment 4.681131e+01 ;
+    ns1:neutral_sentiment 3.504141e+01 ;
+    ns1:positive_sentiment 1.814729e+01 ;
+    ns2:containsText """ Do not waste the balance of life left to you in thoughts about other
+persons, when you are not referring to some advantage of your fellows—for
+why do you rob yourself of something else which you might do—I mean if
+you imagine to yourself what so and so is doing, and why; what he is saying
+or thinking or planning, and every thought of the kind which leads you
+astray from close watch over your governing self?
+Rather you must, in the train of your thoughts, avoid what is merely casual
+and without purpose, and above all curiosity and malice; you must habituate
+yourself only to thoughts about which if someone were suddenly to ask:
+‘What is in your mind now?’, you would at once reply, quite frankly, this or
+that; and so from the answer it would immediately be plain that all was
+simplicity and kindness, the thoughts of a social being, who disregards
+pleasurable, or to speak more generally luxurious imaginings or rivalry of
+any kind, or envy and suspicion or anything else about which you would
+blush to put into words that you had it in your head.
+A man so minded, putting off no longer to be one of the elect, is surely a
+priest and minister of gods, employing aright that which is seated within
+him, which makes the mere mortal to be unstained by pleasures, unscathed
+by any pain, untouched by any wrong, unconscious of any wickedness; a
+wrestler in the greatest contest of all, not to be overthrown by any passion;
+dyed with justice to the core, welcoming with his whole heart all that comes
+to pass and is assigned to him; seldom and only under some great necessity
+and for the common good imagining what another person is saying or doing
+or thinking. For he has only his own work to realize and he keeps in mind
+continually what is assigned to him from the Whole; his work he makes
+perfect, his lot he is convinced is good; for the birth-spirit assigned to every
+man goes with him and carries him along with it.
+Moreover, he remembers that all reasonable beings are akin to himself, and
+that although to care for all men is in accord with man’s nature, he is to
+cling not to the opinion of all men, but only of men who live in accord with
+Nature. Indeed, he remembers continually what those who do not so live are
+like, in their homes and abroad, by night and by day; what manner of men
+they are, and those with whom they defile themselves. Therefore he takes
+no account even of the praise of such men-men who are not even acceptable
+to themselves.
+""" .
+
+ns1:3.5 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/God/>,
+        <https://w3id.org/arco/ontology/core/body/> ;
+    ns1:negative_sentiment 5.083099e+01 ;
+    ns1:neutral_sentiment 3.277674e+01 ;
+    ns1:positive_sentiment 1.639226e+01 ;
+    ns2:containsText """ Do not act unwillingly nor selfishly nor without self-examination, nor
+with divergent motives. Let no affectation veneer your thinking. Be neither
+a busy talker, nor a busybody. Moreover let the God within be the guardian
+of a real man, a man of ripe years, a statesman, a Roman, a magistrate,
+who has taken his post like one waiting for the Retreat to sound, ready to
+depart, needing no oath nor any man as witness. And see that you have
+gladness of face, no need of service from without nor the peace that other
+men bestow. You should stand upright,
+ not be held upright.
+""" .
+
+ns1:3.6 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/divinity/>,
+        <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/honour/>,
+        <https://w3id.org/arco/ontology/core/impulse/>,
+        <https://w3id.org/arco/ontology/core/justice/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/power/>,
+        <https://w3id.org/arco/ontology/core/reason/>,
+        <https://w3id.org/arco/ontology/core/temperance/>,
+        <https://w3id.org/arco/ontology/core/truth/> ;
+    ns1:negative_sentiment 3.512914e+01 ;
+    ns1:neutral_sentiment 3.909614e+01 ;
+    ns1:positive_sentiment 2.577472e+01 ;
+    ns2:containsText """ If you discover in the life of man something higher than justice, truth,
+temperance, fortitude, and generally speaking than your understanding
+contented with itself, where it presents you behaving by the rule of right,
+and satisfied with destiny, in what is assigned to you and is not yours to
+choose; if, I say, you see something higher than this, turn to it with all your
+heart and enjoy the supreme good now that it is found. But if nothing higher
+is revealed than the very divinity seated within you, subordinating your
+private impulses to itself, examining your thoughts, having withdrawn
+itself, as Socrates used to say,
+ from the sense-affections, and subordinated
+itself to the gods and making men its first care; if you find all else to be
+smaller and cheaper than this, give no room to anything else, to which when
+once you incline and turn, you will no longer have the power without a
+struggle to prefer in honour that which is your own, your peculiar good. For
+it is not right to set up a rival of another kind to the good of Reason and of
+the Commonwealth; the praise of the multitude, for example, or place or
+wealth or pleasurable indulgence. All these, though they appear for a little
+while to be in accord, suddenly gain the mastery and carry a man away. Do
+you then, I say, simply and of your own free will, choose the higher and
+hold fast to that. ‘But the higher is what is to our advantage’;
+if to the
+advantage of a reasonable being, keep hold of that, but if to the advantage
+of a mere animate creature, say so and preserve your decision without
+parade; only see to it that you make a choice that will not betray you.
+""" .
+
+ns1:3.7 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/divinity/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/reason/>,
+        <https://w3id.org/arco/ontology/core/soul/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 5.847489e+01 ;
+    ns1:neutral_sentiment 2.776427e+01 ;
+    ns1:positive_sentiment 1.376084e+01 ;
+    ns2:containsText """ Never value as an advantage to yourself what will force you one day to
+break your word, to abandon self-respect, to hate, suspect, execrate another,
+to act a part, to covet anything that calls for walls or coverings to conceal it.
+A man who puts first his own mind and divinity, and the holy rites of its
+excellence, makes no scene, utters no groans, will need neither the refuge of
+solitude nor the crowded streets. What is most worthwhile, he will pass his
+days neither in pursuit nor in avoidance, and it is no concern at all of his
+whether the time be longer or shorter for which he shall have the use of the
+soul in its bodily envelope; for even if he must be released at once, he will
+depart as easily as he would perform any other act that can be done with
+reverence and sobriety, being careful all his life of this one thing alone that
+his understanding be not found in any state which is foreign to a reasonable
+social being.
+""" .
+
+ns1:3.8 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/fate/>,
+        <https://w3id.org/arco/ontology/core/life/> ;
+    ns1:negative_sentiment 5.099978e+01 ;
+    ns1:neutral_sentiment 3.40675e+01 ;
+    ns1:positive_sentiment 1.493272e+01 ;
+    ns2:containsText """ In the understanding of a man of chastened and purified spirit you will
+find no trace of festering wound, no ulceration, no abscess beneath the skin.
+The hour of fate does not surprise his life before its fulfilment, so that one
+would say that the actor is leaving the stage before he has fulfilled his role,
+before the play is over. You will find nothing servile or artificial, no
+dependence on others nor severance from them; nothing to account for,
+nothing that needs a hole to hide in.
+""" .
+
+ns1:3.9 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/governing_self/>,
+        <https://w3id.org/arco/ontology/core/judgement/>,
+        <https://w3id.org/arco/ontology/core/reason/> ;
+    ns1:negative_sentiment 3.817983e+01 ;
+    ns1:neutral_sentiment 3.977731e+01 ;
+    ns1:positive_sentiment 2.204287e+01 ;
+    ns2:containsText """ Reverence your faculty of judgement. On this it entirely rests that your
+governing self no longer has a judgement disobedient to Nature and to the
+estate of a reasonable being. This judgement promises deliberateness,
+familiar friendship with men, and to follow in the train of the gods.
+""" .
+
+ns1:4.1 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/obstacle/>,
+        <https://w3id.org/arco/ontology/core/power/> ;
+    ns1:negative_sentiment 3.427485e+01 ;
+    ns1:neutral_sentiment 3.779722e+01 ;
+    ns1:positive_sentiment 2.792793e+01 ;
+    ns2:containsText """ The sovereign power within, in its natural state, so confronts what
+comes to pass as always to adapt itself readily to what is feasible and is
+presented to it. This is because it puts its affection upon no material of its
+own choice; rather it sets itself upon its objects with a reservation, and then
+makes the opposition which encounters it into material for itself It is like a
+fire, when it masters what falls into it, whereby a little taper would have
+been put out, but a bright fire very quickly appropriates and devours what is
+heaped upon it, and leaps up higher out of those very obstacles.
+""" .
+
+ns1:4.10 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/justice/> ;
+    ns1:negative_sentiment 1.514733e+01 ;
+    ns1:neutral_sentiment 4.57367e+01 ;
+    ns1:positive_sentiment 3.911597e+01 ;
+    ns2:containsText """ ‘All that comes to pass comes to pass with justice.’ You will find this to
+be so if you watch carefully. I do not mean only in accordance with the
+ordered series of events, but in accordance with justice and as it were by
+someone who assigns what has respect to worth. Watch, therefore, as you
+have begun and whatever you do, do it with this, with goodness in the
+specific sense in which the notion of the good man is conceived. Preserve
+this goodness in everything you do.
+""" .
+
+ns1:4.11 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/truth/> ;
+    ns1:negative_sentiment 3.558784e+01 ;
+    ns1:neutral_sentiment 5.092832e+01 ;
+    ns1:positive_sentiment 1.348383e+01 ;
+    ns2:containsText """ Don’t regard things in the light in which he who does the wrong judges
+them, nor as he wishes you to judge them: but see them as in truth they are.
+""" .
+
+ns1:4.12 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/justice/>,
+        <https://w3id.org/arco/ontology/core/law/>,
+        <https://w3id.org/arco/ontology/core/principle/> ;
+    ns1:negative_sentiment 2.566589e+01 ;
+    ns1:neutral_sentiment 4.365436e+01 ;
+    ns1:positive_sentiment 3.067974e+01 ;
+    ns2:containsText """ In these two ways you must always be prepared: the one, only to act as
+the principle of the royal and law-giving art prescribes for the benefit of
+mankind; the second, to change your purpose, if someone is there to correct
+and to guide you away from some fancy of yours
+. The guidance must,
+however, always be from a conviction of justice or common benefit
+ensuing, and what you prefer must be similar, not because it looked pleasant
+or popular.
+""" .
+
+ns1:4.13 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/reason/> ;
+    ns1:negative_sentiment 2.079576e+01 ;
+    ns1:neutral_sentiment 6.184995e+01 ;
+    ns1:positive_sentiment 1.735428e+01 ;
+    ns2:containsText """ ‘You have reason?’ ‘Yes, I have?’ ‘Why not use it then? If this is doing
+its part, what else do you want?’
+""" .
+
+ns1:4.14 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/reason/> ;
+    ns1:negative_sentiment 2.492757e+01 ;
+    ns1:neutral_sentiment 6.120906e+01 ;
+    ns1:positive_sentiment 1.386337e+01 ;
+    ns2:containsText """ You came into the world as a part. You will vanish in that which gave
+you birth, or rather you will be taken up into its generative reason by the
+process of change.
+""" .
+
+ns1:4.15 ns1:negative_sentiment 3.201352e+01 ;
+    ns1:neutral_sentiment 5.55382e+01 ;
+    ns1:positive_sentiment 1.244828e+01 ;
+    ns2:containsText """ Many grains of incense upon the same altar; one falls first, another later,
+but difference there is none.
+""" .
+
+ns1:4.16 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/principle/> ;
+    ns1:negative_sentiment 1.764013e+01 ;
+    ns1:neutral_sentiment 3.057485e+01 ;
+    ns1:positive_sentiment 5.178501e+01 ;
+    ns2:containsText """ Within ten days you will appear a god even to those11
+to whom today
+you seem a beast or a baboon, if you return to your principles and your
+reverence of the Word.
+""" .
+
+ns1:4.17 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/life/> ;
+    ns1:negative_sentiment 2.449854e+01 ;
+    ns1:neutral_sentiment 4.539183e+01 ;
+    ns1:positive_sentiment 3.010964e+01 ;
+    ns2:containsText """ Don’t live as though you were going to live a myriad years. Fate is
+hanging over your head; while you have life, while you may, become good.
+""" .
+
+ns1:4.18 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/body/> ;
+    ns1:negative_sentiment 3.152124e+01 ;
+    ns1:neutral_sentiment 4.231474e+01 ;
+    ns1:positive_sentiment 2.616403e+01 ;
+    ns2:containsText """ How great a rest from labour he gains who does not look to what his
+neighbour says or does or thinks,
+ but only to what he himself is doing, in
+order that exactly this may be just and holy, or in accord with a good man’s
+conduct. ‘Do not look round at a black character’, but run towards the
+goal, balanced, not throwing your body about.
+""" .
+
+ns1:4.19 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/whole/> ;
+    ns1:negative_sentiment 4.694458e+01 ;
+    ns1:neutral_sentiment 3.583797e+01 ;
+    ns1:positive_sentiment 1.721746e+01 ;
+    ns2:containsText """ The man in a flutter for after-fame fails to picture to himself that each of
+those who remember him will himself also very shortly die, then again the
+man who succeeded him, until the whole remembrance is extinguished as it
+runs along a line of men who are kindled and then put out. And put the case
+that those who will remember never die, and the remembrance never dies,
+what is that to you! And I do not say that it is nothing to the dead; what is
+praise to the living, except perhaps for some practical purpose? For now
+you are putting off unseasonably the gift of Nature, which does not depend
+on the testimony of some one else . . .
+""" .
+
+ns1:4.2 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/principle/> ;
+    ns1:negative_sentiment 1.096053e+01 ;
+    ns1:neutral_sentiment 4.2343e+01 ;
+    ns1:positive_sentiment 4.669648e+01 ;
+    ns2:containsText """ Nothing that is undertaken is to be undertaken without a purpose, nor
+otherwise than according to a principle which makes the art of living
+perfect.
+""" .
+
+ns1:4.20 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/blame/>,
+        <https://w3id.org/arco/ontology/core/corrupt/>,
+        <https://w3id.org/arco/ontology/core/law/>,
+        <https://w3id.org/arco/ontology/core/truth/> ;
+    ns1:negative_sentiment 4.105186e+01 ;
+    ns1:neutral_sentiment 3.18007e+01 ;
+    ns1:positive_sentiment 2.714744e+01 ;
+    ns2:containsText """ Everything in any way lovely is of itself and terminates in itself, holding
+praise to be no part of itself. At all events, in no case does what is praised
+become better or worse. This I say also of what is commonly called lovely,
+for instance materials and work of art; and indeed what is there lacking at
+all to that which is really lovely? No more than to law, no more than to
+truth, no more than to kindness or reverence of self. Which of these is
+lovely because it is praised or corrupted because it is blamed? Does an
+emerald become worse than it was, if it be not praised? And what of gold,
+ivory, purple, a lute, a sword-blade, a flower-bud, and little plant?
+""" .
+
+ns1:4.21 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/dissolution/>,
+        <https://w3id.org/arco/ontology/core/principle/>,
+        <https://w3id.org/arco/ontology/core/soul/>,
+        <https://w3id.org/arco/ontology/core/souls/>,
+        <https://w3id.org/arco/ontology/core/time/>,
+        <https://w3id.org/arco/ontology/core/truth/> ;
+    ns1:negative_sentiment 3.458687e+01 ;
+    ns1:neutral_sentiment 4.838521e+01 ;
+    ns1:positive_sentiment 1.702793e+01 ;
+    ns2:containsText """ You ask how, if souls continue to exist, the atmosphere has room for
+them from time external. But how does the ground have room for the bodies
+of those who for so long an age are buried in it? The answer is that, as on
+earth change and dissolution after a continuance for so long make room for
+other dead bodies, so in the atmosphere souls pass on and continue for so
+long, and then change and are poured out and are kindled being assumed
+into the generative principle of Universal Nature, and so provide room for
+those which succeed to their place. This would be the answer presuming
+that souls do continue. But we must consider not only the multitude of
+bodies that are thus buried, but also the number of animals eaten every day
+by ourselves and the rest of the animal creation. How large a number are
+devoured and in a manner of speaking buried in the bodies of those who
+feed upon them; and yet there is room to contain them because they are
+turned into blood, because they are changed into forms of air and heat. How
+shall we investigate the truth of this? By a distinction into the material and
+the causal.
+""" .
+
+ns1:4.22 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/impulse/> ;
+    ns1:negative_sentiment 6.102597e+00 ;
+    ns1:neutral_sentiment 4.62846e+01 ;
+    ns1:positive_sentiment 4.76128e+01 ;
+    ns2:containsText """ Do not wander without a purpose, but in all your impulses render what
+is just, and in all your imaginations preserve what you apprehend.
+""" .
+
+ns1:4.23 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/God/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 1.830371e+01 ;
+    ns1:neutral_sentiment 4.513912e+01 ;
+    ns1:positive_sentiment 3.655717e+01 ;
+    ns2:containsText """ Everything is fitting for me, my Universe, which fits thy purpose.
+Nothing in thy good time is too early or too late for me; everything is fruit
+for me which thy seasons. Nature, bear; from thee, in thee, to thee are all
+things. The poet sings: ‘Dear city of Cecrops’, and will you not say: ‘Dear
+city of God’?
+""" .
+
+ns1:4.24 ns1:hasAssociatedAgent ns1:Democritus ;
+    ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/action/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/reason/> ;
+    ns1:negative_sentiment 3.788009e+01 ;
+    ns1:neutral_sentiment 3.704405e+01 ;
+    ns1:positive_sentiment 2.507586e+01 ;
+    ns2:containsText """ Democritus has said: ‘Do few things, if you would enjoy tranquillity’.
+May it not be better to do the necessary things and what the reason of a
+creature intended by Nature to be social prescribes, and as that reason
+prescribes? For this brings not only the tranquillity from doing right but
+also from doing few things. For if one removes most of what we say and do
+as unnecessary, he will have more leisure and less interruption. Wherefore
+on each occasion he should remind himself: ‘Is this not one of the necessary
+things?’ <Democritus> And he should remove not actions merely that are unnecessary, but
+imaginations also, for in this way superfluous actions too will not follow in
+their train.
+""" .
+
+ns1:4.25 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/action/>,
+        <https://w3id.org/arco/ontology/core/life/> ;
+    ns1:negative_sentiment 1.06691e+01 ;
+    ns1:neutral_sentiment 2.933795e+01 ;
+    ns1:positive_sentiment 5.999295e+01 ;
+    ns2:containsText """ Make trial for yourself how the life of the good man, too, fares well, of
+the man pleased with what is assigned from Universal Nature and contented
+by his own just action and kind disposition.
+""" .
+
+ns1:4.26 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/matter/>,
+        <https://w3id.org/arco/ontology/core/reason/> ;
+    ns1:negative_sentiment 3.99662e+01 ;
+    ns1:neutral_sentiment 3.962366e+01 ;
+    ns1:positive_sentiment 2.041014e+01 ;
+    ns2:containsText """ You have seen those things, look now at these: do not trouble yourself,
+make yourself simple. Does a man do wrong? He does wrong to himself.
+Has some chance befallen you? It is well; from Universal Nature, from the
+beginning, all that befalls was determined for you and the thread was
+spun. The sum of the matter is this: life is short; the present must be
+turned to profit with reasonableness and right. Be sober without effort.
+""" .
+
+ns1:4.27 ns1:negative_sentiment 3.261803e+01 ;
+    ns1:neutral_sentiment 4.31866e+01 ;
+    ns1:positive_sentiment 2.419537e+01 ;
+    ns2:containsText """ Either an ordered Universe or a medley heaped together mechanically
+but still an order; or can order subsist in you and disorder in the Whole!
+And that, too, when all things are so distinguished and yet intermingled and
+sympathetic.
+""" .
+
+ns1:4.28 ns1:negative_sentiment 9.320403e+01 ;
+    ns1:neutral_sentiment 5.146576e+00 ;
+    ns1:positive_sentiment 1.649411e+00 ;
+    ns2:containsText """ A black heart is an unmanly heart, a stubborn heart; resembling a
+beast of prey, a mere brute, or a child; foolish, crafty, ribald, mercenary,
+despotic.
+""" .
+
+ns1:4.29 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/law/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/nature/>,
+        <https://w3id.org/arco/ontology/core/reason/>,
+        <https://w3id.org/arco/ontology/core/soul/> ;
+    ns1:negative_sentiment 4.997193e+01 ;
+    ns1:neutral_sentiment 3.867792e+01 ;
+    ns1:positive_sentiment 1.135015e+01 ;
+    ns2:containsText """ If he is a foreigner in the Universe who does not recognize the essence
+of the Universe, no less is he a foreigner, who does not recognize what
+comes to pass in it. A fugitive is he who runs away from the reasonable law
+of his City; a blind man, he who shuts the eye of the mind; a beggar, he who
+has need of another and has not all that is necessary for life in himself; a
+blain on the Universe, he who rebels and separates himself from the reason
+of our common nature because he is displeased with what comes to pass
+(for Nature who bore you, brings these things also into being); a fragment
+cut off from the City, he who cuts off his own soul from the soul of
+reasonable creatures, which is one.
+""" .
+
+ns1:4.3 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/atoms/>,
+        <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/flesh/>,
+        <https://w3id.org/arco/ontology/core/glory/>,
+        <https://w3id.org/arco/ontology/core/judgement/>,
+        <https://w3id.org/arco/ontology/core/justice/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/power/>,
+        <https://w3id.org/arco/ontology/core/reason/>,
+        <https://w3id.org/arco/ontology/core/time/>,
+        <https://w3id.org/arco/ontology/core/truth/>,
+        <https://w3id.org/arco/ontology/core/vital_spirit/> ;
+    ns1:negative_sentiment 4.077607e+01 ;
+    ns1:neutral_sentiment 3.784606e+01 ;
+    ns1:positive_sentiment 2.137787e+01 ;
+    ns2:containsText """ Men look for retreats for themselves, the country, the seashore, the hills;
+and you yourself, too, are peculiarly accustomed to feel the same want. Yet
+all this is very unlike a philosopher, when you may at any hour you please
+retreat into yourself. For nowhere does a man retreat into more quiet or
+more privacy than into his own mind, especially one who has within such
+things that he has only to look into, and become at once in perfect ease; and
+by ease I mean nothing else but good behaviour. Continually, therefore,
+grant yourself this retreat and repair yourself. But let them be brief and
+fundamental truths, which will suffice at once by their presence to wash
+away all sorrow, and to send you back without repugnance to the life to
+which you return.
+For what is it that shall move your repugnance? The wickedness of men?
+Recall the judgement that reasonable creatures have come into the world for
+the sake of one another; that patience is a part of justice; that men do wrong
+involuntarily; and how many at last, after enmity, suspicion, hatred,
+warfare, have been laid out on their death-beds and come to dust. This
+should make you pause. But shall what is assigned from Universal Nature
+be repugnant to you? Revive the alternative: ‘either Providence or blind
+atoms’,
+ and the many proofs that the Universe is a kind of Commonwealth.
+Shall then the things of the flesh still have hold upon you? Reflect that the
+understanding, when once it takes control of itself and recognizes its own
+power, does not mingle with the vital spirit, be its current smooth or broken,
+and finally reflect upon all that you have heard and consented to about pain
+and pleasure.
+Well, then, shall mere glory distract you? Look at the swiftness of the
+oblivion of all men; the gulf of endless time, behind and before; the
+hollowness of applause, the fickleness and folly of those who seem to speak
+well of you, and the narrow room in which it is confined. This should make
+you pause. For the entire earth is a point in space, and how small a corner
+thereof is this your dwelling place, and how few and how paltry those who
+will sing your praises here!
+Finally, therefore, remember your retreat into this little domain which is
+yourself, and above all be not disturbed nor on the rack, but be free and
+look at things as a man, a human being, a citizen, a creature that must die.
+And among what is most ready to hand into which you will look have these
+two: the one, that things do not take hold upon the mind, but stand without
+unmoved, and that disturbances come only from the judgement within; the
+second, that all that your eyes behold will change in a moment and be no
+more; and of how many things you have already witnessed the changes,
+think continually of that.
+The Universe is change, life is opinion.
+""" .
+
+ns1:4.30 ns1:negative_sentiment 5.285822e+01 ;
+    ns1:neutral_sentiment 3.56671e+01 ;
+    ns1:positive_sentiment 1.147469e+01 ;
+    ns2:containsText """ Here is a philosopher without a tunic, another without a book, another
+here half-naked. ‘I have no bread,’ he says, ‘still I stand firm by the Word.’
+And I have nourishment from my lessons and yet do not stand firm.
+""" .
+
+ns1:4.31 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/whole/> ;
+    ns1:negative_sentiment 1.244309e+01 ;
+    ns1:neutral_sentiment 3.782156e+01 ;
+    ns1:positive_sentiment 4.973535e+01 ;
+    ns2:containsText """ Love the art which you were taught, set up your rest in this. Pass
+through what is left of life as one who has committed all that is yours, with
+your whole heart, to the gods, and of men making yourself neither despot
+nor servant to any.
+""" .
+
+ns1:4.32 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/action/>,
+        <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/matter/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/time/>,
+        <https://w3id.org/arco/ontology/core/whole/> ;
+    ns1:negative_sentiment 5.067819e+01 ;
+    ns1:neutral_sentiment 3.327906e+01 ;
+    ns1:positive_sentiment 1.604274e+01 ;
+    ns2:containsText """ Call to mind by way of example the time of Vespasian: you will see
+everything the same: men marrying, bringing up children, falling ill, dying,
+fighting, feasting, trading, farming, flattering, asserting themselves,
+suspecting, plotting, praying for another’s death, murmuring at the present,
+lusting, heaping up riches, setting their heart on offices and thrones. And
+now that life of theirs is no more and nowhere.
+Again pass on to the time of Trajan; again everything the same. That life,
+too, is dead. In like manner contemplate and behold the rest of the records
+of times and whole nations; and see how many after their struggles fell in a
+little while and were resolved into the elements. But most of all you must
+run over in mind those whom you yourself have known to be distracted in
+vain, neglecting to perform what was agreeable to their own constitution, to
+hold fast to this and to be content with this. And here you are bound to
+remember that the attention paid to each action has its own worth and
+proportion; only so you will not be dejected if in smaller matters you are
+occupied no farther than was appropriate.
+""" .
+
+ns1:4.33 ns1:hasAssociatedAgent ns1:Homer ;
+    ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 3.65464e+01 ;
+    ns1:neutral_sentiment 3.731576e+01 ;
+    ns1:positive_sentiment 2.613785e+01 ;
+    ns2:containsText """ Words familiar in olden times are now archaisms; so also the names of
+those whose praises were hymned in bygone days are now in a sense
+archaisms; Camillus, Caeso, Volesus, Dentatus; a little after, Scipio too
+and Cato; then also Augustus, then also Hadrian and Antoninus. For all
+things quickly fade and turn to fable, and quickly, too, utter oblivion covers
+them like sand. And this I say of those who shone like stars to wonder at;
+the rest, as soon as the breath was out of their bodies, were ‘unnoticed and
+unwept’<Homer>. And what after all is everlasting remembrance? Utter vanity.
+What then is that about which a man ought to spend his pains? This one
+thing; right understanding, neighbourly behaviour, speech which would
+never lie, and a disposition welcoming all which comes to pass, as
+necessary, as familiar, as flowing from a source and fountain like itself.
+""" .
+
+ns1:4.34 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/fate/>,
+        <https://w3id.org/arco/ontology/core/whole/> ;
+    ns1:negative_sentiment 2.471172e+01 ;
+    ns1:neutral_sentiment 5.192994e+01 ;
+    ns1:positive_sentiment 2.335834e+01 ;
+    ns2:containsText """ With your whole will surrender yourself to Clotho to spin your fate into
+whatever web of things she will.
+""" .
+
+ns1:4.35 ns1:negative_sentiment 7.608096e+00 ;
+    ns1:neutral_sentiment 6.791073e+01 ;
+    ns1:positive_sentiment 2.448117e+01 ;
+    ns2:containsText """ All is ephemeral, both what remembers and what is remembered.
+""" .
+
+ns1:4.36 ns1:negative_sentiment 2.368439e+01 ;
+    ns1:neutral_sentiment 4.535368e+01 ;
+    ns1:positive_sentiment 3.096192e+01 ;
+    ns2:containsText """ Contemplate continually all things coming to pass by change, and
+accustom yourself to think that Universal Nature loves nothing so much as
+to change what is and to create new things in their likeness. For everything
+that is, is in a way the seed of what will come out of it, whereas you
+imagine seeds to be only those which are cast into the earth or into the
+womb. But that is very unscientific.
+""" .
+
+ns1:4.37 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/action/> ;
+    ns1:negative_sentiment 8.325111e+01 ;
+    ns1:neutral_sentiment 1.396632e+01 ;
+    ns1:positive_sentiment 2.782575e+00 ;
+    ns2:containsText """ You will presently be dead and are not yet simple, untroubled, void of
+suspicion that anything from outside can hurt you, not yet propitious to all
+men, nor counting wisdom to consist only in just action.
+""" .
+
+ns1:4.38 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/principle/> ;
+    ns1:negative_sentiment 3.061161e+01 ;
+    ns1:neutral_sentiment 5.326674e+01 ;
+    ns1:positive_sentiment 1.612164e+01 ;
+    ns2:containsText """ Look into their governing principles, even the wise among them, what
+petty things they avoid and what pursue!
+""" .
+
+ns1:4.39 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/body/>,
+        <https://w3id.org/arco/ontology/core/judgement/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/principle/> ;
+    ns1:negative_sentiment 4.870023e+01 ;
+    ns1:neutral_sentiment 4.02358e+01 ;
+    ns1:positive_sentiment 1.106397e+01 ;
+    ns2:containsText """ Your evil does not consist in another’s governing principle, nor indeed
+in any change and alteration of your environment. Where then? Where the
+part of you which judges about evil is. Let it not frame the judgement, and
+all is well. Even if what is nearest to it, your body, is cut, cauterized,
+suppurates, mortifies, still let the part which judges about these things be at
+rest; that is, let it decide that nothing is good or evil which can happen
+indifferently to the evil man and the good. For what happens indifferently to
+one whose life is contrary to Nature and to one whose life is according to
+Nature, this is neither according to nor contrary to Nature.
+""" .
+
+ns1:4.4 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/law/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/reason/>,
+        <https://w3id.org/arco/ontology/core/vital_spirit/>,
+        <https://w3id.org/arco/ontology/core/whole/> ;
+    ns1:negative_sentiment 3.163647e+01 ;
+    ns1:neutral_sentiment 4.862449e+01 ;
+    ns1:positive_sentiment 1.973905e+01 ;
+    ns2:containsText """ If mind is common to us all, then also the reason, whereby we are
+reasoning beings, is common. If this be so, then also the reason which
+enjoins what is to be done or left undone is common. If this be so, law also
+is common; if this be so, we are citizens; if this be so, we are partakers in
+one constitution; if this be so, the Universe is a kind of Commonwealth. For
+in what other common government can we say that the whole race of men
+partakes? And thence, from this common City, is derived our mind itself,
+our reason and our sense of law, or from what else? For as the earthy is in
+me a portion from some earth, and the watery from a second element, and
+the vital spirit from some source, and the hot and fiery from yet another
+source of its own (for nothing comes from nothing, just as nothing returns
+to nothing), so therefore the mind also has come from some source.
+""" .
+
+ns1:4.40 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/soul/> ;
+    ns1:negative_sentiment 1.335633e+01 ;
+    ns1:neutral_sentiment 3.935704e+01 ;
+    ns1:positive_sentiment 4.728664e+01 ;
+    ns2:containsText """ Constantly think of the Universe as one living creature, embracing one
+being and one soul; how all is absorbed into the one consciousness of this
+living creature; how it compasses all things with a single purpose, and how
+all things work together to cause all that comes to pass, and their wonderful
+web and texture.
+""" .
+
+ns1:4.41 ns1:hasAssociatedAgent ns1:Epictetus ;
+    ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/body/> ;
+    ns1:negative_sentiment 1.1086e+01 ;
+    ns1:neutral_sentiment 6.75382e+01 ;
+    ns1:positive_sentiment 2.13758e+01 ;
+    ns2:containsText """ You are a spirit bearing the weight of a dead body, as Epictetus used to
+say. <Epictetus>
+
+""" .
+
+ns1:4.42 ns1:negative_sentiment 3.258474e+01 ;
+    ns1:neutral_sentiment 4.472182e+01 ;
+    ns1:positive_sentiment 2.269345e+01 ;
+    ns2:containsText """ For what comes to pass in the course of change nothing is evil, as
+nothing is good for what exists in consequence of change.
+""" .
+
+ns1:4.43 ns1:negative_sentiment 1.78551e+01 ;
+    ns1:neutral_sentiment 6.082101e+01 ;
+    ns1:positive_sentiment 2.132389e+01 ;
+    ns2:containsText """ There is a kind of river of things passing into being, and Time is a
+violent torrent. For no sooner is each seen, then it has been carried away,
+and another is being carried by, and that, too, will be carried away.
+""" .
+
+ns1:4.44 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/sick/> ;
+    ns1:negative_sentiment 6.304154e+01 ;
+    ns1:neutral_sentiment 2.546237e+01 ;
+    ns1:positive_sentiment 1.149609e+01 ;
+    ns2:containsText """ All that comes to pass is as familiar and well known as the rose in
+spring and the grape in summer. Of like fashion are sickness, death,
+calumny, intrigue, and all that gladdens or saddens the foolish.
+""" .
+
+ns1:4.45 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/necessity/> ;
+    ns1:negative_sentiment 1.671241e+01 ;
+    ns1:neutral_sentiment 5.572611e+01 ;
+    ns1:positive_sentiment 2.75615e+01 ;
+    ns2:containsText """ What follows is always organically related to what went before; for it is
+not like a simple enumeration of units separately determined by necessity,
+but a rational combination; and as Being is arranged in a mutual coordination, so the phenomena of Becoming display no bare succession but a
+wonderful organic interrelation.
+""" .
+
+ns1:4.46 ns1:hasAssociatedAgent ns1:Heraclitus ;
+    ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/death/> ;
+    ns1:negative_sentiment 2.736249e+01 ;
+    ns1:neutral_sentiment 5.223032e+01 ;
+    ns1:positive_sentiment 2.040718e+01 ;
+    ns2:containsText """ Always remember what Heraclitus said: ‘the death of earth is the birth
+of water, the death of water is the birth of atmosphere, the death of
+atmosphere is fire, and conversely’<Heraclitus> Remember, too, his image of the man
+who forgets the way he is going; and: ‘they are at variance with that with
+which they most continuously have converse (Reason which governs the
+Universe), and the things they meet with every day appear alien to them’;
+and again: ‘we must not act and speak like men who sleep, for in sleep we
+suppose that we act and speak’; and ‘we must not be like children with
+parents’<Heraclitus>, that is, accept things simply as we have received them.
+""" .
+
+ns1:4.47 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/god/>,
+        <https://w3id.org/arco/ontology/core/gods/>,
+        <https://w3id.org/arco/ontology/core/matter/> ;
+    ns1:negative_sentiment 4.144048e+01 ;
+    ns1:neutral_sentiment 4.504745e+01 ;
+    ns1:positive_sentiment 1.351208e+01 ;
+    ns2:containsText """ Just as, if one of the gods told you: ‘tomorrow you will be dead or in
+any case the day after tomorrow’, you would no longer be making that day
+after important any more than tomorrow, unless you are an arrant coward
+(for the difference is a mere trifle), in the same way count it no great matter
+to live to a year that is an infinite distance off rather than till tomorrow.
+""" .
+
+ns1:4.48 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/matter/>,
+        <https://w3id.org/arco/ontology/core/power/>,
+        <https://w3id.org/arco/ontology/core/time/>,
+        <https://w3id.org/arco/ontology/core/whole/> ;
+    ns1:negative_sentiment 4.73975e+01 ;
+    ns1:neutral_sentiment 3.280904e+01 ;
+    ns1:positive_sentiment 1.979346e+01 ;
+    ns2:containsText """ Think continually how many physicians have died, after often knitting
+their foreheads over their patients; how many astrologers after prophesying
+other men’s deaths, as though to die were a great matter; how many
+philosophers after endless debate on death or survival after death; how
+many paladins after slaying their thousands; how many tyrants after using
+their power over men’s lives with monstrous arrogance, as if themselves
+immortal; how many entire cities have, if I may use the term, died,
+Helice, Pompeii, Herculaneum, and others innumerable. Run over, too, the
+many also you know of, one after another. One followed this man’s funeral
+and then was himself laid on the bier; another followed him, and all in a
+little while. This is the whole matter: see always how ephemeral and cheap
+are the things of man—yesterday, a spot of albumen, tomorrow, ashes or a
+mummy. Therefore make your passage through this span of time in
+obedience to Nature and gladly lay down your life, as an olive, when ripe,
+might fall, blessing her who bare it and grateful to the tree which gave it
+life.
+""" .
+
+ns1:4.49 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/fortune/>,
+        <https://w3id.org/arco/ontology/core/judgement/>,
+        <https://w3id.org/arco/ontology/core/mind/>,
+        <https://w3id.org/arco/ontology/core/nature/>,
+        <https://w3id.org/arco/ontology/core/principle/> ;
+    ns1:negative_sentiment 4.565172e+01 ;
+    ns1:neutral_sentiment 3.283204e+01 ;
+    ns1:positive_sentiment 2.151623e+01 ;
+    ns2:containsText """ Be like the headland on which the waves continually break, but it stands
+firm and about it the boiling waters sink to sleep. ‘Unlucky am I, because
+this has befallen me.’ Nay rather: ‘Lucky am I, because, though this befell
+me, I continue free from sorrow, neither crushed by the present, nor fearing
+what is to come.’ For such an event might have befallen any man, but not
+every man would have continued in it free from sorrow. On what grounds
+then is this ill fortune more than that good fortune? Do you, speaking
+generally, call what is not a deviation from man’s nature a man’s ill fortune,
+and do you suppose that what is not opposed to his natural will is a
+deviation from his nature? Very well, you have been taught what that will
+is. Can what has befallen you prevent your being just, high-minded,
+temperate, prudent, free from rash judgements, trustful, self-reverent, free,
+and whatever else by its presence with him enables a man’s nature to secure
+what is really his? Finally, in every event which leads you to sorrow,
+remember to use this principle: that this is not a misfortune, but that to bear
+it like a brave man is good fortune.
+""" .
+
+ns1:4.5 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/dissolution/>,
+        <https://w3id.org/arco/ontology/core/principle/>,
+        <https://w3id.org/arco/ontology/core/reason/> ;
+    ns1:negative_sentiment 5.019354e+01 ;
+    ns1:neutral_sentiment 4.035704e+01 ;
+    ns1:positive_sentiment 9.449439e+00 ;
+    ns2:containsText """ Death is like birth, a mystery of Nature; a coming together out of
+identical elements and a dissolution into the same. Looked at generally this
+is not a thing of which man should be ashamed, for it is contrary neither to
+what is conformable to a reasonable creature nor to the principle of his
+constitution.
+""" .
+
+ns1:4.50 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/body/>,
+        <https://w3id.org/arco/ontology/core/death/>,
+        <https://w3id.org/arco/ontology/core/life/>,
+        <https://w3id.org/arco/ontology/core/time/> ;
+    ns1:negative_sentiment 5.361725e+01 ;
+    ns1:neutral_sentiment 3.13459e+01 ;
+    ns1:positive_sentiment 1.503685e+01 ;
+    ns2:containsText """ An unscientific but none the less a helpful support to disdain of death is
+to review those who have clung tenaciously to life. What more did they
+gain than those who died prematurely? In every case they are laid in some
+grave at last: Caedicianus, Fabius, Julianus, Lepidus, and any others like
+them, who after carrying many to the grave were themselves carried out. To
+speak generally the difference is a small one, and this difference longdrawn-out through what great toils and with what sorts of men and in how
+weak a body. Do not count it then as a thing . . .; for see the gulf of time
+behind and another infinite time in front: in this what difference is there
+between a three-days-old infant and a Nestor of three generations?
+""" .
+
+ns1:4.51 ns1:negative_sentiment 1.820833e+01 ;
+    ns1:neutral_sentiment 4.407362e+01 ;
+    ns1:positive_sentiment 3.771805e+01 ;
+    ns2:containsText """ Run always the short road, and Nature’s road is short. Therefore say and
+do everything in the soundest way, because a purpose like this delivers a
+man from troubles and warfare, from every care and superfluity.""" .
+
+ns1:4.6 ns1:negative_sentiment 4.046469e+01 ;
+    ns1:neutral_sentiment 4.129795e+01 ;
+    ns1:positive_sentiment 1.823737e+01 ;
+    ns2:containsText """ These are natural and necessary results from creatures of this kind, and
+one who wants this to be otherwise wants the fig tree not to yield its acrid
+juice. And in general remember this, that within a very little while both he
+and you will be dead, and a little after not even your name nor his will be
+left.
+""" .
+
+ns1:4.7 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/judgement/> ;
+    ns1:negative_sentiment 5.890254e+01 ;
+    ns1:neutral_sentiment 3.516955e+01 ;
+    ns1:positive_sentiment 5.927908e+00 ;
+    ns2:containsText """ Get rid of the judgement; you are rid of the ‘I am hurt’; get rid of the ‘I
+am hurt’, you are rid of the hurt itself.
+""" .
+
+ns1:4.8 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/life/> ;
+    ns1:negative_sentiment 6.968813e+01 ;
+    ns1:neutral_sentiment 2.566391e+01 ;
+    ns1:positive_sentiment 4.647962e+00 ;
+    ns2:containsText """ What does not make a man worse than he was, neither makes his life
+worse than it was, nor hurts him without or within.
+""" .
+
+ns1:4.9 ns1:hasAssociatedConcept <https://w3id.org/arco/ontology/core/law/>,
+        <https://w3id.org/arco/ontology/core/necessity/> ;
+    ns1:negative_sentiment 1.402557e+01 ;
+    ns1:neutral_sentiment 4.264485e+01 ;
+    ns1:positive_sentiment 4.332957e+01 ;
+    ns2:containsText """ It was a law of necessity that what is naturally beneficial should bring
+this about.
+""" .
+
+<https://w3id.org/arco/ontology/core/Gods/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/providence> .
+
+<https://w3id.org/arco/ontology/core/atoms/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/providence> .
+
+<https://w3id.org/arco/ontology/core/blame/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/justice> .
+
+<https://w3id.org/arco/ontology/core/employment/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/power> .
+
+<https://w3id.org/arco/ontology/core/obstacle/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/power> .
+
+<https://w3id.org/arco/ontology/core/providence/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/providence> .
+
+<https://w3id.org/arco/ontology/core/universe/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/nature> .
+
+<https://w3id.org/arco/ontology/core/flesh/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/psyche&body> .
+
+<https://w3id.org/arco/ontology/core/glory/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/power> .
+
+<https://w3id.org/arco/ontology/core/souls/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/psyche&body> .
+
+<https://w3id.org/arco/ontology/core/temperance/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/justice> .
+
+<https://w3id.org/arco/ontology/core/corrupt/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/power> .
+
+<https://w3id.org/arco/ontology/core/dissolution/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/death> .
+
+<https://w3id.org/arco/ontology/core/fault/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/justice> .
+
+<https://w3id.org/arco/ontology/core/fortune/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/providence> .
+
+<https://w3id.org/arco/ontology/core/governing_self/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/power> .
+
+<https://w3id.org/arco/ontology/core/ignorance/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/reason> .
+
+<https://w3id.org/arco/ontology/core/sick/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/death> .
+
+<https://w3id.org/arco/ontology/core/divinity/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/providence> .
+
+<https://w3id.org/arco/ontology/core/fate/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/providence> .
+
+<https://w3id.org/arco/ontology/core/honour/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/justice> .
+
+<https://w3id.org/arco/ontology/core/vital_spirit/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/psyche&body> .
+
+<https://w3id.org/arco/ontology/core/action/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/justice> .
+
+<https://w3id.org/arco/ontology/core/impulse/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/psyche&body> .
+
+<https://w3id.org/arco/ontology/core/law/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/nature> .
+
+<https://w3id.org/arco/ontology/core/necessity/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/nature> .
+
+<https://w3id.org/arco/ontology/core/God/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/providence> .
+
+<https://w3id.org/arco/ontology/core/matter/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/nature> .
+
+<https://w3id.org/arco/ontology/core/soul/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/psyche&body> .
+
+<https://w3id.org/arco/ontology/core/body/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/psyche&body> .
+
+<https://w3id.org/arco/ontology/core/judgement/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/reason> .
+
+<https://w3id.org/arco/ontology/core/justice/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/justice> .
+
+<https://w3id.org/arco/ontology/core/power/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/power> .
+
+<https://w3id.org/arco/ontology/core/principle/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/reason> .
+
+<https://w3id.org/arco/ontology/core/nature/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/nature> .
+
+<https://w3id.org/arco/ontology/core/truth/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/reason> .
+
+<https://w3id.org/arco/ontology/core/whole/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/nature> .
+
+<https://w3id.org/arco/ontology/core/gods/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/providence> .
+
+<https://w3id.org/arco/ontology/core/death/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/death> .
+
+<https://w3id.org/arco/ontology/core/god/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/providence> .
+
+<https://w3id.org/arco/ontology/core/reason/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/reason> .
+
+<https://w3id.org/arco/ontology/core/time/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/death> .
+
+<https://w3id.org/arco/ontology/core/mind/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/reason> .
+
+<https://w3id.org/arco/ontology/core/life/> ns1:isCategoryOf <https://w3id.org/arco/ontology/core/Category/death> .
+
