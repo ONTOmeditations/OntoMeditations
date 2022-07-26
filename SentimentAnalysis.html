@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>The Sentiment Analysis</title>
+  <title>The Linguistic Analysis</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -17,7 +17,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=EB+Garamond&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+	
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +31,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
   <!-- =======================================================
   * Template Name: Plato - v4.7.0
   * Template URL: https://bootstrapmade.com/plato-responsive-bootstrap-website-template/
@@ -96,19 +98,3589 @@
 
         </div>
       </section><!-- End Breadcrumbs -->
-
-      <section class="inner-page">
         <div class="container">
+            <div class="container text-center">
+
+        </div>        
+     <main id="main">
+      <section class="inner-page">
+
           <p>
             For our sentiment analysis, we automatically processed each and every paragraph, or “entry”, of Marcus Aurelius’ diary, annotating it with the degree to which it is positive, negative or neutral. This gives us a percentage estimation in this sentimental continuum of Marcus Aurelius, for each fragment.</p>
             
             <p>First, we use the latest <a href="https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment">XLM-roBERTa</a> model to extract data regarding the sentiments of each diary entry. Then, we add this data to each diary entry on our knowledge graph, to give to the user the possibility to see, understand and query which sentiment is dominant in each diary entry. </p>
 
-            <p>Feel free to hack our code and our choice of data model to better fulfill your own sentiment analysis and computationally-aided annotation needs.
+<hr>
+<p>Select one of the 12 books to see the sentimental analysis results on each of its fragments.</p>
+<hr>
+	            <div class="row">
+          <div class="col-6">
+        <a class="butn2" href="#" data-rel="content1">Book I</a>
+        <a class="butn2" href="#" data-rel="content2">Book II</a>
+        <a class="butn2" href="#" data-rel="content3">Book III</a>
+        <a class="butn2" href="#" data-rel="content4">Book IV</a>
+        <a class="butn2" href="#" data-rel="content5">Book V</a>
+        <a class="butn2" href="#" data-rel="content6">Book VI</a>
+        <a class="butn2" href="#" data-rel="content7">Book VII</a>
+        <a class="butn2" href="#" data-rel="content8">Book VIII</a>
+        <a class="butn2" href="#" data-rel="content9">Book IX</a>
+        <a class="butn2" href="#" data-rel="content10">Book X</a>
+        <a class="butn2" href="#" data-rel="content11">Book XI</a>
+        <a class="butn2" href="#" data-rel="content12">Book XII</a>
+      </div>
 
-          </p>
+
+        </div>
+<hr>
+      <div class="content-container">
+          <div id="content1"><table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td>1</td>
+<td align="right">1</td>
+<td align="right">0.05316855</td>
+<td align="right">0.375244</td>
+<td align="right">0.5715874</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">2</td>
+<td align="right">0.049230266</td>
+<td align="right">0.2740714</td>
+<td align="right">0.67669827</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">3</td>
+<td align="right">0.34608826</td>
+<td align="right">0.38594672</td>
+<td align="right">0.26796505</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">4</td>
+<td align="right">0.09973159</td>
+<td align="right">0.29120174</td>
+<td align="right">0.60906667</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">5</td>
+<td align="right">0.48962015</td>
+<td align="right">0.34082535</td>
+<td align="right">0.16955452</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">6</td>
+<td align="right">0.4193811</td>
+<td align="right">0.3140514</td>
+<td align="right">0.26656738</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">7</td>
+<td align="right">0.409127</td>
+<td align="right">0.3343325</td>
+<td align="right">0.25654042</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">8</td>
+<td align="right">0.5203923</td>
+<td align="right">0.2716585</td>
+<td align="right">0.20794913</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">9</td>
+<td align="right">0.4058218</td>
+<td align="right">0.3076793</td>
+<td align="right">0.28649896</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">10</td>
+<td align="right">0.42150012</td>
+<td align="right">0.37609872</td>
+<td align="right">0.2024012</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">11</td>
+<td align="right">0.9319361</td>
+<td align="right">0.050125804</td>
+<td align="right">0.01793828</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">12</td>
+<td align="right">0.40571952</td>
+<td align="right">0.43883651</td>
+<td align="right">0.15544403</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">13</td>
+<td align="right">0.40984577</td>
+<td align="right">0.28181553</td>
+<td align="right">0.30833867</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">14</td>
+<td align="right">0.36935246</td>
+<td align="right">0.34825122</td>
+<td align="right">0.28239632</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">15</td>
+<td align="right">0.5603805</td>
+<td align="right">0.27055675</td>
+<td align="right">0.1690627</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">16</td>
+<td align="right">0.49327028</td>
+<td align="right">0.30722263</td>
+<td align="right">0.19950715</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">17</td>
+<td align="right">0.42539966</td>
+<td align="right">0.35222572</td>
+<td align="right">0.22237468</td>
+</tr>
+</tbody></table></p>
+</div>
+      
+
+
+<div id="content2">
+<p><table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">0.6137548</td>
+<td align="right">0.26416886</td>
+<td align="right">0.12207642</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">0.6358594</td>
+<td align="right">0.27105168</td>
+<td align="right">0.09308894</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">0.28054222</td>
+<td align="right">0.4039995</td>
+<td align="right">0.3154582</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">0.38289613</td>
+<td align="right">0.43711063</td>
+<td align="right">0.17999321</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">5</td>
+<td align="right">0.34795308</td>
+<td align="right">0.3972809</td>
+<td align="right">0.25476617</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">0.83797747</td>
+<td align="right">0.12767908</td>
+<td align="right">0.034343388</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">7</td>
+<td align="right">0.5396933</td>
+<td align="right">0.32381704</td>
+<td align="right">0.13648969</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="right">0.7927872</td>
+<td align="right">0.17288353</td>
+<td align="right">0.034329344</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">9</td>
+<td align="right">0.19088173</td>
+<td align="right">0.6208019</td>
+<td align="right">0.18831639</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">10</td>
+<td align="right">0.60179824</td>
+<td align="right">0.24103937</td>
+<td align="right">0.15716238</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">11</td>
+<td align="right">0.68046486</td>
+<td align="right">0.22760186</td>
+<td align="right">0.09193329</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">12</td>
+<td align="right">0.49337167</td>
+<td align="right">0.35392922</td>
+<td align="right">0.15269919</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">13</td>
+<td align="right">0.6076666</td>
+<td align="right">0.2689649</td>
+<td align="right">0.12336842</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">14</td>
+<td align="right">0.49019518</td>
+<td align="right">0.37600744</td>
+<td align="right">0.13379727</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">15</td>
+<td align="right">0.17107818</td>
+<td align="right">0.5788231</td>
+<td align="right">0.2500987</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">16</td>
+<td align="right">0.4525687</td>
+<td align="right">0.3993635</td>
+<td align="right">0.14806777</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">17</td>
+<td align="right">0.4656561</td>
+<td align="right">0.38244691</td>
+<td align="right">0.15189715</td>
+</tr>
+</tbody></table></p>
+</div>
+        
+    <div id="content3">
+    <table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">0.3811612</td>
+<td align="right">0.39604115</td>
+<td align="right">0.22279766</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">0.35379523</td>
+<td align="right">0.36424989</td>
+<td align="right">0.28195462</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">0.5419194</td>
+<td align="right">0.3045905</td>
+<td align="right">0.15349007</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">0.46811312</td>
+<td align="right">0.35041413</td>
+<td align="right">0.18147288</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">5</td>
+<td align="right">0.5083099</td>
+<td align="right">0.32776743</td>
+<td align="right">0.16392258</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">6</td>
+<td align="right">0.35129142</td>
+<td align="right">0.3909614</td>
+<td align="right">0.25774717</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">7</td>
+<td align="right">0.58474886</td>
+<td align="right">0.27764267</td>
+<td align="right">0.13760842</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">8</td>
+<td align="right">0.5099978</td>
+<td align="right">0.34067503</td>
+<td align="right">0.14932723</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">0.38179827</td>
+<td align="right">0.3977731</td>
+<td align="right">0.2204287</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">10</td>
+<td align="right">0.5530969</td>
+<td align="right">0.34048423</td>
+<td align="right">0.10641883</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">11</td>
+<td align="right">0.31076065</td>
+<td align="right">0.45744327</td>
+<td align="right">0.231796</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="right">0.19162495</td>
+<td align="right">0.36617965</td>
+<td align="right">0.44219533</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">13</td>
+<td align="right">0.3129915</td>
+<td align="right">0.43668777</td>
+<td align="right">0.25032076</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">14</td>
+<td align="right">0.60559714</td>
+<td align="right">0.27993712</td>
+<td align="right">0.11446582</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">15</td>
+<td align="right">0.36667764</td>
+<td align="right">0.53408384</td>
+<td align="right">0.09923844</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">16</td>
+<td align="right">0.3505262</td>
+<td align="right">0.39697495</td>
+<td align="right">0.25249875</td>
+</tr>
+</tbody></table>
+
+</div>
+	    <div id="content4">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">0.34274846</td>
+<td align="right">0.37797222</td>
+<td align="right">0.27927932</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">2</td>
+<td align="right">0.109605275</td>
+<td align="right">0.42342997</td>
+<td align="right">0.4669648</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">3</td>
+<td align="right">0.4077607</td>
+<td align="right">0.37846062</td>
+<td align="right">0.21377873</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">0.31636465</td>
+<td align="right">0.48624492</td>
+<td align="right">0.19739047</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">0.50193536</td>
+<td align="right">0.40357038</td>
+<td align="right">0.094494395</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">6</td>
+<td align="right">0.40464693</td>
+<td align="right">0.41297948</td>
+<td align="right">0.18237367</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">7</td>
+<td align="right">0.5890254</td>
+<td align="right">0.35169548</td>
+<td align="right">0.059279077</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">8</td>
+<td align="right">0.6968813</td>
+<td align="right">0.25663906</td>
+<td align="right">0.046479616</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">9</td>
+<td align="right">0.14025572</td>
+<td align="right">0.42644855</td>
+<td align="right">0.43329567</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">10</td>
+<td align="right">0.1514733</td>
+<td align="right">0.45736703</td>
+<td align="right">0.3911597</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">11</td>
+<td align="right">0.3558784</td>
+<td align="right">0.50928324</td>
+<td align="right">0.1348383</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">12</td>
+<td align="right">0.2566589</td>
+<td align="right">0.43654358</td>
+<td align="right">0.30679744</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">13</td>
+<td align="right">0.20795758</td>
+<td align="right">0.61849946</td>
+<td align="right">0.17354284</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">14</td>
+<td align="right">0.24927574</td>
+<td align="right">0.6120906</td>
+<td align="right">0.13863371</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">15</td>
+<td align="right">0.3201352</td>
+<td align="right">0.555382</td>
+<td align="right">0.12448281</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">16</td>
+<td align="right">0.17640133</td>
+<td align="right">0.30574852</td>
+<td align="right">0.5178501</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">17</td>
+<td align="right">0.24498543</td>
+<td align="right">0.45391825</td>
+<td align="right">0.30109644</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">18</td>
+<td align="right">0.3152124</td>
+<td align="right">0.42314738</td>
+<td align="right">0.26164034</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">19</td>
+<td align="right">0.46944577</td>
+<td align="right">0.3583797</td>
+<td align="right">0.17217459</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">20</td>
+<td align="right">0.4105186</td>
+<td align="right">0.31800702</td>
+<td align="right">0.27147436</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">21</td>
+<td align="right">0.34586868</td>
+<td align="right">0.4838521</td>
+<td align="right">0.17027928</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">22</td>
+<td align="right">0.061025966</td>
+<td align="right">0.46284598</td>
+<td align="right">0.476128</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">23</td>
+<td align="right">0.18303707</td>
+<td align="right">0.45139122</td>
+<td align="right">0.36557168</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">24</td>
+<td align="right">0.37880093</td>
+<td align="right">0.37044048</td>
+<td align="right">0.25075856</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">25</td>
+<td align="right">0.10669102</td>
+<td align="right">0.29337946</td>
+<td align="right">0.5999295</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">26</td>
+<td align="right">0.399662</td>
+<td align="right">0.39623663</td>
+<td align="right">0.20410143</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">27</td>
+<td align="right">0.32618028</td>
+<td align="right">0.43186602</td>
+<td align="right">0.24195367</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">28</td>
+<td align="right">0.93204033</td>
+<td align="right">0.051465757</td>
+<td align="right">0.016494108</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">29</td>
+<td align="right">0.49971926</td>
+<td align="right">0.38677916</td>
+<td align="right">0.11350154</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">30</td>
+<td align="right">0.52858216</td>
+<td align="right">0.356671</td>
+<td align="right">0.11474689</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">31</td>
+<td align="right">0.124430895</td>
+<td align="right">0.3782156</td>
+<td align="right">0.4973535</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">32</td>
+<td align="right">0.50678194</td>
+<td align="right">0.3327906</td>
+<td align="right">0.16042744</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">33</td>
+<td align="right">0.365464</td>
+<td align="right">0.3731576</td>
+<td align="right">0.26137847</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">34</td>
+<td align="right">0.24711722</td>
+<td align="right">0.5192994</td>
+<td align="right">0.23358336</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">35</td>
+<td align="right">0.07608096</td>
+<td align="right">0.6791073</td>
+<td align="right">0.24481173</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">36</td>
+<td align="right">0.2368439</td>
+<td align="right">0.45353678</td>
+<td align="right">0.30961922</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">37</td>
+<td align="right">0.8325111</td>
+<td align="right">0.13966316</td>
+<td align="right">0.027825754</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">38</td>
+<td align="right">0.30611613</td>
+<td align="right">0.5326674</td>
+<td align="right">0.16121641</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">39</td>
+<td align="right">0.48700234</td>
+<td align="right">0.40235797</td>
+<td align="right">0.11063975</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">40</td>
+<td align="right">0.13356335</td>
+<td align="right">0.3935704</td>
+<td align="right">0.47286642</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">41</td>
+<td align="right">0.11086004</td>
+<td align="right">0.67538196</td>
+<td align="right">0.21375804</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">42</td>
+<td align="right">0.3258474</td>
+<td align="right">0.44721818</td>
+<td align="right">0.22693448</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">43</td>
+<td align="right">0.17855102</td>
+<td align="right">0.6082101</td>
+<td align="right">0.21323892</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">44</td>
+<td align="right">0.6304154</td>
+<td align="right">0.25462374</td>
+<td align="right">0.114960924</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">45</td>
+<td align="right">0.1671241</td>
+<td align="right">0.55726105</td>
+<td align="right">0.27561495</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">46</td>
+<td align="right">0.27362493</td>
+<td align="right">0.5223032</td>
+<td align="right">0.20407182</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">47</td>
+<td align="right">0.4144048</td>
+<td align="right">0.45047447</td>
+<td align="right">0.13512075</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">48</td>
+<td align="right">0.47397497</td>
+<td align="right">0.32809043</td>
+<td align="right">0.19793458</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">49</td>
+<td align="right">0.45651725</td>
+<td align="right">0.3283204</td>
+<td align="right">0.2151623</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">50</td>
+<td align="right">0.53617245</td>
+<td align="right">0.31345898</td>
+<td align="right">0.15036853</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">51</td>
+<td align="right">0.18208331</td>
+<td align="right">0.44073623</td>
+<td align="right">0.3771805</td>
+</tr>
+</tbody></table>
+
+</div>
+		    <div id="content5">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">5</td>
+<td align="right">1</td>
+<td align="right">0.46337882</td>
+<td align="right">0.34133708</td>
+<td align="right">0.19528398</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">2</td>
+<td align="right">0.26313752</td>
+<td align="right">0.3236017</td>
+<td align="right">0.4132608</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3</td>
+<td align="right">0.35100427</td>
+<td align="right">0.44726327</td>
+<td align="right">0.20173246</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">4</td>
+<td align="right">0.14573817</td>
+<td align="right">0.37983826</td>
+<td align="right">0.47442356</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">5</td>
+<td align="right">0.58722204</td>
+<td align="right">0.25129372</td>
+<td align="right">0.16148415</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">6</td>
+<td align="right">0.39052776</td>
+<td align="right">0.38511163</td>
+<td align="right">0.22436067</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">0.10074145</td>
+<td align="right">0.2839889</td>
+<td align="right">0.6152697</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">8</td>
+<td align="right">0.36977613</td>
+<td align="right">0.41126552</td>
+<td align="right">0.21895821</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">9</td>
+<td align="right">0.507755</td>
+<td align="right">0.31003624</td>
+<td align="right">0.18220875</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">10</td>
+<td align="right">0.4968815</td>
+<td align="right">0.3334543</td>
+<td align="right">0.16966413</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">11</td>
+<td align="right">0.70015377</td>
+<td align="right">0.24083368</td>
+<td align="right">0.059012532</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">0.42280215</td>
+<td align="right">0.3515592</td>
+<td align="right">0.22563866</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">13</td>
+<td align="right">0.35901007</td>
+<td align="right">0.49475604</td>
+<td align="right">0.14623399</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">14</td>
+<td align="right">0.12781292</td>
+<td align="right">0.50932425</td>
+<td align="right">0.36286283</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">0.49333295</td>
+<td align="right">0.31649187</td>
+<td align="right">0.19017518</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">16</td>
+<td align="right">0.3050989</td>
+<td align="right">0.4300261</td>
+<td align="right">0.26487505</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">17</td>
+<td align="right">0.7536041</td>
+<td align="right">0.17986266</td>
+<td align="right">0.06653322</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">18</td>
+<td align="right">0.4837312</td>
+<td align="right">0.3375821</td>
+<td align="right">0.1786867</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">19</td>
+<td align="right">0.61242884</td>
+<td align="right">0.3104648</td>
+<td align="right">0.07710639</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">20</td>
+<td align="right">0.43872398</td>
+<td align="right">0.36640164</td>
+<td align="right">0.19487433</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">21</td>
+<td align="right">0.12368711</td>
+<td align="right">0.49679604</td>
+<td align="right">0.37951687</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">22</td>
+<td align="right">0.60121614</td>
+<td align="right">0.2931912</td>
+<td align="right">0.1055927</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">23</td>
+<td align="right">0.43732995</td>
+<td align="right">0.36774415</td>
+<td align="right">0.19492584</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">24</td>
+<td align="right">0.18623501</td>
+<td align="right">0.57117486</td>
+<td align="right">0.24259001</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">25</td>
+<td align="right">0.19845045</td>
+<td align="right">0.5629316</td>
+<td align="right">0.23861799</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">26</td>
+<td align="right">0.39320642</td>
+<td align="right">0.39783528</td>
+<td align="right">0.2089584</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">27</td>
+<td align="right">0.089745395</td>
+<td align="right">0.49626216</td>
+<td align="right">0.41399243</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">28</td>
+<td align="right">0.42634767</td>
+<td align="right">0.32148856</td>
+<td align="right">0.2521637</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">29</td>
+<td align="right">0.5259651</td>
+<td align="right">0.30126905</td>
+<td align="right">0.17276578</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">30</td>
+<td align="right">0.16345999</td>
+<td align="right">0.37705398</td>
+<td align="right">0.45948595</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">31</td>
+<td align="right">0.4069723</td>
+<td align="right">0.35353157</td>
+<td align="right">0.23949613</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">32</td>
+<td align="right">0.3635521</td>
+<td align="right">0.48430014</td>
+<td align="right">0.15214783</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">33</td>
+<td align="right">0.46256304</td>
+<td align="right">0.36531353</td>
+<td align="right">0.1721234</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">34</td>
+<td align="right">0.23754893</td>
+<td align="right">0.37307167</td>
+<td align="right">0.38937932</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">35</td>
+<td align="right">0.9009005</td>
+<td align="right">0.083451845</td>
+<td align="right">0.015647637</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">36</td>
+<td align="right">0.5940446</td>
+<td align="right">0.26927355</td>
+<td align="right">0.13668187</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">37</td>
+<td align="right">0.124707505</td>
+<td align="right">0.3030572</td>
+<td align="right">0.5722353</td>
+</tr>
+</tbody></table>   
+</div>
+<div id="content6">
+		    
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">6</td>
+<td align="right">1</td>
+<td align="right">0.27291843</td>
+<td align="right">0.4600906</td>
+<td align="right">0.26699087</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">2</td>
+<td align="right">0.41614237</td>
+<td align="right">0.37855756</td>
+<td align="right">0.20530005</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">0.3789429</td>
+<td align="right">0.48374006</td>
+<td align="right">0.13731703</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">4</td>
+<td align="right">0.26105744</td>
+<td align="right">0.58572805</td>
+<td align="right">0.15321466</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">5</td>
+<td align="right">0.10496228</td>
+<td align="right">0.68953085</td>
+<td align="right">0.20550679</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">0.54526246</td>
+<td align="right">0.246522</td>
+<td align="right">0.20821545</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">7</td>
+<td align="right">0.03399296</td>
+<td align="right">0.3618442</td>
+<td align="right">0.6041628</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">8</td>
+<td align="right">0.08107257</td>
+<td align="right">0.36718854</td>
+<td align="right">0.55173886</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">9</td>
+<td align="right">0.16145252</td>
+<td align="right">0.64458305</td>
+<td align="right">0.19396448</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">0.47998467</td>
+<td align="right">0.34496805</td>
+<td align="right">0.17504732</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">11</td>
+<td align="right">0.3527566</td>
+<td align="right">0.42612028</td>
+<td align="right">0.22112317</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">12</td>
+<td align="right">0.2658254</td>
+<td align="right">0.49226844</td>
+<td align="right">0.24190614</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">13</td>
+<td align="right">0.43105268</td>
+<td align="right">0.3129692</td>
+<td align="right">0.2559782</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">14</td>
+<td align="right">0.42601302</td>
+<td align="right">0.36970094</td>
+<td align="right">0.20428596</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">15</td>
+<td align="right">0.41047925</td>
+<td align="right">0.3960805</td>
+<td align="right">0.19344023</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">16</td>
+<td align="right">0.4301578</td>
+<td align="right">0.36107373</td>
+<td align="right">0.20876856</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">17</td>
+<td align="right">0.1512292</td>
+<td align="right">0.5274326</td>
+<td align="right">0.3213382</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">18</td>
+<td align="right">0.86173934</td>
+<td align="right">0.110163294</td>
+<td align="right">0.028097402</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">19</td>
+<td align="right">0.21851565</td>
+<td align="right">0.41632646</td>
+<td align="right">0.3651579</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">20</td>
+<td align="right">0.5587509</td>
+<td align="right">0.29155993</td>
+<td align="right">0.14968918</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">21</td>
+<td align="right">0.40834808</td>
+<td align="right">0.31530038</td>
+<td align="right">0.27635145</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">22</td>
+<td align="right">0.8452055</td>
+<td align="right">0.12415305</td>
+<td align="right">0.03064145</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">23</td>
+<td align="right">0.26410833</td>
+<td align="right">0.3980741</td>
+<td align="right">0.33781767</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">24</td>
+<td align="right">0.46497622</td>
+<td align="right">0.4249235</td>
+<td align="right">0.11010028</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">25</td>
+<td align="right">0.18214959</td>
+<td align="right">0.53898686</td>
+<td align="right">0.27886358</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">26</td>
+<td align="right">0.47975639</td>
+<td align="right">0.3434318</td>
+<td align="right">0.17681174</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">27</td>
+<td align="right">0.7970519</td>
+<td align="right">0.1372742</td>
+<td align="right">0.065673836</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">28</td>
+<td align="right">0.18234317</td>
+<td align="right">0.6165946</td>
+<td align="right">0.20106219</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">29</td>
+<td align="right">0.88884604</td>
+<td align="right">0.09289154</td>
+<td align="right">0.018262431</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">30</td>
+<td align="right">0.45628262</td>
+<td align="right">0.33296472</td>
+<td align="right">0.21075268</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">31</td>
+<td align="right">0.26252812</td>
+<td align="right">0.46724695</td>
+<td align="right">0.27022493</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">32</td>
+<td align="right">0.45370674</td>
+<td align="right">0.4550905</td>
+<td align="right">0.09120272</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">33</td>
+<td align="right">0.47949964</td>
+<td align="right">0.41574645</td>
+<td align="right">0.10475393</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">34</td>
+<td align="right">0.23975706</td>
+<td align="right">0.1458071</td>
+<td align="right">0.6144359</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">35</td>
+<td align="right">0.4579178</td>
+<td align="right">0.34837097</td>
+<td align="right">0.19371125</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">36</td>
+<td align="right">0.46229047</td>
+<td align="right">0.38772586</td>
+<td align="right">0.14998366</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">37</td>
+<td align="right">0.09201811</td>
+<td align="right">0.41926175</td>
+<td align="right">0.48872015</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">38</td>
+<td align="right">0.13401918</td>
+<td align="right">0.48412812</td>
+<td align="right">0.3818526</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">39</td>
+<td align="right">0.045481537</td>
+<td align="right">0.29112837</td>
+<td align="right">0.66339016</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">40</td>
+<td align="right">0.1908854</td>
+<td align="right">0.49327323</td>
+<td align="right">0.31584147</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">41</td>
+<td align="right">0.716598</td>
+<td align="right">0.21360382</td>
+<td align="right">0.069798134</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">42</td>
+<td align="right">0.47499105</td>
+<td align="right">0.36165902</td>
+<td align="right">0.16334994</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">43</td>
+<td align="right">0.21055144</td>
+<td align="right">0.5500358</td>
+<td align="right">0.23941278</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">44</td>
+<td align="right">0.38034588</td>
+<td align="right">0.3855108</td>
+<td align="right">0.23414338</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">45</td>
+<td align="right">0.24619429</td>
+<td align="right">0.47234866</td>
+<td align="right">0.28145695</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">46</td>
+<td align="right">0.33213326</td>
+<td align="right">0.42174396</td>
+<td align="right">0.24612276</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">47</td>
+<td align="right">0.4453504</td>
+<td align="right">0.33846167</td>
+<td align="right">0.21618788</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">48</td>
+<td align="right">0.17341714</td>
+<td align="right">0.38996348</td>
+<td align="right">0.43661937</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">49</td>
+<td align="right">0.44849938</td>
+<td align="right">0.39653593</td>
+<td align="right">0.15496475</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">50</td>
+<td align="right">0.49250373</td>
+<td align="right">0.3218996</td>
+<td align="right">0.18559656</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">51</td>
+<td align="right">0.12483167</td>
+<td align="right">0.40822142</td>
+<td align="right">0.466947</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">52</td>
+<td align="right">0.41456968</td>
+<td align="right">0.41460657</td>
+<td align="right">0.17082378</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">53</td>
+<td align="right">0.16713618</td>
+<td align="right">0.59868574</td>
+<td align="right">0.23417813</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">54</td>
+<td align="right">0.6137245</td>
+<td align="right">0.2680401</td>
+<td align="right">0.118235365</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">55</td>
+<td align="right">0.7496097</td>
+<td align="right">0.21229075</td>
+<td align="right">0.03809945</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">56</td>
+<td align="right">0.85688955</td>
+<td align="right">0.12477651</td>
+<td align="right">0.018334068</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">57</td>
+<td align="right">0.81729525</td>
+<td align="right">0.13187905</td>
+<td align="right">0.05082581</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">58</td>
+<td align="right">0.14624238</td>
+<td align="right">0.5851865</td>
+<td align="right">0.26857117</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">59</td>
+<td align="right">0.13724646</td>
+<td align="right">0.48286894</td>
+<td align="right">0.3798845</td>
+</tr>
+</tbody></table>
+
+</div>
+<div id="content7">
+		
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">7</td>
+<td align="right">1</td>
+<td align="right">0.51782274</td>
+<td align="right">0.343103</td>
+<td align="right">0.1390742</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">2</td>
+<td align="right">0.37588885</td>
+<td align="right">0.35747552</td>
+<td align="right">0.26663557</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">3</td>
+<td align="right">0.43856218</td>
+<td align="right">0.31491756</td>
+<td align="right">0.24652022</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">4</td>
+<td align="right">0.10177517</td>
+<td align="right">0.6813922</td>
+<td align="right">0.21683264</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">0.22798765</td>
+<td align="right">0.4378565</td>
+<td align="right">0.33415565</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">6</td>
+<td align="right">0.74657387</td>
+<td align="right">0.22301394</td>
+<td align="right">0.030412162</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">7</td>
+<td align="right">0.6852702</td>
+<td align="right">0.20850272</td>
+<td align="right">0.10622695</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">8</td>
+<td align="right">0.067418195</td>
+<td align="right">0.5094805</td>
+<td align="right">0.42310134</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">9</td>
+<td align="right">0.208803</td>
+<td align="right">0.44887888</td>
+<td align="right">0.34231818</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">10</td>
+<td align="right">0.25769252</td>
+<td align="right">0.42110965</td>
+<td align="right">0.3211978</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">11</td>
+<td align="right">0.059791308</td>
+<td align="right">0.7138533</td>
+<td align="right">0.22635542</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">0.1367764</td>
+<td align="right">0.7047738</td>
+<td align="right">0.15844986</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">13</td>
+<td align="right">0.3157823</td>
+<td align="right">0.41872174</td>
+<td align="right">0.2654959</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">14</td>
+<td align="right">0.5836074</td>
+<td align="right">0.29098105</td>
+<td align="right">0.12541163</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">15</td>
+<td align="right">0.15483838</td>
+<td align="right">0.32719442</td>
+<td align="right">0.5179672</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">16</td>
+<td align="right">0.5518393</td>
+<td align="right">0.31112877</td>
+<td align="right">0.13703194</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">17</td>
+<td align="right">0.4096549</td>
+<td align="right">0.3389173</td>
+<td align="right">0.25142783</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">18</td>
+<td align="right">0.43373075</td>
+<td align="right">0.41298994</td>
+<td align="right">0.15327938</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">19</td>
+<td align="right">0.3964319</td>
+<td align="right">0.39954075</td>
+<td align="right">0.20402732</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">20</td>
+<td align="right">0.8768309</td>
+<td align="right">0.10111631</td>
+<td align="right">0.02205275</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">21</td>
+<td align="right">0.38344094</td>
+<td align="right">0.5231785</td>
+<td align="right">0.09338058</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">22</td>
+<td align="right">0.6732543</td>
+<td align="right">0.22667849</td>
+<td align="right">0.10006725</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">23</td>
+<td align="right">0.4403964</td>
+<td align="right">0.39843124</td>
+<td align="right">0.16117239</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">24</td>
+<td align="right">0.8317631</td>
+<td align="right">0.13634922</td>
+<td align="right">0.03188778</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">25</td>
+<td align="right">0.09971675</td>
+<td align="right">0.54577523</td>
+<td align="right">0.35450804</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">26</td>
+<td align="right">0.6317576</td>
+<td align="right">0.24900156</td>
+<td align="right">0.119240895</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">27</td>
+<td align="right">0.45212227</td>
+<td align="right">0.3506687</td>
+<td align="right">0.1972089</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">28</td>
+<td align="right">0.15046167</td>
+<td align="right">0.34303835</td>
+<td align="right">0.50649995</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">29</td>
+<td align="right">0.28247282</td>
+<td align="right">0.56837624</td>
+<td align="right">0.14915088</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">30</td>
+<td align="right">0.05261881</td>
+<td align="right">0.68215096</td>
+<td align="right">0.2652303</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">31</td>
+<td align="right">0.15877807</td>
+<td align="right">0.39453816</td>
+<td align="right">0.44668382</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">32</td>
+<td align="right">0.35574</td>
+<td align="right">0.5474304</td>
+<td align="right">0.09682956</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">33</td>
+<td align="right">0.5067718</td>
+<td align="right">0.3824562</td>
+<td align="right">0.11077191</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">34</td>
+<td align="right">0.23950182</td>
+<td align="right">0.5506341</td>
+<td align="right">0.20986402</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">35</td>
+<td align="right">0.34876826</td>
+<td align="right">0.30325478</td>
+<td align="right">0.34797695</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">36</td>
+<td align="right">0.048568193</td>
+<td align="right">0.37750158</td>
+<td align="right">0.5739302</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">37</td>
+<td align="right">0.34024665</td>
+<td align="right">0.44934413</td>
+<td align="right">0.21040925</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">38</td>
+<td align="right">0.52139616</td>
+<td align="right">0.39397</td>
+<td align="right">0.08463382</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">39</td>
+<td align="right">0.02492249</td>
+<td align="right">0.12976152</td>
+<td align="right">0.845316</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">40</td>
+<td align="right">0.12958494</td>
+<td align="right">0.6014341</td>
+<td align="right">0.26898086</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">41</td>
+<td align="right">0.46031994</td>
+<td align="right">0.4113128</td>
+<td align="right">0.12836713</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">42</td>
+<td align="right">0.057110585</td>
+<td align="right">0.44566858</td>
+<td align="right">0.49722084</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">43</td>
+<td align="right">0.8468547</td>
+<td align="right">0.107275106</td>
+<td align="right">0.045870174</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">44</td>
+<td align="right">0.31613582</td>
+<td align="right">0.51644486</td>
+<td align="right">0.16741922</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">45</td>
+<td align="right">0.55767304</td>
+<td align="right">0.3107914</td>
+<td align="right">0.1315356</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">46</td>
+<td align="right">0.2780285</td>
+<td align="right">0.40181017</td>
+<td align="right">0.32016137</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">47</td>
+<td align="right">0.15475217</td>
+<td align="right">0.4175617</td>
+<td align="right">0.42768613</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">48</td>
+<td align="right">0.40544796</td>
+<td align="right">0.45869693</td>
+<td align="right">0.13585514</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">49</td>
+<td align="right">0.27451384</td>
+<td align="right">0.5017321</td>
+<td align="right">0.22375412</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">50</td>
+<td align="right">0.44533747</td>
+<td align="right">0.42386606</td>
+<td align="right">0.1307964</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">51</td>
+<td align="right">0.13541797</td>
+<td align="right">0.39215478</td>
+<td align="right">0.4724272</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">52</td>
+<td align="right">0.4095045</td>
+<td align="right">0.30343533</td>
+<td align="right">0.28706017</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">53</td>
+<td align="right">0.13070627</td>
+<td align="right">0.4091473</td>
+<td align="right">0.46014658</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">54</td>
+<td align="right">0.1589423</td>
+<td align="right">0.41804683</td>
+<td align="right">0.42301095</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">55</td>
+<td align="right">0.39642963</td>
+<td align="right">0.39902884</td>
+<td align="right">0.2045415</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">56</td>
+<td align="right">0.2846362</td>
+<td align="right">0.5564342</td>
+<td align="right">0.15892968</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">57</td>
+<td align="right">0.06865604</td>
+<td align="right">0.38992962</td>
+<td align="right">0.5414144</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">58</td>
+<td align="right">0.48790467</td>
+<td align="right">0.36660165</td>
+<td align="right">0.14549367</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">59</td>
+<td align="right">0.035534605</td>
+<td align="right">0.2110596</td>
+<td align="right">0.7534057</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">60</td>
+<td align="right">0.22747596</td>
+<td align="right">0.48653758</td>
+<td align="right">0.28598648</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">61</td>
+<td align="right">0.14057148</td>
+<td align="right">0.4373786</td>
+<td align="right">0.42204997</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">62</td>
+<td align="right">0.38427356</td>
+<td align="right">0.42726862</td>
+<td align="right">0.18845792</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">63</td>
+<td align="right">0.28387755</td>
+<td align="right">0.387796</td>
+<td align="right">0.32832646</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">64</td>
+<td align="right">0.6555302</td>
+<td align="right">0.24812196</td>
+<td align="right">0.09634781</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">65</td>
+<td align="right">0.44408303</td>
+<td align="right">0.42364883</td>
+<td align="right">0.13226816</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">66</td>
+<td align="right">0.58707726</td>
+<td align="right">0.27423784</td>
+<td align="right">0.13868493</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">67</td>
+<td align="right">0.4610055</td>
+<td align="right">0.33391628</td>
+<td align="right">0.20507826</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">68</td>
+<td align="right">0.37313798</td>
+<td align="right">0.38927004</td>
+<td align="right">0.23759183</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">69</td>
+<td align="right">0.30427358</td>
+<td align="right">0.37432438</td>
+<td align="right">0.32140198</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">70</td>
+<td align="right">0.65160894</td>
+<td align="right">0.23618512</td>
+<td align="right">0.112206094</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">71</td>
+<td align="right">0.8807324</td>
+<td align="right">0.08598903</td>
+<td align="right">0.033278678</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">72</td>
+<td align="right">0.45094767</td>
+<td align="right">0.34777433</td>
+<td align="right">0.20127809</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">73</td>
+<td align="right">0.5005735</td>
+<td align="right">0.35697928</td>
+<td align="right">0.14244719</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">74</td>
+<td align="right">0.14112931</td>
+<td align="right">0.44381672</td>
+<td align="right">0.41505402</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">75</td>
+<td align="right">0.4127812</td>
+<td align="right">0.3930268</td>
+<td align="right">0.19419199</td>
+</tr>
+</tbody></table>
+</div>
+<div id="content8">
+		   
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">8</td>
+<td align="right">1</td>
+<td align="right">0.48299193</td>
+<td align="right">0.34308103</td>
+<td align="right">0.17392713</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">2</td>
+<td align="right">0.6093237</td>
+<td align="right">0.33407846</td>
+<td align="right">0.056597885</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">0.33635992</td>
+<td align="right">0.51079273</td>
+<td align="right">0.15284748</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">4</td>
+<td align="right">0.24653086</td>
+<td align="right">0.5148618</td>
+<td align="right">0.23860736</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">5</td>
+<td align="right">0.3144733</td>
+<td align="right">0.41862097</td>
+<td align="right">0.26690578</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">6</td>
+<td align="right">0.16425784</td>
+<td align="right">0.53363645</td>
+<td align="right">0.30210578</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">7</td>
+<td align="right">0.25586852</td>
+<td align="right">0.5188551</td>
+<td align="right">0.22527644</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">8</td>
+<td align="right">0.3308626</td>
+<td align="right">0.28188387</td>
+<td align="right">0.38725352</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">9</td>
+<td align="right">0.87924635</td>
+<td align="right">0.09321038</td>
+<td align="right">0.027543256</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">10</td>
+<td align="right">0.5544841</td>
+<td align="right">0.26229915</td>
+<td align="right">0.1832167</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">11</td>
+<td align="right">0.27209437</td>
+<td align="right">0.6605385</td>
+<td align="right">0.0673671</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">12</td>
+<td align="right">0.27714664</td>
+<td align="right">0.48297068</td>
+<td align="right">0.2398826</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">13</td>
+<td align="right">0.087216035</td>
+<td align="right">0.58843523</td>
+<td align="right">0.32434875</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">14</td>
+<td align="right">0.44374797</td>
+<td align="right">0.36075097</td>
+<td align="right">0.1955011</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">15</td>
+<td align="right">0.45138</td>
+<td align="right">0.33483556</td>
+<td align="right">0.21378455</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">16</td>
+<td align="right">0.07284594</td>
+<td align="right">0.5102521</td>
+<td align="right">0.416902</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">17</td>
+<td align="right">0.639876</td>
+<td align="right">0.2700071</td>
+<td align="right">0.090116784</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">18</td>
+<td align="right">0.13123564</td>
+<td align="right">0.6089605</td>
+<td align="right">0.25980383</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">19</td>
+<td align="right">0.30020612</td>
+<td align="right">0.55101466</td>
+<td align="right">0.14877929</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">20</td>
+<td align="right">0.3700422</td>
+<td align="right">0.38442078</td>
+<td align="right">0.2455369</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">21</td>
+<td align="right">0.44750562</td>
+<td align="right">0.3802686</td>
+<td align="right">0.17222574</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">22</td>
+<td align="right">0.4082805</td>
+<td align="right">0.43286556</td>
+<td align="right">0.1588539</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">23</td>
+<td align="right">0.17379798</td>
+<td align="right">0.59487885</td>
+<td align="right">0.23132318</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">24</td>
+<td align="right">0.9046192</td>
+<td align="right">0.07237599</td>
+<td align="right">0.023004813</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">25</td>
+<td align="right">0.42821288</td>
+<td align="right">0.37636173</td>
+<td align="right">0.19542542</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">26</td>
+<td align="right">0.102017544</td>
+<td align="right">0.31588092</td>
+<td align="right">0.58210164</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">27</td>
+<td align="right">0.09227625</td>
+<td align="right">0.6034841</td>
+<td align="right">0.30423966</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">28</td>
+<td align="right">0.5358744</td>
+<td align="right">0.33419433</td>
+<td align="right">0.12993118</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">29</td>
+<td align="right">0.30571476</td>
+<td align="right">0.4257013</td>
+<td align="right">0.26858383</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">30</td>
+<td align="right">0.13399519</td>
+<td align="right">0.56257045</td>
+<td align="right">0.30343443</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">31</td>
+<td align="right">0.49471354</td>
+<td align="right">0.38088104</td>
+<td align="right">0.124405436</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">32</td>
+<td align="right">0.35957614</td>
+<td align="right">0.4444656</td>
+<td align="right">0.19595814</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">33</td>
+<td align="right">0.24747731</td>
+<td align="right">0.45863196</td>
+<td align="right">0.29389083</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">34</td>
+<td align="right">0.46278682</td>
+<td align="right">0.38545582</td>
+<td align="right">0.15175726</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">35</td>
+<td align="right">0.19642025</td>
+<td align="right">0.4665657</td>
+<td align="right">0.33701408</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">36</td>
+<td align="right">0.533242</td>
+<td align="right">0.3289617</td>
+<td align="right">0.13779634</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">37</td>
+<td align="right">0.6151654</td>
+<td align="right">0.25776476</td>
+<td align="right">0.12706967</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">38</td>
+<td align="right">0.06322883</td>
+<td align="right">0.47526357</td>
+<td align="right">0.46150768</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">39</td>
+<td align="right">0.35911474</td>
+<td align="right">0.37091368</td>
+<td align="right">0.2699716</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">40</td>
+<td align="right">0.5282984</td>
+<td align="right">0.37684733</td>
+<td align="right">0.094854236</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">41</td>
+<td align="right">0.51237017</td>
+<td align="right">0.32059082</td>
+<td align="right">0.16703899</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">42</td>
+<td align="right">0.72266215</td>
+<td align="right">0.22032602</td>
+<td align="right">0.057011902</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">43</td>
+<td align="right">0.09472384</td>
+<td align="right">0.19616923</td>
+<td align="right">0.7091069</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">44</td>
+<td align="right">0.42263868</td>
+<td align="right">0.34991238</td>
+<td align="right">0.22744898</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">45</td>
+<td align="right">0.27203175</td>
+<td align="right">0.37580255</td>
+<td align="right">0.35216567</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">46</td>
+<td align="right">0.7030346</td>
+<td align="right">0.24297798</td>
+<td align="right">0.05398737</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">47</td>
+<td align="right">0.6049542</td>
+<td align="right">0.28982928</td>
+<td align="right">0.10521652</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">48</td>
+<td align="right">0.48926425</td>
+<td align="right">0.3236126</td>
+<td align="right">0.18712313</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">49</td>
+<td align="right">0.6889298</td>
+<td align="right">0.2404362</td>
+<td align="right">0.07063413</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">50</td>
+<td align="right">0.6216509</td>
+<td align="right">0.2721339</td>
+<td align="right">0.1062153</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">51</td>
+<td align="right">0.48362544</td>
+<td align="right">0.2979077</td>
+<td align="right">0.21846679</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">52</td>
+<td align="right">0.68066144</td>
+<td align="right">0.27343404</td>
+<td align="right">0.045904525</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">53</td>
+<td align="right">0.503882</td>
+<td align="right">0.364586</td>
+<td align="right">0.13153188</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">54</td>
+<td align="right">0.12434963</td>
+<td align="right">0.46200854</td>
+<td align="right">0.41364187</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">55</td>
+<td align="right">0.3702628</td>
+<td align="right">0.4332485</td>
+<td align="right">0.19648865</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">56</td>
+<td align="right">0.43097016</td>
+<td align="right">0.3493598</td>
+<td align="right">0.21967001</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">57</td>
+<td align="right">0.33533657</td>
+<td align="right">0.45638052</td>
+<td align="right">0.20828292</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">58</td>
+<td align="right">0.7880711</td>
+<td align="right">0.18021801</td>
+<td align="right">0.031710908</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">59</td>
+<td align="right">0.15526767</td>
+<td align="right">0.46630976</td>
+<td align="right">0.37842253</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">60</td>
+<td align="right">0.17045118</td>
+<td align="right">0.66802996</td>
+<td align="right">0.16151892</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">61</td>
+<td align="right">0.18434332</td>
+<td align="right">0.49166498</td>
+<td align="right">0.32399175</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<div id="content9">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">9</td>
+<td align="right">1</td>
+<td align="right">0.43293667</td>
+<td align="right">0.36438686</td>
+<td align="right">0.2026765</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">0.72052777</td>
+<td align="right">0.18004107</td>
+<td align="right">0.09943111</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">3</td>
+<td align="right">0.4445634</td>
+<td align="right">0.36682916</td>
+<td align="right">0.1886073</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">4</td>
+<td align="right">0.89314866</td>
+<td align="right">0.083810255</td>
+<td align="right">0.023041021</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">5</td>
+<td align="right">0.68070984</td>
+<td align="right">0.26143557</td>
+<td align="right">0.0578546</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">6</td>
+<td align="right">0.0976678</td>
+<td align="right">0.5030618</td>
+<td align="right">0.39927036</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">7</td>
+<td align="right">0.14337586</td>
+<td align="right">0.5756272</td>
+<td align="right">0.28099704</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">0.16128673</td>
+<td align="right">0.635164</td>
+<td align="right">0.20354931</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">9</td>
+<td align="right">0.33991012</td>
+<td align="right">0.40797138</td>
+<td align="right">0.2521185</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">10</td>
+<td align="right">0.16461082</td>
+<td align="right">0.48352906</td>
+<td align="right">0.35186005</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">11</td>
+<td align="right">0.20966767</td>
+<td align="right">0.39516467</td>
+<td align="right">0.39516762</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">12</td>
+<td align="right">0.6288469</td>
+<td align="right">0.2453957</td>
+<td align="right">0.12575732</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">13</td>
+<td align="right">0.23479633</td>
+<td align="right">0.56986463</td>
+<td align="right">0.19533898</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">14</td>
+<td align="right">0.257707</td>
+<td align="right">0.49485105</td>
+<td align="right">0.24744196</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">15</td>
+<td align="right">0.6448268</td>
+<td align="right">0.32097512</td>
+<td align="right">0.03419809</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">16</td>
+<td align="right">0.396406</td>
+<td align="right">0.40362352</td>
+<td align="right">0.19997045</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">17</td>
+<td align="right">0.43523318</td>
+<td align="right">0.42416823</td>
+<td align="right">0.1405986</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">18</td>
+<td align="right">0.7290629</td>
+<td align="right">0.21134408</td>
+<td align="right">0.059592947</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">19</td>
+<td align="right">0.5469555</td>
+<td align="right">0.4069367</td>
+<td align="right">0.04610784</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">20</td>
+<td align="right">0.83839333</td>
+<td align="right">0.14028852</td>
+<td align="right">0.021318119</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">21</td>
+<td align="right">0.5039306</td>
+<td align="right">0.37934774</td>
+<td align="right">0.11672164</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">22</td>
+<td align="right">0.2766155</td>
+<td align="right">0.47467935</td>
+<td align="right">0.24870512</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">23</td>
+<td align="right">0.3730849</td>
+<td align="right">0.4205278</td>
+<td align="right">0.2063874</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">24</td>
+<td align="right">0.2509864</td>
+<td align="right">0.52236146</td>
+<td align="right">0.22665218</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">25</td>
+<td align="right">0.13557553</td>
+<td align="right">0.5516551</td>
+<td align="right">0.31276944</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">26</td>
+<td align="right">0.86059517</td>
+<td align="right">0.11130771</td>
+<td align="right">0.028097235</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">27</td>
+<td align="right">0.36292312</td>
+<td align="right">0.39387232</td>
+<td align="right">0.24320443</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">28</td>
+<td align="right">0.3251853</td>
+<td align="right">0.5042087</td>
+<td align="right">0.17060599</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">29</td>
+<td align="right">0.12517437</td>
+<td align="right">0.4692486</td>
+<td align="right">0.40557703</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">30</td>
+<td align="right">0.48194593</td>
+<td align="right">0.32799155</td>
+<td align="right">0.19006251</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">31</td>
+<td align="right">0.42177105</td>
+<td align="right">0.36802188</td>
+<td align="right">0.21020702</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">32</td>
+<td align="right">0.12392597</td>
+<td align="right">0.58916247</td>
+<td align="right">0.28691152</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">33</td>
+<td align="right">0.36339343</td>
+<td align="right">0.37191707</td>
+<td align="right">0.26468936</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">34</td>
+<td align="right">0.35149518</td>
+<td align="right">0.45701197</td>
+<td align="right">0.1914929</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">35</td>
+<td align="right">0.6381401</td>
+<td align="right">0.22336596</td>
+<td align="right">0.138494</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">36</td>
+<td align="right">0.53211087</td>
+<td align="right">0.31903964</td>
+<td align="right">0.14884955</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">37</td>
+<td align="right">0.35247523</td>
+<td align="right">0.4862511</td>
+<td align="right">0.16127372</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">38</td>
+<td align="right">0.718125</td>
+<td align="right">0.20908657</td>
+<td align="right">0.07278842</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">39</td>
+<td align="right">0.6901312</td>
+<td align="right">0.27697638</td>
+<td align="right">0.032892466</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">40</td>
+<td align="right">0.68927956</td>
+<td align="right">0.23719262</td>
+<td align="right">0.073527865</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">41</td>
+<td align="right">0.46716595</td>
+<td align="right">0.3574171</td>
+<td align="right">0.17541698</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">42</td>
+<td align="right">0.4936239</td>
+<td align="right">0.33964226</td>
+<td align="right">0.1667339</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">43</td>
+<td align="right">0.6011822</td>
+<td align="right">0.27308807</td>
+<td align="right">0.12572965</td>
+</tr>
+</tbody></table>
+</div>
+
+<div id="content10">
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">10</td>
+<td align="right">1</td>
+<td align="right">0.38522533</td>
+<td align="right">0.35185814</td>
+<td align="right">0.26291654</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">2</td>
+<td align="right">0.33617786</td>
+<td align="right">0.47288015</td>
+<td align="right">0.190942</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">3</td>
+<td align="right">0.35126963</td>
+<td align="right">0.4084769</td>
+<td align="right">0.24025361</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">4</td>
+<td align="right">0.74115473</td>
+<td align="right">0.20485233</td>
+<td align="right">0.053992823</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">5</td>
+<td align="right">0.14301977</td>
+<td align="right">0.5731496</td>
+<td align="right">0.2838307</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">6</td>
+<td align="right">0.32343388</td>
+<td align="right">0.43285453</td>
+<td align="right">0.24371158</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">7</td>
+<td align="right">0.37436596</td>
+<td align="right">0.44503134</td>
+<td align="right">0.18060271</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">8</td>
+<td align="right">0.43088427</td>
+<td align="right">0.34778112</td>
+<td align="right">0.22133462</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">9</td>
+<td align="right">0.34411824</td>
+<td align="right">0.42924362</td>
+<td align="right">0.22663812</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">0.6001682</td>
+<td align="right">0.29218125</td>
+<td align="right">0.1076504</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">11</td>
+<td align="right">0.31038073</td>
+<td align="right">0.4618946</td>
+<td align="right">0.22772469</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">0.3656137</td>
+<td align="right">0.36403802</td>
+<td align="right">0.2703482</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">13</td>
+<td align="right">0.45450646</td>
+<td align="right">0.3589728</td>
+<td align="right">0.18652071</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">14</td>
+<td align="right">0.1033957</td>
+<td align="right">0.38916278</td>
+<td align="right">0.5074416</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">15</td>
+<td align="right">0.29150918</td>
+<td align="right">0.42179608</td>
+<td align="right">0.28669465</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">16</td>
+<td align="right">0.28763995</td>
+<td align="right">0.45695633</td>
+<td align="right">0.25540364</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">17</td>
+<td align="right">0.15770844</td>
+<td align="right">0.48088983</td>
+<td align="right">0.36140162</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">18</td>
+<td align="right">0.26385874</td>
+<td align="right">0.5896503</td>
+<td align="right">0.14649099</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">19</td>
+<td align="right">0.45398808</td>
+<td align="right">0.36810803</td>
+<td align="right">0.17790383</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">20</td>
+<td align="right">0.04635997</td>
+<td align="right">0.6372049</td>
+<td align="right">0.3164352</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">21</td>
+<td align="right">0.13146962</td>
+<td align="right">0.4207807</td>
+<td align="right">0.44774964</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">22</td>
+<td align="right">0.11509798</td>
+<td align="right">0.43125725</td>
+<td align="right">0.45364478</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">23</td>
+<td align="right">0.19154339</td>
+<td align="right">0.53134567</td>
+<td align="right">0.27711096</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">24</td>
+<td align="right">0.4191888</td>
+<td align="right">0.46484467</td>
+<td align="right">0.11596652</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">25</td>
+<td align="right">0.47471446</td>
+<td align="right">0.35637033</td>
+<td align="right">0.16891529</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">26</td>
+<td align="right">0.27979386</td>
+<td align="right">0.3366874</td>
+<td align="right">0.38351876</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">27</td>
+<td align="right">0.30948225</td>
+<td align="right">0.4643668</td>
+<td align="right">0.22615086</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">28</td>
+<td align="right">0.5283751</td>
+<td align="right">0.3146316</td>
+<td align="right">0.15699324</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">29</td>
+<td align="right">0.6684352</td>
+<td align="right">0.28669268</td>
+<td align="right">0.044872213</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">30</td>
+<td align="right">0.49125355</td>
+<td align="right">0.35825062</td>
+<td align="right">0.15049586</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">31</td>
+<td align="right">0.3806442</td>
+<td align="right">0.40878284</td>
+<td align="right">0.21057297</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">32</td>
+<td align="right">0.7352845</td>
+<td align="right">0.20180076</td>
+<td align="right">0.06291467</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">33</td>
+<td align="right">0.44157526</td>
+<td align="right">0.36251035</td>
+<td align="right">0.19591436</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">34</td>
+<td align="right">0.4109934</td>
+<td align="right">0.34789112</td>
+<td align="right">0.24111551</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">35</td>
+<td align="right">0.2716438</td>
+<td align="right">0.4253299</td>
+<td align="right">0.30302638</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">36</td>
+<td align="right">0.4321443</td>
+<td align="right">0.3609434</td>
+<td align="right">0.2069122</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">37</td>
+<td align="right">0.51427174</td>
+<td align="right">0.4126388</td>
+<td align="right">0.07308949</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">38</td>
+<td align="right">0.29472968</td>
+<td align="right">0.4857291</td>
+<td align="right">0.21954116</td>
+</tr>
+</tbody></table> 
+</div>
+<div id="content11">
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">11</td>
+<td align="right">1</td>
+<td align="right">0.3240105</td>
+<td align="right">0.45150718</td>
+<td align="right">0.22448242</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">2</td>
+<td align="right">0.3567934</td>
+<td align="right">0.4073631</td>
+<td align="right">0.23584346</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">3</td>
+<td align="right">0.34649768</td>
+<td align="right">0.3473532</td>
+<td align="right">0.30614915</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">4</td>
+<td align="right">0.05552772</td>
+<td align="right">0.15932608</td>
+<td align="right">0.78514624</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">5</td>
+<td align="right">0.40249664</td>
+<td align="right">0.40448934</td>
+<td align="right">0.19301404</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">6</td>
+<td align="right">0.43338647</td>
+<td align="right">0.36364302</td>
+<td align="right">0.20297045</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">7</td>
+<td align="right">0.16018753</td>
+<td align="right">0.24754074</td>
+<td align="right">0.59227175</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">8</td>
+<td align="right">0.50585014</td>
+<td align="right">0.35955855</td>
+<td align="right">0.13459133</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">9</td>
+<td align="right">0.6166083</td>
+<td align="right">0.25959077</td>
+<td align="right">0.12380091</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">10</td>
+<td align="right">0.343115</td>
+<td align="right">0.42766172</td>
+<td align="right">0.22922327</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">11</td>
+<td align="right">0.33906502</td>
+<td align="right">0.44704163</td>
+<td align="right">0.2138934</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">12</td>
+<td align="right">0.17923944</td>
+<td align="right">0.57276756</td>
+<td align="right">0.2479929</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">13</td>
+<td align="right">0.54335296</td>
+<td align="right">0.2910027</td>
+<td align="right">0.16564438</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">14</td>
+<td align="right">0.57641214</td>
+<td align="right">0.24970122</td>
+<td align="right">0.17388672</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">15</td>
+<td align="right">0.37408465</td>
+<td align="right">0.3483624</td>
+<td align="right">0.27755302</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">16</td>
+<td align="right">0.43450052</td>
+<td align="right">0.36871675</td>
+<td align="right">0.19678274</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">17</td>
+<td align="right">0.11672483</td>
+<td align="right">0.68188256</td>
+<td align="right">0.20139265</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">18</td>
+<td align="right">0.5019387</td>
+<td align="right">0.3398314</td>
+<td align="right">0.15822989</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">19</td>
+<td align="right">0.46388084</td>
+<td align="right">0.34206223</td>
+<td align="right">0.194057</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">20</td>
+<td align="right">0.5350029</td>
+<td align="right">0.3252811</td>
+<td align="right">0.13971603</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">21</td>
+<td align="right">0.3831975</td>
+<td align="right">0.40280348</td>
+<td align="right">0.21399899</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">22</td>
+<td align="right">0.33491418</td>
+<td align="right">0.4492582</td>
+<td align="right">0.21582769</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">23</td>
+<td align="right">0.7567992</td>
+<td align="right">0.21233395</td>
+<td align="right">0.030866927</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">24</td>
+<td align="right">0.23551024</td>
+<td align="right">0.5263419</td>
+<td align="right">0.23814774</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">25</td>
+<td align="right">0.6101904</td>
+<td align="right">0.30704013</td>
+<td align="right">0.08276946</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">26</td>
+<td align="right">0.109938234</td>
+<td align="right">0.33445606</td>
+<td align="right">0.5556057</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">27</td>
+<td align="right">0.1491828</td>
+<td align="right">0.4002062</td>
+<td align="right">0.4506109</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">28</td>
+<td align="right">0.3100409</td>
+<td align="right">0.40981188</td>
+<td align="right">0.28014717</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">29</td>
+<td align="right">0.20156187</td>
+<td align="right">0.48483938</td>
+<td align="right">0.31359866</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">30</td>
+<td align="right">0.48012194</td>
+<td align="right">0.4481432</td>
+<td align="right">0.07173496</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">31</td>
+<td align="right">0.040113837</td>
+<td align="right">0.20531467</td>
+<td align="right">0.75457156</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">32</td>
+<td align="right">0.9165874</td>
+<td align="right">0.066983365</td>
+<td align="right">0.016429218</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">33</td>
+<td align="right">0.42613125</td>
+<td align="right">0.45085436</td>
+<td align="right">0.12301454</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">34</td>
+<td align="right">0.6473976</td>
+<td align="right">0.2864981</td>
+<td align="right">0.06610431</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">35</td>
+<td align="right">0.35372</td>
+<td align="right">0.5317309</td>
+<td align="right">0.11454908</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">36</td>
+<td align="right">0.16704148</td>
+<td align="right">0.60985965</td>
+<td align="right">0.223099</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">37</td>
+<td align="right">0.2260796</td>
+<td align="right">0.47118157</td>
+<td align="right">0.3027388</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">38</td>
+<td align="right">0.28015563</td>
+<td align="right">0.53305966</td>
+<td align="right">0.18678468</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">39</td>
+<td align="right">0.3777406</td>
+<td align="right">0.5544138</td>
+<td align="right">0.06784544</td>
+</tr>
+</tbody></table>
+</div>
+<div id ="content12">
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #2">Book</th>
+<th title="Field #3">BookChapter</th>
+<th title="Field #4">Negative</th>
+<th title="Field #5">Neutral</th>
+<th title="Field #6">Positive</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">12</td>
+<td align="right">1</td>
+<td align="right">0.35477337</td>
+<td align="right">0.43357998</td>
+<td align="right">0.21164662</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">2</td>
+<td align="right">0.68353146</td>
+<td align="right">0.21665634</td>
+<td align="right">0.09981225</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">3</td>
+<td align="right">0.3262434</td>
+<td align="right">0.4537426</td>
+<td align="right">0.22001399</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">0.42978087</td>
+<td align="right">0.3385727</td>
+<td align="right">0.23164639</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">5</td>
+<td align="right">0.4832516</td>
+<td align="right">0.3585911</td>
+<td align="right">0.1581573</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">6</td>
+<td align="right">0.30499434</td>
+<td align="right">0.3641915</td>
+<td align="right">0.3308141</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">7</td>
+<td align="right">0.3677571</td>
+<td align="right">0.46393505</td>
+<td align="right">0.16830778</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">8</td>
+<td align="right">0.4109427</td>
+<td align="right">0.4992588</td>
+<td align="right">0.08979857</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">0.20123945</td>
+<td align="right">0.6266304</td>
+<td align="right">0.17213006</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">0.1207768</td>
+<td align="right">0.7073876</td>
+<td align="right">0.17183554</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">11</td>
+<td align="right">0.09449677</td>
+<td align="right">0.43406585</td>
+<td align="right">0.47143736</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">12</td>
+<td align="right">0.59907603</td>
+<td align="right">0.26580688</td>
+<td align="right">0.13511711</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">13</td>
+<td align="right">0.90115356</td>
+<td align="right">0.07587518</td>
+<td align="right">0.022971159</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">14</td>
+<td align="right">0.36637142</td>
+<td align="right">0.35799438</td>
+<td align="right">0.27563408</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">15</td>
+<td align="right">0.5156818</td>
+<td align="right">0.30617663</td>
+<td align="right">0.17814155</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">16</td>
+<td align="right">0.42697182</td>
+<td align="right">0.4757273</td>
+<td align="right">0.09730081</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">17</td>
+<td align="right">0.58427346</td>
+<td align="right">0.24782386</td>
+<td align="right">0.16790262</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">18</td>
+<td align="right">0.14607683</td>
+<td align="right">0.50748736</td>
+<td align="right">0.34643576</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">19</td>
+<td align="right">0.19180857</td>
+<td align="right">0.6081967</td>
+<td align="right">0.19999476</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">20</td>
+<td align="right">0.20193867</td>
+<td align="right">0.45477295</td>
+<td align="right">0.34328845</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">21</td>
+<td align="right">0.47142255</td>
+<td align="right">0.37277296</td>
+<td align="right">0.15580454</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">22</td>
+<td align="right">0.40944883</td>
+<td align="right">0.40770754</td>
+<td align="right">0.1828435</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">23</td>
+<td align="right">0.31998646</td>
+<td align="right">0.46160033</td>
+<td align="right">0.2184131</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">24</td>
+<td align="right">0.37390676</td>
+<td align="right">0.46325678</td>
+<td align="right">0.1628365</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">25</td>
+<td align="right">0.48557904</td>
+<td align="right">0.29865587</td>
+<td align="right">0.21576501</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">26</td>
+<td align="right">0.24461827</td>
+<td align="right">0.41508326</td>
+<td align="right">0.34029853</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">27</td>
+<td align="right">0.25280014</td>
+<td align="right">0.42766938</td>
+<td align="right">0.31953058</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">28</td>
+<td align="right">0.3480702</td>
+<td align="right">0.41143757</td>
+<td align="right">0.2404923</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">29</td>
+<td align="right">0.49652433</td>
+<td align="right">0.32107356</td>
+<td align="right">0.18240215</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">30</td>
+<td align="right">0.39823642</td>
+<td align="right">0.34806406</td>
+<td align="right">0.2536995</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">31</td>
+<td align="right">0.20085347</td>
+<td align="right">0.6304389</td>
+<td align="right">0.16870765</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">32</td>
+<td align="right">0.87753326</td>
+<td align="right">0.07348539</td>
+<td align="right">0.048981383</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">33</td>
+<td align="right">0.36891976</td>
+<td align="right">0.38538536</td>
+<td align="right">0.24569489</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">34</td>
+<td align="right">0.4527012</td>
+<td align="right">0.3840903</td>
+<td align="right">0.16320854</td>
+</tr>
+</tbody></table>
+        
         </div>
       </section>
+
+<p>Feel free to hack our code and our choice of data model to better fulfill your own sentiment analysis and computationally-aided annotation needs.
+<p>The related documentation can be found on our <a href="https://github.com/ONTOmeditations/OntoMeditations/tree/main/Sentiment_analysis">Github</a> repository.</p>
 
     </main><!-- End #main -->
 
@@ -158,8 +3730,34 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="assets/js/plugins/moment.min.js"></script>
+<!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Google Maps Plugin  -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+<script src="assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/main1.js"></script>
+<script>
+
+      $(".butn2").click(function(e) {
+      e.preventDefault();
+      $('.content-container div').fadeOut('slow');
+      $('#' + $(this).data('rel')).fadeIn('slow');
+});
+    </script>
+
 
 </body>
 
