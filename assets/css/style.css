@@ -9,9 +9,13 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Day Roman';
+  font-family: 'EB Garamond',serif;
   color: #444444;
   background-color: #f4f4f4;
+  font-size: 20px;
+  font-weight: 50;
+  letter-spacing: 0.8px;
+;
 }
 
 a {
@@ -25,12 +29,13 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Trajanus Roman';
-	src: url("https://github.com/ONTOmeditations/OntoMeditations/blob/gh-pages/assets/trajanus-roman/TRAJANUS.TTF")format('truetype');
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2.5px;
 }
 
 logo {
-	font-family: 'Britannic', cursive;;
+	font-family: 'Britannic', cursive;
+  position:relative;
 }
 
 .wrap {
@@ -134,7 +139,7 @@ logo {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
   color: #fff;
   white-space: nowrap;
@@ -167,7 +172,7 @@ logo {
 }
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 18px;
   color: #444444;
 }
 .navbar .dropdown ul a i {
@@ -1515,6 +1520,29 @@ section {
   bottom: 0;
   right: 0;
   min-height: 70px;
+}
+
+
+.row {
+  display: flex;
+  position:relative;
+  margin: 0 auto;
+
+
+  /* margin-right: -15px;
+  margin-left: -15px; */
+  min-width: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-6 {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
 }
 
 /*
