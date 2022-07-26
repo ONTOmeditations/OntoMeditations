@@ -4,7 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5#> .
+@base <http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5> .
 
 <http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5> rdf:type owl:Ontology .
 
@@ -38,7 +38,7 @@
 
 ###  https://w3id.org/arco/ontology/core/hasCharacteristic
 <https://w3id.org/arco/ontology/core/hasCharacteristic> rdf:type owl:ObjectProperty ;
-                                                        rdfs:domain <https://w3id.org/arco/ontology/core/fragments> ;
+                                                        rdfs:domain <http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/literary_diary> ;
                                                         rdfs:range <https://w3id.org/arco/ontology/core/AbstractFigure> ,
                                                                    <https://w3id.org/arco/ontology/core/AgentRole> ,
                                                                    <https://w3id.org/arco/ontology/core/Concept> ,
@@ -107,12 +107,6 @@
 <https://w3id.org/arco/ontology/core/hasAttributedAuthor> rdf:type owl:DatatypeProperty ;
                                                           rdfs:domain <http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/literary_diary> ;
                                                           rdfs:range rdfs:Literal .
-
-
-###  https://w3id.org/arco/ontology/core/hasCitation
-<https://w3id.org/arco/ontology/core/hasCitation> rdf:type owl:DatatypeProperty ;
-                                                  rdfs:domain <https://w3id.org/arco/ontology/core/AgentRole> ;
-                                                  rdfs:range rdfs:Literal .
 
 
 ###  https://w3id.org/arco/ontology/core/keyword
@@ -283,32 +277,27 @@
 
 ###  https://w3id.org/arco/ontology/core/Democritus
 <https://w3id.org/arco/ontology/core/Democritus> rdf:type owl:NamedIndividual ,
-                                                          <https://w3id.org/arco/ontology/core/AgentRole> ;
-                                                 <https://w3id.org/arco/ontology/core/hasCitation> "" .
+                                                          <https://w3id.org/arco/ontology/core/AgentRole> .
 
 
 ###  https://w3id.org/arco/ontology/core/Epictetus
 <https://w3id.org/arco/ontology/core/Epictetus> rdf:type owl:NamedIndividual ,
-                                                         <https://w3id.org/arco/ontology/core/AgentRole> ;
-                                                <https://w3id.org/arco/ontology/core/hasCitation> "" .
+                                                         <https://w3id.org/arco/ontology/core/AgentRole> .
 
 
 ###  https://w3id.org/arco/ontology/core/Euripides
 <https://w3id.org/arco/ontology/core/Euripides> rdf:type owl:NamedIndividual ,
-                                                         <https://w3id.org/arco/ontology/core/AgentRole> ;
-                                                <https://w3id.org/arco/ontology/core/hasCitation> "" .
+                                                         <https://w3id.org/arco/ontology/core/AgentRole> .
 
 
 ###  https://w3id.org/arco/ontology/core/Heraclitus
 <https://w3id.org/arco/ontology/core/Heraclitus> rdf:type owl:NamedIndividual ,
-                                                          <https://w3id.org/arco/ontology/core/AgentRole> ;
-                                                 <https://w3id.org/arco/ontology/core/hasCitation> "" .
+                                                          <https://w3id.org/arco/ontology/core/AgentRole> .
 
 
 ###  https://w3id.org/arco/ontology/core/Homer
 <https://w3id.org/arco/ontology/core/Homer> rdf:type owl:NamedIndividual ,
-                                                     <https://w3id.org/arco/ontology/core/AgentRole> ;
-                                            <https://w3id.org/arco/ontology/core/hasCitation> "" .
+                                                     <https://w3id.org/arco/ontology/core/AgentRole> .
 
 
 ###  https://w3id.org/arco/ontology/core/action
@@ -351,6 +340,12 @@
 ###  https://w3id.org/arco/ontology/core/death
 <https://w3id.org/arco/ontology/core/death> rdf:type owl:NamedIndividual ,
                                                      <https://w3id.org/arco/ontology/core/Category/death> .
+
+[ rdf:type owl:NegativePropertyAssertion ;
+   owl:sourceIndividual <https://w3id.org/arco/ontology/core/death> ;
+   owl:assertionProperty <https://w3id.org/arco/ontology/core/oppositeOf> ;
+   owl:targetIndividual <https://w3id.org/arco/ontology/core/life>
+ ] .
 
 
 ###  https://w3id.org/arco/ontology/core/displeasure
@@ -430,6 +425,12 @@
                                                    <https://w3id.org/arco/ontology/core/Category/providence> ;
                                           <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/providence> .
 
+[ rdf:type owl:NegativePropertyAssertion ;
+   owl:sourceIndividual <https://w3id.org/arco/ontology/core/god> ;
+   owl:assertionProperty <https://w3id.org/arco/ontology/core/oppositeOf> ;
+   owl:targetIndividual <https://w3id.org/arco/ontology/core/atoms>
+ ] .
+
 
 ###  https://w3id.org/arco/ontology/core/governing_self
 <https://w3id.org/arco/ontology/core/governing_self> rdf:type owl:NamedIndividual ,
@@ -469,7 +470,8 @@
 
 ###  https://w3id.org/arco/ontology/core/justice
 <https://w3id.org/arco/ontology/core/justice> rdf:type owl:NamedIndividual ,
-                                                       <https://w3id.org/arco/ontology/core/Category/justice> .
+                                                       <https://w3id.org/arco/ontology/core/Category/justice> ;
+                                              <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/justice> .
 
 
 ###  https://w3id.org/arco/ontology/core/law
@@ -500,7 +502,8 @@
 
 ###  https://w3id.org/arco/ontology/core/nature
 <https://w3id.org/arco/ontology/core/nature> rdf:type owl:NamedIndividual ,
-                                                      <https://w3id.org/arco/ontology/core/Category/nature> .
+                                                      <https://w3id.org/arco/ontology/core/Category/nature> ;
+                                             <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/nature> .
 
 
 ###  https://w3id.org/arco/ontology/core/necessity
@@ -532,7 +535,8 @@
 
 ###  https://w3id.org/arco/ontology/core/power
 <https://w3id.org/arco/ontology/core/power> rdf:type owl:NamedIndividual ,
-                                                     <https://w3id.org/arco/ontology/core/Category/power> .
+                                                     <https://w3id.org/arco/ontology/core/Category/power> ;
+                                            <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/power> .
 
 
 ###  https://w3id.org/arco/ontology/core/principle
@@ -542,7 +546,14 @@
 
 ###  https://w3id.org/arco/ontology/core/providence
 <https://w3id.org/arco/ontology/core/providence> rdf:type owl:NamedIndividual ,
-                                                          <https://w3id.org/arco/ontology/core/Category/providence> .
+                                                          <https://w3id.org/arco/ontology/core/Category/providence> ;
+                                                 <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/providence> .
+
+[ rdf:type owl:NegativePropertyAssertion ;
+   owl:sourceIndividual <https://w3id.org/arco/ontology/core/providence> ;
+   owl:assertionProperty <https://w3id.org/arco/ontology/core/oppositeOf> ;
+   owl:targetIndividual <https://w3id.org/arco/ontology/core/atoms>
+ ] .
 
 
 ###  https://w3id.org/arco/ontology/core/purpose
@@ -552,7 +563,14 @@
 
 ###  https://w3id.org/arco/ontology/core/reason
 <https://w3id.org/arco/ontology/core/reason> rdf:type owl:NamedIndividual ,
-                                                      <https://w3id.org/arco/ontology/core/Category/Category/reason> .
+                                                      <https://w3id.org/arco/ontology/core/Category/Category/reason> ;
+                                             <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/reason> .
+
+[ rdf:type owl:NegativePropertyAssertion ;
+   owl:sourceIndividual <https://w3id.org/arco/ontology/core/reason> ;
+   owl:assertionProperty <https://w3id.org/arco/ontology/core/oppositeOf> ;
+   owl:targetIndividual <https://w3id.org/arco/ontology/core/ignorance>
+ ] .
 
 
 ###  https://w3id.org/arco/ontology/core/sick
@@ -619,7 +637,8 @@
 
 ###  https://w3id.org/arco/ontology/core/psyche&body
 <https://w3id.org/arco/ontology/core/psyche&body> rdf:type owl:NamedIndividual ,
-                                                           <https://w3id.org/arco/ontology/core/Category/psyche&body> .
+                                                           <https://w3id.org/arco/ontology/core/Category/psyche&body> ;
+                                                  <https://w3id.org/arco/ontology/core/sameAs> <https://w3id.org/arco/ontology/core/psyche&body> .
 
 
 #################################################################
@@ -706,4 +725,4 @@
 ] .
 
 
-###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
