@@ -17,15 +17,18 @@
       "xml": "http://www.w3.org/XML/1998/namespace",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
     },
-    "iri": "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5"
+    "iri": "http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5",
+    "title": "OntoMeditations",
+    "version": "1.0",
+    "author": "Victor Chaix, Chloe Papadopoulou, Eleonora Pasquale, Manu Srivastava"
   },
   "namespace": [],
   "settings": {
     "global": {
       "zoom": "0.29",
       "translation": [
-        394.91,
-        275.76
+        577.91,
+        153.76
       ],
       "paused": false
     },
