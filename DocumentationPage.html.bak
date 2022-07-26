@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Documantation</title>
+  <title>Documentation</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -52,8 +52,8 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-             <li class="dropdown"><a class="nav-link scrollto active" href="#about"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
+            <li><a  href="index.html">Home</a></li>
+             <li class="dropdown"><a href="index.html #about"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 
 				<li class="dropdown"><a href="index-en.html"><span>The Ontology</span> <i class="bi bi-chevron-right"></i></a>
@@ -67,8 +67,8 @@
 
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="#faq">Queries</a></li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li><a href="index.html #faq">Queries</a></li>
+            <li><a href="index.html #team">Team</a></li>
 
 
           </ul>
@@ -88,7 +88,7 @@
             <h2>Documentation</h2>
             <ol>
               <li><a href="index.html">Home</a></li>
-              <li>Documantation</li>
+              <li>Documentation</li>
             </ol>
           </div>
 
@@ -97,9 +97,25 @@
 
       <section class="inner-page">
         <div class="container">
-          <p>
-            Example inner page template
-          </p>
+          <h3>Domain and Scope</h3>
+                <p>
+                 The work of Marcus Aurelius and its place in the philosophical school of Stoicism has for centuries been the subject of scholarly activity. One can argue, however, that antique philosophical concepts have been studied too much in their objective meanings and implications, without considering enough the humans behind them, in all of their individualities and perhaps even, personalities.   </p>
+                   
+                  <p>We believe that understanding the subjective perspectives of philosophers is key for grasping the concepts and themes they work on and build upon - that is, the way these general outlooks contribute in shaping concepts in certain ways. We can do this by inscribing their corresponding themes in certain sentiments about them, from positive to negative. 
+					<p>As such, we decided to work on Marcus Aurelius’ book Meditations, rich in both concepts and sentiments, to produce a linguistic and sentiment analysis ontology of his writings. What better work indeed to deal with this problem, than that of the most popular stoic philosopher, concerned before anything else about dealing with human emotions, and on providing a general system of “ethics” concerning them - a way of living, spiritual exercises, therapeutics?<a id="footnote-1-ref" href="#footnote-1">[1]</a> </p>
+					
+           
+                    <br>
+					<p id="footnote-1">
+                     1. https://plato.stanford.edu/entries/stoicism/ <a href="#footnote-1-ref">&#8617;</a> 
+                      </p>
+					  <br>
+					  <br>
+					  <br>
+		     <h3>Conceptual Map</h3>
+			 <p> This is the initial conceptual map we used to visualize our classes and properties</p>
+			 <img src="assets/img/ConceptualMap.jpg" alt="map">
+			 
         </div>
       </section>
 

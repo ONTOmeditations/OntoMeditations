@@ -67,7 +67,7 @@
                 
 				<li class="dropdown"><a href="index-en.html"><span>The Ontology</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
-                    <li><a href="#">Documentation</a></li>
+                    <li><a href="DocumentationPage.html">Documentation</a></li>
 					</ul>
                  </li>
                 </li>
@@ -97,15 +97,13 @@
 
             <div class="col-xl-13 pt-4 pt-lg-0 d-flex align-items-stretch">
               <div class="content d-flex flex-column justify-content-center" data-aos="fade-left">
-                <h3>Research Questions</h3>
+                <h3>The Project</h3>
                 <p>
-                  Scholars have been interested in the concepts of Marcus Aurelius, and their place in the general philosophical school of Stoicism. They have not yet truly diven into how his concepts and philosophical themes - as much as the ones of other classic philosophers - are associated with more subjective sentiments, emotions and perspectives he might have had. Indeed, we believe that philosophical concepts from antiquity have been treated too much in their objective meanings and implications, without considering enough the humans behind them, in all of their individualities and perhaps even, personalities. </p>
+                  OntoMeditations is a Knowledge Representation and Knowledge Extraction (KRKE) course project, made as part of the Digital Humanities and Digital Knowledge (DHDK) program of the Università di Bologna.   </p>
                    <br>
-                  <p>Because we believe that understanding the subjective perspectives of philosophers is key to understand the concepts and themes they work on and build upon - that is, the way these general outlooks contribute in shaping concepts in certain ways, and in inscribing their corresponding themes in certain sentiments about them, going from the more positive to the more negative - we have decided to work on Marcus Aurelius’ book Meditations, rich in both concepts and sentiments, to produce a sentiment analysis ontology of his writings. What better work indeed to work on this problem, than that of the most popular stoic philosopher, concerned before anything else about dealing with human emotions, and on providing a general system of “ethics” concerning them - a way of living, spiritual exercises, therapeutics? [https://plato.stanford.edu/entries/stoicism/]</p>
+                  <p>Engaged with Marcus Aurelius’ Meditations, a major work of Stoïcist philosophy, our project uses linguistic and sentiment analysis digital techniques applied to a dedicated ontology. The aim is to read and understand this rich philosophical work, as well as its iconic author-emperor-thinker-feeler, in novel ways, through digital lights.</p>
                     <br>
-                  <p>Until recently, scholars did not have access to knowledge extraction digital tools and techniques, which makes the study of these questions much more feasible, and so in a more scientific approach (that is, having deductions based on concrete observations). These tools allow one to analyze the overall system of an author’s writing, from a more “distant” perspective [distant reading book reference], including to a certain extent their sentiments associations to themes and agents - though with the inherent limit of never being able to reach the “essence” of one’s sentiments through automatic calculations and deductions, if we consider them to not being reducible to calculations and even written words, which stay relative and ambiguous to a significant degree.  </p>
-                    <br>
-                  <p>As such, our principal research question can be formulated in this way: what patterns can we observe, in between the philosophical concepts and themes of Marcus Aurelius’ Meditations, and the specific stoic sentiments their associated with, from the positive stoic calm to the negative stoic trouble ? Which ontology would best identify the main entities in this sentiment polarity applied to stoicism, the most important concepts of Meditations and their related themes, as well as the external agents or more abstract figures mentioned throughout the philosopher’s writings? To what sentiments are these different concepts, themes, agents and figures associated the most, in general?                </p>
+                  
                 <div class="row">
                   <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
                     <i class="bx bx-receipt"></i>

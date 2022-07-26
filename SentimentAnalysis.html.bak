@@ -52,8 +52,8 @@
 
      <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-             <li class="dropdown"><a class="nav-link scrollto active" href="#about"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
+            <li><a  href="index.html">Home</a></li>
+             <li class="dropdown"><a href="index.html #about"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 
 				<li class="dropdown"><a href="index-en.html"><span>The Ontology</span> <i class="bi bi-chevron-right"></i></a>
@@ -67,8 +67,8 @@
 
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="#faq">Queries</a></li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li><a href="index.html #faq">Queries</a></li>
+            <li><a href="index.html #team">Team</a></li>
 
 
           </ul>
@@ -98,7 +98,12 @@
       <section class="inner-page">
         <div class="container">
           <p>
-            Example inner page template
+            For our sentiment analysis, we automatically processed each and every paragraph, or “entry”, of Marcus Aurelius’ diary, annotating it with the degree to which it is positive, negative or neutral. This gives us a percentage estimation in this sentimental continuum of Marcus Aurelius, for each fragment.</p>
+            
+            First, we use Python to extract data regarding the sentiments of each diary entry. Then, we add this data to each diary entry on our knowledge graph, to give to the user the possibility to see, understand and query which sentiment is dominant in which diary entry. 
+
+            Feel free to hack our code and our choice of data model to better fulfill your own sentiment analysis and computationally-aided annotation needs.
+
           </p>
         </div>
       </section>
