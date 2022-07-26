@@ -205,126 +205,183 @@
           <div class="section-title" data-aos="fade-down">
             <span>Competency Questions</span>
             <h2>Competency Questions</h2>
-            <p>We have created 14 Competency Questions which will help us explore our research domain. In creating them, we considered the main reoccuring themes and concepts in Marcus Aurelius's work </p>
+            <p>We have created 14 Competency Questions which will help us explore our research domain. In creating them, we considered the main reoccuring themes and concepts in Marcus Aurelius's work. We have provided the formalized queries for each incompetency questions below, which you can download as part of our knowledge graph, stored in the db file in our <a href="https://github.com/ONTOmeditations/OntoMeditations">github repository </a>, so that you actually run the queries and see their results.</p>
           </div>
 
           <div class="faq-list">
             <ul>
               <li data-aos="fade-up">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Which main conceptual themes are, in order, more associated with stoic calm sentiments? Still in order, which are associated more with stoic trouble sentiment? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">In terms of stoic calm percentage associated for each concept, what are the top 5 fragments throughout Meditations and their locations? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                   <p>
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
+                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
+                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+
+                    SELECT ?fragment ?sentimentValue ?concept ?conceptWord <br>
+                    WHERE { <br>
+                          ?fragment rdf:type core:fragments; <br>
+                                      core:positive_sentiment ?sentimentValue; <br>
+                                      core:hasAssociatedConcept ?conceptWord. <br>
+                          ?conceptWord core:isCategoryOf ?concept <br>
+                            } <br>
+                    ORDER BY desc(?sentimentValue) <br>
+                    Limit 5 <br>
                   </p>
                 </div>
               </li>
 
               <li data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">How many times does the concept of “Nature”, in all of its instances, appear alongside the abstract figure “god”, and how many times for “men”? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">In how many fragments does the concept of “nature”, in all of its instances, appear alongside the abstract figure “god”? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
+                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
+                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
+                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
+                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+
+                    SELECT (count(?fragment) as ?count) <br>
+                    WHERE { <br>
+                          ?fragment rdf:type core:fragments; <br>
+                                      core:hasAssociatedConcept ?conceptWord; <br>
+                                      core:hasAssociatedFigure abstractFigure:God. <br>
+                          ?conceptWord core:isCategoryOf category:nature. <br>
+                            ?bookchapter core:hasPart ?fragment <br>
+                            } <br>
+                    ORDER BY desc(?conceptword) <br>
                   </p>
                 </div>
               </li>
 
               <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Are there more occurrences of instances of stoic calm, or of stoic trouble, for each chapter? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What is the overall average of positive sentiments and negative sentiments percentage throughout Meditations? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
+                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
+                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
+                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
+                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+
+                    SELECT (count(?fragment) as ?count) (sum (?sentimentPValue)/?count as ?sentimentSum_positve) (sum (?sentimentNValue)/?count as ?  sentimentSum_negative) <br>
+                    WHERE { <br>
+                          ?fragment rdf:type core:fragments; <br>
+                                      core:positive_sentiment ?sentimentPValue; <br>
+                                      core:negative_sentiment ?sentimentNValue; <br>
+                            } <br>
                   </p>
                 </div>
               </li>
 
               <li data-aos="fade-up" data-aos-delay="300">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Which main concept can we observe for each chapter of Meditations, in all of its defined instances? Where are their locations? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">How many times does the concept of “justice”, in all of its instances, appear in the text? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
+                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
+                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
+                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
+                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+
+                    SELECT (count(?fragment1) as ?justiceFragments) (count(?conceptWord) as ?justicewordCount) <br>
+                    WHERE { <br>
+                          ?fragment1 rdf:type core:fragments; <br>
+                                      core:hasAssociatedConcept ?conceptWord. <br>      
+                          ?conceptWord core:isCategoryOf category:justice. <br>
+                            } <br>
+                    ORDER BY desc(?conceptword) <br>
                   </p>
                 </div>
               </li>
 
               <li data-aos="fade-up" data-aos-delay="400">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">To what extent does Marcus Aurelius use logical opposite instances of main concepts, to talk about these concepts? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">How many times does Meditations talk about the abstract figure of God?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
+                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
+                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
+                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
+                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+
+                    SELECT (count(?fragment1) as ?figureGod) <br>
+                    WHERE { <br>
+                          ?fragment1 rdf:type core:fragments; <br>
+                                      core:hasAssociatedFigure abstractFigure:God. <br>
+                      
+                            } <br>
+                    ORDER BY desc(?figureClass) <br>
+                  </p> 
+                </div>
+              </li>
+
+			  <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">In how many fragments does the concept of power co-occur with the concept of nature?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
+                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
+                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
+                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
+                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+
+                    SELECT (count(?fragment1) as ?figureNature) <br>
+                    WHERE { <br>
+                          ?fragment1 rdf:type core:fragments; <br>
+                                      core:hasAssociatedConcept ?conceptWord1; <br>
+                                      core:hasAssociatedConcept ?conceptWord2. <br>			
+                          ?conceptWord1 core:isCategoryOf category:nature. <br>
+                      
+                          ?fragment1 rdf:type core:fragments; <br>
+                                      core:hasAssociatedConcept ?conceptWord2. <br>
+                          ?conceptWord2 core:isCategoryOf category:power. <br>
+                            } <br>
+                    ORDER BY desc(?fragment) <br>
                   </p>
                 </div>
               </li>
 
 			  <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Does Meditations talk more about abstract figure God, or abstract figure men? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What is the positive sentiment value for fragments in which the concept of Providence is mentioned, and where are these located?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </p>
-                </div>
-              </li>
+                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
+                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
+                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
+                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
+                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
 
-			  <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Which two main concepts co-occur the most, in each segment and throughout the book? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    SELECT ?fragment1 ?sentimentValue <br>
+                    WHERE { <br>
+                          ?fragment1 rdf:type core:fragments; <br>
+                                      core:positive_sentiment ?sentimentValue; <br>
+                                      core:hasAssociatedConcept ?conceptWord. <br>
+                          ?conceptWord core:isCategoryOf category:providence. <br>
+                            } <br>
+                    ORDER BY desc(?sentimentValue) <br>
                   </p>
                 </div>
               </li>
 			  <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How much does the instance of “ignorance” of the concept “reason” appear? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How many times is Euripides directly cited or indirectly mentioned? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </p>
-                </div>
-              </li>
-			  <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">To what extent do negative and positive sentiments co-occur in the books’ segments? does it point to a specific concept? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </p>
-                </div>
-              </li>
-			  <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Which fragments are most emotionally charged within the book? does it point to a specific concept? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </p>
-                </div>
-              </li><li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Relatively to the other macro-concepts, how much is the Providence concept associated with positive sentiments?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </p>
-                </div>
-              </li><li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Who is the most cited author throughout the books?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </p>
-                </div>
-              </li><li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">In citations of Euripides's by Marcus Aurelius, which is the most recurring concept? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </p>
-                </div>
-              </li><li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">In citations of Homer by Marcus Aurelius, does an abstract figure appear in particular in between men or god? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </p>
-                </div>
-              </li>
+                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
+                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
+                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
+                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
+                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
 
+                    SELECT (count(?fragment1) as ?CitationCount) <br>
+                    WHERE { <br>
+                          ?fragment1 rdf:type core:fragments; <br>
+                                      core:hasAssociatedAgent core:Epictetus. <br>
+                            } <br>
+                  </p>
+                </div>
+              </li>
+			  <li data-aos="fade-up" data-aos-delay="200">
             </ul>
           </div>
 
