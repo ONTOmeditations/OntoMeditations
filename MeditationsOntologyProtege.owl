@@ -14,7 +14,13 @@
     <Prefix name="arco" IRI="https://w3id.org/arco/ontology/core"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="/literary_diary"/>
+        <Class IRI="/LiteraryDiary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/fragments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/neutral_sentiment"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/arco/ontology/core/AbstractFigure"/>
@@ -30,9 +36,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/arco/ontology/core/chapters"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/arco/ontology/core/fragments"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/arco/ontology/core/negative_sentiment"/>
@@ -68,6 +71,9 @@
         <Class IRI="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/isPartOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedAgent"/>
     </Declaration>
     <Declaration>
@@ -80,9 +86,6 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedSentiment"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasCharacteristic"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConstituent"/>
     </Declaration>
     <Declaration>
@@ -93,9 +96,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isComponentOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isPartOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/oppositeOf"/>
@@ -317,28 +317,8 @@
         <NamedIndividual IRI="https://w3id.org/arco/ontology/core/psyche&amp;body"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/core/AbstractFigure"/>
-        <Class IRI="/literary_diary"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/core/AgentRole"/>
-        <Class IRI="/literary_diary"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
-        <Class IRI="/literary_diary"/>
-    </SubClassOf>
-    <SubClassOf>
+        <Class IRI="/neutral_sentiment"/>
         <Class IRI="https://w3id.org/arco/ontology/core/Sentiment"/>
-        <Class IRI="/literary_diary"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/core/chapters"/>
-        <Class IRI="/literary_diary"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/core/fragments"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/chapters"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://w3id.org/arco/ontology/core/negative_sentiment"/>
@@ -752,29 +732,25 @@
         <NamedIndividual IRI="https://w3id.org/arco/ontology/core/Homer"/>
         <Literal></Literal>
     </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isPartOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasPart"/>
-    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isPartOf"/>
+        <Class IRI="https://w3id.org/arco/ontology/core/chapters"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedAgent"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/fragments"/>
+        <Class IRI="/LiteraryDiary"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedConcept"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/fragments"/>
+        <Class IRI="/LiteraryDiary"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedFigure"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/fragments"/>
+        <Class IRI="/LiteraryDiary"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedSentiment"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/fragments"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasCharacteristic"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/fragments"/>
+        <Class IRI="/LiteraryDiary"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConstituent"/>
@@ -782,7 +758,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasPart"/>
-        <Class IRI="/literary_diary"/>
+        <Class IRI="/LiteraryDiary"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isCategoryOf"/>
@@ -792,10 +768,10 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isComponentOf"/>
         <Class IRI="https://w3id.org/arco/ontology/core/AbstractFigure"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isPartOf"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/fragments"/>
-    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isPartOf"/>
+        <Class IRI="/fragments"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedAgent"/>
         <Class IRI="https://w3id.org/arco/ontology/core/AgentRole"/>
@@ -813,28 +789,12 @@
         <Class IRI="https://w3id.org/arco/ontology/core/Sentiment"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasCharacteristic"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/AbstractFigure"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasCharacteristic"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/AgentRole"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasCharacteristic"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasCharacteristic"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/Sentiment"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConstituent"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/negative_sentiment"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConstituent"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <ObjectUnionOf>
+            <Class IRI="/neutral_sentiment"/>
+            <Class IRI="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+            <Class IRI="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasPart"/>
@@ -870,41 +830,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isComponentOf"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <ObjectUnionOf>
+            <Class IRI="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+            <Class IRI="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isComponentOf"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isPartOf"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/chapters"/>
-    </ObjectPropertyRange>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedAgent"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedConcept"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedFigure"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasAssociatedSentiment"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasCharacteristic"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConstituent"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasPart"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isCategoryOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isComponentOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/oppositeOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/sameAs"/>
-    </DisjointObjectProperties>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasCharacteristic"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConstituent"/>
-    </DisjointObjectProperties>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasCharacteristic"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasPart"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isCategoryOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isComponentOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/oppositeOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/sameAs"/>
-    </DisjointObjectProperties>
     <DisjointObjectProperties>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConstituent"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasPart"/>
@@ -917,23 +847,16 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasPart"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isCategoryOf"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isComponentOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/oppositeOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/sameAs"/>
-    </DisjointObjectProperties>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isCategoryOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isComponentOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isPartOf"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/oppositeOf"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/sameAs"/>
     </DisjointObjectProperties>
     <DataPropertyDomain>
         <DataProperty IRI="/hasTitle"/>
-        <Class IRI="/literary_diary"/>
+        <Class IRI="/LiteraryDiary"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="https://w3id.org/arco/ontology/core/hasAttributedAuthor"/>
-        <Class IRI="/literary_diary"/>
+        <Class IRI="/LiteraryDiary"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="https://w3id.org/arco/ontology/core/hasCitation"/>
@@ -967,6 +890,451 @@
         <DataProperty IRI="https://w3id.org/arco/ontology/core/synonym"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LiteraryDiary</IRI>
+        <Literal>a book intended or used for a diary record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/fragments</IRI>
+        <Literal>the division of chapters in numbered paragraphs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasTitle</IRI>
+        <Literal>This property relates an object to its official title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/isPartOf</IRI>
+        <Literal>This property relates the part of an entity to that entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/neutral_sentiment</IRI>
+        <Literal>a neither negative nor positive feeling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/AbstractFigure</IRI>
+        <Literal>Agents that play a figurative role in the text, as abstract individuals or ideas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/AgentRole</IRI>
+        <Literal>Agents that have been existing writers and play a certain the book, by being mentionned or cited</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Concept</IRI>
+        <Literal>An abstract idea or notion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Democritus</IRI>
+        <Literal>Democritus was an Ancient Greek pre-Socratic philosopher from Abdera, primarily remembered today for his formulation of an atomic theory of the universe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Epictetus</IRI>
+        <Literal>Epictetus was a Greek Stoic philosopher.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Euripides</IRI>
+        <Literal>Euripides was a tragedian of classical Athens. Along with Aeschylus and Sophocles, he is one of the three ancient Greek tragedians for whom any plays have survived in full.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Heraclitus</IRI>
+        <Literal>Heraclitus of Ephesus was an ancient Greek, pre-Socratic, Ionian philosopher and a native of the city of Ephesus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Homer</IRI>
+        <Literal>Homer is the legendary author to whom the authorship of the Iliad and the Odyssey (the two epic poems that are the foundational works of ancient Greek literature) is attributed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Sentiment</IRI>
+        <Literal>An attitude, thought, or judgment prompted by feeling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/action</IRI>
+        <Literal>An act of will</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/atoms</IRI>
+        <Literal>A tiny particle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/blame</IRI>
+        <Literal>An expression of disapproval or reproach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/bodies</IRI>
+        <Literal>The organized physical substance of a human, animal or plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/chapters</IRI>
+        <Literal>the main division of a book</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/corrupt</IRI>
+        <Literal>morally degenerate and perverted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/death</IRI>
+        <Literal>The state of being no longer alive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/displeasure</IRI>
+        <Literal>Disconfort and unhappiness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/dissolution</IRI>
+        <Literal>The act or process of dissolving</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/divinity</IRI>
+        <Literal>The quality or state of being divine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/employment</IRI>
+        <Literal>Use, purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/extinct</IRI>
+        <Literal>Being no longer in existance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/fate</IRI>
+        <Literal>The power that is believed to control everything that happens and that cannot be stopped or changed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/fault</IRI>
+        <Literal>The responsibility for wrongdoing or failure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/flesh</IRI>
+        <Literal>The phisical nature of human beings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/fortitude</IRI>
+        <Literal>Strength of mind that enables a person to encounter danger or bear pain or adversity with courage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/fortune</IRI>
+        <Literal>Destiny, fate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/freedom</IRI>
+        <Literal>The quality or state of being free</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/glory</IRI>
+        <Literal>Praise, honour or distinction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/god</IRI>
+        <Literal>The supreme or ultimate reality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/governing_self</IRI>
+        <Literal>Self control and power</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/hasAssociatedAgent</IRI>
+        <Literal>This property relates a situation in which an agent holds an associated role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/hasAssociatedConcept</IRI>
+        <Literal>The object property that associates any object with a concept, classifying it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/hasAssociatedFigure</IRI>
+        <Literal>The object property that associates an object to an abstract entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/hasAssociatedSentiment</IRI>
+        <Literal>The object property that associates an object to a certain sentiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/hasAttributedAuthor</IRI>
+        <Literal>This property relates a situation where an authorship is attributed to a cultural entity&apos;s author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/hasCitation</IRI>
+        <Literal>This property relates an agent role to its quotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/hasConstituent</IRI>
+        <Literal>This property relates, transitively, an entity to a constituent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/hasPart</IRI>
+        <Literal>This property relates an entity to its part.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/honour</IRI>
+        <Literal>Worth that brings respect or fame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/ignorance</IRI>
+        <Literal>Lack of knowledge, education or awareness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/ill</IRI>
+        <Literal>Not in good health</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/impulse</IRI>
+        <Literal>A sudden spontaneous inclination or incitement to some usually unpremeditated action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/isCategoryOf</IRI>
+        <Literal>The object property that associates a category to any object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/isComponentOf</IRI>
+        <Literal>This property relates, non-transitively, a component to an entity of which it is component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/judgment</IRI>
+        <Literal>The process of forming an opinion or evaluation by discerning and comparing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/justice</IRI>
+        <Literal>The quality of being just, impartial, or fair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/keyword</IRI>
+        <Literal>This property represents a keyword related to an entity, used to search for that entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/law</IRI>
+        <Literal>The action of laws considered as a means of redressing wrongs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/life</IRI>
+        <Literal>A principle or force that is considered to underlie the distinctive quality of animate beings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/matter</IRI>
+        <Literal>The substance of which a physical object is composed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/mind</IRI>
+        <Literal>The element or complex of elements in an individual that feels, perceives, thinks, wills, and especially reasons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/nature</IRI>
+        <Literal>The force that is responsible for physical life</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/necessity</IRI>
+        <Literal>The quality or state of being necessary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/negative_sentiment</IRI>
+        <Literal>a neither neutral, nor positive feeling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/obstacle</IRI>
+        <Literal>Something that impedes progress or achievement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/oppositeOf</IRI>
+        <Literal>The object property that oppose an entity to its logical opposite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/pain</IRI>
+        <Literal>Mental or emotional distress or suffering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/positive_sentiment</IRI>
+        <Literal>a neither neutral, nor negative feeling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/power</IRI>
+        <Literal>Possession of control, authority, or influence over others</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/principle</IRI>
+        <Literal>A comprehensive and fundamental law, doctrine, or assumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/providence</IRI>
+        <Literal>Divine guidance or care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/purpose</IRI>
+        <Literal>Something set up as an object or end to be attained</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/reason</IRI>
+        <Literal>The power of the mind to think, understand and form judgments logically</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/sameAs</IRI>
+        <Literal>The object property that draws an equivalence between an entity and another</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/sick</IRI>
+        <Literal>Affected with disease or ill health</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/souls</IRI>
+        <Literal>the immaterial essence, animating principle, or actuating cause of an individual life</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/synonym</IRI>
+        <Literal>This property relates a synonym to an entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/temperance</IRI>
+        <Literal>Moderation in action, thought, or feeling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/time</IRI>
+        <Literal>The measured or measurable period during which an action, process, or condition exists or continues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/truth</IRI>
+        <Literal>The body of real things, events, and facts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/universe</IRI>
+        <Literal>The whole body of things and phenomena observed or postulated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/violence</IRI>
+        <Literal>The use of physical force so as to injure, abuse, damage, or destroy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/vital_spirit</IRI>
+        <Literal>In Stoicism it is a mixture of air and fire held to be the divine organizing principle of the universe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/well-being</IRI>
+        <Literal>The state of being happy, healthy, or prosperous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/AbstractFigure/god</IRI>
+        <Literal>abstract and general entity or idea relating to a superior being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/AbstractFigure/men</IRI>
+        <Literal>abstract and general entity or idea relating to humanity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Category/death</IRI>
+        <Literal>absence of life</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Category/justice</IRI>
+        <Literal>the condition of being morally correct or fair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Category/nature</IRI>
+        <Literal>the force that is responsible for physical life</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Category/power</IRI>
+        <Literal>ability to control onelself, people or events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Category/providence</IRI>
+        <Literal>protective care of God or of nature as a spiritual power</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Category/Category/reason</IRI>
+        <Literal>the power of the mind to think, understand and form judgments logically</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/Category/psyche&amp;body</IRI>
+        <Literal>the human soul, mind, or spirit &amp; its flesh, pysical structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/arco/ontology/core/psyche&amp;body</IRI>
+        <Literal>The human soul, mind, or spirit &amp; its flesh, pysical structure</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
