@@ -20,7 +20,8 @@
 
 
 ###  http://www.w3.org/2002/07/owl#bottomObjectProperty
-owl:bottomObjectProperty owl:equivalentProperty <https://w3id.org/arco/ontology/core/isCategoryOf> .
+owl:bottomObjectProperty owl:equivalentProperty <https://w3id.org/arco/ontology/core/isCategoryOf> ;
+                         owl:inverseOf <https://w3id.org/arco/ontology/core/isCategoryOf> .
 
 
 ###  https://w3id.org/arco/ontology/core/hasAssociatedAgent
@@ -72,6 +73,8 @@ owl:bottomObjectProperty owl:equivalentProperty <https://w3id.org/arco/ontology/
 
 ###  https://w3id.org/arco/ontology/core/isCategoryOf
 <https://w3id.org/arco/ontology/core/isCategoryOf> rdf:type owl:ObjectProperty ;
+                                                   owl:equivalentProperty [ owl:inverseOf <https://w3id.org/arco/ontology/core/isCategoryOf>
+                                                                          ] ;
                                                    rdfs:subPropertyOf <http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf> ,
                                                                       <https://w3id.org/arco/ontology/core/hasAssociatedAgent> ,
                                                                       <https://w3id.org/arco/ontology/core/hasAssociatedConcept> ,
@@ -81,7 +84,28 @@ owl:bottomObjectProperty owl:equivalentProperty <https://w3id.org/arco/ontology/
                                                                       <https://w3id.org/arco/ontology/core/hasPart> ,
                                                                       <https://w3id.org/arco/ontology/core/isComponentOf> ,
                                                                       <https://w3id.org/arco/ontology/core/oppositeOf> ,
-                                                                      <https://w3id.org/arco/ontology/core/sameAs> ;
+                                                                      <https://w3id.org/arco/ontology/core/sameAs> ,
+                                                                      [ owl:inverseOf <http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf>
+                                                                      ] ,
+                                                                      [ owl:inverseOf <https://w3id.org/arco/ontology/core/hasAssociatedAgent>
+                                                                      ] ,
+                                                                      [ owl:inverseOf <https://w3id.org/arco/ontology/core/hasAssociatedConcept>
+                                                                      ] ,
+                                                                      [ owl:inverseOf <https://w3id.org/arco/ontology/core/hasAssociatedFigure>
+                                                                      ] ,
+                                                                      [ owl:inverseOf <https://w3id.org/arco/ontology/core/hasAssociatedSentiment>
+                                                                      ] ,
+                                                                      [ owl:inverseOf <https://w3id.org/arco/ontology/core/hasConstituent>
+                                                                      ] ,
+                                                                      [ owl:inverseOf <https://w3id.org/arco/ontology/core/hasPart>
+                                                                      ] ,
+                                                                      [ owl:inverseOf <https://w3id.org/arco/ontology/core/isComponentOf>
+                                                                      ] ,
+                                                                      [ owl:inverseOf <https://w3id.org/arco/ontology/core/oppositeOf>
+                                                                      ] ,
+                                                                      [ owl:inverseOf <https://w3id.org/arco/ontology/core/sameAs>
+                                                                      ] ;
+                                                   owl:inverseOf <https://w3id.org/arco/ontology/core/isCategoryOf> ;
                                                    rdf:type owl:SymmetricProperty ;
                                                    rdfs:domain <https://w3id.org/arco/ontology/core/Concept> ;
                                                    rdfs:range <https://w3id.org/arco/ontology/core/Category/death> ,
@@ -96,12 +120,12 @@ owl:bottomObjectProperty owl:equivalentProperty <https://w3id.org/arco/ontology/
 
 ###  https://w3id.org/arco/ontology/core/isComponentOf
 <https://w3id.org/arco/ontology/core/isComponentOf> rdf:type owl:ObjectProperty ;
-                                                    rdfs:domain <https://w3id.org/arco/ontology/core/AbstractFigure> ;
-                                                    rdfs:range [ rdf:type owl:Class ;
-                                                                 owl:unionOf ( <https://w3id.org/arco/ontology/core/AbstractFigure/god>
-                                                                               <https://w3id.org/arco/ontology/core/AbstractFigure/men>
-                                                                             )
-                                                               ] ;
+                                                    rdfs:domain [ rdf:type owl:Class ;
+                                                                  owl:unionOf ( <https://w3id.org/arco/ontology/core/AbstractFigure/god>
+                                                                                <https://w3id.org/arco/ontology/core/AbstractFigure/men>
+                                                                              )
+                                                                ] ;
+                                                    rdfs:range <https://w3id.org/arco/ontology/core/AbstractFigure> ;
                                                     rdfs:comment "This property relates, non-transitively, a component to an entity of which it is component." .
 
 
@@ -881,7 +905,8 @@ owl:bottomObjectProperty owl:equivalentProperty <https://w3id.org/arco/ontology/
 ###  https://w3id.org/arco/ontology/core/whole
 <https://w3id.org/arco/ontology/core/whole> rdf:type owl:NamedIndividual ,
                                                      <https://w3id.org/arco/ontology/core/Concept> ,
-                                                     <https://w3id.org/arco/ontology/core/Category/nature> .
+                                                     <https://w3id.org/arco/ontology/core/Category/nature> ;
+                                            rdfs:comment "Constituting the total sum or undiminished entirety" .
 
 
 ###  https://w3id.org/arco/ontology/core/psyche&body
