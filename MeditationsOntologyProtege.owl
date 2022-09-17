@@ -1,17 +1,20 @@
 @prefix : <https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix arco: <https://w3id.org/arco/ontology/core> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl> .
 
 <https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl> rdf:type owl:Ontology ;
-                                                                                                         <http://purl.org/dc/elements/1.1/creator> "Chloe Papadopoulou" ,
-                                                                                                                                                   "Eleonora Pasquale" ,
-                                                                                                                                                   "Manu Srivastava" ,
-                                                                                                                                                   "Victor Chaix" ;
-                                                                                                         <http://purl.org/dc/elements/1.1/title> "OntoMeditations" ;
+                                                                                                         owl:versionIRI <https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl> ;
+                                                                                                         dc:creator "Chloe Papadopoulou" ,
+                                                                                                                    "Eleonora Pasquale" ,
+                                                                                                                    "Manu Srivastava" ,
+                                                                                                                    "Victor Chaix" ;
+                                                                                                         dc:title "OntoMeditations" ;
                                                                                                          rdfs:comment "OntoMeditations is an ontology based on Marcus Aurelius' 'Meditations', a series of writings in which the emperor recorded personal notes to himself and expressed his ideas on Stoic philosophy. The ontology was created with the aim to represent the work's nature as both a spiritual diary and a philosophical treatise, by formalizing recurring philosophical concepts and themes, as well as personal sentiments, with the use of linguistic and sentimental analysis techniques" ;
                                                                                                          owl:versionInfo 2.0 .
 
@@ -20,11 +23,11 @@
 #################################################################
 
 ###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+dc:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+dc:title rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -92,8 +95,6 @@ owl:bottomObjectProperty owl:equivalentProperty <https://w3id.org/arco/ontology/
 ###  https://w3id.org/arco/ontology/core/isCategoryOf
 <https://w3id.org/arco/ontology/core/isCategoryOf> rdf:type owl:ObjectProperty ;
                                                    owl:equivalentProperty [ owl:inverseOf <https://w3id.org/arco/ontology/core/isCategoryOf>
-                                                                          ] ,
-                                                                          [ owl:inverseOf <https://w3id.org/arco/ontology/core/isCategoryOf>
                                                                           ] ;
                                                    rdfs:subPropertyOf <https://w3id.org/arco/ontology/core/hasAssociatedAgent> ,
                                                                       <https://w3id.org/arco/ontology/core/hasAssociatedConcept> ,
