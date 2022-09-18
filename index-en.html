@@ -114,20 +114,23 @@ $(function(){
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>OntoMeditations</h1>
 
 
 <dl>
+<dt>This version:</dt>
+<dd><a href="https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl">https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl</a></dd>
 <dt>Latest version:</dt>
 <dd><a href="https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl">https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl</a></dd>
 <dt>Revision:</dt>
-<dd>1.0</dd>
+<dd>2.0</dd>
 <dt>Authors:</dt>
 <dd>Chloe Papadopoulou</dd><dd>Eleonora Pasquale</dd><dd>Manu Srivastava</dd><dd>Victor Chaix</dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="https://img.shields.io/badge/License-Creative%20Commons%20Attribution%20License-blue.svg" alt="http://creativecommons.org/licenses/by/3.0/" /></a>
-</dd><dt>Visualization:</dt><dd><a href="https://service.tib.eu/webvowl/#url=https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/myDocumentation/webvowl/data/ontomeditations.owl.json#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Chloe Papadopoulou, Eleonora Pasquale, Manu Srivastava, Victor Chaix. Revision: 1.0.</dd>
+<dd>Chloe Papadopoulou, Eleonora Pasquale, Manu Srivastava, Victor Chaix. OntoMeditations. Revision: 2.0. Retrieved from: https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl</dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
@@ -137,9 +140,9 @@ $(function(){
 <span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-OntoMeditations is an ontology based on Marcus Aurelius' 'Meditations', a series of writings in which the emperor recorded personal notes to himself and expressed his ideas on Stoic philosophy. The ontology was created with the aim to represent the work's nature as both a spiritual diary and a philosophical treatise, by formalizing recurring philosophical concepts and themes, as well as personal sentiments, with the use of linguistic and sentimental analysis techniques.</span>
+OntoMeditations is an ontology based on Marcus Aurelius' 'Meditations', a series of writings in which the emperor recorded personal notes to himself and expressed his ideas on Stoic philosophy. The ontology was created with the aim to represent the work's nature as both a spiritual diary and a philosophical treatise, by formalizing recurring philosophical concepts and themes, as well as personal sentiments, with the use of linguistic and sentimental analysis techniques</span>
 </div>
-<div id="toc"></div>
+<div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -181,7 +184,37 @@ OntoMeditations is an ontology based on Marcus Aurelius' 'Meditations', a series
 </div>
 </div>
 </div>
-
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>ontomeditations</b></td><td>&lt;https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl&gt;</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td><b>psyche</b></td><td>&lt;https://w3id.org/arco/ontology/core/psyche&&gt;</td></tr>
+<tr><td><b>Category</b></td><td>&lt;https://w3id.org/arco/ontology/core/Category/Category&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>psyche2</b></td><td>&lt;https://w3id.org/arco/ontology/core/Category/psyche&&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>arco</b></td><td>&lt;https://w3id.org/arco/ontology/core&gt;</td></tr>
+<tr><td><b>core</b></td><td>&lt;https://w3id.org/arco/ontology/core&gt;</td></tr>
+<tr><td><b>Category1</b></td><td>&lt;https://w3id.org/arco/ontology/core/Category&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>AbstractFigure</b></td><td>&lt;https://w3id.org/arco/ontology/core/AbstractFigure&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">OntoMeditations: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -197,7 +230,7 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
    </li>
    <li>
-      <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+      <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
    </li>
    <li>
       <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
@@ -207,7 +240,7 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/arco/ontology/core/Category/death">death</a>
    </li>
    <li>
-      <a href="#https://w3id.org/arco/ontology/core/fragments" title="https://w3id.org/arco/ontology/core/fragments">fragments</a>
+      <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
    </li>
    <li>
       <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -234,8 +267,8 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
    </li>
    <li>
-      <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-         title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
+      <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+         title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
    </li>
    <li>
       <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
@@ -261,12 +294,6 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
    </li>
 </ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
-   <li>
-      <a href="#http://www.w3.org/2002/07/owl#bottomObjectProperty"
-         title="http://www.w3.org/2002/07/owl#bottomObjectProperty">
-         <span>bottom object property</span>
-      </a>
-   </li>
    <li>
       <a href="#https://w3id.org/arco/ontology/core/hasAssociatedAgent"
          title="https://w3id.org/arco/ontology/core/hasAssociatedAgent">has associated agent</a>
@@ -298,8 +325,7 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/arco/ontology/core/isComponentOf">is component of</a>
    </li>
    <li>
-      <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf"
-         title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf">is part of</a>
+      <a href="#https://w3id.org/arco/ontology/core/isPartOf" title="https://w3id.org/arco/ontology/core/isPartOf">is part of</a>
    </li>
    <li>
       <a href="#https://w3id.org/arco/ontology/core/oppositeOf" title="https://w3id.org/arco/ontology/core/oppositeOf">opposite of</a>
@@ -309,6 +335,9 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
+      <a href="#https://w3id.org/arco/ontology/core/containsText" title="https://w3id.org/arco/ontology/core/containsText">contains text</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/arco/ontology/core/hasAttributedAuthor"
          title="https://w3id.org/arco/ontology/core/hasAttributedAuthor">has attributed author</a>
    </li>
@@ -316,8 +345,7 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/arco/ontology/core/hasCitation" title="https://w3id.org/arco/ontology/core/hasCitation">has citation</a>
    </li>
    <li>
-      <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle"
-         title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle">has title</a>
+      <a href="#https://w3id.org/arco/ontology/core/hasTitle" title="https://w3id.org/arco/ontology/core/hasTitle">has title</a>
    </li>
    <li>
       <a href="#https://w3id.org/arco/ontology/core/keyword" title="https://w3id.org/arco/ontology/core/keyword">keyword</a>
@@ -329,6 +357,11 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
          <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
+         <span>title</span>
       </a>
    </li>
 </ul><h4>Named Individuals</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
@@ -535,9 +568,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#https://w3id.org/arco/ontology/core/whole" title="https://w3id.org/arco/ontology/core/whole">whole</a>
    </li>
-</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
-
+  
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">OntoMeditations: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -545,7 +578,6 @@ This ontology has the following classes and properties.</span>
 <p>For a detailed description, please consult the OntoMeditations dedicated <a href="https://ontomeditations.github.io/OntoMeditations/DomainPage.html">documentation page</a>.</p>
 </span>
 </div>
-
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for OntoMeditations classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -561,7 +593,7 @@ This section provides details for each class and property defined by OntoMeditat
          <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
       </li>
       <li>
-         <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+         <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
       </li>
       <li>
          <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
@@ -571,7 +603,7 @@ This section provides details for each class and property defined by OntoMeditat
             title="https://w3id.org/arco/ontology/core/Category/death">death</a>
       </li>
       <li>
-         <a href="#https://w3id.org/arco/ontology/core/fragments" title="https://w3id.org/arco/ontology/core/fragments">fragments</a>
+         <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
       </li>
       <li>
          <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -598,8 +630,8 @@ This section provides details for each class and property defined by OntoMeditat
             title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
       </li>
       <li>
-         <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-            title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
+         <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+            title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
       </li>
       <li>
          <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
@@ -654,14 +686,17 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/death"
@@ -681,7 +716,7 @@ This section provides details for each class and property defined by OntoMeditat
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -719,15 +754,18 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -752,18 +790,18 @@ This section provides details for each class and property defined by OntoMeditat
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/arco/ontology/core/chapters">
-      <h3>chapters<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="https://w3id.org/arco/ontology/core/chapter">
+      <h3>chapter<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/arco/ontology/core/chapters</p>
+         <strong>IRI:</strong> https://w3id.org/arco/ontology/core/chapter</p>
       <div class="comment">
          <span class="markdown">the main division of a book</span>
       </div>
@@ -771,8 +809,7 @@ This section provides details for each class and property defined by OntoMeditat
          <dt>is in range of</dt>
          <dd>
             <a href="#https://w3id.org/arco/ontology/core/hasPart" title="https://w3id.org/arco/ontology/core/hasPart">has part</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf">is part of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/isPartOf" title="https://w3id.org/arco/ontology/core/isPartOf">is part of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>has members</dt>
@@ -793,15 +830,18 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -922,15 +962,18 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -941,7 +984,7 @@ This section provides details for each class and property defined by OntoMeditat
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -979,15 +1022,18 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -1022,22 +1068,58 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/arco/ontology/core/fragments">
-      <h3>fragments<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="https://w3id.org/arco/ontology/core/fragment">
+      <h3>fragment<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/arco/ontology/core/fragments</p>
+         <strong>IRI:</strong> https://w3id.org/arco/ontology/core/fragment</p>
       <div class="comment">
-         <span class="markdown">the division of chapters in numbered paragraphs</span>
+         <span class="markdown">the division of a chapter in a numbered paragraph</span>
       </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf">is part of</a>
+            <a href="#https://w3id.org/arco/ontology/core/containsText" title="https://w3id.org/arco/ontology/core/containsText">contains text</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/arco/ontology/core/isPartOf" title="https://w3id.org/arco/ontology/core/isPartOf">is part of</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+               title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
+               title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
+               title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
+               title="https://w3id.org/arco/ontology/core/AbstractFigure/god">god</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/men"
+               title="https://w3id.org/arco/ontology/core/AbstractFigure/men">men</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/death"
+               title="https://w3id.org/arco/ontology/core/Category/death">death</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/justice"
+               title="https://w3id.org/arco/ontology/core/Category/justice">justice</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/nature"
+               title="https://w3id.org/arco/ontology/core/Category/nature">nature</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/power"
+               title="https://w3id.org/arco/ontology/core/Category/power">power</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/providence"
+               title="https://w3id.org/arco/ontology/core/Category/providence">providence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/Category/reason"
+               title="https://w3id.org/arco/ontology/core/Category/Category/reason">reason</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/psyche&body"
+               title="https://w3id.org/arco/ontology/core/Category/psyche&amp;body">psyche &amp; body</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1060,14 +1142,17 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/men"
@@ -1123,15 +1208,18 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -1190,9 +1278,43 @@ This section provides details for each class and property defined by OntoMeditat
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/hasAttributedAuthor"
                title="https://w3id.org/arco/ontology/core/hasAttributedAuthor">has attributed author</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/arco/ontology/core/hasPart" title="https://w3id.org/arco/ontology/core/hasPart">has part</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle">has title</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/hasTitle" title="https://w3id.org/arco/ontology/core/hasTitle">has title</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+               title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
+               title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
+               title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
+               title="https://w3id.org/arco/ontology/core/AbstractFigure/god">god</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/men"
+               title="https://w3id.org/arco/ontology/core/AbstractFigure/men">men</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/death"
+               title="https://w3id.org/arco/ontology/core/Category/death">death</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/justice"
+               title="https://w3id.org/arco/ontology/core/Category/justice">justice</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/nature"
+               title="https://w3id.org/arco/ontology/core/Category/nature">nature</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/power"
+               title="https://w3id.org/arco/ontology/core/Category/power">power</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/providence"
+               title="https://w3id.org/arco/ontology/core/Category/providence">providence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/Category/reason"
+               title="https://w3id.org/arco/ontology/core/Category/Category/reason">reason</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Category/psyche&body"
+               title="https://w3id.org/arco/ontology/core/Category/psyche&amp;body">psyche &amp; body</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1215,14 +1337,17 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -1278,15 +1403,18 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -1351,7 +1479,12 @@ This section provides details for each class and property defined by OntoMeditat
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -1376,13 +1509,13 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">
+   <div class="entity" id="https://w3id.org/arco/ontology/core/neutral_sentiment">
       <h3>neutral sentiment<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment</p>
+         <strong>IRI:</strong> https://w3id.org/arco/ontology/core/neutral_sentiment</p>
       <div class="comment">
          <span class="markdown">a neither negative nor positive feeling</span>
       </div>
@@ -1398,7 +1531,14 @@ This section provides details for each class and property defined by OntoMeditat
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
+               title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
+               title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
                title="https://w3id.org/arco/ontology/core/AbstractFigure/god">god</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/men"
@@ -1451,9 +1591,14 @@ This section provides details for each class and property defined by OntoMeditat
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
                title="https://w3id.org/arco/ontology/core/AbstractFigure/god">god</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/men"
@@ -1510,15 +1655,18 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -1586,15 +1734,18 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -1663,15 +1814,18 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -1739,15 +1893,18 @@ This section provides details for each class and property defined by OntoMeditat
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
+            <a href="#https://w3id.org/arco/ontology/core/AbstractFigure"
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Sentiment" title="https://w3id.org/arco/ontology/core/Sentiment">sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
@@ -1797,8 +1954,8 @@ This section provides details for each class and property defined by OntoMeditat
          <dd>
             <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-               title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+               title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
             <sup class="type-c" title="class">c</sup>
@@ -1834,7 +1991,10 @@ This section provides details for each class and property defined by OntoMeditat
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/LiteraryDiary"
+               title="https://w3id.org/arco/ontology/core/LiteraryDiary">literary diary</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
                title="https://w3id.org/arco/ontology/core/AbstractFigure/god">god</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/men"
@@ -1857,7 +2017,7 @@ This section provides details for each class and property defined by OntoMeditat
                title="https://w3id.org/arco/ontology/core/AbstractFigure">abstract figure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/AgentRole" title="https://w3id.org/arco/ontology/core/AgentRole">agent role</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/Concept" title="https://w3id.org/arco/ontology/core/Concept">concept</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1865,12 +2025,6 @@ This section provides details for each class and property defined by OntoMeditat
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
-      <li>
-         <a href="#http://www.w3.org/2002/07/owl#bottomObjectProperty"
-            title="http://www.w3.org/2002/07/owl#bottomObjectProperty">
-            <span>bottom object property</span>
-         </a>
-      </li>
       <li>
          <a href="#https://w3id.org/arco/ontology/core/hasAssociatedAgent"
             title="https://w3id.org/arco/ontology/core/hasAssociatedAgent">has associated agent</a>
@@ -1902,8 +2056,7 @@ This section provides details for each class and property defined by OntoMeditat
             title="https://w3id.org/arco/ontology/core/isComponentOf">is component of</a>
       </li>
       <li>
-         <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf"
-            title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf">is part of</a>
+         <a href="#https://w3id.org/arco/ontology/core/isPartOf" title="https://w3id.org/arco/ontology/core/isPartOf">is part of</a>
       </li>
       <li>
          <a href="#https://w3id.org/arco/ontology/core/oppositeOf" title="https://w3id.org/arco/ontology/core/oppositeOf">opposite of</a>
@@ -1912,35 +2065,6 @@ This section provides details for each class and property defined by OntoMeditat
          <a href="#https://w3id.org/arco/ontology/core/sameAs" title="https://w3id.org/arco/ontology/core/sameAs">same as</a>
       </li>
    </ul>
-   <div class="entity" id="http://www.w3.org/2002/07/owl#bottomObjectProperty">
-      <h3>bottom object property<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/2002/07/owl#bottomObjectProperty</p>
-      <div class="description">
-         <p>
-            <strong>has characteristics:
-                </strong> functional, inverse functional, symmetric, asymmetric, irreflexive</p>
-         <dl>
-            <dt>has equivalent properties</dt>
-            <dd>
-               <a href="#https://w3id.org/arco/ontology/core/isCategoryOf" title="https://w3id.org/arco/ontology/core/isCategoryOf">is category of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#http://www.w3.org/2002/07/owl#bottomObjectProperty"
-                  title="http://www.w3.org/2002/07/owl#bottomObjectProperty">bottom object property</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/2002/07/owl#bottomObjectProperty"
-                  title="http://www.w3.org/2002/07/owl#bottomObjectProperty">bottom object property</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/isCategoryOf" title="https://w3id.org/arco/ontology/core/isCategoryOf">is category of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="https://w3id.org/arco/ontology/core/hasAssociatedAgent">
       <h3>has associated agent<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2090,14 +2214,14 @@ This section provides details for each class and property defined by OntoMeditat
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"
-                  title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">neutral sentiment</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
                <a href="#https://w3id.org/arco/ontology/core/negative_sentiment"
                   title="https://w3id.org/arco/ontology/core/negative_sentiment">negative sentiment</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#https://w3id.org/arco/ontology/core/neutral_sentiment"
+                  title="https://w3id.org/arco/ontology/core/neutral_sentiment">neutral sentiment</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#https://w3id.org/arco/ontology/core/positive_sentiment"
                   title="https://w3id.org/arco/ontology/core/positive_sentiment">positive sentiment</a>
                <sup class="type-c" title="class">c</sup>
@@ -2130,7 +2254,7 @@ This section provides details for each class and property defined by OntoMeditat
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+               <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2149,14 +2273,8 @@ This section provides details for each class and property defined by OntoMeditat
       <div class="description">
          <p>
             <strong>has characteristics:
-                </strong> functional, inverse functional, symmetric, asymmetric, irreflexive</p>
+                </strong> symmetric</p>
          <dl>
-            <dt>has equivalent properties</dt>
-            <dd>
-               <a href="#http://www.w3.org/2002/07/owl#bottomObjectProperty"
-                  title="http://www.w3.org/2002/07/owl#bottomObjectProperty">bottom object property</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has super-properties</dt>
             <dd>
                <a href="#https://w3id.org/arco/ontology/core/hasAssociatedAgent"
@@ -2172,8 +2290,7 @@ This section provides details for each class and property defined by OntoMeditat
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/hasPart" title="https://w3id.org/arco/ontology/core/hasPart">has part</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/isComponentOf"
                   title="https://w3id.org/arco/ontology/core/isComponentOf">is component of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf"
-                  title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf">is part of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/isPartOf" title="https://w3id.org/arco/ontology/core/isPartOf">is part of</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/oppositeOf" title="https://w3id.org/arco/ontology/core/oppositeOf">opposite of</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/sameAs" title="https://w3id.org/arco/ontology/core/sameAs">same as</a>
                <sup class="type-op" title="object property">op</sup>
@@ -2221,9 +2338,7 @@ This section provides details for each class and property defined by OntoMeditat
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#http://www.w3.org/2002/07/owl#bottomObjectProperty"
-                  title="http://www.w3.org/2002/07/owl#bottomObjectProperty">bottom object property</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/isCategoryOf" title="https://w3id.org/arco/ontology/core/isCategoryOf">is category of</a>
+               <a href="#https://w3id.org/arco/ontology/core/isCategoryOf" title="https://w3id.org/arco/ontology/core/isCategoryOf">is category of</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/arco/ontology/core/isCategoryOf" title="https://w3id.org/arco/ontology/core/isCategoryOf">is category of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
@@ -2251,8 +2366,8 @@ This section provides details for each class and property defined by OntoMeditat
             <dd>
                <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/god"
                   title="https://w3id.org/arco/ontology/core/AbstractFigure/god">god</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#https://w3id.org/arco/ontology/core/AbstractFigure/men"
                   title="https://w3id.org/arco/ontology/core/AbstractFigure/men">men</a>
                <sup class="type-c" title="class">c</sup>
@@ -2266,13 +2381,13 @@ This section provides details for each class and property defined by OntoMeditat
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf">
+   <div class="entity" id="https://w3id.org/arco/ontology/core/isPartOf">
       <h3>is part of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf</p>
+         <strong>IRI:</strong> https://w3id.org/arco/ontology/core/isPartOf</p>
       <div class="comment">
          <span class="markdown">This property relates the part of an entity to that entity.</span>
       </div>
@@ -2285,12 +2400,12 @@ This section provides details for each class and property defined by OntoMeditat
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/arco/ontology/core/fragments" title="https://w3id.org/arco/ontology/core/fragments">fragments</a>
+               <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+               <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2340,6 +2455,9 @@ This section provides details for each class and property defined by OntoMeditat
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#https://w3id.org/arco/ontology/core/containsText" title="https://w3id.org/arco/ontology/core/containsText">contains text</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/arco/ontology/core/hasAttributedAuthor"
             title="https://w3id.org/arco/ontology/core/hasAttributedAuthor">has attributed author</a>
       </li>
@@ -2347,8 +2465,7 @@ This section provides details for each class and property defined by OntoMeditat
          <a href="#https://w3id.org/arco/ontology/core/hasCitation" title="https://w3id.org/arco/ontology/core/hasCitation">has citation</a>
       </li>
       <li>
-         <a href="#http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle"
-            title="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle">has title</a>
+         <a href="#https://w3id.org/arco/ontology/core/hasTitle" title="https://w3id.org/arco/ontology/core/hasTitle">has title</a>
       </li>
       <li>
          <a href="#https://w3id.org/arco/ontology/core/keyword" title="https://w3id.org/arco/ontology/core/keyword">keyword</a>
@@ -2357,6 +2474,32 @@ This section provides details for each class and property defined by OntoMeditat
          <a href="#https://w3id.org/arco/ontology/core/synonym" title="https://w3id.org/arco/ontology/core/synonym">synonym</a>
       </li>
    </ul>
+   <div class="entity" id="https://w3id.org/arco/ontology/core/containsText">
+      <h3>contains text<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/arco/ontology/core/containsText</p>
+      <div class="comment">
+         <span class="markdown">This property relates a fragment to the text it contains</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/arco/ontology/core/fragment" title="https://w3id.org/arco/ontology/core/fragment">fragment</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="https://w3id.org/arco/ontology/core/hasAttributedAuthor">
       <h3>has attributed author<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -2410,13 +2553,13 @@ This section provides details for each class and property defined by OntoMeditat
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle">
+   <div class="entity" id="https://w3id.org/arco/ontology/core/hasTitle">
       <h3>has title<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle</p>
+         <strong>IRI:</strong> https://w3id.org/arco/ontology/core/hasTitle</p>
       <div class="comment">
          <span class="markdown">This property relates an object to its official title</span>
       </div>
@@ -2498,6 +2641,11 @@ This section provides details for each class and property defined by OntoMeditat
             <span>creator</span>
          </a>
       </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
+            <span>title</span>
+         </a>
+      </li>
    </ul>
    <div class="entity" id="http://purl.org/dc/elements/1.1/creator">
       <h3>creator<sup class="type-ap" title="annotation property">ap</sup>
@@ -2506,6 +2654,14 @@ This section provides details for each class and property defined by OntoMeditat
       </h3>
       <p>
          <strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
    </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
@@ -2816,7 +2972,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2831,7 +2987,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2846,7 +3002,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2861,7 +3017,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2876,7 +3032,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2891,7 +3047,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2906,7 +3062,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2921,7 +3077,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2936,7 +3092,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2951,7 +3107,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2966,7 +3122,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2981,7 +3137,7 @@ This section provides details for each class and property defined by OntoMeditat
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/arco/ontology/core/chapters" title="https://w3id.org/arco/ontology/core/chapters">chapters</a>
+            <a href="#https://w3id.org/arco/ontology/core/chapter" title="https://w3id.org/arco/ontology/core/chapter">chapter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3051,7 +3207,7 @@ This section provides details for each class and property defined by OntoMeditat
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/arco/ontology/core/hasCitation" title="https://w3id.org/arco/ontology/core/hasCitation">has citation</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup> 
             <span class="literal">""</span>
          </dd>
       </dl>
@@ -3167,7 +3323,7 @@ This section provides details for each class and property defined by OntoMeditat
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/arco/ontology/core/hasCitation" title="https://w3id.org/arco/ontology/core/hasCitation">has citation</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup> 
             <span class="literal">""</span>
          </dd>
       </dl>
@@ -3191,7 +3347,7 @@ This section provides details for each class and property defined by OntoMeditat
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/arco/ontology/core/hasCitation" title="https://w3id.org/arco/ontology/core/hasCitation">has citation</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup> 
             <span class="literal">""</span>
          </dd>
       </dl>
@@ -3404,7 +3560,7 @@ This section provides details for each class and property defined by OntoMeditat
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/arco/ontology/core/sameAs" title="https://w3id.org/arco/ontology/core/sameAs">same as</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-op" title="object property">op</sup> 
             <a href="#https://w3id.org/arco/ontology/core/providence" title="https://w3id.org/arco/ontology/core/providence">providence</a>
          </dd>
       </dl>
@@ -3451,7 +3607,7 @@ This section provides details for each class and property defined by OntoMeditat
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/arco/ontology/core/hasCitation" title="https://w3id.org/arco/ontology/core/hasCitation">has citation</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup> 
             <span class="literal">""</span>
          </dd>
       </dl>
@@ -3475,7 +3631,7 @@ This section provides details for each class and property defined by OntoMeditat
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/arco/ontology/core/hasCitation" title="https://w3id.org/arco/ontology/core/hasCitation">has citation</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup> 
             <span class="literal">""</span>
          </dd>
       </dl>
@@ -4180,6 +4336,7 @@ This section provides details for each class and property defined by OntoMeditat
 </div>
 </div>
 </div>
+    
 
 
 <!--REFERENCES SECTION-->
