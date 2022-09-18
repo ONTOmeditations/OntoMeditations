@@ -1,0 +1,1656 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#"
+     xml:base="https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://w3id.org/arco/ontology/core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl"/>
+        <dc:creator>Chloe Papadopoulou</dc:creator>
+        <dc:creator>Eleonora Pasquale</dc:creator>
+        <dc:creator>Manu Srivastava</dc:creator>
+        <dc:creator>Victor Chaix</dc:creator>
+        <dc:title>OntoMeditations</dc:title>
+        <rdfs:comment>OntoMeditations is an ontology based on Marcus Aurelius&apos; &apos;Meditations&apos;, a series of writings in which the emperor recorded personal notes to himself and expressed his ideas on Stoic philosophy. The ontology was created with the aim to represent the work&apos;s nature as both a spiritual diary and a philosophical treatise, by formalizing recurring philosophical concepts and themes, as well as personal sentiments, with the use of linguistic and sentimental analysis techniques</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#bottomObjectProperty -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#bottomObjectProperty">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/arco/ontology/core/isCategoryOf"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/isCategoryOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasAssociatedAgent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasAssociatedAgent">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
+        <rdfs:comment>This property relates a situation in which an agent holds an associated role</rdfs:comment>
+        <rdfs:label>has associated agent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasAssociatedConcept -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasAssociatedConcept">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdfs:comment>The object property that associates any object with a concept, classifying it.</rdfs:comment>
+        <rdfs:label>has associated concept</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasAssociatedFigure -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasAssociatedFigure">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure"/>
+        <rdfs:comment>The object property that associates an object to an abstract entity</rdfs:comment>
+        <rdfs:label>has associated figure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasAssociatedSentiment -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasAssociatedSentiment">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdfs:comment>The object property that associates an object to a certain sentiment</rdfs:comment>
+        <rdfs:label>has associated sentiment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasConstituent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasConstituent">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+                    <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
+                    <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>This property relates, transitively, an entity to a constituent.</rdfs:comment>
+        <rdfs:label>has constituent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasPart">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:comment>This property relates an entity to its part.</rdfs:comment>
+        <rdfs:label>has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/isCategoryOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/isCategoryOf">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/isCategoryOf"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedAgent"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedConcept"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedFigure"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedSentiment"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasConstituent"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/isComponentOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/isPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/sameAs"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedAgent"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedConcept"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedFigure"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedSentiment"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/hasConstituent"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/hasPart"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/isComponentOf"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/isPartOf"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/sameAs"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/isCategoryOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>The object property that associates a category to any object.</rdfs:comment>
+        <rdfs:label>is category of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/isComponentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/isComponentOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+                    <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure"/>
+        <rdfs:comment>This property relates, non-transitively, a component to an entity of which it is component.</rdfs:comment>
+        <rdfs:label>is component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/isPartOf">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:comment>This property relates the part of an entity to that entity.</rdfs:comment>
+        <rdfs:label>is part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/oppositeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/oppositeOf">
+        <rdfs:comment>The object property that oppose an entity to its logical opposite</rdfs:comment>
+        <rdfs:label>opposite of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/sameAs -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/sameAs">
+        <rdfs:comment>The object property that draws an equivalence between an entity and another</rdfs:comment>
+        <rdfs:label>same as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/containsText -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/arco/ontology/core/containsText">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>This property relates a fragment to the text it contains</rdfs:comment>
+        <rdfs:label>contains text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasAttributedAuthor -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/arco/ontology/core/hasAttributedAuthor">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>This property relates a situation where an authorship is attributed to a cultural entity&apos;s author</rdfs:comment>
+        <rdfs:label>has attributed author</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasCitation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/arco/ontology/core/hasCitation">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>This property relates an agent role to its quotation</rdfs:comment>
+        <rdfs:label>has citation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/arco/ontology/core/hasTitle">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>This property relates an object to its official title</rdfs:comment>
+        <rdfs:label>has title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/keyword -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/arco/ontology/core/keyword">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>This property represents a keyword related to an entity, used to search for that entity.</rdfs:comment>
+        <rdfs:label>keyword</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/synonym -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/arco/ontology/core/synonym">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>This property relates a synonym to an entity</rdfs:comment>
+        <rdfs:label>synonym</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/AbstractFigure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/AbstractFigure">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>Agents that play a figurative role in the text, as abstract individuals or ideas</rdfs:comment>
+        <rdfs:label>abstract figure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/AgentRole -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/AgentRole">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>Agents that have been existing writers and play a certain the book, by being mentionned or cited</rdfs:comment>
+        <rdfs:label>agent role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Concept -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Concept">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <rdfs:comment>An abstract idea or notion</rdfs:comment>
+        <rdfs:label>concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/LiteraryDiary -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/LiteraryDiary">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>a book intended or used for a diary record</rdfs:comment>
+        <rdfs:label>literary diary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Sentiment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Sentiment">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>An attitude, thought, or judgment prompted by feeling</rdfs:comment>
+        <rdfs:label>sentiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/chapter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/chapter">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>the main division of a book</rdfs:comment>
+        <rdfs:label>chapter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/fragment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/fragment">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>the division of a chapter in a numbered paragraph</rdfs:comment>
+        <rdfs:label>fragment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/negative_sentiment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/negative_sentiment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>a neither neutral, nor positive feeling</rdfs:comment>
+        <rdfs:label>negative sentiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/neutral_sentiment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/neutral_sentiment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>a neither negative nor positive feeling</rdfs:comment>
+        <rdfs:label>neutral sentiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/positive_sentiment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/positive_sentiment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>a neither neutral, nor negative feeling</rdfs:comment>
+        <rdfs:label>positive sentiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/AbstractFigure/god -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/AbstractFigure/god">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>abstract and general entity or idea relating to a superior being</rdfs:comment>
+        <rdfs:label>god</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/AbstractFigure/men -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/AbstractFigure/men">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>abstract and general entity or idea relating to humanity</rdfs:comment>
+        <rdfs:label>men</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Category/death -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Category/death">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>absence of life</rdfs:comment>
+        <rdfs:label>death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Category/justice -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Category/justice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>the condition of being morally correct or fair</rdfs:comment>
+        <rdfs:label>justice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Category/nature -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Category/nature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>the force that is responsible for physical life</rdfs:comment>
+        <rdfs:label>nature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Category/power -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Category/power">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>ability to control onelself, people or events</rdfs:comment>
+        <rdfs:label>power</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Category/providence -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Category/providence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>protective care of God or of nature as a spiritual power</rdfs:comment>
+        <rdfs:label>providence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Category/Category/reason -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Category/Category/reason">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>the power of the mind to think, understand and form judgments logically</rdfs:comment>
+        <rdfs:label>reason</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Category/psyche&amp;body -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Category/psyche&amp;body">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdfs:comment>the human soul, mind, or spirit &amp; its flesh, pysical structure</rdfs:comment>
+        <rdfs:label>psyche &amp; body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_I -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_I">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_II -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_II">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_III -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_III">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_IV -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_IV">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_IX -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_IX">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_V -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_V">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_VI -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_VI">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_VII -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_VII">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_VIII -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_VIII">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_X -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_X">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_XI -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_XI">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 11</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Book_XII -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_XII">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:label>book 12</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Democritus -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Democritus">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
+        <core:hasCitation></core:hasCitation>
+        <rdfs:comment>Democritus was an Ancient Greek pre-Socratic philosopher from Abdera, primarily remembered today for his formulation of an atomic theory of the universe.</rdfs:comment>
+        <rdfs:label>Democritus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Epictetus -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Epictetus">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
+        <core:hasCitation></core:hasCitation>
+        <rdfs:comment>Epictetus was a Greek Stoic philosopher.</rdfs:comment>
+        <rdfs:label>Epictetus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Euripides -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Euripides">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
+        <core:hasCitation></core:hasCitation>
+        <rdfs:comment>Euripides was a tragedian of classical Athens. Along with Aeschylus and Sophocles, he is one of the three ancient Greek tragedians for whom any plays have survived in full.</rdfs:comment>
+        <rdfs:label>Euripides</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Heraclitus -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Heraclitus">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
+        <core:hasCitation></core:hasCitation>
+        <rdfs:comment>Heraclitus of Ephesus was an ancient Greek, pre-Socratic, Ionian philosopher and a native of the city of Ephesus</rdfs:comment>
+        <rdfs:label>Heraclitus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Homer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Homer">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
+        <core:hasCitation></core:hasCitation>
+        <rdfs:comment>Homer is the legendary author to whom the authorship of the Iliad and the Odyssey (the two epic poems that are the foundational works of ancient Greek literature) is attributed.</rdfs:comment>
+        <rdfs:label>Homer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/action -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/action">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <rdfs:comment>An act of will</rdfs:comment>
+        <rdfs:label>action</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/atoms -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/atoms">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <rdfs:comment>A tiny particle</rdfs:comment>
+        <rdfs:label>atoms</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/atoms"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/god"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/atoms"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/providence"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/blame -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/blame">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <rdfs:comment>An expression of disapproval or reproach</rdfs:comment>
+        <rdfs:label>blame</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/bodies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/bodies">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>The organized physical substance of a human, animal or plant</rdfs:comment>
+        <rdfs:label>bodies</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/corrupt -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/corrupt">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <rdfs:comment>morally degenerate and perverted</rdfs:comment>
+        <rdfs:label>corrupt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/death -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/death">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <rdfs:comment>The state of being no longer alive</rdfs:comment>
+        <rdfs:label>death</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/displeasure -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/displeasure">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <rdfs:comment>Disconfort and unhappiness</rdfs:comment>
+        <rdfs:label>displeasure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/dissolution -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/dissolution">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <rdfs:comment>The act or process of dissolving</rdfs:comment>
+        <rdfs:label>dissolution</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/divinity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/divinity">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <rdfs:comment>The quality or state of being divine</rdfs:comment>
+        <rdfs:label>divinity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/employment -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/employment">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <rdfs:comment>Use, purpose</rdfs:comment>
+        <rdfs:label>employment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/extinct -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/extinct">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <rdfs:comment>Being no longer in existance</rdfs:comment>
+        <rdfs:label>extinct</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/fate -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/fate">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <rdfs:comment>The power that is believed to control everything that happens and that cannot be stopped or changed</rdfs:comment>
+        <rdfs:label>fate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/fault -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/fault">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <rdfs:comment>The responsibility for wrongdoing or failure</rdfs:comment>
+        <rdfs:label>fault</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/flesh -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/flesh">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>The phisical nature of human beings</rdfs:comment>
+        <rdfs:label>flesh</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/flesh"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/souls"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/fortitude -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/fortitude">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <rdfs:comment>Strength of mind that enables a person to encounter danger or bear pain or adversity with courage</rdfs:comment>
+        <rdfs:label>fortitude</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/fortitude"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/obstacle"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/fortune -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/fortune">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <rdfs:comment>Destiny, fate</rdfs:comment>
+        <rdfs:label>fortune</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/freedom -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/freedom">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <rdfs:comment>The quality or state of being free</rdfs:comment>
+        <rdfs:label>freedom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/glory -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/glory">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <rdfs:comment>Praise, honour or distinction</rdfs:comment>
+        <rdfs:label>glory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/god -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/god">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <core:sameAs rdf:resource="https://w3id.org/arco/ontology/core/providence"/>
+        <rdfs:comment>The supreme or ultimate reality</rdfs:comment>
+        <rdfs:label>god</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/governing_self -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/governing_self">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <rdfs:comment>Self control and power</rdfs:comment>
+        <rdfs:label>governing self</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/honour -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/honour">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <rdfs:comment>Worth that brings respect or fame</rdfs:comment>
+        <rdfs:label>honour</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/ignorance -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/ignorance">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <rdfs:comment>Lack of knowledge, education or awareness</rdfs:comment>
+        <rdfs:label>ignorance</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/ignorance"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/reason"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/ill -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/ill">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <rdfs:comment>Not in good health</rdfs:comment>
+        <rdfs:label>ill</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/impulse -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/impulse">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>A sudden spontaneous inclination or incitement to some usually unpremeditated action</rdfs:comment>
+        <rdfs:label>impulse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/judgment -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/judgment">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <rdfs:comment>The process of forming an opinion or evaluation by discerning and comparing</rdfs:comment>
+        <rdfs:label>judgment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/justice -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/justice">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <rdfs:comment>The quality of being just, impartial, or fair</rdfs:comment>
+        <rdfs:label>justice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/law -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/law">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <rdfs:comment>The action of laws considered as a means of redressing wrongs</rdfs:comment>
+        <rdfs:label>law</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/life -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/life">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <rdfs:comment>A principle or force that is considered to underlie the distinctive quality of animate beings</rdfs:comment>
+        <rdfs:label>life</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/life"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/death"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/matter -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/matter">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <rdfs:comment>The substance of which a physical object is composed</rdfs:comment>
+        <rdfs:label>matter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/mind -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/mind">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <rdfs:comment>The element or complex of elements in an individual that feels, perceives, thinks, wills, and especially reasons</rdfs:comment>
+        <rdfs:label>mind</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/nature -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/nature">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <rdfs:comment>The force that is responsible for physical life</rdfs:comment>
+        <rdfs:label>nature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/necessity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/necessity">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <rdfs:comment>The quality or state of being necessary</rdfs:comment>
+        <rdfs:label>necessity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/obstacle -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/obstacle">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <rdfs:comment>Something that impedes progress or achievement</rdfs:comment>
+        <rdfs:label>obstacle</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/obstacle"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/fortitude"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/pain -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/pain">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <rdfs:comment>Mental or emotional distress or suffering</rdfs:comment>
+        <rdfs:label>pain</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/pain"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/well-being"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/power -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/power">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <rdfs:comment>Possession of control, authority, or influence over others</rdfs:comment>
+        <rdfs:label>power</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/principle -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/principle">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <rdfs:comment>A comprehensive and fundamental law, doctrine, or assumption</rdfs:comment>
+        <rdfs:label>principle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/providence -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/providence">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <rdfs:comment>Divine guidance or care</rdfs:comment>
+        <rdfs:label>providence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/purpose -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/purpose">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <rdfs:comment>Something set up as an object or end to be attained</rdfs:comment>
+        <rdfs:label>purpose</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/reason -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/reason">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <rdfs:comment>The power of the mind to think, understand and form judgments logically</rdfs:comment>
+        <rdfs:label>reason</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/sick -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/sick">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <rdfs:comment>Affected with disease or ill health</rdfs:comment>
+        <rdfs:label>sick</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/souls -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/souls">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>the immaterial essence, animating principle, or actuating cause of an individual life</rdfs:comment>
+        <rdfs:label>souls</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/souls"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/flesh"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/temperance -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/temperance">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <rdfs:comment>Moderation in action, thought, or feeling</rdfs:comment>
+        <rdfs:label>temperence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/time -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/time">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <rdfs:comment>The measured or measurable period during which an action, process, or condition exists or continues</rdfs:comment>
+        <rdfs:label>time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/truth -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/truth">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <rdfs:comment>The body of real things, events, and facts</rdfs:comment>
+        <rdfs:label>truth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/universe -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/universe">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <rdfs:comment>The whole body of things and phenomena observed or postulated</rdfs:comment>
+        <rdfs:label>universe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/violence -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/violence">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <rdfs:comment>The use of physical force so as to injure, abuse, damage, or destroy</rdfs:comment>
+        <rdfs:label>violence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/vital_spirit -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/vital_spirit">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>In Stoicism it is a mixture of air and fire held to be the divine organizing principle of the universe</rdfs:comment>
+        <rdfs:label>vital spirit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/well-being -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/well-being">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <rdfs:comment>The state of being happy, healthy, or prosperous</rdfs:comment>
+        <rdfs:label>well-being</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/arco/ontology/core/well-being"/>
+        <owl:assertionProperty rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/arco/ontology/core/pain"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/whole -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/whole">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <rdfs:comment>Constituting the total sum or undiminished entirety</rdfs:comment>
+        <rdfs:label>whole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/psyche&amp;body -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/psyche&amp;body">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>The human soul, mind, or spirit &amp; its flesh, pysical structure</rdfs:comment>
+        <rdfs:label>psyche &amp; body</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/AbstractFigure"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/AgentRole"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Concept"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Sentiment"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/chapter"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Category/death"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Category/justice"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Category/nature"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Category/power"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Category/providence"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/hasConstituent"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/hasPart"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/isCategoryOf"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/isComponentOf"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/oppositeOf"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/sameAs"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/hasPart"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/isCategoryOf"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/isComponentOf"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/oppositeOf"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/sameAs"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
