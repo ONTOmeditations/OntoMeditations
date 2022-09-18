@@ -2,7 +2,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<..\index-en.html> a prov:Entity;
+<https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl> a prov:Entity;
+	 dc:title "OntoMeditations";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;

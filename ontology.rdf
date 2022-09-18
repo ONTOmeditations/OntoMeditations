@@ -9,13 +9,14 @@
      xmlns:core="https://w3id.org/arco/ontology/core/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl">
-        <dc:creator rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chloe Papadopoulou</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Eleonora Pasquale</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Manu Srivastava</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Victor Chaix</dc:creator>
-        <rdfs:comment>OntoMeditations is an ontology based on Marcus Aurelius&apos; &apos;Meditations&apos;, a series of writings in which the emperor recorded personal notes to himself and expressed his ideas on Stoic philosophy. The ontology was created with the aim to represent the work&apos;s nature as both a spiritual diary and a philosophical treatise, by formalizing recurring philosophical concepts and themes, as well as personal sentiments, with the use of linguistic and sentimental analysis techniques.</rdfs:comment>
-        <rdfs:label>OntoMeditations</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl"/>
+        <dc:creator>Chloe Papadopoulou</dc:creator>
+        <dc:creator>Eleonora Pasquale</dc:creator>
+        <dc:creator>Manu Srivastava</dc:creator>
+        <dc:creator>Victor Chaix</dc:creator>
+        <dc:title>OntoMeditations</dc:title>
+        <rdfs:comment>OntoMeditations is an ontology based on Marcus Aurelius&apos; &apos;Meditations&apos;, a series of writings in which the emperor recorded personal notes to himself and expressed his ideas on Stoic philosophy. The ontology was created with the aim to represent the work&apos;s nature as both a spiritual diary and a philosophical treatise, by formalizing recurring philosophical concepts and themes, as well as personal sentiments, with the use of linguistic and sentimental analysis techniques</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -39,6 +40,13 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -51,31 +59,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf">
-        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/fragments"/>
-        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
-        <rdfs:comment>This property relates the part of an entity to that entity.</rdfs:comment>
-        <rdfs:label>is part of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.w3.org/2002/07/owl#bottomObjectProperty -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#bottomObjectProperty">
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#bottomObjectProperty">
         <owl:equivalentProperty rdf:resource="https://w3id.org/arco/ontology/core/isCategoryOf"/>
-        <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#bottomObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/isCategoryOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    </owl:ObjectProperty>
+    </rdf:Description>
     
 
 
@@ -135,8 +125,8 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment"/>
                     <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+                    <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
                     <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/positive_sentiment"/>
                 </owl:unionOf>
             </owl:Class>
@@ -152,7 +142,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasPart">
         <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
-        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:comment>This property relates an entity to its part.</rdfs:comment>
         <rdfs:label>has part</rdfs:label>
     </owl:ObjectProperty>
@@ -168,7 +158,6 @@
                 <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/isCategoryOf"/>
             </rdf:Description>
         </owl:equivalentProperty>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf"/>
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedAgent"/>
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedConcept"/>
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedFigure"/>
@@ -176,13 +165,9 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasConstituent"/>
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/hasPart"/>
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/isComponentOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/isPartOf"/>
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/core/sameAs"/>
-        <rdfs:subPropertyOf>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/isPartOf"/>
-            </rdf:Description>
-        </rdfs:subPropertyOf>
         <rdfs:subPropertyOf>
             <rdf:Description>
                 <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/hasAssociatedAgent"/>
@@ -220,6 +205,11 @@
         </rdfs:subPropertyOf>
         <rdfs:subPropertyOf>
             <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/isPartOf"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
                 <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/oppositeOf"/>
             </rdf:Description>
         </rdfs:subPropertyOf>
@@ -229,11 +219,7 @@
             </rdf:Description>
         </rdfs:subPropertyOf>
         <owl:inverseOf rdf:resource="https://w3id.org/arco/ontology/core/isCategoryOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
         <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
         <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
@@ -263,6 +249,18 @@
         <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure"/>
         <rdfs:comment>This property relates, non-transitively, a component to an entity of which it is component.</rdfs:comment>
         <rdfs:label>is component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/isPartOf">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <rdfs:comment>This property relates the part of an entity to that entity.</rdfs:comment>
+        <rdfs:label>is part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -299,14 +297,14 @@
     
 
 
-    <!-- http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle -->
+    <!-- https://w3id.org/arco/ontology/core/containsText -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/hasTitle">
-        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/arco/ontology/core/containsText">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>This property relates an object to its official title</rdfs:comment>
-        <rdfs:label>has title</rdfs:label>
+        <rdfs:comment>This property relates a fragment to the text it contains</rdfs:comment>
+        <rdfs:label>contains text</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -331,6 +329,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment>This property relates an agent role to its quotation</rdfs:comment>
         <rdfs:label>has citation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/arco/ontology/core/hasTitle">
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>This property relates an object to its official title</rdfs:comment>
+        <rdfs:label>has title</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -371,39 +381,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment -->
-
-
-    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5/neutral_sentiment">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
-        <rdfs:comment>a neither negative nor positive feeling</rdfs:comment>
-        <rdfs:label>neutral sentiment</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/arco/ontology/core/AbstractFigure -->
 
 
     <owl:Class rdf:about="https://w3id.org/arco/ontology/core/AbstractFigure">
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AgentRole"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
@@ -423,9 +412,12 @@
 
     <owl:Class rdf:about="https://w3id.org/arco/ontology/core/AgentRole">
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
@@ -446,9 +438,12 @@
 
 
     <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Concept">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/LiteraryDiary"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
@@ -462,6 +457,21 @@
 
 
     <owl:Class rdf:about="https://w3id.org/arco/ontology/core/LiteraryDiary">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
         <rdfs:comment>a book intended or used for a diary record</rdfs:comment>
         <rdfs:label>literary diary</rdfs:label>
     </owl:Class>
@@ -472,7 +482,8 @@
 
 
     <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Sentiment">
-        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
@@ -488,11 +499,13 @@
     
 
 
-    <!-- https://w3id.org/arco/ontology/core/chapters -->
+    <!-- https://w3id.org/arco/ontology/core/chapter -->
 
 
-    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/chapters">
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/chapter">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/fragment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
@@ -504,17 +517,29 @@
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
         <rdfs:comment>the main division of a book</rdfs:comment>
-        <rdfs:label>chapters</rdfs:label>
+        <rdfs:label>chapter</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/arco/ontology/core/fragments -->
+    <!-- https://w3id.org/arco/ontology/core/fragment -->
 
 
-    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/fragments">
-        <rdfs:comment>the division of chapters in numbered paragraphs</rdfs:comment>
-        <rdfs:label>fragments</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/fragment">
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/negative_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>the division of a chapter in a numbered paragraph</rdfs:comment>
+        <rdfs:label>fragment</rdfs:label>
     </owl:Class>
     
 
@@ -524,6 +549,7 @@
 
     <owl:Class rdf:about="https://w3id.org/arco/ontology/core/negative_sentiment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/neutral_sentiment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
@@ -536,6 +562,27 @@
         <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
         <rdfs:comment>a neither neutral, nor positive feeling</rdfs:comment>
         <rdfs:label>negative sentiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/neutral_sentiment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/neutral_sentiment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/positive_sentiment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/god"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/AbstractFigure/men"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/death"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/justice"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/nature"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/power"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/providence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/Category/reason"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/arco/ontology/core/Category/psyche&amp;body"/>
+        <rdfs:comment>a neither negative nor positive feeling</rdfs:comment>
+        <rdfs:label>neutral sentiment</rdfs:label>
     </owl:Class>
     
 
@@ -711,7 +758,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_I">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -721,7 +768,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_II">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -731,7 +778,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_III">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -741,7 +788,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_IV">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -751,7 +798,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_IX">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 9</rdfs:label>
     </owl:NamedIndividual>
     
@@ -761,7 +808,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_V">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -771,7 +818,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_VI">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -781,7 +828,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_VII">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 7</rdfs:label>
     </owl:NamedIndividual>
     
@@ -791,7 +838,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_VIII">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 8</rdfs:label>
     </owl:NamedIndividual>
     
@@ -801,7 +848,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_X">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 10</rdfs:label>
     </owl:NamedIndividual>
     
@@ -811,7 +858,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_XI">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 11</rdfs:label>
     </owl:NamedIndividual>
     
@@ -821,7 +868,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/core/Book_XII">
-        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapters"/>
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/chapter"/>
         <rdfs:label>book 12</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1564,7 +1611,7 @@
             <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/AgentRole"/>
             <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Concept"/>
             <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/Sentiment"/>
-            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/chapters"/>
+            <rdf:Description rdf:about="https://w3id.org/arco/ontology/core/chapter"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
