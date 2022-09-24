@@ -214,18 +214,15 @@
                 <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">In terms of stoic calm percentage associated for each concept, what are the top 5 fragments throughout Meditations and their locations? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                   <p>
-                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
-                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
-                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+                    prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; <br>
+                    prefix core: &lt;https://w3id.org/arco/ontology/core/&gt; <br>
 
-                    SELECT ?fragment ?sentimentValue ?concept ?conceptWord <br>
-                    WHERE { <br>
-                          ?fragment rdf:type core:fragments; <br>
-                                      core:positive_sentiment ?sentimentValue; <br>
-                                      core:hasAssociatedConcept ?conceptWord. <br>
-                          ?conceptWord core:isCategoryOf ?concept <br>
-                            } <br>
-                    ORDER BY desc(?sentimentValue) <br>
+                    SELECT ?fragment ?Chapter ?sentiment <br>
+                    WHERE {?fragment rdf:type ?o; <br>
+                      core:positive_sentiment ?sentiment. <br>
+                   ?Chapter core:hasPart ?fragment. <br>
+                   } <br>
+                    ORDER BY desc(?sentiment) <br>
                     Limit 5 <br>
                   </p>
                 </div>
@@ -235,21 +232,19 @@
                 <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">In how many fragments does the concept of “nature”, in all of its instances, appear alongside the abstract figure “god”? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
-                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
-                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
-                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
-                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+                    prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; <br>
+                    prefix core: &lt;https://w3id.org/arco/ontology/core/&gt; <br>
+                    prefix category: &lt;https://w3id.org/arco/ontology/core/Category/&gt; <br>
+                    prefix abstractFigure: &lt;https://w3id.org/arco/ontology/core/AbstractFigure/&gt; <br>
 
                     SELECT (count(?fragment) as ?count) <br>
                     WHERE { <br>
-                          ?fragment rdf:type core:fragments; <br>
+                          ?fragment rdf:type ?o; <br>
                                       core:hasAssociatedConcept ?conceptWord; <br>
                                       core:hasAssociatedFigure abstractFigure:God. <br>
                           ?conceptWord core:isCategoryOf category:nature. <br>
                             ?bookchapter core:hasPart ?fragment <br>
                             } <br>
-                    ORDER BY desc(?conceptword) <br>
                   </p>
                 </div>
               </li>
@@ -258,17 +253,16 @@
                 <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What is the overall average of positive sentiments and negative sentiments percentage throughout Meditations? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
-                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
-                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
-                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
-                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+                    prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&lt; <br>
+                    prefix core: &lt;https://w3id.org/arco/ontology/core/&lt; <br>
+                    prefix category: &lt;https://w3id.org/arco/ontology/core/Category/&lt; <br>
+                    prefix abstractFigure: &lt;https://w3id.org/arco/ontology/core/AbstractFigure/&lt; <br>
 
-                    SELECT (count(?fragment) as ?count) (sum (?sentimentPValue)/?count as ?sentimentSum_positve) (sum (?sentimentNValue)/?count as ?  sentimentSum_negative) <br>
+                    SELECT (count(?fragment) as ?count) (sum (?sentimentPValue)/?count as ?sentimentSum_positve) (sum (?sentimentNValue)/?count as ?sentimentSum_negative) <br>
                     WHERE { <br>
                           ?fragment rdf:type core:fragments; <br>
                                       core:positive_sentiment ?sentimentPValue; <br>
-                                      core:negative_sentiment ?sentimentNValue; <br>
+                                      core:negative_sentiment ?sentimentNValue. <br>
                             } <br>
                   </p>
                 </div>
@@ -278,11 +272,10 @@
                 <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">How many times does the concept of “justice”, in all of its instances, appear in the text? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
-                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
-                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
-                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
-                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+                    prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&lt; <br>
+                    prefix core: &lt;https://w3id.org/arco/ontology/core/&lt; <br>
+                    prefix category: &lt;https://w3id.org/arco/ontology/core/Category/&lt; <br>
+                    prefix abstractFigure: &lt;https://w3id.org/arco/ontology/core/AbstractFigure/&lt; <br>
 
                     SELECT (count(?fragment1) as ?justiceFragments) (count(?conceptWord) as ?justicewordCount) <br>
                     WHERE { <br>
@@ -299,17 +292,15 @@
                 <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">How many times does Meditations talk about the abstract figure of God?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
-                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
-                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
-                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
-                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+                    prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&lt; <br>
+                    prefix core: &lt;https://w3id.org/arco/ontology/core/&lt; <br>
+                    prefix category: &lt;https://w3id.org/arco/ontology/core/Category/&lt; <br>
+                    prefix abstractFigure: &lt;https://w3id.org/arco/ontology/core/AbstractFigure/&lt; <br>
 
                     SELECT (count(?fragment1) as ?figureGod) <br>
                     WHERE { <br>
                           ?fragment1 rdf:type core:fragments; <br>
                                       core:hasAssociatedFigure abstractFigure:God. <br>
-                      
                             } <br>
                     ORDER BY desc(?figureClass) <br>
                   </p> 
@@ -317,14 +308,13 @@
               </li>
 
 			  <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">In how many fragments does the concept of power co-occur with the concept of nature?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">In how many fragments does the concept of power co-occur with the concept of nature?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
-                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
-                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
-                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
-                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+                    prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&lt; <br>
+                    prefix core: &lt;https://w3id.org/arco/ontology/core/&lt; <br>
+                    prefix category: &lt;https://w3id.org/arco/ontology/core/Category/&lt; <br>
+                    prefix abstractFigure: &lt;https://w3id.org/arco/ontology/core/AbstractFigure/&lt; <br>
 
                     SELECT (count(?fragment1) as ?figureNature) <br>
                     WHERE { <br>
@@ -343,15 +333,14 @@
               </li>
 
 			  <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What is the positive sentiment value for fragments in which the concept of Providence is mentioned, and where are these located?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-7" class="collapsed">What is the positive sentiment value for fragments in which the concept of Providence is mentioned, and where are these located?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
-                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
-                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
-                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
-                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
-
+                    prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&lt; <br>
+                    prefix core: &lt;https://w3id.org/arco/ontology/core/&lt; <br>
+                    prefix category: &lt;https://w3id.org/arco/ontology/core/Category/&lt; <br>
+                    prefix abstractFigure: &lt;https://w3id.org/arco/ontology/core/AbstractFigure/&lt; <br>
+               
                     SELECT ?fragment1 ?sentimentValue <br>
                     WHERE { <br>
                           ?fragment1 rdf:type core:fragments; <br>
@@ -360,18 +349,18 @@
                           ?conceptWord core:isCategoryOf category:providence. <br>
                             } <br>
                     ORDER BY desc(?sentimentValue) <br>
+                    Limit 5 <br>
                   </p>
                 </div>
               </li>
 			  <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How many times is Euripides directly cited or indirectly mentioned? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-8" class="collapsed">How many times is Euripides directly cited or indirectly mentioned? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-8" class="collapse" data-bs-parent=".faq-list">
                   <p>
-                    prefix core: <https://w3id.org/arco/ontology/core/> <br>
-                    prefix category: <https://w3id.org/arco/ontology/core/Category/> <br>
-                    prefix abstractFigure: <https://w3id.org/arco/ontology/core/AbstractFigure/> <br>
-                    prefix associatedSentiment: <https://w3id.org/arco/ontology/core/hasAssociatedSentiment> <br>
-                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+                    prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&lt; <br>
+                    prefix core: &lt;https://w3id.org/arco/ontology/core/&lt; <br>
+                    prefix category: &lt;https://w3id.org/arco/ontology/core/Category/&lt; <br>
+                    prefix abstractFigure: &lt;https://w3id.org/arco/ontology/core/AbstractFigure/&lt; <br>
 
                     SELECT (count(?fragment1) as ?CitationCount) <br>
                     WHERE { <br>
@@ -381,7 +370,6 @@
                   </p>
                 </div>
               </li>
-			  <li data-aos="fade-up" data-aos-delay="200">
             </ul>
           </div>
 
