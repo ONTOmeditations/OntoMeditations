@@ -1,4 +1,4 @@
-from ast import keyword
+from ast import Pass, keyword
 from distutils.command.upload import upload
 from operator import contains
 from platform import node
@@ -15,7 +15,7 @@ from sparql_dataframe import get
 
 #my ontology classes URI 
 #main class
-literaryDiaryIRI=URIRef("http://www.semanticweb.org/victor/ontologies/2022/6/ontoMeditations/literary_diary")
+literaryDiaryIRI=URIRef("http://w3id.org/arco/ontology/core/literary_diary") #updated
 #sub class
 abstractFigureIRI=URIRef("https://w3id.org/arco/ontology/core/AbstractFigure")
 agentRoleIRI=URIRef("https://w3id.org/arco/ontology/core/AgentRole")
@@ -40,6 +40,7 @@ hasAssociatedsentimentIRI=URIRef("https://w3id.org/arco/ontology/core/hasAssocia
 hasCharacteristicIRI=URIRef("https://w3id.org/arco/ontology/core/hasCharacteristic")
 hasConstituentIRI=URIRef("https://w3id.org/arco/ontology/core/hasConstituent")
 hasPartIRI=URIRef("https://w3id.org/arco/ontology/core/hasPart")
+
 # sub class of has part IRI
 isPartOfIRI=URIRef("https://w3id.org/arco/ontology/core/isPartOf")
 isCategoryOfIRI=URIRef("https://w3id.org/arco/ontology/core/isCategoryOf")
@@ -59,10 +60,10 @@ psychebodyIRI=URIRef("https://w3id.org/arco/ontology/core/Category/psyche&body")
 
 
 #Data properties
-containsTextIRI = URIRef("https://www.semanticweb.org/victor/ontologies/2022/6/untitled-ontology-5#containsText")
+containsTextIRI = URIRef("https://w3id.org/arco/ontology/core/containsText")
 hasTitleIRI = URIRef("https://w3id.org/arco/ontology/core/hasTitle")
 hasAttributedAuthorIRI=URIRef("https://w3id.org/arco/ontology/core/hasAttributedAuthor")
-hasCitationIRI=URIRef("https://w3id.org/arco/ontology/core/hasCitation")
+hasCitationIRI=URIRef("https://w3id.org/arco/ontology/core/hasCitation") 
 keywordURI=URIRef("https://w3id.org/arco/ontology/core/keyword")
 synonymIRI=URIRef("https://w3id.org/arco/ontology/core/synonym")
 
@@ -100,6 +101,9 @@ def uploadtxt(filepath):
         allTxt.append(chapter)
         f.close
     return
+
+
+#THIS FUNCTION ACCEPTS THE ABSTRACT FIGURES OCCURENCE DATA AND CREATES DICTS OUT OF IT    
 def uploadextractedAbstractFigures():
     book1GodDF = pd.read_csv("extractedSentiments/book1_occ/abstr_occ0.csv")
     book1manDF = pd.read_csv("extractedSentiments/book1_occ/abstr_occ1.csv")  
@@ -151,9 +155,8 @@ def uploadextractedAbstractFigures():
 
     
     globals()['allAbstractFiguresDict'] = {"1":book1dict,"2":book2dict,"3":book3dict,"4":book4dict,"5":book5dict,"6":book6dict,"7":book7dict,"8":book8dict,"9":book9dict,"10":book10dict,"11":book11dict,"12":book12dict} 
-
 uploadextractedAbstractFigures()
-print(allAbstractFiguresDict)
+
 
 #THIS FUNCTION ACCEPTS THE EXTRACTED SENTIMENTS FOR EACH FRAGMENT
 def uploadextractedSentiments(filepath):
@@ -241,7 +244,7 @@ def fragmentdictcreator(fragment,fragmentlen):
     return
 # create the list of fragments for each book
 def fragmentor(txt):
-    #THIS FUNCTION CREATOS FRAGMENTS FROM THE TEXT USING REGEX SPLITER AND STORES THEM IN THE 
+    #THIS FUNCTION CREATES FRAGMENTS FROM THE TEXT USING REGEX SPLITER AND STORES THEM IN THE 
     for item in allTxt:
         fragment =re.split('\d+\.', item)  #this creates a list of fragments
         #CHECK IF THERE ARE ANY BLANK FRAGMENTS
@@ -482,9 +485,18 @@ def KGraphcreator():
     #create your triples for books/chapters here
     bookId = 1
     for items in allTxt:
+        print(subj)
+        chaptersubj = URIRef(baseIRI + "Book" + str(bookId))
+        print(chaptersubj)
+        myGraph.add((chaptersubj,isPartOfIRI,subj)) #NEW ADDITIONA!!!
+        bookId +=1
+        
+    bookId = 1    
+    for items in allTxt:
         chaptersubj = URIRef(baseIRI + "Book" + str(bookId))
         #create your triples for book class instance here
         myGraph.add((chaptersubj,RDF.type,chaptersIRI))
+        
         #create triples for each fragment of individual chapter
         for key in allFragments:
             if key == bookId:
@@ -500,6 +512,7 @@ def KGraphcreator():
                             
                             #connect the frag to the chapter
                             myGraph.add((chaptersubj,hasPartIRI,fragIRI))
+                            
                             myGraph.add((fragIRI,containsTextIRI,Literal(item))) #adds the text to the fragment 
                             myGraph.add((fragIRI,RDF.type,fragmentIRI))
                             #add concepts to this fragment
