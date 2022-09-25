@@ -12,7 +12,7 @@
   <!-- Favicons -->
   <link href="assets/img/icons8-greek-pillar-base-48.png" rel="icon">
   <link href="assets/img/icons8-greek-pillar-base-48.png" rel="apple-touch-icon">
-	
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +30,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: Plato - v4.7.0
@@ -60,13 +61,13 @@
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
-	      
+
         <nav id="navbar" class="navbar">
           <ul>
             <li><a  href="index.html">Home</a></li>
              <li class="dropdown"><a href="index.html#about"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                
+
 				<li class="dropdown"><a href="index-en.html"><span>The Ontology</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
                     <li><a href="DocumentationPage.html">Documentation</a></li>
@@ -79,8 +80,8 @@
 
               </ul>
             </li>
-             <li><a class="nav-link scrollto" href="index.html#faq">Queries</a></li> 
-	     <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>  
+             <li><a class="nav-link scrollto" href="index.html#faq">Queries</a></li>
+	     <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
 
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
@@ -106,27 +107,27 @@
                    <br>
                   <p>Engaged with Marcus Aurelius’ Meditations, a major work of Stoic philosophy, our project uses linguistic and sentiment analysis digital techniques applied to a dedicated ontology. The aim is to read and understand this rich philosophical work, as well as its iconic author-emperor-thinker-feeler, in novel ways, through digital lights.</p>
                     <br>
-                  
+
                 <div class="row">
                   <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
                     <i class="bx bx-receipt"></i>
                     <h4>22 Classes</h4>
-                    
+
                   </div>
                   <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
                     <i class="bx bx-cube-alt"></i>
                     <h4>12 Object Properties</h4>
-                    
+
                   </div>
                   <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
                     <i class="bx bx-images"></i>
                     <h4>5 Data Properties</h4>
-                    
+
                   </div>
                   <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="400">
                     <i class="bx bx-shield"></i>
                     <h4>66 Named Individuals</h4>
-                    
+
                   </div>
                 </div>
               </div><!-- End .content-->
@@ -135,11 +136,11 @@
 
         </div>
       </section><!-- End About Section -->
-	  
-	  
-	  
-	  
-	  
+
+
+
+
+
 	  <!-- ======= Features Section ======= -->
       <section id="features" class="features">
         <div class="container">
@@ -179,7 +180,7 @@
 
 
 
-      
+
 
       <!-- ======= Cta Section ======= -->
       <section id="cta" class="cta">
@@ -194,7 +195,7 @@
         </div>
       </section><!-- End Cta Section -->
 
-      
+
 
 
 
@@ -205,7 +206,14 @@
           <div class="section-title" data-aos="fade-down">
             <span>Competency Questions</span>
             <h2>Competency Questions</h2>
-            <p>We have created 14 Competency Questions which will help us explore our research domain. In creating them, we considered the main reoccuring themes and concepts in Marcus Aurelius's work. We have provided the formalized queries for each incompetency questions below, which you can download as part of our knowledge graph, stored in the db file in our <a href="https://github.com/ONTOmeditations/OntoMeditations">Github repository</a>, so that you actually run the queries and see their results.</p>
+            <p>We have created 14 Competency Questions which will help us explore our research domain.
+               In creating them, we considered the main reoccuring <a href="https://ontomeditations.github.io/OntoMeditations/DomainPage.html">themes and concepts</a> in Marcus Aurelius's
+               work. We have provided the formalized queries for each competency question below, and a sample of the results
+               returned by our knowledge graph.</p>
+               <p>The implemented code and data can be found in our
+               <a href="https://github.com/ONTOmeditations/OntoMeditations/tree/main/scripts"> Github
+                 directory </a>, for users to actually construct the graph and view the query results.</p>
+
           </div>
 
           <div class="faq-list">
@@ -225,6 +233,12 @@
                     ORDER BY desc(?sentiment) <br>
                     Limit 5 <br>
                   </p>
+
+<hr>
+<br>
+                    <h5>&emsp;Sample results</h5>
+                      <img src="assets/img/result1.JPG">
+
                 </div>
               </li>
 
@@ -246,7 +260,12 @@
                             ?bookchapter core:hasPart ?fragment <br>
                             } <br>
                   </p>
-                </div>
+                  <hr>
+                  <br>
+                  <h5>Sample results</h5>
+
+                    <img src="assets/img/result2.JPG">
+                  </div>
               </li>
 
               <li data-aos="fade-up" data-aos-delay="200">
@@ -265,6 +284,11 @@
                                       core:negative_sentiment ?sentimentNValue. <br>
                             } <br>
                   </p>
+                  <hr>
+                  <br>
+                  <h5>Sample results</h5>
+                  <img src="assets/img/result3.JPG">
+
                 </div>
               </li>
 
@@ -280,11 +304,16 @@
                     SELECT (count(?fragment1) as ?justiceFragments) (count(?conceptWord) as ?justicewordCount) <br>
                     WHERE { <br>
                           ?fragment1 rdf:type core:fragments; <br>
-                                      core:hasAssociatedConcept ?conceptWord. <br>      
+                                      core:hasAssociatedConcept ?conceptWord. <br>
                           ?conceptWord core:isCategoryOf category:justice. <br>
                             } <br>
                     ORDER BY desc(?conceptword) <br>
                   </p>
+                  <hr>
+                  <br>
+                  <h5>Sample results</h5>
+                  <img src="assets/img/result4.JPG">
+
                 </div>
               </li>
 
@@ -303,7 +332,12 @@
                                       core:hasAssociatedFigure abstractFigure:God. <br>
                             } <br>
                     ORDER BY desc(?figureClass) <br>
-                  </p> 
+                  </p>
+                  <hr>
+                  <br>
+                  <h5>Sample results</h5>
+                  <img src="assets/img/result5.JPG">
+
                 </div>
               </li>
 
@@ -320,14 +354,19 @@
                     WHERE { <br>
                           ?fragment1 rdf:type core:fragments; <br>
                                       core:hasAssociatedConcept ?conceptWord1; <br>
-                                      core:hasAssociatedConcept ?conceptWord2. <br>			
+                                      core:hasAssociatedConcept ?conceptWord2. <br>
                           ?conceptWord1 core:isCategoryOf category:nature. <br>
-                      
+
                           ?fragment1 rdf:type core:fragments; <br>
                                       core:hasAssociatedConcept ?conceptWord2. <br>
                           ?conceptWord2 core:isCategoryOf category:power. <br>
                             } <br>
                     ORDER BY desc(?fragment) <br>
+                    <hr>
+                    <br>
+                    <h5>Sample results</h5>
+                    <img src="assets/img/result6.JPG">
+
                   </p>
                 </div>
               </li>
@@ -340,7 +379,7 @@
                     prefix core: &lt;https://w3id.org/arco/ontology/core/&gt; <br>
                     prefix category: &lt;https://w3id.org/arco/ontology/core/Category/&gt; <br>
                     prefix abstractFigure: &lt;https://w3id.org/arco/ontology/core/AbstractFigure/&gt; <br>
-               
+
                     SELECT ?fragment1 ?sentimentValue <br>
                     WHERE { <br>
                           ?fragment1 rdf:type core:fragments; <br>
@@ -350,7 +389,13 @@
                             } <br>
                     ORDER BY desc(?sentimentValue) <br>
                     Limit 5 <br>
+
                   </p>
+                  <hr>
+                  <br>
+                  <h5>Sample results</h5>
+                  <img src="assets/img/result7.JPG">
+
                 </div>
               </li>
 			  <li data-aos="fade-up" data-aos-delay="200">
@@ -368,6 +413,11 @@
                                       core:hasAssociatedAgent core:Epictetus. <br>
                             } <br>
                   </p>
+                  <hr>
+                  <br>
+                  <h5>Sample results</h5>
+                  <img src="assets/img/result8.JPG">
+
                 </div>
               </li>
             </ul>
@@ -394,9 +444,9 @@
                 <div class="member-info">
                   <div class="member-info-content">
                     <h4>Victor Chaix</h4>
-			          
+
                   </div>
-                  
+
                 </div>
               </div>
             </div>
@@ -409,7 +459,7 @@
                     <h4>Chloe Papadopoulou </h4>
 
                   </div>
-                  
+
                 </div>
               </div>
             </div>
@@ -422,9 +472,9 @@
                 <div class="member-info">
                   <div class="member-info-content">
                     <h4>Eleonora Pasquale</h4>
-                
+
                   </div>
-                 
+
                 </div>
               </div>
             </div>
@@ -434,9 +484,9 @@
                 <div class="member-info">
                   <div class="member-info-content">
                     <h4>Manu Srivastava</h4>
-            
+
                   </div>
-                  
+
                 </div>
               </div>
             </div>
@@ -498,6 +548,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+
+
+
+
+</script>
 
 </body>
 
