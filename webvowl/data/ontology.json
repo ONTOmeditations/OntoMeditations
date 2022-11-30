@@ -1,13 +1,13 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "en" ],
-    "baseIris" : [ "http://www.w3.org/2002/07/owl", "https://w3id.org/arco/ontology/core/Category", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/arco/ontology/core", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/arco/ontology/core/Category/Category", "https://w3id.org/arco/ontology/core/AbstractFigure" ],
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "undefined" : "OntoMeditations"
     },
     "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
-    "version" : "2.0",
+    "version" : "3.0",
     "author" : [ "Eleonora Pasquale", "Chloe Papadopoulou", "Victor Chaix", "Manu Srivastava" ],
     "comments" : {
       "undefined" : "OntoMeditations is an ontology based on Marcus Aurelius' 'Meditations', a series of writings in which the emperor recorded personal notes to himself and expressed his ideas on Stoic philosophy. The ontology was created with the aim to represent the work's nature as both a spiritual diary and a philosophical treatise, by formalizing recurring philosophical concepts and themes, as well as personal sentiments, with the use of linguistic and sentimental analysis techniques"
@@ -16,28 +16,28 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Eleonora Pasquale",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Victor Chaix",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Chloe Papadopoulou",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Eleonora Pasquale",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "Manu Srivastava",
         "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Victor Chaix",
+        "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "2.0",
+        "value" : "3.0",
         "type" : "label"
       } ],
       "title" : [ {
@@ -50,96 +50,377 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "1",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "43",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
+    "id" : "51",
     "type" : "owl:unionOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
   }, {
     "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "47",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
     "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "65",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "100",
-    "type" : "owl:Class"
-  }, {
-    "id" : "95",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "48",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "32",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "114",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "97",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "153",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "134",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
     "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://w3id.org/arco/ontology/core/neutral_sentiment",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#positive_sentiment",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "positive_sentiment",
+      "undefined" : "positive sentiment"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#fortitude",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Strength of mind that enables a person to encounter danger or bear pain or adversity with courage"
+      },
+      "labels" : {
+        "IRI-based" : "fortitude",
+        "undefined" : "fortitude"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#purpose",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Something set up as an object or end to be attained"
+      },
+      "labels" : {
+        "IRI-based" : "purpose",
+        "undefined" : "purpose"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#freedom",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The quality or state of being free"
+      },
+      "labels" : {
+        "IRI-based" : "freedom",
+        "undefined" : "freedom"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#well-being",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The state of being happy, healthy, or prosperous"
+      },
+      "labels" : {
+        "IRI-based" : "well-being",
+        "undefined" : "well-being"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "a neither neutral, nor negative feeling"
+    },
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#men",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "men",
+      "undefined" : "men"
+    },
+    "comment" : {
+      "undefined" : "abstract and general entity or idea relating to humanity"
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "24", "10", "16" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#nature",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "nature",
+      "undefined" : "nature"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#matter",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The substance of which a physical object is composed"
+      },
+      "labels" : {
+        "IRI-based" : "matter",
+        "undefined" : "matter"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#universe",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The whole body of things and phenomena observed or postulated"
+      },
+      "labels" : {
+        "IRI-based" : "universe",
+        "undefined" : "universe"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#whole",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Constituting the total sum or undiminished entirety"
+      },
+      "labels" : {
+        "IRI-based" : "whole",
+        "undefined" : "whole"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#law",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The action of laws considered as a means of redressing wrongs"
+      },
+      "labels" : {
+        "IRI-based" : "law",
+        "undefined" : "law"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#necessity",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The quality or state of being necessary"
+      },
+      "labels" : {
+        "IRI-based" : "necessity",
+        "undefined" : "necessity"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The force that is responsible for physical life"
+    },
+    "id" : "26",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#negative_sentiment",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "negative_sentiment",
+      "undefined" : "negative sentiment"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#ill",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Not in good health"
+      },
+      "labels" : {
+        "IRI-based" : "ill",
+        "undefined" : "ill"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#pain",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Mental or emotional distress or suffering"
+      },
+      "labels" : {
+        "IRI-based" : "pain",
+        "undefined" : "pain"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#displeasure",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Disconfort and unhappiness"
+      },
+      "labels" : {
+        "IRI-based" : "displeasure",
+        "undefined" : "displeasure"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#violence",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The use of physical force so as to injure, abuse, damage, or destroy"
+      },
+      "labels" : {
+        "IRI-based" : "violence",
+        "undefined" : "violence"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "a neither neutral, nor positive feeling"
+    },
+    "id" : "24",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Sentiment",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sentiment",
+      "undefined" : "sentiment"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#fortitude",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Strength of mind that enables a person to encounter danger or bear pain or adversity with courage"
+      },
+      "labels" : {
+        "IRI-based" : "fortitude",
+        "undefined" : "fortitude"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#ill",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Not in good health"
+      },
+      "labels" : {
+        "IRI-based" : "ill",
+        "undefined" : "ill"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#purpose",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Something set up as an object or end to be attained"
+      },
+      "labels" : {
+        "IRI-based" : "purpose",
+        "undefined" : "purpose"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#pain",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Mental or emotional distress or suffering"
+      },
+      "labels" : {
+        "IRI-based" : "pain",
+        "undefined" : "pain"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#freedom",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The quality or state of being free"
+      },
+      "labels" : {
+        "IRI-based" : "freedom",
+        "undefined" : "freedom"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#displeasure",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Disconfort and unhappiness"
+      },
+      "labels" : {
+        "IRI-based" : "displeasure",
+        "undefined" : "displeasure"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#violence",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The use of physical force so as to injure, abuse, damage, or destroy"
+      },
+      "labels" : {
+        "IRI-based" : "violence",
+        "undefined" : "violence"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#well-being",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The state of being happy, healthy, or prosperous"
+      },
+      "labels" : {
+        "IRI-based" : "well-being",
+        "undefined" : "well-being"
+      }
+    } ],
+    "subClasses" : [ "24", "10", "16" ],
+    "comment" : {
+      "undefined" : "An attitude, thought, or judgment prompted by feeling"
+    },
+    "id" : "17"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#neutral_sentiment",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
     "instances" : 0,
     "label" : {
       "IRI-based" : "neutral_sentiment",
@@ -148,104 +429,285 @@
     "comment" : {
       "undefined" : "a neither negative nor positive feeling"
     },
-    "attributes" : [ "external" ],
-    "id" : "1",
-    "superClasses" : [ "16" ]
+    "id" : "10",
+    "superClasses" : [ "17" ]
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/AgentRole",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "instances" : 0,
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#justice",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 1,
     "label" : {
-      "IRI-based" : "AgentRole",
-      "undefined" : "agent role"
+      "IRI-based" : "justice",
+      "undefined" : "justice"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/Euripides",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#temperance",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "Euripides was a tragedian of classical Athens. Along with Aeschylus and Sophocles, he is one of the three ancient Greek tragedians for whom any plays have survived in full."
+        "undefined" : "Moderation in action, thought, or feeling"
       },
       "labels" : {
-        "IRI-based" : "Euripides",
-        "undefined" : "Euripides"
+        "IRI-based" : "temperance",
+        "undefined" : "temperence"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Homer",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#fault",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "Homer is the legendary author to whom the authorship of the Iliad and the Odyssey (the two epic poems that are the foundational works of ancient Greek literature) is attributed."
+        "undefined" : "The responsibility for wrongdoing or failure"
       },
       "labels" : {
-        "IRI-based" : "Homer",
-        "undefined" : "Homer"
+        "IRI-based" : "fault",
+        "undefined" : "fault"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Heraclitus",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#action",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "Heraclitus of Ephesus was an ancient Greek, pre-Socratic, Ionian philosopher and a native of the city of Ephesus"
+        "undefined" : "An act of will"
       },
       "labels" : {
-        "IRI-based" : "Heraclitus",
-        "undefined" : "Heraclitus"
+        "IRI-based" : "action",
+        "undefined" : "action"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Epictetus",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#blame",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "Epictetus was a Greek Stoic philosopher."
+        "undefined" : "An expression of disapproval or reproach"
       },
       "labels" : {
-        "IRI-based" : "Epictetus",
-        "undefined" : "Epictetus"
+        "IRI-based" : "blame",
+        "undefined" : "blame"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Democritus",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#honour",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "Democritus was an Ancient Greek pre-Socratic philosopher from Abdera, primarily remembered today for his formulation of an atomic theory of the universe."
+        "undefined" : "Worth that brings respect or fame"
       },
       "labels" : {
-        "IRI-based" : "Democritus",
-        "undefined" : "Democritus"
+        "IRI-based" : "honour",
+        "undefined" : "honour"
       }
     } ],
     "comment" : {
-      "undefined" : "Agents that have been existing writers and play a certain the book, by being mentionned or cited"
+      "undefined" : "The quality of being just, impartial, or fair"
     },
-    "attributes" : [ "external" ],
-    "id" : "38"
+    "id" : "14",
+    "superClasses" : [ "21" ]
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Category/providence",
-    "baseIri" : "https://w3id.org/arco/ontology/core/Category",
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#psyche&body",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
     "instances" : 0,
+    "label" : {
+      "IRI-based" : "psyche&body",
+      "undefined" : "psyche & body"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#flesh",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The phisical nature of human beings"
+      },
+      "labels" : {
+        "IRI-based" : "flesh",
+        "undefined" : "flesh"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#impulse",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "A sudden spontaneous inclination or incitement to some usually unpremeditated action"
+      },
+      "labels" : {
+        "IRI-based" : "impulse",
+        "undefined" : "impulse"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#/psyche&body",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The human soul, mind, or spirit & its flesh, pysical structure"
+      },
+      "labels" : {
+        "IRI-based" : "/psyche&body",
+        "undefined" : "psyche & body"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#souls",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "the immaterial essence, animating principle, or actuating cause of an individual life"
+      },
+      "labels" : {
+        "IRI-based" : "souls",
+        "undefined" : "souls"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#bodies",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The organized physical substance of a human, animal or plant"
+      },
+      "labels" : {
+        "IRI-based" : "bodies",
+        "undefined" : "bodies"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#vital_spirit",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "In Stoicism it is a mixture of air and fire held to be the divine organizing principle of the universe"
+      },
+      "labels" : {
+        "IRI-based" : "vital_spirit",
+        "undefined" : "vital spirit"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "the human soul, mind, or spirit & its flesh, pysical structure"
+    },
+    "id" : "12",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#power",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "power",
+      "undefined" : "power"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#employment",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Use, purpose"
+      },
+      "labels" : {
+        "IRI-based" : "employment",
+        "undefined" : "employment"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#glory",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Praise, honour or distinction"
+      },
+      "labels" : {
+        "IRI-based" : "glory",
+        "undefined" : "glory"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#corrupt",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "morally degenerate and perverted"
+      },
+      "labels" : {
+        "IRI-based" : "corrupt",
+        "undefined" : "corrupt"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#governing_self",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Self control and power"
+      },
+      "labels" : {
+        "IRI-based" : "governing_self",
+        "undefined" : "governing self"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#obstacle",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Something that impedes progress or achievement"
+      },
+      "labels" : {
+        "IRI-based" : "obstacle",
+        "undefined" : "obstacle"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Possession of control, authority, or influence over others"
+    },
+    "id" : "6",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#death",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "death",
+      "undefined" : "death"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#extinct",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Being no longer in existance"
+      },
+      "labels" : {
+        "IRI-based" : "extinct",
+        "undefined" : "extinct"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#dissolution",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The act or process of dissolving"
+      },
+      "labels" : {
+        "IRI-based" : "dissolution",
+        "undefined" : "dissolution"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#life",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "A principle or force that is considered to underlie the distinctive quality of animate beings"
+      },
+      "labels" : {
+        "IRI-based" : "life",
+        "undefined" : "life"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#sick",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Affected with disease or ill health"
+      },
+      "labels" : {
+        "IRI-based" : "sick",
+        "undefined" : "sick"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#time",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The measured or measurable period during which an action, process, or condition exists or continues"
+      },
+      "labels" : {
+        "IRI-based" : "time",
+        "undefined" : "time"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The state of being no longer alive"
+    },
+    "id" : "29",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#providence",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 2,
     "label" : {
       "IRI-based" : "providence",
       "undefined" : "providence"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/fate",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The power that is believed to control everything that happens and that cannot be stopped or changed"
-      },
-      "labels" : {
-        "IRI-based" : "fate",
-        "undefined" : "fate"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/divinity",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The quality or state of being divine"
-      },
-      "labels" : {
-        "IRI-based" : "divinity",
-        "undefined" : "divinity"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/atoms",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#atoms",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
         "undefined" : "A tiny particle"
       },
@@ -254,28 +716,28 @@
         "undefined" : "atoms"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/god",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#fate",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "The supreme or ultimate reality"
+        "undefined" : "The power that is believed to control everything that happens and that cannot be stopped or changed"
       },
       "labels" : {
-        "IRI-based" : "god",
-        "undefined" : "god"
+        "IRI-based" : "fate",
+        "undefined" : "fate"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/providence",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#divinity",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "Divine guidance or care"
+        "undefined" : "The quality or state of being divine"
       },
       "labels" : {
-        "IRI-based" : "providence",
-        "undefined" : "providence"
+        "IRI-based" : "divinity",
+        "undefined" : "divinity"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/fortune",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#fortune",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
         "undefined" : "Destiny, fate"
       },
@@ -287,236 +749,18 @@
     "comment" : {
       "undefined" : "protective care of God or of nature as a spiritual power"
     },
-    "attributes" : [ "external" ],
-    "id" : "15",
-    "superClasses" : [ "42" ]
+    "id" : "8",
+    "superClasses" : [ "21" ]
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Category/nature",
-    "baseIri" : "https://w3id.org/arco/ontology/core/Category",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "31",
     "label" : {
-      "IRI-based" : "nature",
-      "undefined" : "nature"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/necessity",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The quality or state of being necessary"
-      },
-      "labels" : {
-        "IRI-based" : "necessity",
-        "undefined" : "necessity"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/universe",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The whole body of things and phenomena observed or postulated"
-      },
-      "labels" : {
-        "IRI-based" : "universe",
-        "undefined" : "universe"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/matter",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The substance of which a physical object is composed"
-      },
-      "labels" : {
-        "IRI-based" : "matter",
-        "undefined" : "matter"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/nature",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The force that is responsible for physical life"
-      },
-      "labels" : {
-        "IRI-based" : "nature",
-        "undefined" : "nature"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/law",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The action of laws considered as a means of redressing wrongs"
-      },
-      "labels" : {
-        "IRI-based" : "law",
-        "undefined" : "law"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/whole",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Constituting the total sum or undiminished entirety"
-      },
-      "labels" : {
-        "IRI-based" : "whole",
-        "undefined" : "whole"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "the force that is responsible for physical life"
-    },
-    "attributes" : [ "external" ],
-    "id" : "13",
-    "superClasses" : [ "42" ]
+      "undefined" : "Thing"
+    }
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/AbstractFigure",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AbstractFigure",
-      "undefined" : "abstract figure"
-    },
-    "subClasses" : [ "25", "4" ],
-    "comment" : {
-      "undefined" : "Agents that play a figurative role in the text, as abstract individuals or ideas"
-    },
-    "attributes" : [ "external" ],
-    "id" : "43"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Category/death",
-    "baseIri" : "https://w3id.org/arco/ontology/core/Category",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "death",
-      "undefined" : "death"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/life",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "A principle or force that is considered to underlie the distinctive quality of animate beings"
-      },
-      "labels" : {
-        "IRI-based" : "life",
-        "undefined" : "life"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/death",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The state of being no longer alive"
-      },
-      "labels" : {
-        "IRI-based" : "death",
-        "undefined" : "death"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/time",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The measured or measurable period during which an action, process, or condition exists or continues"
-      },
-      "labels" : {
-        "IRI-based" : "time",
-        "undefined" : "time"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/sick",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Affected with disease or ill health"
-      },
-      "labels" : {
-        "IRI-based" : "sick",
-        "undefined" : "sick"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/dissolution",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The act or process of dissolving"
-      },
-      "labels" : {
-        "IRI-based" : "dissolution",
-        "undefined" : "dissolution"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/extinct",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Being no longer in existance"
-      },
-      "labels" : {
-        "IRI-based" : "extinct",
-        "undefined" : "extinct"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "absence of life"
-    },
-    "attributes" : [ "external" ],
-    "id" : "2",
-    "superClasses" : [ "42" ]
-  }, {
-    "instances" : 0,
-    "union" : [ "1", "6", "24" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "52"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/negative_sentiment",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "negative_sentiment",
-      "undefined" : "negative sentiment"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/displeasure",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Disconfort and unhappiness"
-      },
-      "labels" : {
-        "IRI-based" : "displeasure",
-        "undefined" : "displeasure"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/ill",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Not in good health"
-      },
-      "labels" : {
-        "IRI-based" : "ill",
-        "undefined" : "ill"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/violence",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The use of physical force so as to injure, abuse, damage, or destroy"
-      },
-      "labels" : {
-        "IRI-based" : "violence",
-        "undefined" : "violence"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/pain",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Mental or emotional distress or suffering"
-      },
-      "labels" : {
-        "IRI-based" : "pain",
-        "undefined" : "pain"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "a neither neutral, nor positive feeling"
-    },
-    "attributes" : [ "external" ],
-    "id" : "24",
-    "superClasses" : [ "16" ]
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/fragment",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#fragment",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
     "instances" : 0,
     "label" : {
       "IRI-based" : "fragment",
@@ -525,203 +769,134 @@
     "comment" : {
       "undefined" : "the division of a chapter in a numbered paragraph"
     },
-    "attributes" : [ "external" ],
-    "id" : "47"
+    "id" : "1"
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Sentiment",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#AgentRole",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Sentiment",
-      "undefined" : "sentiment"
+      "IRI-based" : "AgentRole",
+      "undefined" : "agent role"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/displeasure",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Euripides",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "Disconfort and unhappiness"
+        "undefined" : "Euripides was a tragedian of classical Athens. Along with Aeschylus and Sophocles, he is one of the three ancient Greek tragedians for whom any plays have survived in full."
       },
       "labels" : {
-        "IRI-based" : "displeasure",
-        "undefined" : "displeasure"
+        "IRI-based" : "Euripides",
+        "undefined" : "Euripides"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/well-being",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Heraclitus",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "The state of being happy, healthy, or prosperous"
+        "undefined" : "Heraclitus of Ephesus was an ancient Greek, pre-Socratic, Ionian philosopher and a native of the city of Ephesus"
       },
       "labels" : {
-        "IRI-based" : "well-being",
-        "undefined" : "well-being"
+        "IRI-based" : "Heraclitus",
+        "undefined" : "Heraclitus"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/ill",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Democritus",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "Not in good health"
+        "undefined" : "Democritus was an Ancient Greek pre-Socratic philosopher from Abdera, primarily remembered today for his formulation of an atomic theory of the universe."
       },
       "labels" : {
-        "IRI-based" : "ill",
-        "undefined" : "ill"
+        "IRI-based" : "Democritus",
+        "undefined" : "Democritus"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/violence",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Homer",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "The use of physical force so as to injure, abuse, damage, or destroy"
+        "undefined" : "Homer is the legendary author to whom the authorship of the Iliad and the Odyssey (the two epic poems that are the foundational works of ancient Greek literature) is attributed."
       },
       "labels" : {
-        "IRI-based" : "violence",
-        "undefined" : "violence"
+        "IRI-based" : "Homer",
+        "undefined" : "Homer"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/freedom",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Epictetus",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "The quality or state of being free"
+        "undefined" : "Epictetus was a Greek Stoic philosopher."
       },
       "labels" : {
-        "IRI-based" : "freedom",
-        "undefined" : "freedom"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/fortitude",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Strength of mind that enables a person to encounter danger or bear pain or adversity with courage"
-      },
-      "labels" : {
-        "IRI-based" : "fortitude",
-        "undefined" : "fortitude"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/pain",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Mental or emotional distress or suffering"
-      },
-      "labels" : {
-        "IRI-based" : "pain",
-        "undefined" : "pain"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/purpose",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Something set up as an object or end to be attained"
-      },
-      "labels" : {
-        "IRI-based" : "purpose",
-        "undefined" : "purpose"
-      }
-    } ],
-    "subClasses" : [ "1", "6", "24" ],
-    "comment" : {
-      "undefined" : "An attitude, thought, or judgment prompted by feeling"
-    },
-    "attributes" : [ "external" ],
-    "id" : "16"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/positive_sentiment",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "positive_sentiment",
-      "undefined" : "positive sentiment"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/well-being",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The state of being happy, healthy, or prosperous"
-      },
-      "labels" : {
-        "IRI-based" : "well-being",
-        "undefined" : "well-being"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/freedom",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The quality or state of being free"
-      },
-      "labels" : {
-        "IRI-based" : "freedom",
-        "undefined" : "freedom"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/fortitude",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Strength of mind that enables a person to encounter danger or bear pain or adversity with courage"
-      },
-      "labels" : {
-        "IRI-based" : "fortitude",
-        "undefined" : "fortitude"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/purpose",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Something set up as an object or end to be attained"
-      },
-      "labels" : {
-        "IRI-based" : "purpose",
-        "undefined" : "purpose"
+        "IRI-based" : "Epictetus",
+        "undefined" : "Epictetus"
       }
     } ],
     "comment" : {
-      "undefined" : "a neither neutral, nor negative feeling"
+      "undefined" : "Agents that have been existing writers and play a certain the book, by being mentionned or cited"
     },
-    "attributes" : [ "external" ],
-    "id" : "6",
-    "superClasses" : [ "16" ]
+    "id" : "48"
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/AbstractFigure/god",
-    "baseIri" : "https://w3id.org/arco/ontology/core/AbstractFigure",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "god",
-      "undefined" : "god"
-    },
-    "comment" : {
-      "undefined" : "abstract and general entity or idea relating to a superior being"
-    },
-    "attributes" : [ "external" ],
-    "id" : "4",
-    "superClasses" : [ "43" ]
+    "union" : [ "18", "4" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "104"
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Category/psyche&body",
-    "baseIri" : "https://w3id.org/arco/ontology/core/Category",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "168",
     "label" : {
-      "IRI-based" : "psyche&body",
-      "undefined" : "psyche & body"
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Concept",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 7,
+    "label" : {
+      "IRI-based" : "Concept",
+      "undefined" : "concept"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/vital_spirit",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "In Stoicism it is a mixture of air and fire held to be the divine organizing principle of the universe"
-      },
-      "labels" : {
-        "IRI-based" : "vital_spirit",
-        "undefined" : "vital spirit"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/psyche&body",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The human soul, mind, or spirit & its flesh, pysical structure"
-      },
-      "labels" : {
-        "IRI-based" : "psyche&body",
-        "undefined" : "psyche & body"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/flesh",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#flesh",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
         "undefined" : "The phisical nature of human beings"
       },
@@ -730,133 +905,8 @@
         "undefined" : "flesh"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/souls",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "the immaterial essence, animating principle, or actuating cause of an individual life"
-      },
-      "labels" : {
-        "IRI-based" : "souls",
-        "undefined" : "souls"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/impulse",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "A sudden spontaneous inclination or incitement to some usually unpremeditated action"
-      },
-      "labels" : {
-        "IRI-based" : "impulse",
-        "undefined" : "impulse"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/bodies",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The organized physical substance of a human, animal or plant"
-      },
-      "labels" : {
-        "IRI-based" : "bodies",
-        "undefined" : "bodies"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "the human soul, mind, or spirit & its flesh, pysical structure"
-    },
-    "attributes" : [ "external" ],
-    "id" : "22",
-    "superClasses" : [ "42" ]
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Concept",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Concept",
-      "undefined" : "concept"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/governing_self",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Self control and power"
-      },
-      "labels" : {
-        "IRI-based" : "governing_self",
-        "undefined" : "governing self"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/fault",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The responsibility for wrongdoing or failure"
-      },
-      "labels" : {
-        "IRI-based" : "fault",
-        "undefined" : "fault"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/vital_spirit",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "In Stoicism it is a mixture of air and fire held to be the divine organizing principle of the universe"
-      },
-      "labels" : {
-        "IRI-based" : "vital_spirit",
-        "undefined" : "vital spirit"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/corrupt",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "morally degenerate and perverted"
-      },
-      "labels" : {
-        "IRI-based" : "corrupt",
-        "undefined" : "corrupt"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/honour",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Worth that brings respect or fame"
-      },
-      "labels" : {
-        "IRI-based" : "honour",
-        "undefined" : "honour"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/temperance",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Moderation in action, thought, or feeling"
-      },
-      "labels" : {
-        "IRI-based" : "temperance",
-        "undefined" : "temperence"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/glory",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Praise, honour or distinction"
-      },
-      "labels" : {
-        "IRI-based" : "glory",
-        "undefined" : "glory"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/universe",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The whole body of things and phenomena observed or postulated"
-      },
-      "labels" : {
-        "IRI-based" : "universe",
-        "undefined" : "universe"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/employment",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#employment",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
         "undefined" : "Use, purpose"
       },
@@ -865,78 +915,28 @@
         "undefined" : "employment"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/life",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#impulse",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "A principle or force that is considered to underlie the distinctive quality of animate beings"
+        "undefined" : "A sudden spontaneous inclination or incitement to some usually unpremeditated action"
       },
       "labels" : {
-        "IRI-based" : "life",
-        "undefined" : "life"
+        "IRI-based" : "impulse",
+        "undefined" : "impulse"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/judgment",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#temperance",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "The process of forming an opinion or evaluation by discerning and comparing"
+        "undefined" : "Moderation in action, thought, or feeling"
       },
       "labels" : {
-        "IRI-based" : "judgment",
-        "undefined" : "judgment"
+        "IRI-based" : "temperance",
+        "undefined" : "temperence"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/death",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The state of being no longer alive"
-      },
-      "labels" : {
-        "IRI-based" : "death",
-        "undefined" : "death"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/nature",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The force that is responsible for physical life"
-      },
-      "labels" : {
-        "IRI-based" : "nature",
-        "undefined" : "nature"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/souls",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "the immaterial essence, animating principle, or actuating cause of an individual life"
-      },
-      "labels" : {
-        "IRI-based" : "souls",
-        "undefined" : "souls"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/fortune",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Destiny, fate"
-      },
-      "labels" : {
-        "IRI-based" : "fortune",
-        "undefined" : "fortune"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/law",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The action of laws considered as a means of redressing wrongs"
-      },
-      "labels" : {
-        "IRI-based" : "law",
-        "undefined" : "law"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/dissolution",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#dissolution",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
         "undefined" : "The act or process of dissolving"
       },
@@ -945,456 +945,8 @@
         "undefined" : "dissolution"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/power",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Possession of control, authority, or influence over others"
-      },
-      "labels" : {
-        "IRI-based" : "power",
-        "undefined" : "power"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/action",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "An act of will"
-      },
-      "labels" : {
-        "IRI-based" : "action",
-        "undefined" : "action"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/justice",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The quality of being just, impartial, or fair"
-      },
-      "labels" : {
-        "IRI-based" : "justice",
-        "undefined" : "justice"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/extinct",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Being no longer in existance"
-      },
-      "labels" : {
-        "IRI-based" : "extinct",
-        "undefined" : "extinct"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/fate",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The power that is believed to control everything that happens and that cannot be stopped or changed"
-      },
-      "labels" : {
-        "IRI-based" : "fate",
-        "undefined" : "fate"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/principle",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "A comprehensive and fundamental law, doctrine, or assumption"
-      },
-      "labels" : {
-        "IRI-based" : "principle",
-        "undefined" : "principle"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/divinity",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The quality or state of being divine"
-      },
-      "labels" : {
-        "IRI-based" : "divinity",
-        "undefined" : "divinity"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/reason",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The power of the mind to think, understand and form judgments logically"
-      },
-      "labels" : {
-        "IRI-based" : "reason",
-        "undefined" : "reason"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/obstacle",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Something that impedes progress or achievement"
-      },
-      "labels" : {
-        "IRI-based" : "obstacle",
-        "undefined" : "obstacle"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/psyche&body",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The human soul, mind, or spirit & its flesh, pysical structure"
-      },
-      "labels" : {
-        "IRI-based" : "psyche&body",
-        "undefined" : "psyche & body"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/atoms",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "A tiny particle"
-      },
-      "labels" : {
-        "IRI-based" : "atoms",
-        "undefined" : "atoms"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/god",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The supreme or ultimate reality"
-      },
-      "labels" : {
-        "IRI-based" : "god",
-        "undefined" : "god"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/matter",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The substance of which a physical object is composed"
-      },
-      "labels" : {
-        "IRI-based" : "matter",
-        "undefined" : "matter"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/sick",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Affected with disease or ill health"
-      },
-      "labels" : {
-        "IRI-based" : "sick",
-        "undefined" : "sick"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/whole",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Constituting the total sum or undiminished entirety"
-      },
-      "labels" : {
-        "IRI-based" : "whole",
-        "undefined" : "whole"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/ignorance",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Lack of knowledge, education or awareness"
-      },
-      "labels" : {
-        "IRI-based" : "ignorance",
-        "undefined" : "ignorance"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/necessity",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The quality or state of being necessary"
-      },
-      "labels" : {
-        "IRI-based" : "necessity",
-        "undefined" : "necessity"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/truth",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The body of real things, events, and facts"
-      },
-      "labels" : {
-        "IRI-based" : "truth",
-        "undefined" : "truth"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/flesh",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The phisical nature of human beings"
-      },
-      "labels" : {
-        "IRI-based" : "flesh",
-        "undefined" : "flesh"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/providence",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Divine guidance or care"
-      },
-      "labels" : {
-        "IRI-based" : "providence",
-        "undefined" : "providence"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/blame",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "An expression of disapproval or reproach"
-      },
-      "labels" : {
-        "IRI-based" : "blame",
-        "undefined" : "blame"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/time",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The measured or measurable period during which an action, process, or condition exists or continues"
-      },
-      "labels" : {
-        "IRI-based" : "time",
-        "undefined" : "time"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/mind",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The element or complex of elements in an individual that feels, perceives, thinks, wills, and especially reasons"
-      },
-      "labels" : {
-        "IRI-based" : "mind",
-        "undefined" : "mind"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/impulse",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "A sudden spontaneous inclination or incitement to some usually unpremeditated action"
-      },
-      "labels" : {
-        "IRI-based" : "impulse",
-        "undefined" : "impulse"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/bodies",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The organized physical substance of a human, animal or plant"
-      },
-      "labels" : {
-        "IRI-based" : "bodies",
-        "undefined" : "bodies"
-      }
-    } ],
-    "subClasses" : [ "2", "10", "7", "13", "15", "29", "22" ],
-    "comment" : {
-      "undefined" : "An abstract idea or notion"
-    },
-    "attributes" : [ "external" ],
-    "id" : "42"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "65",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "2", "10", "7", "13", "15", "22", "29" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "100"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/chapter",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "chapter",
-      "undefined" : "chapter"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_V",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_V",
-        "undefined" : "book 5"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_VIII",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_VIII",
-        "undefined" : "book 8"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_VI",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_VI",
-        "undefined" : "book 6"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_XII",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_XII",
-        "undefined" : "book 12"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_III",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_III",
-        "undefined" : "book 3"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_XI",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_XI",
-        "undefined" : "book 11"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_I",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_I",
-        "undefined" : "book 1"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_VII",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_VII",
-        "undefined" : "book 7"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_IX",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_IX",
-        "undefined" : "book 9"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_II",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_II",
-        "undefined" : "book 2"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_X",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_X",
-        "undefined" : "book 10"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/Book_IV",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "labels" : {
-        "IRI-based" : "Book_IV",
-        "undefined" : "book 4"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "the main division of a book"
-    },
-    "attributes" : [ "external" ],
-    "id" : "95"
-  }, {
-    "instances" : 0,
-    "union" : [ "25", "4" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "45"
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "48",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "32",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "114",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "97",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "153",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "134",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Category/justice",
-    "baseIri" : "https://w3id.org/arco/ontology/core/Category",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "justice",
-      "undefined" : "justice"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/fault",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The responsibility for wrongdoing or failure"
-      },
-      "labels" : {
-        "IRI-based" : "fault",
-        "undefined" : "fault"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/temperance",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Moderation in action, thought, or feeling"
-      },
-      "labels" : {
-        "IRI-based" : "temperance",
-        "undefined" : "temperence"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/honour",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#honour",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
         "undefined" : "Worth that brings respect or fame"
       },
@@ -1403,182 +955,18 @@
         "undefined" : "honour"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/blame",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#vital_spirit",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
-        "undefined" : "An expression of disapproval or reproach"
+        "undefined" : "In Stoicism it is a mixture of air and fire held to be the divine organizing principle of the universe"
       },
       "labels" : {
-        "IRI-based" : "blame",
-        "undefined" : "blame"
+        "IRI-based" : "vital_spirit",
+        "undefined" : "vital spirit"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/action",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "An act of will"
-      },
-      "labels" : {
-        "IRI-based" : "action",
-        "undefined" : "action"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/justice",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The quality of being just, impartial, or fair"
-      },
-      "labels" : {
-        "IRI-based" : "justice",
-        "undefined" : "justice"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "the condition of being morally correct or fair"
-    },
-    "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "42" ]
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/AbstractFigure/men",
-    "baseIri" : "https://w3id.org/arco/ontology/core/AbstractFigure",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "men",
-      "undefined" : "men"
-    },
-    "comment" : {
-      "undefined" : "abstract and general entity or idea relating to humanity"
-    },
-    "attributes" : [ "external" ],
-    "id" : "25",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Category/power",
-    "baseIri" : "https://w3id.org/arco/ontology/core/Category",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "power",
-      "undefined" : "power"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/governing_self",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Self control and power"
-      },
-      "labels" : {
-        "IRI-based" : "governing_self",
-        "undefined" : "governing self"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/obstacle",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Something that impedes progress or achievement"
-      },
-      "labels" : {
-        "IRI-based" : "obstacle",
-        "undefined" : "obstacle"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/corrupt",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "morally degenerate and perverted"
-      },
-      "labels" : {
-        "IRI-based" : "corrupt",
-        "undefined" : "corrupt"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/glory",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Praise, honour or distinction"
-      },
-      "labels" : {
-        "IRI-based" : "glory",
-        "undefined" : "glory"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/employment",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Use, purpose"
-      },
-      "labels" : {
-        "IRI-based" : "employment",
-        "undefined" : "employment"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/power",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Possession of control, authority, or influence over others"
-      },
-      "labels" : {
-        "IRI-based" : "power",
-        "undefined" : "power"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "ability to control onelself, people or events"
-    },
-    "attributes" : [ "external" ],
-    "id" : "7",
-    "superClasses" : [ "42" ]
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Category/Category/reason",
-    "baseIri" : "https://w3id.org/arco/ontology/core/Category/Category",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "reason",
-      "undefined" : "reason"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/arco/ontology/core/ignorance",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "Lack of knowledge, education or awareness"
-      },
-      "labels" : {
-        "IRI-based" : "ignorance",
-        "undefined" : "ignorance"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/principle",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "A comprehensive and fundamental law, doctrine, or assumption"
-      },
-      "labels" : {
-        "IRI-based" : "principle",
-        "undefined" : "principle"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/reason",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The power of the mind to think, understand and form judgments logically"
-      },
-      "labels" : {
-        "IRI-based" : "reason",
-        "undefined" : "reason"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/truth",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
-      "comment" : {
-        "undefined" : "The body of real things, events, and facts"
-      },
-      "labels" : {
-        "IRI-based" : "truth",
-        "undefined" : "truth"
-      }
-    }, {
-      "iri" : "https://w3id.org/arco/ontology/core/judgment",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#judgment",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
         "undefined" : "The process of forming an opinion or evaluation by discerning and comparing"
       },
@@ -1587,8 +975,454 @@
         "undefined" : "judgment"
       }
     }, {
-      "iri" : "https://w3id.org/arco/ontology/core/mind",
-      "baseIri" : "https://w3id.org/arco/ontology/core",
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#fault",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The responsibility for wrongdoing or failure"
+      },
+      "labels" : {
+        "IRI-based" : "fault",
+        "undefined" : "fault"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#souls",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "the immaterial essence, animating principle, or actuating cause of an individual life"
+      },
+      "labels" : {
+        "IRI-based" : "souls",
+        "undefined" : "souls"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#fate",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The power that is believed to control everything that happens and that cannot be stopped or changed"
+      },
+      "labels" : {
+        "IRI-based" : "fate",
+        "undefined" : "fate"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#governing_self",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Self control and power"
+      },
+      "labels" : {
+        "IRI-based" : "governing_self",
+        "undefined" : "governing self"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#law",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The action of laws considered as a means of redressing wrongs"
+      },
+      "labels" : {
+        "IRI-based" : "law",
+        "undefined" : "law"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#fortune",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Destiny, fate"
+      },
+      "labels" : {
+        "IRI-based" : "fortune",
+        "undefined" : "fortune"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#obstacle",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Something that impedes progress or achievement"
+      },
+      "labels" : {
+        "IRI-based" : "obstacle",
+        "undefined" : "obstacle"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#action",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "An act of will"
+      },
+      "labels" : {
+        "IRI-based" : "action",
+        "undefined" : "action"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#extinct",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Being no longer in existance"
+      },
+      "labels" : {
+        "IRI-based" : "extinct",
+        "undefined" : "extinct"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#/psyche&body",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The human soul, mind, or spirit & its flesh, pysical structure"
+      },
+      "labels" : {
+        "IRI-based" : "/psyche&body",
+        "undefined" : "psyche & body"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#principle",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "A comprehensive and fundamental law, doctrine, or assumption"
+      },
+      "labels" : {
+        "IRI-based" : "principle",
+        "undefined" : "principle"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#ignorance",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Lack of knowledge, education or awareness"
+      },
+      "labels" : {
+        "IRI-based" : "ignorance",
+        "undefined" : "ignorance"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#divinity",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The quality or state of being divine"
+      },
+      "labels" : {
+        "IRI-based" : "divinity",
+        "undefined" : "divinity"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#life",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "A principle or force that is considered to underlie the distinctive quality of animate beings"
+      },
+      "labels" : {
+        "IRI-based" : "life",
+        "undefined" : "life"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#whole",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Constituting the total sum or undiminished entirety"
+      },
+      "labels" : {
+        "IRI-based" : "whole",
+        "undefined" : "whole"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#sick",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Affected with disease or ill health"
+      },
+      "labels" : {
+        "IRI-based" : "sick",
+        "undefined" : "sick"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#matter",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The substance of which a physical object is composed"
+      },
+      "labels" : {
+        "IRI-based" : "matter",
+        "undefined" : "matter"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#truth",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The body of real things, events, and facts"
+      },
+      "labels" : {
+        "IRI-based" : "truth",
+        "undefined" : "truth"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#glory",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Praise, honour or distinction"
+      },
+      "labels" : {
+        "IRI-based" : "glory",
+        "undefined" : "glory"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#atoms",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "A tiny particle"
+      },
+      "labels" : {
+        "IRI-based" : "atoms",
+        "undefined" : "atoms"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#universe",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The whole body of things and phenomena observed or postulated"
+      },
+      "labels" : {
+        "IRI-based" : "universe",
+        "undefined" : "universe"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#blame",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "An expression of disapproval or reproach"
+      },
+      "labels" : {
+        "IRI-based" : "blame",
+        "undefined" : "blame"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#corrupt",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "morally degenerate and perverted"
+      },
+      "labels" : {
+        "IRI-based" : "corrupt",
+        "undefined" : "corrupt"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#bodies",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The organized physical substance of a human, animal or plant"
+      },
+      "labels" : {
+        "IRI-based" : "bodies",
+        "undefined" : "bodies"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#mind",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The element or complex of elements in an individual that feels, perceives, thinks, wills, and especially reasons"
+      },
+      "labels" : {
+        "IRI-based" : "mind",
+        "undefined" : "mind"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#time",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The measured or measurable period during which an action, process, or condition exists or continues"
+      },
+      "labels" : {
+        "IRI-based" : "time",
+        "undefined" : "time"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#necessity",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The quality or state of being necessary"
+      },
+      "labels" : {
+        "IRI-based" : "necessity",
+        "undefined" : "necessity"
+      }
+    } ],
+    "subClasses" : [ "29", "26", "8", "2", "14", "12", "6" ],
+    "comment" : {
+      "undefined" : "An abstract idea or notion"
+    },
+    "id" : "21"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#AbstractFigure",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbstractFigure",
+      "undefined" : "abstract figure"
+    },
+    "subClasses" : [ "18", "4" ],
+    "comment" : {
+      "undefined" : "Agents that play a figurative role in the text, as abstract individuals or ideas"
+    },
+    "id" : "19"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#LiteraryDiary",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LiteraryDiary",
+      "undefined" : "literary diary"
+    },
+    "comment" : {
+      "undefined" : "a book intended or used for a diary record"
+    },
+    "id" : "44"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#chapter",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "chapter",
+      "undefined" : "chapter"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_XI",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_XI",
+        "undefined" : "book 11"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_VII",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_VII",
+        "undefined" : "book 7"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_I",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_I",
+        "undefined" : "book 1"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_VI",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_VI",
+        "undefined" : "book 6"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_XII",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_XII",
+        "undefined" : "book 12"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_VIII",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_VIII",
+        "undefined" : "book 8"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_IV",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_IV",
+        "undefined" : "book 4"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_II",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_II",
+        "undefined" : "book 2"
+      }
+    }, {
+      "iri" : "hhttps://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_IX",
+      "baseIri" : "hhttps://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_IX",
+        "undefined" : "book 9"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_V",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_V",
+        "undefined" : "book 5"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_III",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_III",
+        "undefined" : "book 3"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Book_X",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "labels" : {
+        "IRI-based" : "Book_X",
+        "undefined" : "book 10"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "the main division of a book"
+    },
+    "id" : "45"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#reason",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "reason",
+      "undefined" : "reason"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#truth",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The body of real things, events, and facts"
+      },
+      "labels" : {
+        "IRI-based" : "truth",
+        "undefined" : "truth"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#judgment",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "The process of forming an opinion or evaluation by discerning and comparing"
+      },
+      "labels" : {
+        "IRI-based" : "judgment",
+        "undefined" : "judgment"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#principle",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "A comprehensive and fundamental law, doctrine, or assumption"
+      },
+      "labels" : {
+        "IRI-based" : "principle",
+        "undefined" : "principle"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#ignorance",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+      "comment" : {
+        "undefined" : "Lack of knowledge, education or awareness"
+      },
+      "labels" : {
+        "IRI-based" : "ignorance",
+        "undefined" : "ignorance"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#mind",
+      "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
       "comment" : {
         "undefined" : "The element or complex of elements in an individual that feels, perceives, thinks, wills, and especially reasons"
       },
@@ -1600,22 +1434,21 @@
     "comment" : {
       "undefined" : "the power of the mind to think, understand and form judgments logically"
     },
-    "attributes" : [ "external" ],
-    "id" : "29",
-    "superClasses" : [ "42" ]
+    "id" : "2",
+    "superClasses" : [ "21" ]
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/LiteraryDiary",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#god",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "LiteraryDiary",
-      "undefined" : "literary diary"
+      "IRI-based" : "god",
+      "undefined" : "god"
     },
     "comment" : {
-      "undefined" : "a book intended or used for a diary record"
+      "undefined" : "abstract and general entity or idea relating to a superior being"
     },
-    "attributes" : [ "external" ],
-    "id" : "18"
+    "id" : "4",
+    "superClasses" : [ "19" ]
   } ],
   "property" : [ {
     "id" : "0",
@@ -1627,7 +1460,7 @@
     "id" : "5",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "8",
+    "id" : "7",
     "type" : "owl:disjointWith"
   }, {
     "id" : "9",
@@ -1636,25 +1469,19 @@
     "id" : "11",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "12",
+    "id" : "13",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "14",
+    "id" : "15",
     "type" : "owl:disjointWith"
-  }, {
-    "id" : "17",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "20",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "21",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "23",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "26",
+    "id" : "25",
     "type" : "owl:disjointWith"
   }, {
     "id" : "27",
@@ -1664,10 +1491,10 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "30",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "31",
-    "type" : "owl:datatypeProperty"
+    "id" : "32",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "33",
     "type" : "owl:disjointWith"
@@ -1684,6 +1511,9 @@
     "id" : "37",
     "type" : "owl:disjointWith"
   }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
     "id" : "39",
     "type" : "owl:disjointWith"
   }, {
@@ -1693,19 +1523,22 @@
     "id" : "41",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "44",
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
     "type" : "owl:objectProperty"
   }, {
     "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "49",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "50",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "51",
+    "id" : "52",
     "type" : "owl:disjointWith"
   }, {
     "id" : "53",
@@ -1715,10 +1548,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "55",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "56",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "57",
     "type" : "owl:disjointWith"
@@ -1742,16 +1572,19 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "64",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "66",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "67",
     "type" : "owl:disjointWith"
   }, {
     "id" : "68",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "69",
     "type" : "owl:disjointWith"
@@ -1781,22 +1614,19 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "78",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "79",
     "type" : "owl:disjointWith"
   }, {
     "id" : "80",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "81",
     "type" : "owl:disjointWith"
   }, {
     "id" : "82",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "83",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "84",
     "type" : "owl:disjointWith"
@@ -1811,7 +1641,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "88",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "89",
     "type" : "owl:disjointWith"
@@ -1831,8 +1661,14 @@
     "id" : "94",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "96",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "97",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "98",
     "type" : "owl:disjointWith"
@@ -1840,44 +1676,47 @@
     "id" : "99",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
     "id" : "101",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "102",
     "type" : "owl:disjointWith"
   }, {
     "id" : "103",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "104",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "105",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "106",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "107",
     "type" : "owl:disjointWith"
   }, {
     "id" : "108",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "109",
     "type" : "owl:disjointWith"
   }, {
     "id" : "110",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "111",
     "type" : "owl:disjointWith"
   }, {
     "id" : "112",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "113",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "115",
     "type" : "owl:disjointWith"
@@ -1886,10 +1725,10 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "117",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "118",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "119",
     "type" : "owl:disjointWith"
@@ -1898,7 +1737,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "121",
-    "type" : "owl:disjointWith"
+    "type" : "rdf:Property"
   }, {
     "id" : "122",
     "type" : "owl:disjointWith"
@@ -1907,16 +1746,16 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "124",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "125",
     "type" : "owl:disjointWith"
   }, {
     "id" : "126",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "127",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "128",
     "type" : "rdfs:SubClassOf"
@@ -1925,97 +1764,100 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "130",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "131",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "132",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "133",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "135",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "136",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "137",
     "type" : "owl:disjointWith"
   }, {
+    "id" : "137",
+    "type" : "rdf:Property"
+  }, {
     "id" : "138",
-    "type" : "rdfs:SubClassOf"
+    "type" : "rdf:Property"
   }, {
     "id" : "139",
     "type" : "owl:disjointWith"
   }, {
     "id" : "140",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "141",
     "type" : "owl:disjointWith"
   }, {
     "id" : "142",
-    "type" : "rdfs:SubClassOf"
+    "type" : "rdf:Property"
   }, {
     "id" : "143",
     "type" : "owl:disjointWith"
   }, {
     "id" : "144",
-    "type" : "rdfs:SubClassOf"
+    "type" : "rdf:Property"
   }, {
     "id" : "145",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "146",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "147",
     "type" : "owl:disjointWith"
   }, {
     "id" : "148",
-    "type" : "rdfs:SubClassOf"
+    "type" : "rdf:Property"
   }, {
     "id" : "149",
     "type" : "owl:disjointWith"
   }, {
     "id" : "150",
-    "type" : "rdfs:SubClassOf"
+    "type" : "rdf:Property"
   }, {
     "id" : "151",
     "type" : "owl:disjointWith"
   }, {
     "id" : "152",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdf:Property"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "154",
-    "type" : "owl:disjointWith"
+    "type" : "rdf:Property"
   }, {
     "id" : "155",
     "type" : "owl:disjointWith"
   }, {
     "id" : "156",
-    "type" : "owl:disjointWith"
+    "type" : "rdf:Property"
   }, {
     "id" : "157",
     "type" : "owl:disjointWith"
   }, {
     "id" : "158",
-    "type" : "owl:disjointWith"
+    "type" : "rdf:Property"
   }, {
     "id" : "159",
-    "type" : "owl:disjointWith"
+    "type" : "rdf:Property"
   }, {
     "id" : "160",
-    "type" : "owl:disjointWith"
+    "type" : "rdf:Property"
   }, {
     "id" : "161",
     "type" : "owl:disjointWith"
   }, {
     "id" : "162",
-    "type" : "owl:disjointWith"
+    "type" : "rdf:Property"
   }, {
     "id" : "163",
     "type" : "owl:disjointWith"
@@ -2031,9 +1873,6 @@
   }, {
     "id" : "167",
     "type" : "owl:disjointWith"
-  }, {
-    "id" : "19",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "169",
     "type" : "owl:disjointWith"
@@ -2064,9 +1903,6 @@
   }, {
     "id" : "178",
     "type" : "owl:disjointWith"
-  }, {
-    "id" : "168",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "179",
     "type" : "owl:disjointWith"
@@ -2099,7 +1935,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "189",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "190",
     "type" : "owl:disjointWith"
@@ -2184,6 +2020,39 @@
   }, {
     "id" : "217",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "219",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "220",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "224",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "225",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "226",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "owl:disjointWith"
   } ],
   "propertyAttribute" : [ {
     "range" : "2",
@@ -2196,1112 +2065,1193 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "3"
   }, {
-    "range" : "7",
-    "domain" : "6",
+    "range" : "6",
+    "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
     "id" : "5"
   }, {
-    "range" : "4",
-    "domain" : "6",
+    "range" : "8",
+    "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "8"
+    "id" : "7"
   }, {
     "range" : "10",
-    "domain" : "6",
+    "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
     "id" : "9"
   }, {
-    "range" : "2",
-    "domain" : "6",
+    "range" : "12",
+    "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
     "id" : "11"
   }, {
-    "range" : "13",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "12"
-  }, {
-    "range" : "15",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "14"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/hasAssociatedSentiment",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "16",
-    "label" : {
-      "IRI-based" : "hasAssociatedSentiment",
-      "undefined" : "has associated sentiment"
-    },
-    "domain" : "18",
-    "subproperty" : [ "19" ],
-    "comment" : {
-      "undefined" : "The object property that associates an object to a certain sentiment"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "17"
-  }, {
-    "range" : "6",
+    "range" : "14",
     "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "20"
+    "id" : "13"
   }, {
-    "range" : "22",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "21"
-  }, {
-    "range" : "25",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "23"
-  }, {
-    "range" : "4",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "26"
-  }, {
-    "range" : "15",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "27"
-  }, {
-    "range" : "29",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "28"
-  }, {
-    "range" : "7",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "30"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/hasAttributedAuthor",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "hasAttributedAuthor",
-      "undefined" : "has attributed author"
-    },
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "This property relates a situation where an authorship is attributed to a cultural entity's author"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "31"
-  }, {
-    "range" : "13",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "33"
-  }, {
-    "range" : "10",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "34"
-  }, {
-    "range" : "25",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "35"
-  }, {
-    "range" : "15",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "36"
-  }, {
-    "range" : "2",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "37"
-  }, {
-    "range" : "7",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "39"
-  }, {
-    "range" : "13",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "40"
-  }, {
-    "range" : "1",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "41"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/isComponentOf",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "isComponentOf",
-      "undefined" : "is component of"
-    },
-    "domain" : "45",
-    "subproperty" : [ "19" ],
-    "comment" : {
-      "undefined" : "This property relates, non-transitively, a component to an entity of which it is component."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "44"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/containsText",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "48",
-    "label" : {
-      "IRI-based" : "containsText",
-      "undefined" : "contains text"
-    },
-    "domain" : "47",
-    "comment" : {
-      "undefined" : "This property relates a fragment to the text it contains"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "46"
-  }, {
-    "range" : "29",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "49"
-  }, {
-    "range" : "22",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "50"
-  }, {
-    "range" : "22",
-    "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "51"
-  }, {
-    "range" : "15",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "53"
-  }, {
-    "range" : "29",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "54"
-  }, {
-    "range" : "22",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "55"
-  }, {
-    "range" : "15",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
-  }, {
-    "range" : "29",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "57"
-  }, {
-    "range" : "22",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "58"
-  }, {
-    "range" : "7",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "59"
-  }, {
-    "range" : "15",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
-  }, {
-    "range" : "29",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "61"
-  }, {
-    "range" : "22",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "62"
-  }, {
-    "range" : "7",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "63"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/oppositeOf",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "65",
-    "label" : {
-      "IRI-based" : "oppositeOf",
-      "undefined" : "opposite of"
-    },
-    "domain" : "65",
-    "subproperty" : [ "19" ],
-    "comment" : {
-      "undefined" : "The object property that oppose an entity to its logical opposite"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "64"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/hasAssociatedConcept",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "hasAssociatedConcept",
-      "undefined" : "has associated concept"
-    },
-    "domain" : "18",
-    "subproperty" : [ "19" ],
-    "comment" : {
-      "undefined" : "The object property that associates any object with a concept, classifying it."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "66"
-  }, {
-    "range" : "13",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "67"
-  }, {
-    "range" : "15",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "68"
-  }, {
-    "range" : "29",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "69"
-  }, {
-    "range" : "22",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "70"
-  }, {
-    "range" : "13",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "71"
-  }, {
-    "range" : "13",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "72"
-  }, {
-    "range" : "2",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "73"
-  }, {
-    "range" : "29",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "74"
-  }, {
-    "range" : "10",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "75"
-  }, {
-    "range" : "7",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "76"
-  }, {
-    "range" : "10",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "77"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/hasAssociatedFigure",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "hasAssociatedFigure",
-      "undefined" : "has associated figure"
-    },
-    "domain" : "18",
-    "subproperty" : [ "19" ],
-    "comment" : {
-      "undefined" : "The object property that associates an object to an abstract entity"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "78"
-  }, {
-    "range" : "25",
+    "range" : "8",
     "domain" : "4",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "79"
+    "id" : "15"
   }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#synonym",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
     "range" : "22",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "80"
-  }, {
-    "range" : "15",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "81"
-  }, {
-    "range" : "7",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "82"
-  }, {
-    "range" : "10",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "83"
-  }, {
-    "range" : "29",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "84"
-  }, {
-    "range" : "7",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "85"
-  }, {
-    "range" : "13",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "86"
-  }, {
-    "range" : "2",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "87"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/hasAssociatedAgent",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "hasAssociatedAgent",
-      "undefined" : "has associated agent"
-    },
-    "domain" : "18",
-    "subproperty" : [ "19" ],
-    "comment" : {
-      "undefined" : "This property relates a situation in which an agent holds an associated role"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "88"
-  }, {
-    "range" : "22",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "89"
-  }, {
-    "range" : "15",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "90"
-  }, {
-    "range" : "22",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "91"
-  }, {
-    "range" : "29",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "92"
-  }, {
-    "range" : "25",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "93"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/isPartOf",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "95",
-    "label" : {
-      "IRI-based" : "isPartOf",
-      "undefined" : "is part of"
-    },
-    "domain" : "47",
-    "subproperty" : [ "19" ],
-    "comment" : {
-      "undefined" : "This property relates the part of an entity to that entity."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "94"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/hasTitle",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "97",
-    "label" : {
-      "IRI-based" : "hasTitle",
-      "undefined" : "has title"
-    },
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "This property relates an object to its official title"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "96"
-  }, {
-    "range" : "10",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "98"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#bottomObjectProperty",
-    "inverse" : "19",
-    "equivalent" : [ "19" ],
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "bottomObjectProperty"
-    },
-    "domain" : "100",
-    "attributes" : [ "external", "object" ],
-    "id" : "99"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/hasPart",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "95",
-    "label" : {
-      "IRI-based" : "hasPart",
-      "undefined" : "has part"
-    },
-    "domain" : "18",
-    "subproperty" : [ "19" ],
-    "comment" : {
-      "undefined" : "This property relates an entity to its part."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "101"
-  }, {
-    "range" : "47",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "102"
-  }, {
-    "range" : "13",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "103"
-  }, {
-    "range" : "4",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "104"
-  }, {
-    "range" : "18",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "105"
-  }, {
-    "range" : "22",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "106"
-  }, {
-    "range" : "6",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "107"
-  }, {
-    "range" : "1",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "108"
-  }, {
-    "range" : "2",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "109"
-  }, {
-    "range" : "7",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "110"
-  }, {
-    "range" : "1",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "111"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/hasConstituent",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "52",
-    "label" : {
-      "IRI-based" : "hasConstituent",
-      "undefined" : "has constituent"
-    },
-    "domain" : "16",
-    "subproperty" : [ "19" ],
-    "comment" : {
-      "undefined" : "This property relates, transitively, an entity to a constituent."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "112"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/hasCitation",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "114",
-    "label" : {
-      "IRI-based" : "hasCitation",
-      "undefined" : "has citation"
-    },
-    "domain" : "38",
-    "comment" : {
-      "undefined" : "This property relates an agent role to its quotation"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "113"
-  }, {
-    "range" : "47",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "115"
-  }, {
-    "range" : "7",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "116"
-  }, {
-    "range" : "22",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "117"
-  }, {
-    "range" : "42",
-    "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "118"
-  }, {
-    "range" : "18",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "119"
-  }, {
-    "range" : "13",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "120"
-  }, {
-    "range" : "15",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "121"
-  }, {
-    "range" : "29",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "122"
-  }, {
-    "range" : "95",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "123"
-  }, {
-    "range" : "24",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "124"
-  }, {
-    "range" : "6",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "125"
-  }, {
-    "range" : "4",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "126"
-  }, {
-    "range" : "42",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "127"
-  }, {
-    "range" : "42",
-    "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "128"
-  }, {
-    "range" : "29",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "129"
-  }, {
-    "range" : "25",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "130"
-  }, {
-    "range" : "15",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "131"
-  }, {
-    "range" : "43",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "132"
-  }, {
-    "iri" : "https://w3id.org/arco/ontology/core/synonym",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "134",
     "label" : {
       "IRI-based" : "synonym",
       "undefined" : "synonym"
     },
-    "domain" : "42",
+    "domain" : "21",
     "comment" : {
       "undefined" : "This property relates a synonym to an entity"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "133"
+    "attributes" : [ "datatype" ],
+    "id" : "20"
   }, {
-    "range" : "95",
-    "domain" : "18",
+    "range" : "24",
+    "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "135"
+    "id" : "23"
+  }, {
+    "range" : "26",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "12",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "10",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#owl:sameAs",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "31",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "owl",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "owl:sameAs",
+      "undefined" : "same as"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "The object property that draws an equivalence between an entity and another"
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "range" : "16",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "18",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "4",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "1",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "24",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
   }, {
     "range" : "16",
     "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "136"
+    "id" : "37"
   }, {
-    "range" : "1",
-    "domain" : "18",
+    "range" : "18",
+    "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "137"
+    "id" : "38"
   }, {
-    "range" : "16",
+    "range" : "12",
     "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "138"
-  }, {
-    "range" : "16",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "139"
-  }, {
-    "range" : "16",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "140"
-  }, {
-    "range" : "47",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "141"
-  }, {
-    "range" : "42",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "142"
-  }, {
-    "range" : "25",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "143"
-  }, {
-    "range" : "42",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "144"
-  }, {
-    "range" : "6",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "145"
-  }, {
-    "range" : "42",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "146"
+    "id" : "39"
   }, {
     "range" : "2",
-    "domain" : "18",
+    "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "147"
+    "id" : "40"
   }, {
-    "range" : "42",
-    "domain" : "13",
+    "range" : "2",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "148"
+    "id" : "41"
   }, {
-    "range" : "1",
-    "domain" : "42",
+    "range" : "12",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "149"
+    "id" : "42"
   }, {
-    "range" : "43",
-    "domain" : "25",
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasPart",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "undefined" : "has part"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "This property relates an entity to its part."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#isPartOf",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "undefined" : "is part of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "This property relates the part of an entity to that entity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasCitation",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasCitation",
+      "undefined" : "has citation"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "This property relates an agent role to its quotation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasConstituent",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasConstituent",
+      "undefined" : "has constituent"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "This property relates, transitively, an entity to a constituent."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "range" : "8",
+    "domain" : "16",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "150"
+    "id" : "52"
   }, {
-    "range" : "24",
-    "domain" : "42",
+    "range" : "6",
+    "domain" : "16",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "151"
+    "id" : "53"
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/keyword",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "153",
+    "range" : "12",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#keyword",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "56",
     "label" : {
       "IRI-based" : "keyword",
       "undefined" : "keyword"
     },
-    "domain" : "16",
+    "domain" : "17",
     "comment" : {
       "undefined" : "This property represents a keyword related to an entity, used to search for that entity."
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "152"
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "2",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "12",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "16",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "6",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "10",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "12",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "6",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "2",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "16",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasAssociatedAgent",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasAssociatedAgent",
+      "undefined" : "has associated agent"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "This property relates a situation in which an agent holds an associated role"
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "range" : "2",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "24",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "10",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "16",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "8",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "16",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "10",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "6",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "8",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "12",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "26",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasAssociatedSentiment",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasAssociatedSentiment",
+      "undefined" : "has associated sentiment"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The object property that associates an object to a certain sentiment"
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "range" : "24",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasTitle",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "hasTitle",
+      "undefined" : "has title"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "This property relates an object to its official title"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "82"
   }, {
     "range" : "18",
-    "domain" : "42",
+    "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "154"
+    "id" : "84"
+  }, {
+    "range" : "16",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "24",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "12",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "24",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "26",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "16",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "10",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#oppositeOf",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "oppositeOf",
+      "undefined" : "opposite of"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "The object property that oppose an entity to its logical opposite"
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasAssociatedConcept",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasAssociatedConcept",
+      "undefined" : "has associated concept"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The object property that associates any object with a concept, classifying it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "range" : "10",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "14",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "18",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasAssociatedFigure",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasAssociatedFigure",
+      "undefined" : "has associated figure"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The object property that associates an object to an abstract entity"
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "range" : "16",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "14",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "10",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#isComponentOf",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isComponentOf",
+      "undefined" : "is component of"
+    },
+    "domain" : "104",
+    "comment" : {
+      "undefined" : "This property relates, non-transitively, a component to an entity of which it is component."
+    },
+    "attributes" : [ "object" ],
+    "id" : "103"
+  }, {
+    "range" : "21",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "105"
+  }, {
+    "range" : "21",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "24",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "12",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "19",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "18",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
   }, {
     "range" : "4",
-    "domain" : "42",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "24",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "29",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "1",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "2",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "21",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "12",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "45",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "8",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "domain" : "2",
+    "range" : "2",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "180",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "45",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "17",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "17",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "45",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "17",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "17",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "14",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "21",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "21",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "21",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "21",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "17",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "21",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "10",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "domain" : "8",
+    "range" : "8",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "178",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "8",
+    "range" : "4",
+    "id" : "138",
+    "label" : {
+      "IRI-based" : "179",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "12",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "45",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "4",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "domain" : "21",
+    "range" : "8",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "170",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "1",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "domain" : "21",
+    "range" : "14",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "171",
+      "undefined" : "is a"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasAttributedAuthor",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "hasAttributedAuthor",
+      "undefined" : "has attributed author"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "This property relates a situation where an authorship is attributed to a cultural entity's author"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "145"
+  }, {
+    "range" : "18",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "domain" : "21",
+    "range" : "2",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "172",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "8",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "domain" : "21",
+    "range" : "4",
+    "id" : "150",
+    "label" : {
+      "IRI-based" : "173",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "14",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "domain" : "29",
+    "range" : "29",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "174",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "18",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "domain" : "14",
+    "range" : "14",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "175",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "17",
+    "domain" : "44",
     "attributes" : [ "anonymous", "object" ],
     "id" : "155"
   }, {
-    "range" : "24",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "156"
+    "domain" : "26",
+    "range" : "26",
+    "id" : "156",
+    "label" : {
+      "IRI-based" : "176",
+      "undefined" : "is a"
+    }
   }, {
-    "range" : "47",
-    "domain" : "42",
+    "range" : "6",
+    "domain" : "44",
     "attributes" : [ "anonymous", "object" ],
     "id" : "157"
   }, {
+    "domain" : "6",
     "range" : "6",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "158"
+    "id" : "158",
+    "label" : {
+      "IRI-based" : "177",
+      "undefined" : "is a"
+    }
   }, {
-    "range" : "15",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "159"
+    "domain" : "21",
+    "range" : "26",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "167",
+      "undefined" : "is a"
+    }
   }, {
-    "range" : "25",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "160"
-  }, {
+    "domain" : "21",
     "range" : "29",
-    "domain" : "38",
+    "id" : "160",
+    "label" : {
+      "IRI-based" : "168",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "24",
+    "domain" : "21",
     "attributes" : [ "anonymous", "object" ],
     "id" : "161"
   }, {
-    "range" : "2",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "162"
-  }, {
+    "domain" : "21",
     "range" : "6",
-    "domain" : "95",
+    "id" : "162",
+    "label" : {
+      "IRI-based" : "169",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "16",
+    "domain" : "21",
     "attributes" : [ "anonymous", "object" ],
     "id" : "163"
   }, {
-    "range" : "22",
-    "domain" : "95",
+    "range" : "10",
+    "domain" : "21",
     "attributes" : [ "anonymous", "object" ],
     "id" : "164"
   }, {
     "range" : "1",
-    "domain" : "95",
+    "domain" : "21",
     "attributes" : [ "anonymous", "object" ],
     "id" : "165"
   }, {
-    "range" : "10",
-    "domain" : "95",
+    "range" : "6",
+    "domain" : "48",
     "attributes" : [ "anonymous", "object" ],
     "id" : "166"
   }, {
-    "range" : "4",
-    "domain" : "95",
+    "range" : "44",
+    "domain" : "21",
     "attributes" : [ "anonymous", "object" ],
     "id" : "167"
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/isCategoryOf",
-    "inverse" : "19",
-    "equivalent" : [ "99" ],
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "100",
-    "label" : {
-      "IRI-based" : "isCategoryOf",
-      "undefined" : "is category of"
-    },
-    "superproperty" : [ "94", "44", "88", "168", "64", "78", "112", "17", "66", "101" ],
-    "domain" : "42",
-    "comment" : {
-      "undefined" : "The object property that associates a category to any object."
-    },
-    "attributes" : [ "symmetric", "external", "object" ],
-    "id" : "19"
-  }, {
-    "range" : "13",
-    "domain" : "95",
+    "range" : "4",
+    "domain" : "21",
     "attributes" : [ "anonymous", "object" ],
     "id" : "169"
   }, {
-    "range" : "15",
-    "domain" : "95",
+    "range" : "44",
+    "domain" : "48",
     "attributes" : [ "anonymous", "object" ],
     "id" : "170"
   }, {
-    "range" : "7",
-    "domain" : "16",
+    "range" : "26",
+    "domain" : "48",
     "attributes" : [ "anonymous", "object" ],
     "id" : "171"
   }, {
-    "range" : "22",
-    "domain" : "16",
+    "range" : "8",
+    "domain" : "48",
     "attributes" : [ "anonymous", "object" ],
     "id" : "172"
   }, {
-    "range" : "4",
-    "domain" : "16",
+    "range" : "29",
+    "domain" : "48",
     "attributes" : [ "anonymous", "object" ],
     "id" : "173"
   }, {
-    "range" : "25",
-    "domain" : "16",
+    "range" : "10",
+    "domain" : "45",
     "attributes" : [ "anonymous", "object" ],
     "id" : "174"
   }, {
-    "range" : "15",
-    "domain" : "16",
+    "range" : "8",
+    "domain" : "45",
     "attributes" : [ "anonymous", "object" ],
     "id" : "175"
   }, {
-    "range" : "2",
-    "domain" : "16",
+    "range" : "24",
+    "domain" : "45",
     "attributes" : [ "anonymous", "object" ],
     "id" : "176"
   }, {
-    "range" : "10",
-    "domain" : "16",
+    "range" : "16",
+    "domain" : "45",
     "attributes" : [ "anonymous", "object" ],
     "id" : "177"
   }, {
-    "range" : "47",
-    "domain" : "16",
+    "range" : "29",
+    "domain" : "45",
     "attributes" : [ "anonymous", "object" ],
     "id" : "178"
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/sameAs",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "range" : "65",
-    "label" : {
-      "IRI-based" : "sameAs",
-      "undefined" : "same as"
-    },
-    "domain" : "65",
-    "subproperty" : [ "19" ],
-    "comment" : {
-      "undefined" : "The object property that draws an equivalence between an entity and another"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "168"
-  }, {
-    "range" : "29",
-    "domain" : "16",
+    "range" : "4",
+    "domain" : "45",
     "attributes" : [ "anonymous", "object" ],
     "id" : "179"
   }, {
-    "range" : "24",
-    "domain" : "18",
+    "range" : "1",
+    "domain" : "45",
     "attributes" : [ "anonymous", "object" ],
     "id" : "180"
   }, {
-    "range" : "13",
-    "domain" : "16",
+    "range" : "4",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
     "id" : "181"
   }, {
-    "range" : "10",
-    "domain" : "18",
+    "range" : "8",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
     "id" : "182"
   }, {
-    "range" : "7",
-    "domain" : "18",
+    "range" : "18",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
     "id" : "183"
   }, {
-    "range" : "13",
-    "domain" : "18",
+    "range" : "2",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
     "id" : "184"
   }, {
-    "range" : "22",
-    "domain" : "18",
+    "range" : "14",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
     "id" : "185"
   }, {
-    "range" : "10",
-    "domain" : "24",
+    "range" : "6",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
     "id" : "186"
   }, {
-    "range" : "6",
-    "domain" : "24",
+    "range" : "12",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
     "id" : "187"
   }, {
-    "range" : "22",
-    "domain" : "24",
+    "range" : "26",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
     "id" : "188"
   }, {
-    "range" : "29",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#containsText",
+    "baseIri" : "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl",
+    "range" : "168",
+    "label" : {
+      "IRI-based" : "containsText",
+      "undefined" : "contains text"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "This property relates a fragment to the text it contains"
+    },
+    "attributes" : [ "datatype" ],
     "id" : "189"
   }, {
-    "range" : "22",
-    "domain" : "47",
+    "range" : "29",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
     "id" : "190"
   }, {
-    "range" : "13",
-    "domain" : "47",
+    "range" : "2",
+    "domain" : "44",
     "attributes" : [ "anonymous", "object" ],
     "id" : "191"
   }, {
-    "range" : "7",
-    "domain" : "47",
+    "range" : "1",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
     "id" : "192"
   }, {
-    "range" : "42",
-    "domain" : "43",
+    "range" : "24",
+    "domain" : "44",
     "attributes" : [ "anonymous", "object" ],
     "id" : "193"
   }, {
-    "range" : "16",
-    "domain" : "43",
+    "range" : "29",
+    "domain" : "44",
     "attributes" : [ "anonymous", "object" ],
     "id" : "194"
   }, {
-    "range" : "95",
-    "domain" : "43",
+    "range" : "16",
+    "domain" : "44",
     "attributes" : [ "anonymous", "object" ],
     "id" : "195"
   }, {
-    "range" : "42",
-    "domain" : "38",
+    "range" : "26",
+    "domain" : "44",
     "attributes" : [ "anonymous", "object" ],
     "id" : "196"
   }, {
-    "range" : "16",
-    "domain" : "38",
+    "range" : "2",
+    "domain" : "26",
     "attributes" : [ "anonymous", "object" ],
     "id" : "197"
   }, {
-    "range" : "95",
-    "domain" : "38",
+    "range" : "8",
+    "domain" : "26",
     "attributes" : [ "anonymous", "object" ],
     "id" : "198"
   }, {
-    "range" : "16",
-    "domain" : "42",
+    "range" : "8",
+    "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
     "id" : "199"
   }, {
-    "range" : "95",
-    "domain" : "42",
+    "range" : "12",
+    "domain" : "26",
     "attributes" : [ "anonymous", "object" ],
     "id" : "200"
   }, {
-    "range" : "10",
-    "domain" : "43",
+    "range" : "2",
+    "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
     "id" : "201"
   }, {
-    "range" : "38",
-    "domain" : "43",
+    "range" : "6",
+    "domain" : "26",
     "attributes" : [ "anonymous", "object" ],
     "id" : "202"
   }, {
-    "range" : "1",
-    "domain" : "47",
+    "range" : "12",
+    "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
     "id" : "203"
   }, {
-    "range" : "10",
-    "domain" : "47",
+    "range" : "16",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
     "id" : "204"
   }, {
-    "range" : "6",
-    "domain" : "47",
+    "range" : "1",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
     "id" : "205"
   }, {
-    "range" : "15",
-    "domain" : "47",
+    "range" : "6",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
     "id" : "206"
   }, {
-    "range" : "4",
-    "domain" : "47",
+    "range" : "45",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
     "id" : "207"
   }, {
-    "range" : "24",
-    "domain" : "47",
+    "range" : "21",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
     "id" : "208"
   }, {
-    "range" : "29",
-    "domain" : "47",
+    "range" : "10",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
     "id" : "209"
   }, {
-    "range" : "25",
-    "domain" : "47",
+    "range" : "2",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
     "id" : "210"
   }, {
-    "range" : "2",
-    "domain" : "47",
+    "range" : "26",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
     "id" : "211"
   }, {
-    "range" : "24",
-    "domain" : "95",
+    "range" : "44",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
     "id" : "212"
   }, {
-    "range" : "47",
-    "domain" : "95",
+    "range" : "48",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
     "id" : "213"
   }, {
-    "range" : "29",
-    "domain" : "95",
+    "range" : "26",
+    "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
     "id" : "214"
   }, {
-    "range" : "25",
-    "domain" : "95",
+    "range" : "12",
+    "domain" : "29",
     "attributes" : [ "anonymous", "object" ],
     "id" : "215"
   }, {
-    "range" : "7",
-    "domain" : "95",
+    "range" : "8",
+    "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
     "id" : "216"
   }, {
-    "range" : "2",
-    "domain" : "95",
+    "range" : "6",
+    "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
     "id" : "217"
+  }, {
+    "range" : "6",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "26",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "range" : "2",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "220"
+  }, {
+    "range" : "8",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "14",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "range" : "14",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "2",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "6",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "range" : "12",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "226"
+  }, {
+    "range" : "26",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "18",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "228"
   } ]
 }

@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl> a prov:Entity;
+<..\index-en.html> a prov:Entity;
 	 dc:title "OntoMeditations";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
@@ -10,6 +10,7 @@
 	 prov:wasAttributedTo :agent3;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl>;
+	 prov:wasGeneratedAt "30/11/2022";
 .
 :agent0 a prov:Agent; foaf:name "Chloe Papadopoulou".
 :agent1 a prov:Agent; foaf:name "Eleonora Pasquale".

@@ -7,7 +7,6 @@ div.syntaxmenu {
   padding:0.5em;
   margin: 1em; 
 }
-/* 
 
 .container {
     margin-right: auto;
@@ -15,7 +14,6 @@ div.syntaxmenu {
     padding-left: 15px;
     padding-right: 15px;
 }
- */
 
 @media print {
    div.syntaxmenu { display:none; }
@@ -40,7 +38,6 @@ div.exampleheader span.exampleheader {
   padding-bottom: 3px;
   padding-top: 0px;
 }
-
 
 /* Also copy MediaWiki style here, so it will not look different when exported */
 div.fssyntax pre, div.rdfxml pre, div.owlxml pre, div.turtle pre, div.manchester pre  {
@@ -100,9 +97,7 @@ div.fssyntax pre, div.rdfxml pre, div.owlxml pre, div.turtle pre, div.manchester
 } 
 
 /* And text inside, don't confuse fonts as it breaks em above */
-/* 
 .status div span {
     font-family: "Tauri";
     font-size: larger;
- */
 }
