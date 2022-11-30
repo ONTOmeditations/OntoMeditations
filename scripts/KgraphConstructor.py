@@ -15,63 +15,63 @@ from sparql_dataframe import get
 
 #my ontology classes URI 
 #main class
-literaryDiaryIRI=URIRef("http://w3id.org/arco/ontology/core/literary_diary") #updated
+literaryDiaryIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#iterary_diary") #updated
 #sub class
-abstractFigureIRI=URIRef("https://w3id.org/arco/ontology/core/AbstractFigure")
-agentRoleIRI=URIRef("https://w3id.org/arco/ontology/core/AgentRole")
-chaptersIRI=URIRef("https://w3id.org/arco/ontology/core/chapters")
-conceptIRI=URIRef("https://w3id.org/arco/ontology/core/Concept")
-sentimentIRI=URIRef("https://w3id.org/arco/ontology/core/Sentiment")
+abstractFigureIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#AbstractFigure")
+agentRoleIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#AgentRole")
+chaptersIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#chapters")
+conceptIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Concept")
+sentimentIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Sentiment")
 #sub sub class of abstractfigure
-menIRI=URIRef("https://w3id.org/arco/ontology/core/AbstractFigure/man")
-godIRI=URIRef("https://w3id.org/arco/ontology/core/AbstractFigure/God")
+menIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#man")
+godIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#God")
 #sub sub class of chapters
-fragmentIRI=URIRef("https://w3id.org/arco/ontology/core/fragments")
+fragmentIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#fragments")
 #sub sub class of sentiments
-negativeIRI=URIRef("https://w3id.org/arco/ontology/core/negative_sentiment")
-positiveIRI=URIRef("https://w3id.org/arco/ontology/core/positive_sentiment")
-neutralIRI=URIRef("https://w3id.org/arco/ontology/core/neutral_sentiment")
+negativeIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#negative_sentiment")
+positiveIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#positive_sentiment")
+neutralIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#neutral_sentiment")
 
 #my ontology URI for Object Properties
-hasAssociatedAgent=URIRef("https://w3id.org/arco/ontology/core/hasAssociatedAgent")
-hasAssociatedConcept=URIRef("https://w3id.org/arco/ontology/core/hasAssociatedConcept")
-hasAssociatedFigure=URIRef("https://w3id.org/arco/ontology/core/hasAssociatedFigure")
-hasAssociatedsentimentIRI=URIRef("https://w3id.org/arco/ontology/core/hasAssociatedSentiment")
-hasCharacteristicIRI=URIRef("https://w3id.org/arco/ontology/core/hasCharacteristic")
-hasConstituentIRI=URIRef("https://w3id.org/arco/ontology/core/hasConstituent")
-hasPartIRI=URIRef("https://w3id.org/arco/ontology/core/hasPart")
+hasAssociatedAgent=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasAssociatedAgent")
+hasAssociatedConcept=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasAssociatedConcept")
+hasAssociatedFigure=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasAssociatedFigure")
+hasAssociatedsentimentIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasAssociatedSentiment")
+hasCharacteristicIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasCharacteristic")
+hasConstituentIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasConstituent")
+hasPartIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasPart")
 
 # sub class of has part IRI
-isPartOfIRI=URIRef("https://w3id.org/arco/ontology/core/isPartOf")
-isCategoryOfIRI=URIRef("https://w3id.org/arco/ontology/core/isCategoryOf")
-isCompoentOfIRI=URIRef("https://w3id.org/arco/ontology/core/isComponentOf")
-oppositveOfIRI=URIRef("https://w3id.org/arco/ontology/core/oppositeOf")
-sameasIRI=URIRef("https://w3id.org/arco/ontology/core/sameAs")
+isPartOfIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#isPartOf")
+isCategoryOfIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#isCategoryOf")
+isCompoentOfIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#isComponentOf")
+oppositveOfIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#oppositeOf")
+sameasIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#sameAs")
 
 
 
-providenceIRI=URIRef("https://w3id.org/arco/ontology/core/Category/providence")
-justiceIRI=URIRef("https://w3id.org/arco/ontology/core/Category/justice")
-reasonIRI=URIRef("https://w3id.org/arco/ontology/core/Category/reason")
-powerIRI=URIRef("https://w3id.org/arco/ontology/core/Category/power")
-deathIRI=URIRef("https://w3id.org/arco/ontology/core/Category/death")
-natureIRI=URIRef("https://w3id.org/arco/ontology/core/Category/nature")
-psychebodyIRI=URIRef("https://w3id.org/arco/ontology/core/Category/psyche&body")
+providenceIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#providence")
+justiceIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#justice")
+reasonIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#reason")
+powerIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#power")
+deathIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#death")
+natureIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#nature")
+psychebodyIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#psyche&body")
 
 
 #Data properties
-containsTextIRI = URIRef("https://w3id.org/arco/ontology/core/containsText")
-hasTitleIRI = URIRef("https://w3id.org/arco/ontology/core/hasTitle")
-hasAttributedAuthorIRI=URIRef("https://w3id.org/arco/ontology/core/hasAttributedAuthor")
-hasCitationIRI=URIRef("https://w3id.org/arco/ontology/core/hasCitation") 
-keywordURI=URIRef("https://w3id.org/arco/ontology/core/keyword")
-synonymIRI=URIRef("https://w3id.org/arco/ontology/core/synonym")
+containsTextIRI = URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#containsText")
+hasTitleIRI = URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasTitle")
+hasAttributedAuthorIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasAttributedAuthor")
+hasCitationIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#hasCitation") 
+keywordURI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#keyword")
+synonymIRI=URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#synonym")
 
 #data types
 schemaIRI = URIRef("http://www.w3.org/2000/01/rdf-schema#")
 LiteralIRI=URIRef("http://www.w3.org/2000/01/rdf-schema#Literal")
 
-baseIRI = "https://w3id.org/arco/ontology/core/"
+baseIRI = "https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#"
 
 # accept the natural txt to work on
 #my global variables
@@ -384,15 +384,15 @@ def addsentimentstriples(fragIRI,booknum,position):
 def addAgentsTriples(fragIRI,booknum,position):
     triples = Graph()
     #other agent roles IRIs
-    DemocritusIRI = URIRef("https://w3id.org/arco/ontology/core/Democritus")
+    DemocritusIRI = URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Democritus")
     triples.add((DemocritusIRI,RDF.type,agentRoleIRI))
-    EpictetusIRI = URIRef("https://w3id.org/arco/ontology/core/Epictetus")
+    EpictetusIRI = URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Epictetus")
     triples.add((EpictetusIRI,RDF.type,agentRoleIRI))
-    EuripidesIRI = URIRef("https://w3id.org/arco/ontology/core/Euripides")
+    EuripidesIRI = URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Euripides")
     triples.add((EuripidesIRI,RDF.type,agentRoleIRI))
-    HeraclitusIRI = URIRef("https://w3id.org/arco/ontology/core/Heraclitus")
+    HeraclitusIRI = URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Heraclitus")
     triples.add((HeraclitusIRI,RDF.type,agentRoleIRI))
-    HomerIRI = URIRef("https://w3id.org/arco/ontology/core/Homer")
+    HomerIRI = URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#Homer")
     triples.add((HomerIRI,RDF.type,agentRoleIRI))
     
     for key in allFragments:
@@ -467,7 +467,7 @@ def KGraphcreator():
     fragIRIdict = {}
     myGraph = Graph()
     #create triples for your author here
-    authorIRI = URIRef("https://w3id.org/arco/ontology/core/MarcusAurelius")
+    authorIRI = URIRef("https://raw.githubusercontent.com/ONTOmeditations/OntoMeditations/main/MeditationsOntologyProtege.owl#MarcusAurelius")
     
     myGraph.add((justiceIRI,RDF.type,conceptIRI))
     myGraph.add((powerIRI,RDF.type,conceptIRI))
